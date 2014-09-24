@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% include head.html %}
+	</head>
+	<body class="uk-grid-preserve">
+		<div id="wrapper" class="uk-container-center uk-width-1-1 uk-clearfix">
+			{% include header.html %}
+			<div class="uk-width-medium-2-3 uk-margin-right uk-width-small-1-1 uk-float-left">
+				<div class="container uk-clearfix">
+					<article id="main-content">
+						{{ content }}
+					</article>
+				</div>
+			</div>
+			<div class="uk-width-medium-1-4 uk-width-small-1-1 uk-float-right uk-hidden-small">				
+				<aside>
+					<section id="blog-categories">
+						<p class="uk-h3">View another category</h4>
+						<ul>
+						{% for cat in site.categories %}
+							<li><a href="{{site.url}}/categories/?cat={{ cat || first }}"><i class="uk-icon-angle-right"></i>{{ cat || first }}</a></li>
+						{% endfor %}
+						</ul>
+					</section>
+					<section id="blog-tags">
+						<p class="uk-h3">View another tag</h4>
+						<ul>
+						{% for tags in site.tags %}
+							<li><a href="{{site.url}}/categories/?tag={{ tag || first }}"><i class="uk-icon-angle-right"></i>{{ tag[0] || first }}</a></li>
+						{% endfor %}
+						</ul>
+					</section>
+				</aside>
+			</div>
+		</div>
+		{% include footer.html %}
+		<script src="{{ site.url }}/assets/js/tags-categories.js"></script>
+	</body>
+</html>

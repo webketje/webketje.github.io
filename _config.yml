@@ -1,2 +1,18 @@
 pygments: true
 github: [Repository metadata]
+timezone: Europe/Brussels
+encoding: utf-8
+title: webketje
+permalink: none
+author: Kevin Van Lierde
+highlighter: pygments
+markdown: kramdown
+# defaults:
+# -
+#    scope:
+#     path: "about/blog"
+#     type: "post"
+#   values:
+#     layout: "blog-post"
+#     author: "Kevin Van Lierde"
+# -

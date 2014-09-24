@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% include head.html %}
+	</head>
+	<body class="uk-grid-preserve">
+		<div id="wrapper" class="uk-container-center uk-width-1-1 uk-clearfix">
+			{% include header.html %}
+			<div class="uk-width-medium-2-3 uk-margin-right uk-width-small-1-1 uk-float-left">
+				<div class="container uk-clearfix">
+				<h2 id="page-title" class="uk-text-center-small uk-text-left-medium uk-hidden-small">{{ page.title }}</h2>
+					<article id="main-content" class="post container">
+						{{ content }}
+					</article>
+				</div>
+			</div>
+			<div class="uk-width-medium-1-4 uk-hidden-small uk-float-right">
+				<div class="container uk-clearfix">
+					<aside id="main-content">
+						{% include sidebar.html %}
+					</aside>
+				</div>
+			</div>
+		</div>
+		{% include footer.html %}
+	</body>
+</html>
