@@ -1,10 +1,9 @@
 
 			<footer id="site-footer">
-				<small>Copyright 2014, Kevin Van Lierde. All Rights Reserved, content licensed under <a href="http://en.wikipedia.org/wiki/BSD_licenses#3-clause_license_.28.22Revised_BSD_License.22.2C_.22New_BSD_License.22.2C_or_.22Modified_BSD_License.22.29">BSD-3</a> </small>
+				<small>Copyright {{ site.time | date: '%Y' }}, Kevin Van Lierde. All Rights Reserved, content licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons</a> </small>
 			</footer>
 		</div>
 	</div>
-		<script src="{{ site.url }}/assets/js/lib/uikit.min.js"></script>
 		<!-- Google Analytics -->
 		<script type="text/javascript">
 			
@@ -15,6 +14,15 @@
 
 			ga('create', 'ID', 'tumblr.com');
 			ga('send', 'pageview');
+
+			var months = document.getElementsByClassName('post-month');
+			if (months) {
+				for (var i = 0; i < months.length; i++) {
+					if (months[i].innerHTML.length > 5) {
+						months[i].innerHTML = months[i].innerHTML.slice(0,3) + '.';
+					}
+				}
+			}
 		</script>
 	</body>
 </html>

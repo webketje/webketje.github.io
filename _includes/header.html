@@ -1,14 +1,13 @@
 <header id="site-header">
-	<div class="uk-float-left uk-margin-right" style="min-width: 100px;">
-		<figure id="profile-picture" class="uk-border-circle">
-			<img src="{{ site.url }}/assets/img/kevin-van-lierde.png" alt="Kevin Van Lierde's profile picture" class="uk-responsive-width">
-		</figure>
-	</div>
-	<div class="uk-clearfix uk-float-left uk-width-2-3 uk-width-medium-3-10">
-		<h1 id="site-title">'t Webketje</h1>
-		<nav id="site-nav" class="uk-float-left">
+	<figure id="profile-picture">
+		<img src="{{ site.url }}/assets/img/kevin-van-lierde.png" alt="Kevin Van Lierde's profile picture">
+	</figure>
+	<div>
+		<h2 id="site-title">'t Webketje</h2>
+		<nav id="site-nav">
 			{% for order in (1..10) %}
 			{% for page in site.pages %}
+			{% if page.order > -1 %}
 			{% if page.order == order %}
 			{% if page.customUrl %}
 			<a href="{{ page.customUrl }}">{{ page.title }}</a> /
@@ -16,12 +15,13 @@
 			<a href="{{ page.url }}">{{ page.title }}</a> /
 			{% endif %} 
 			{% endif %}
+			{% endif %}
 			{% endfor %}
 			{% endfor %}
 		</nav>
 	</div>
-	<nav id="site-social-media" class="uk-float-right uk-hidden-small">
-		<p class="uk-text-right uk-hidden-small" style="margin-top: -10px;">Get in touch:<img src="{{ site.url }}/assets/img/arrow.png" style="height: 30px; margin: 20px 0 0 10px;"></p>
+	<nav id="site-social-media">
+		<p>Get in touch:<img src="{{ site.url }}/assets/img/arrow.png" alt="arrow down"></p>
 		<a href="http://twitter.com/Tyblitz" 	title="Twitter"><i class="fa fa-twitter"></i></a>
 		<a href="http://linkedin.com/kevinvanlierde" 	title="Linkedin"><i class="fa fa-linkedin"></i></a>
 		<a href="http://plus.google.com/+KevinVanLierde" title="Google Plus"><i class="fa fa-google-plus"></i></a>

@@ -1,0 +1,25 @@
+{"ko-site-settings": [
+	{"title":"Introduction"},
+ 	{"title":"Download"},
+ 	{"title":"User guide",
+  	"subtitles": [
+		{"title":"Advised use"},
+		{"title":"Switching between modes"},
+		{"title":"Restricting editing permission"},
+		{"title":"Outputting settings"},
+		{"title":"Editing tabs"},
+		{"title":"Editing settings", 
+		"subtitles": [
+			{"title": "Setting input types"},
+			{"title": "Setting access"}
+		]}
+	]},
+ 	{"title":"Plugin info",
+  	"subtitles": [
+		{"title":"How it works"},
+		{"title":"Dependencies"},
+		{"title":"Known Issues"},
+		{"title":"Planned features"},
+		{"title":"Changelog"}
+	]},
+]}

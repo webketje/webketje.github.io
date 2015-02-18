@@ -1,22 +1,11 @@
 ---
 title: Blog
-customUrl: /
 order: 1
 layout: base
+type: list
+widgets: about,recent,search,categories,tags,archives
+customUrl: /
 ---
-	<div class="uk-width-medium-2-3 uk-margin-right uk-width-small-1-1 uk-float-left">
-		<h2 id="page-title" class="uk-text-center-small uk-text-left-medium uk-hidden-small">{{ page.title }}</h2>
-			<main class="uk-grid-preserve"  itemscope="" itemtype="http://schema.org/Blog">
-				<ul id="blog-roll" class="uk-width-1-1">
-					{% for post in site.posts limit: 10 %}
-					  {% include blog-roll.html %}
-					{% endfor %}
-				</ul>
-				</main>
-			</div>
-			<div class="uk-width-medium-1-4 uk-width-small-1-1 uk-float-right uk-hidden-small">
-				<h3 style="margin-top: 10px;">About this blog</h3>
-				<aside id="site-about">
-					<p id="site-description">Ket : purebred Brussels inhabitant, a Brussels ~. A blog by Kevin Van Lierde about all kinds of stuff. Webstuff, lame stuff, interesting stuff, Belgium stuff. Stuffed turkey (lame, I told you).. Get to know this guy's <a href="about/index.html">occupations & bad habits</a>.</p>
-				</aside>
-			</div>
+{% for post in site.posts limit: 10 %}
+	<li class="list-item">{% include blog-list-item.html %}</li>
+{% endfor %}

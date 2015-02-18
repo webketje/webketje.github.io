@@ -1,0 +1,5 @@
+
+{% if include.block == "note" %}
+	{% comment %} .type info|warn|danger {% endcomment %}
+	<span class="note {{ include.type }}"><span style="text-decoration: underline;">Note: </span>{{ include.text }}</span>
+{% endif %}

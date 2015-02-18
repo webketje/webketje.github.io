@@ -1,4 +1,3 @@
-pygments: true
 github: [Repository metadata]
 timezone: Europe/Brussels
 encoding: utf-8
@@ -7,6 +6,8 @@ permalink: none
 author: Kevin Van Lierde
 highlighter: pygments
 markdown: kramdown
+# Outputting
+permalink: pretty
 # defaults:
 # -
 #    scope:

@@ -1,0 +1,18 @@
+<strong>Table of Contents</strong>
+{% assign file = site.data.toc[page.slug] %}
+<ul>
+{% for section in file %}
+	<li>
+		<a href="#{{ section.title | slugify }}">{{ section.title }}</a>
+		{% if section.subtitles %}
+		{% for sub in section.subtitles %}
+		<ul>
+			<li>
+				<a href="#{{ sub.title | slugify }}">{{ sub.title }}</a>
+			</li>
+		</ul>
+		{% endfor %}
+		{% endif %}
+	</li>
+{% endfor %}
+</ul>

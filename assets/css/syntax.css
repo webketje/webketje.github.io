@@ -1,5 +1,5 @@
-.highlight { background: #F9F6EA; background: transparent; margin-bottom: 21px; margin-bottom: 1.5rem; position: relative;}
-.highlight pre { background: #FDFDFD; border: none;	margin-top: 10px; border-top: 1px solid #CDCDCD; border-bottom: 1px solid #CDCDCD; border-radius: 0;}
+.highlight { background: #F9F6EA; background: transparent; margin-bottom: 21px; margin-bottom: 1.5rem; position: relative; }
+.highlight pre { background: #FDFDFD; border: none;	margin-top: 10px; border-top: 1px solid #CDCDCD; border-bottom: 1px solid #CDCDCD; border-radius: 0; padding: 15px;}
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .k { font-weight: bold } /* Keyword */
