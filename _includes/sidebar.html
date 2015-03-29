@@ -1,0 +1,19 @@
+<aside>
+	{% if include.widgets %}
+	{% assign items = include.widgets | split:',' %}
+	{% for item in items %}
+		<section id="{{ item }}-sidebar">
+			{% if item == 'smallprojects' %}
+			<strong>Small projects</strong>
+			<ul>
+				{% for small in site.data.smallprojects %}
+				<li><a href="{{ small.url }}" target="_blank">{{ small.title }}</a></li>
+				{% endfor %}
+			</ul>
+			{% else %}
+				{% include widget-{{ item }}.html %}
+			{% endif %}
+		</section>
+	{% endfor %}
+	{% endif %}
+</aside>

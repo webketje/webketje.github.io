@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% include head.html %}
+	</head>
+	<body id="{{ page.title | downcase }}">
+		<div id="wrapper">
+			{% include header.html %}
+			<h1 id="page-title">{{ page.title }}</h1>
+			<div id="main" {% unless page.widgets %} class="no-sidebar" {% endunless %}>
+				{% if page.type == 'list' %}
+					<ul id="{{ page.title | downcase }}-roll" class="list">
+						{{ content }}
+					</ul>
+				{% endif %}
+				{% if page.type == 'page' %}
+					<div class="page">
+						{{ content }}
+					</div>
+				{% endif %}
+				{% if page.type == 'cards' %}
+					<ul id="{{ page.title | downcase }}-roll" class="cards">
+						{{ content }}
+					</ul>
+				{% endif %}
+			</div>
+			{% if page.widgets %}
+				{% include sidebar.html widgets=page.widgets %}
+			{% endif %}
+		</div>
+		{% include footer.html %}
+	</body>
+</html>
