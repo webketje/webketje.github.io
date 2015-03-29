@@ -2,16 +2,21 @@
 {% assign file = site.data.toc[page.slug] %}
 <ul>
 {% for section in file %}
-	<li>
-		<a href="#{{ section.title | slugify }}">{{ section.title }}</a>
+	<li><a href="#{{ section.title | slugify }}">{{ section.title }}</a>
 		{% if section.subtitles %}
-		{% for sub in section.subtitles %}
 		<ul>
-			<li>
-				<a href="#{{ sub.title | slugify }}">{{ sub.title }}</a>
+		{% for sub in section.subtitles %}
+			<li><a href="#{{ sub.title | slugify }}">{{ sub.title }}</a>
+				{% if sub.subtitles %}
+				<ul>
+				{% for subt in sub.subtitleq %}
+					<li><a href="#{{ subt.title | slugify }}">{{ subt.title }}</a></li>
+				{% endfor %}
+				</ul>
+				{% endif %}
 			</li>
-		</ul>
 		{% endfor %}
+		</ul>
 		{% endif %}
 	</li>
 {% endfor %}

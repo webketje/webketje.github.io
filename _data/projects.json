@@ -1,5 +1,4 @@
-[{"name": "KO Site settings plugin (GetSimple CMS)", 
-  "link": "/projects/ko-site-settings/",
-  "descr": ["A GetSimple CMS plugin for site-wide custom settings, to be used independently or in conjunction with plugins like i18n. ",
-  			"It allows for the creation of setting lists, spread over multiple tabs, with choice for ",
-            "each setting field between (currently) 8 input types and 3 access levels. The plugin features a very responsive UI (compared to its GS counterparts), and data is saved as JSON."]}]
+[{"name": "GS Custom settings plugin (GetSimple CMS)", 
+  "link": "/projects/gs-custom-settings/",
+  "descr": ["GS Custom Settings is a plugin for GetSimple CMS which lets webmasters/ site managers, theme and plugin developers implement and use their own custom settings for output, configuration, and cross-plugin/-theme communication.",
+            "The plugin offers 8 different types of input to choose from, 3 access levels, per-user editing permission, and an easy UI to create, import and export the settings."]}]

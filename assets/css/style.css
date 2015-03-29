@@ -189,11 +189,11 @@ body.blog-post aside { margin-top: 20px;}
 	font-size: 20px;
 	font-size: 1.25rem;
 }
-#main p { 
-	line-height: 28px;
+#main p, #main ul, #main ol { 
+	line-height: 24px;
 	line-height: 1.5rem;
-	font-size: 18px;
-	font-size: 1.125rem;
+	font-size: 16px;
+	font-size: 1rem;
 	overflow: auto;
 }
 #blog-roll #main p {
@@ -269,7 +269,9 @@ body.blog-post aside { margin-top: 20px;}
 	border-radius: 3px;
 	background: #fafafa;
 	white-space: normal;
+	font-family: monospace;
 }
+#main code { font-size: 1rem; }
 #main .highlight pre code:before {
 	display: block;
 	position: absolute;
@@ -464,3 +466,7 @@ input:focus, textarea:focus, select:focus, *:focus {outline-color: #B76459;}
 
 /* search */
 #search-term { text-decoration: underline; margin-left: 10px; }
+
+/* sidebar widgets */
+.sticky section { height: 90%; overflow: auto;}
+#toc-sidebar ul li ul li a:before { content: '- '; }

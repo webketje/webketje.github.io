@@ -1,22 +1,31 @@
-{"ko-site-settings": [
+{"gs-custom-settings": [
 	{"title":"Introduction"},
- 	{"title":"Download"},
+ 	{"title":"Features"},
+ 	{"title":"Download, install, upgrade"},
  	{"title":"User guide",
   	"subtitles": [
 		{"title":"Advised use"},
 		{"title":"Switching between modes"},
-		{"title":"Restricting editing permission"},
-		{"title":"Outputting settings"},
 		{"title":"Editing tabs"},
-		{"title":"Editing settings", 
-		"subtitles": [
-			{"title": "Setting input types"},
-			{"title": "Setting access"}
-		]}
+		{"title":"Editing settings"},
+		{"title":"Editing setting properties"},
+		{"title":"Outputting settings"}
 	]},
+ 	{"title":"For webmasters/ site managers",
+		"subtitles": [
+			{"title": "Importing settings"},
+			{"title": "Exporting settings"},
+			{"title":"Restricting editing permission"}
+		]},
+ 	{"title":"For theme developers"},
+ 	{"title":"For plugin developers"},
+	{"title":"PHP API",
+		"subtitles": [
+			{"title": "Functions"},
+			{"title": "Hooks"}
+		]},
  	{"title":"Plugin info",
   	"subtitles": [
-		{"title":"How it works"},
 		{"title":"Dependencies"},
 		{"title":"Known Issues"},
 		{"title":"Planned features"},
