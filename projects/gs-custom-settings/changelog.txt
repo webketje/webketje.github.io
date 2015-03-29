@@ -15,7 +15,7 @@ New:
   - Plugin developers can now register their custom settings, i18n-enabled.
   - Added security token check to AJAX filehandler.
   - Added PHP API with variable caching for better performance 
-  - Permissions can be restricted per user by adding a <ko_edit>false</ko_edit> node to the user.xml
+  - Permissions can be restricted per user by adding a <KO_EDIT>false</KO_EDIT> node to the user.xml
   - Added languages French, Dutch.
 Changed:
   - Removed the ability to view all tabs in one (performance)

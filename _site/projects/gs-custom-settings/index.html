@@ -2,7 +2,11 @@
 <html lang="en">
 	<head>
 			<meta charset="utf-8">
+<<<<<<< HEAD
 	<title>GS Custom Settings | webketje</title>
+=======
+	<title>GS Custom settings | webketje</title>
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
 	<link rel="stylesheet" type="text/css" href="/assets/css/syntax.css">
 	<link rel="stylesheet" type="text/css" href="/assets/fonts/font-awesome-4.1.0/css/font-awesome.min.css" type="text/css">
 	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
@@ -323,12 +327,20 @@
 		<a href="#kevin.van.lierde@gmail.com" 	title="E-mail: kevin.van.lierde@gmail.com"><i class="fa fa-envelope"></i></a>
 	</nav>
 </header>
+<<<<<<< HEAD
 			<h1 id="page-title">GS Custom Settings</h1>
+=======
+			<h1 id="page-title">GS Custom settings</h1>
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
 			<div id="main" >
 				
 				
 					<div class="page">
+<<<<<<< HEAD
 						<script src="assets/js/jquery.sticky.js"></script>
+=======
+						<script src="jquery.sticky.js"></script>
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
 <section id="intro">
 	<header>
 		<h2 id="introduction">Introduction</h2>
@@ -379,7 +391,11 @@
 	</section>
 	<section>
 		<h3 id="editing-tabs">Editing tabs</h3>
+<<<<<<< HEAD
 		<img style="float: right; margin-left: 20px;" src="http://i.imgur.com/dmuLukB.gif">
+=======
+		<img style="float: right; margin-left: 20px;" src="http://i.imgur.com/dmuLukB.gif" />
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
 		<p>Editing tabs is pretty self-explanatory (see image to the right). Click the tab label to edit it, and click the icons to complete any of the following actions, from left to right: </p>
 		<ol>
 			<li>Add a new tab</li>
@@ -400,7 +416,11 @@
 			<li>Move all selected settings up</li>
 			<li>Move all selected settings down</li>
 		</ol>
+<<<<<<< HEAD
 		<img src="http://i.imgur.com/pXbVG8A.gif" style="width: 50%; float: right; margin-left: 20px;">
+=======
+		<img src="http://i.imgur.com/pXbVG8A.gif" style="width: 50%; float: right; margin-left: 20px;"/>
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
 		<p>Every setting also has the two first buttons to (de)select individually &amp; hide/show individually. As of v0.2, some setting actions can also be achieved using keyboard shortcuts, eg:</p>
 		<ol>
 		<li><kbd>SHIFT</kbd> + click selects all settings between the setting first and last clicked.</li>
@@ -449,7 +469,11 @@
 		<h3 id="outputting-settings">Outputting settings</h3>
 		<p>To get a setting in a page (in the WYSIWYG editor), simply type <code>(% setting: tab/setting %)</code>.<br>To get a setting in themes and components, type <code>&lt;?php get_setting('tab/setting') ?&gt;</code>.<br>To process the return value before outputting it, type <code>&lt;?php return_setting('tab/setting') ?&gt;</code>. The easiest way to get this code, is to copy to select and copy paste the code field next to the input (the WYSIWYG code is visible in <kbd>Manage</kbd> mode, the PHP code in <kbd>Edit</kbd> mode.) Beneath is a listing of the return values for each type of input (the 'fancy' versions as well as <code>switch</code> simply make use of font icons instead of standard inputs):</p>
 		<table>
+<<<<<<< HEAD
 			<tbody><tr>
+=======
+			<tr>
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
 				<td><strong>Input types</strong></td>
 				<td><strong>With <code>get_setting</code></strong></td>
 				<td><strong>With <code>return_setting</code></strong></td>
@@ -494,7 +518,11 @@
 				<td>Returns the <i>selected</i> option's text value.</td>
 				<td>Returns the <i>selected</i> option's zero-based index.</td>
 			</tr>
+<<<<<<< HEAD
 		</tbody></table>
+=======
+		</table>
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
 	</section>
 </section>
 <section>
@@ -536,7 +564,12 @@
      <span style="color: #C24145">└─ de_DE.json</span></code></pre></div>
 	<p>The only translatable strings are a setting's <code>label</code>,<code>descr</code> and <code>options</code> (if the setting is a <code>select</code>, <code>radio</code> or <code>fancy radio</code>). For each of these, you should prefix the property with the setting's <code>lookup</code>. The language files in the <code>lang</code> directory should have a <code>strings</code> object holding all strings for the settings. You can optionally add a <code>meta</code> object containing information about the translation version, author, date etc.</p>
 
+<<<<<<< HEAD
 <div class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="nt">&quot;meta&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;author&quot;</span><span class="p">:</span><span class="s2">&quot;me&quot;</span><span class="p">},</span> <span class="err">/*</span> <span class="err">meta</span> <span class="err">is</span> <span class="err">optional</span> <span class="err">*/</span>
+=======
+<div class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span>
+  <span class="nt">&quot;meta&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;author&quot;</span><span class="p">:</span> <span class="s2">&quot;me&quot;</span><span class="p">},</span> <span class="err">/*</span> <span class="err">meta</span> <span class="err">is</span> <span class="err">optional</span> <span class="err">*/</span>
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
   <span class="nt">&quot;strings&quot;</span><span class="p">:</span> <span class="p">{</span>
      <span class="nt">&quot;mysetting_label&quot;</span><span class="p">:</span> <span class="s2">&quot;Label&quot;</span><span class="p">,</span>
      <span class="nt">&quot;mysetting_descr&quot;</span><span class="p">:</span> <span class="s2">&quot;Description&quot;</span><span class="p">,</span>
@@ -549,7 +582,10 @@
      <span class="nt">&quot;mysecondsetting_descr&quot;</span><span class="p">:</span> <span class="s2">&quot;Description 2&quot;</span>
   <span class="p">}</span>
 <span class="p">}</span></code></pre></div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
 	<p>You're set! When your theme is activated in the GS <code>theme</code> tab, your settings will appear in the Custom Settings sidebar in the tab <code>Theme settings</code> (GS tab <code>Site</code>). The data is saved to <code>/data/other/custom_settings/theme_data_&lt;themename&gt;.json</code>.</p>
 </section>
 <section>
@@ -579,7 +615,12 @@
   
 	<p>The only translatable strings are a setting's <code>label</code>,<code>descr</code> and <code>options</code> (if the setting is a <code>select</code>, <code>radio</code> or <code>fancy radio</code>). For each of these, you should prefix the property with the setting's <code>lookup</code>. The language files in the <code>lang</code> directory should have a <code>strings</code> object holding all strings for the settings. You can optionally add a <code>meta</code> object containing information about the translation version, author, date etc.</p>
 
+<<<<<<< HEAD
 <div class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="nt">&quot;meta&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;author&quot;</span><span class="p">:</span><span class="s2">&quot;me&quot;</span><span class="p">},</span> <span class="err">/*</span> <span class="err">meta</span> <span class="err">is</span> <span class="err">optional</span> <span class="err">*/</span>
+=======
+<div class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span>
+  <span class="nt">&quot;meta&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;author&quot;</span><span class="p">:</span> <span class="s2">&quot;me&quot;</span><span class="p">},</span> <span class="err">/*</span> <span class="err">meta</span> <span class="err">is</span> <span class="err">optional</span> <span class="err">*/</span>
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
   <span class="nt">&quot;strings&quot;</span><span class="p">:</span> <span class="p">{</span>
      <span class="nt">&quot;mysetting_label&quot;</span><span class="p">:</span> <span class="s2">&quot;Label&quot;</span><span class="p">,</span>
      <span class="nt">&quot;mysetting_descr&quot;</span><span class="p">:</span> <span class="s2">&quot;Description&quot;</span><span class="p">,</span>
@@ -606,11 +647,17 @@
 		<h2 id="php-api">PHP API</h2>
 	</header>
 <h4 id="functions">Functions</h4>
+<<<<<<< HEAD
 
 <div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nx">get_setting</span><span class="p">(</span><span class="nv">$tab</span><span class="p">,</span> <span class="nv">$setting</span><span class="p">)</span>
 <span class="c1">// @param {string} $tab - lookup property of the tab to search in</span>
 <span class="c1">// @param {string} $setting - lookup property of the setting to output</span></code></pre></div>
 
+=======
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nx">get_setting</span><span class="p">(</span><span class="nv">$tab</span><span class="p">,</span> <span class="nv">$setting</span><span class="p">)</span>
+<span class="c1">// @param {string} $tab - lookup property of the tab to search in</span>
+<span class="c1">// @param {string} $setting - lookup property of the setting to output</span></code></pre></div>
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
 	<p>Outputs the setting's value for display. This differs by setting type. </p>
 	<ul>
 		<li>If the setting has options, the text from the selected option (in default language) will be displayed. </li>
@@ -619,11 +666,18 @@
 	</ul>
 	<br>
 	
+<<<<<<< HEAD
 <div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nx">return_setting</span><span class="p">(</span><span class="nv">$tab</span><span class="p">,</span><span class="nv">$setting</span><span class="p">,</span><span class="nv">$prop</span><span class="o">=</span><span class="k">NULL</span><span class="p">)</span>
 <span class="c1">// @param {string} $tab - lookup property of the tab to search in</span>
 <span class="c1">// @param {string} $setting - lookup property of the setting to return</span>
 <span class="c1">// @param {string} [$prop=NULL] - (Optional) A single property of the setting to return</span></code></pre></div>
 
+=======
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nx">return_setting</span><span class="p">(</span><span class="nv">$tab</span><span class="p">,</span> <span class="nv">$setting</span><span class="p">,</span> <span class="nv">$prop</span><span class="o">=</span><span class="k">NULL</span><span class="p">)</span>
+<span class="c1">// @param {string} $tab - lookup property of the tab to search in</span>
+<span class="c1">// @param {string} $setting - lookup property of the setting to return</span>
+<span class="c1">// @param {string} [$prop=NULL] - (Optional) A single property of the setting to return</span></code></pre></div>
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
 	<p>Returns the setting entirely as an array, or one property of it (if <code>$prop !== NULL</code>).</p>
 	<p>When returning a setting's value:</p>
 	<ul>
@@ -636,8 +690,12 @@
 <div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nx">get_tab_link</span><span class="p">(</span><span class="nv">$tab</span><span class="o">=</span><span class="k">NULL</span><span class="p">,</span> <span class="nv">$linkText</span><span class="o">=</span><span class="s1">&#39;settings&#39;</span><span class="p">)</span>
 <span class="c1">// @param {string} [$tab=NULL] - (Optional) Empty, lookup property of  </span>
 <span class="c1">// lookup property of a plugin (basename) or &#39;theme_settings&#39;, or a site tab</span>
+<<<<<<< HEAD
 <span class="c1">// @param {string} [$linkText=&#39;settings&#39;] - (Optional) A custom text for the &amp;lt;a&amp;gt; element</span></code></pre></div>
 
+=======
+<span class="c1">// @param {string} [$linkText=&#39;settings&#39;] - (Optional) A custom text for the &lt;a&gt; element</span></code></pre></div>
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
 	<p>Outputs a link to the settings from the active theme (with <code>$themeOrPlugin</code> set to <code>theme_settings</code>), to an activated plugin, a site tab, or just the GS Custom Settings tab (if <code>$themeOrPlugin</code> is <code>NULL</code>). You can also set a <code>$linkText</code> for custom link text (default is 'settings'). The link will activate the tab given as <code>$themeOrPlugin</code>: useful if you want to include a link to settings from your plugin's page especially.</p>
 	<br>
 	
@@ -645,18 +703,25 @@
 <span class="c1">// @param {string} $tab - lookup property of the tab to search in</span>
 <span class="c1">// @param {string} $setting - lookup property of the setting to return</span>
 <span class="c1">// @param {string|array} $value - The property (ies) to modify.</span></code></pre></div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
 <p>(<strong>Experimental</strong>) Sets a given setting's properties if an array is given as value, or changes the settings' value if <code>$value</code> is a string. Be careful when using this function, as the code will be executed over and over again, forcing properties set by the function to overwrite those set in the UI. Note that the function does not write to a file, but modifies/ adds to a global, and changes will only persist if the data is saved. You should normally only use this function conditionally (eg, if a version setting is not up to date)</p>
 <br>
 	
 <div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nx">remove_setting</span><span class="p">(</span><span class="nv">$tab</span><span class="p">,</span> <span class="nv">$setting</span><span class="p">)</span>
 <span class="c1">// @param {string} $tab - lookup property of the tab to search in</span>
 <span class="c1">// @param {string} $setting - lookup property of the setting to remove</span></code></pre></div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
 <p>(<strong>Experimental</strong>) Removes the given setting in the given tab. You should only use this function conditionally (eg, if a version setting is not up to date)</p>
 	
 <h4 id="hooks">Hooks</h4>
 <p>v0.2 doesn't allow <em>updating</em> a plugin's settings yet (from old to new version). Future versions will include an automatic file update.</p>
+<<<<<<< HEAD
 
 <div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nx">add_action</span><span class="p">(</span><span class="s1">&#39;custom-settings-init&#39;</span><span class="p">,</span> <span class="nv">$function</span><span class="p">)</span>
 <span class="c1">// @param {string} $function - the function you want to execute right after settings are globalized.</span></code></pre></div>
@@ -666,6 +731,13 @@
 <div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nx">add_action</span><span class="p">(</span><span class="s1">&#39;custom-settings-load&#39;</span><span class="p">,</span> <span class="nv">$function</span><span class="p">)</span>
 <span class="c1">// @param {string} $function - the function you want to execute before settings are loaded</span></code></pre></div>
 
+=======
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nx">add_action</span><span class="p">(</span><span class="s1">&#39;custom-settings-init&#39;</span><span class="p">,</span> <span class="nv">$function</span><span class="p">)</span>
+<span class="c1">// @param {string} $function - the function you want to execute right after settings are globalized.</span></code></pre></div>
+<p>Hook that executes right after settings are globalized. Use it to act upon settings saved in the data files.</p>
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nx">add_action</span><span class="p">(</span><span class="s1">&#39;custom-settings-load&#39;</span><span class="p">,</span> <span class="nv">$function</span><span class="p">)</span>
+<span class="c1">// @param {string} $function - the function you want to execute before settings are loaded</span></code></pre></div>
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
 <p>Hook that executes <em>before</em> settings are loaded into the UI. (called through the plugin UI on load). It's worth to point out that this function doesn't directly save settings to a file. It merely adds them to the plugin UI on load, and they will only be saved, if the user hits <kbd>Save updates</kbd>.</p>
 <!--
 <div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nx">add_action</span><span class="p">(</span><span class="s1">&#39;custom-settings-save&#39;</span><span class="p">,</span> <span class="nv">$function</span><span class="p">)</span>
@@ -692,6 +764,7 @@
 		<p>Find the list of currently known issues <a href="https://github.com/webketje/GS-Custom-Settings/issues">on Github</a></p>
 		<pre style="white-space: pre-wrap; font-size: 14px;">﻿25/02/2015 - V. 0.2 public test
 
+<<<<<<< HEAD
   - Settings import only works with IE10 &amp; up, provide fallback
   - When repeatedly batch editing settings, selection might bug or actions might not be executed on entire selection
   - Repeatedly importing settings for the same tab without reloading the page/ importing settings for another tab first doesn't work</pre>
@@ -702,12 +775,31 @@
 - 'Section title' settings (delimiters of different sections of settings inside a tab)
 - URL/ Image fields
 - Version checking & setting updates for plugins
+=======
+  - Placeholders not showing up in Mozilla FF
+  - IE8 untested
+  - Settings import only works with IE10 & up, provide fallback
+  - When repeatedly batch editing settings, selection might bug or actions might not be executed on entire selection
+  - Repeatedly importing settings for the same tab without reloading the page/ importing settings for another tab first doesn't work
+  - Theme settings label sometimes doesn't appear (fetched with AJAX)</pre>
+	</section>
+	<section>
+		<h3 id="planned-features">Planned features</h3>
+		<pre style="white-space: pre-wrap; font-size: 14px;">﻿- Integration with Multi User plugin
+- 'Section title' settings (delimiters of different sections of settings inside a tab)
+- URL/ Image fields
+- Version checking &amp; setting updates for plugins
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
 - Setting user permissions through the UI
 - multilingual text/ textarea settings (mainly for output)
 - Browser testing on Mozilla Firefox and IE (not done yet)
 - Work away bugs in multiselect & keyboard shortcut features
 - Ability to build plugin language files through the UI
+<<<<<<< HEAD
 - Add accesskeys & more keyboard shortcuts for saving, exporting etc.
+=======
+- Add accesskeys &amp; more keyboard shortcuts for saving, exporting etc.
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
 - Add beforeUnload pagecheck to prevent unsaved edits loss
 - Add ability to move settings from one tab to another
 - Add automatic settings update when plugins are updated
@@ -725,15 +817,24 @@ New:
     - tab/setting actions moved to one toolbar to unclutter the UI
     - opening a tab in edit mode is the same as in manage mode (used to be through icon)
     - Settings can now be batch selected/(re)moved/added
+<<<<<<< HEAD
     - settings keyboard functionality (Ctrl, Shift for multiselect &amp; Delete)
   - Import &amp; export data directly from the UI as backup/ transfer to other site.
+=======
+    - settings keyboard functionality (Ctrl, Shift for multiselect & Delete)
+  - Import & export data directly from the UI as backup/ transfer to other site.
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
   - Export tab directly to JSON for plugin/theme dev with custom settings.
   - Enhanced, translatable notification manager
   - Theme developers can now register their custom settings, i18n-enabled.
   - Plugin developers can now register their custom settings, i18n-enabled.
   - Added security token check to AJAX filehandler.
   - Added PHP API with variable caching for better performance 
+<<<<<<< HEAD
   - Permissions can be restricted per user by adding a <ko_edit>false</ko_edit> node to the user.xml
+=======
+  - Permissions can be restricted per user by adding a <KO_EDIT>false</KO_EDIT> node to the user.xml
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
   - Added languages French, Dutch.
 Changed:
   - Removed the ability to view all tabs in one (performance)
@@ -755,20 +856,33 @@ Bugfixes:
 18/02/2014 - V. 0.1 (Alpha)
 
 Initial launch
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
 </pre>
 	</section>
 	<footer>
 	<hr>
+<<<<<<< HEAD
 		<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; float: left; margin-right: 5px;" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
 		<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">GS Custom Settings</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/webketje/GS-Custom-Settings" property="cc:attributionName" rel="cc:attributionURL">Kevin Van Lierde</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. Built for<a xmlns:dct="http://purl.org/dc/terms/" href="http://get-simple.info" rel="dct:source">http://get-simple.info</a>.
 	</p></footer>
+=======
+		<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; float: left; margin-right: 5px;" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"/></a>
+		<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">GS Custom Settings</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/webketje/GS-Custom-Settings" property="cc:attributionName" rel="cc:attributionURL">Kevin Van Lierde</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. Built for<a xmlns:dct="http://purl.org/dc/terms/" href="http://get-simple.info" rel="dct:source">http://get-simple.info</a>.
+	</footer>
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
 </section>
 <script>
   $(document).ready(function(){
     $("#toc-sidebar").sticky({topSpacing:0, className: 'sticky'});
   });
+<<<<<<< HEAD
 	if (location.href.match('?id'))
 		location.href = location.href.replace('?id=','#');
+=======
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
 </script>
 					</div>
 				
@@ -785,6 +899,7 @@ Initial launch
 
 <ul>
 
+<<<<<<< HEAD
 	<li>
 		<a href="#introduction">Introduction</a>
 		
@@ -925,6 +1040,117 @@ Initial launch
 			</li>
 		</ul>
 		
+=======
+	<li><a href="#introduction">Introduction</a>
+		
+	</li>
+
+	<li><a href="#features">Features</a>
+		
+	</li>
+
+	<li><a href="#download-install-upgrade">Download, install, upgrade</a>
+		
+	</li>
+
+	<li><a href="#user-guide">User guide</a>
+		
+		<ul>
+		
+			<li><a href="#advised-use">Advised use</a>
+				
+			</li>
+		
+			<li><a href="#switching-between-modes">Switching between modes</a>
+				
+			</li>
+		
+			<li><a href="#editing-tabs">Editing tabs</a>
+				
+			</li>
+		
+			<li><a href="#editing-settings">Editing settings</a>
+				
+			</li>
+		
+			<li><a href="#editing-setting-properties">Editing setting properties</a>
+				
+			</li>
+		
+			<li><a href="#outputting-settings">Outputting settings</a>
+				
+			</li>
+		
+		</ul>
+		
+	</li>
+
+	<li><a href="#for-webmasters-site-managers">For webmasters/ site managers</a>
+		
+		<ul>
+		
+			<li><a href="#importing-settings">Importing settings</a>
+				
+			</li>
+		
+			<li><a href="#exporting-settings">Exporting settings</a>
+				
+			</li>
+		
+			<li><a href="#restricting-editing-permission">Restricting editing permission</a>
+				
+			</li>
+		
+		</ul>
+		
+	</li>
+
+	<li><a href="#for-theme-developers">For theme developers</a>
+		
+	</li>
+
+	<li><a href="#for-plugin-developers">For plugin developers</a>
+		
+	</li>
+
+	<li><a href="#php-api">PHP API</a>
+		
+		<ul>
+		
+			<li><a href="#functions">Functions</a>
+				
+			</li>
+		
+			<li><a href="#hooks">Hooks</a>
+				
+			</li>
+		
+		</ul>
+		
+	</li>
+
+	<li><a href="#plugin-info">Plugin info</a>
+		
+		<ul>
+		
+			<li><a href="#dependencies">Dependencies</a>
+				
+			</li>
+		
+			<li><a href="#known-issues">Known Issues</a>
+				
+			</li>
+		
+			<li><a href="#planned-features">Planned features</a>
+				
+			</li>
+		
+			<li><a href="#changelog">Changelog</a>
+				
+			</li>
+		
+		</ul>
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
 		
 	</li>
 

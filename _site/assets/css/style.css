@@ -189,7 +189,11 @@ body.blog-post aside { margin-top: 20px;}
 	font-size: 20px;
 	font-size: 1.25rem;
 }
+<<<<<<< HEAD
 #main p, #main ol, #main ul { 
+=======
+#main p, #main ul, #main ol { 
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
 	line-height: 24px;
 	line-height: 1.5rem;
 	font-size: 16px;
@@ -269,7 +273,13 @@ body.blog-post aside { margin-top: 20px;}
 	border-radius: 3px;
 	background: #fafafa;
 	white-space: normal;
+<<<<<<< HEAD
 }
+=======
+	font-family: monospace;
+}
+#main code { font-size: 1rem; }
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
 #main .highlight pre code:before {
 	display: block;
 	position: absolute;
@@ -464,7 +474,14 @@ input:focus, textarea:focus, select:focus, *:focus {outline-color: #B76459;}
 
 /* search */
 #search-term { text-decoration: underline; margin-left: 10px; }
+<<<<<<< HEAD
 #toc-sidebar {
 	max-height: 90%;
 	overflow: auto;
 }
+=======
+
+/* sidebar widgets */
+.sticky section { height: 90%; overflow: auto;}
+#toc-sidebar ul li ul li a:before { content: '- '; }
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
