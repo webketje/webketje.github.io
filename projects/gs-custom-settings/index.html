@@ -407,4 +407,6 @@ add_action('custom-settings-load', $function)
   $(document).ready(function(){
     $("#toc-sidebar").sticky({topSpacing:0, className: 'sticky'});
   });
+	if (location.href.match('?id'))
+		location.href = location.href.replace('?id=','#');
 </script>
