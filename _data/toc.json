@@ -18,7 +18,7 @@
 			{"title":"Restricting editing permission"}
 		]},
  	{"title":"For theme developers"},
- 	{"title":"For plugin developers"},
+ 	{"title":"For plugin developers"}, 
 	{"title":"PHP API",
 		"subtitles": [
 			{"title": "Functions"},

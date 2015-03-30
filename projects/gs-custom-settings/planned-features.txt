@@ -12,4 +12,4 @@
 - Add ability to move settings from one tab to another
 - Add automatic settings update when plugins are updated
 - Add setting search
-- Add custom settings for components
+- Add custom settings for components 
