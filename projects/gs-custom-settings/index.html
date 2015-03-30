@@ -8,10 +8,6 @@ published: true
 order: -1
 ---
 <script src="assets/js/jquery.sticky.js"></script>
-<<<<<<< HEAD
-=======
-<script src="jquery.sticky.js"></script>
->>>>>>> 8b2d07f9d01b7864e8fa635771940782294cd3a0
 <section id="intro">
 	<header>
 		<h2 id="introduction">Introduction</h2>
@@ -132,12 +128,7 @@ order: -1
 		<h3 id="outputting-settings">Outputting settings</h3>
 		<p>To get a setting in a page (in the WYSIWYG editor), simply type <code>(% setting: tab/setting %)</code>.<br>To get a setting in themes and components, type <code>&lt;?php get_setting('tab/setting') ?&gt;</code>.<br>To process the return value before outputting it, type <code>&lt;?php return_setting('tab/setting') ?&gt;</code>. The easiest way to get this code, is to copy to select and copy paste the code field next to the input (the WYSIWYG code is visible in <kbd>Manage</kbd> mode, the PHP code in <kbd>Edit</kbd> mode.) Beneath is a listing of the return values for each type of input (the 'fancy' versions as well as <code>switch</code> simply make use of font icons instead of standard inputs):</p>
 		<table>
-<<<<<<< HEAD
 			<tbody><tr>
-=======
-			<tbody>
-			<tr>
->>>>>>> 8b2d07f9d01b7864e8fa635771940782294cd3a0
 				<td><strong>Input types</strong></td>
 				<td><strong>With <code>get_setting</code></strong></td>
 				<td><strong>With <code>return_setting</code></strong></td>
@@ -182,12 +173,7 @@ order: -1
 				<td>Returns the <i>selected</i> option's text value.</td>
 				<td>Returns the <i>selected</i> option's zero-based index.</td>
 			</tr>
-<<<<<<< HEAD
 		</tbody></table>
-=======
-		</tbody>
-		</table>
->>>>>>> 8b2d07f9d01b7864e8fa635771940782294cd3a0
 	</section>
 </section>
 <section>
@@ -229,13 +215,8 @@ order: -1
      <span style="color: #C24145">└─ de_DE.json</span></code></pre></div>
 	<p>The only translatable strings are a setting's <code>label</code>,<code>descr</code> and <code>options</code> (if the setting is a <code>select</code>, <code>radio</code> or <code>fancy radio</code>). For each of these, you should prefix the property with the setting's <code>lookup</code>. The language files in the <code>lang</code> directory should have a <code>strings</code> object holding all strings for the settings. You can optionally add a <code>meta</code> object containing information about the translation version, author, date etc.</p>
 
-<<<<<<< HEAD
 {% highlight json startinline %}{% raw %}
 {"meta": {"author":"me"}, /* meta is optional */
-=======
-{% highlight json startinline %}{% raw %}{
-  "meta": {"author": "me"}, /* meta is optional */
->>>>>>> 8b2d07f9d01b7864e8fa635771940782294cd3a0
   "strings": {
      "mysetting_label": "Label",
      "mysetting_descr": "Description",
@@ -249,10 +230,7 @@ order: -1
   }
 }
 {% endraw %}{% endhighlight %}
-<<<<<<< HEAD
 
-=======
->>>>>>> 8b2d07f9d01b7864e8fa635771940782294cd3a0
 	<p>You're set! When your theme is activated in the GS <code>theme</code> tab, your settings will appear in the Custom Settings sidebar in the tab <code>Theme settings</code> (GS tab <code>Site</code>). The data is saved to <code>/data/other/custom_settings/theme_data_&lt;themename&gt;.json</code>.</p>
 </section>
 <section>
@@ -311,19 +289,13 @@ order: -1
 		<h2 id="php-api">PHP API</h2>
 	</header>
 <h4 id="functions">Functions</h4>
-<<<<<<< HEAD
 
-=======
->>>>>>> 8b2d07f9d01b7864e8fa635771940782294cd3a0
 {% highlight php startinline %}{% raw %}
 get_setting($tab, $setting)
 // @param {string} $tab - lookup property of the tab to search in
 // @param {string} $setting - lookup property of the setting to output
 {% endraw %}{% endhighlight %}
-<<<<<<< HEAD
 
-=======
->>>>>>> 8b2d07f9d01b7864e8fa635771940782294cd3a0
 	<p>Outputs the setting's value for display. This differs by setting type. </p>
 	<ul>
 		<li>If the setting has options, the text from the selected option (in default language) will be displayed. </li>
@@ -352,11 +324,7 @@ return_setting($tab,$setting,$prop=NULL)
 get_tab_link($tab=NULL, $linkText='settings')
 // @param {string} [$tab=NULL] - (Optional) Empty, lookup property of  
 // lookup property of a plugin (basename) or 'theme_settings', or a site tab
-<<<<<<< HEAD
 // @param {string} [$linkText='settings'] - (Optional) A custom text for the &lt;a&gt; element
-=======
-// @param {string} [$linkText='settings'] - (Optional) A custom text for the <a> element
->>>>>>> 8b2d07f9d01b7864e8fa635771940782294cd3a0
 {% endraw %}{% endhighlight %}
 
 	<p>Outputs a link to the settings from the active theme (with <code>$themeOrPlugin</code> set to <code>theme_settings</code>), to an activated plugin, a site tab, or just the GS Custom Settings tab (if <code>$themeOrPlugin</code> is <code>NULL</code>). You can also set a <code>$linkText</code> for custom link text (default is 'settings'). The link will activate the tab given as <code>$themeOrPlugin</code>: useful if you want to include a link to settings from your plugin's page especially.</p>
@@ -366,11 +334,7 @@ get_tab_link($tab=NULL, $linkText='settings')
 set_setting($tab, $setting, $value)
 // @param {string} $tab - lookup property of the tab to search in
 // @param {string} $setting - lookup property of the setting to return
-<<<<<<< HEAD
 // @param {string|array} $value - The property (ies) to modify.
-=======
-// @param {string|array} $value - The property (ies) to modify. 
->>>>>>> 8b2d07f9d01b7864e8fa635771940782294cd3a0
 {% endraw %}{% endhighlight %}
 
 <p>(<strong>Experimental</strong>) Sets a given setting's properties if an array is given as value, or changes the settings' value if <code>$value</code> is a string. Be careful when using this function, as the code will be executed over and over again, forcing properties set by the function to overwrite those set in the UI. Note that the function does not write to a file, but modifies/ adds to a global, and changes will only persist if the data is saved. You should normally only use this function conditionally (eg, if a version setting is not up to date)</p>
@@ -401,20 +365,13 @@ add_action('custom-settings-load', $function)
 
 <p>Hook that executes <em>before</em> settings are loaded into the UI. (called through the plugin UI on load). It's worth to point out that this function doesn't directly save settings to a file. It merely adds them to the plugin UI on load, and they will only be saved, if the user hits <kbd>Save updates</kbd>.</p>
 <!--
-<<<<<<< HEAD
 <div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nx">add_action</span><span class="p">(</span><span class="s1">&#39;custom-settings-save&#39;</span><span class="p">,</span> <span class="nv">$function</span><span class="p">)</span>
 <span class="c1">// @param {string} $function - the function you want to execute after settings are saved</span></code></pre></div>
-=======
-{% highlight php startinline %}{% raw %}
-add_action('custom-settings-save', $function)
-// @param {string} $function - the function you want to execute after settings are saved
-{% endraw %}{% endhighlight %}
->>>>>>> 8b2d07f9d01b7864e8fa635771940782294cd3a0
 <p>Hook that executes <em>after</em> settings are saved.</p>-->
 <br>
 <br>
 </section>
-<section>
+<section>  
 	<header>
 		<h2 id="plugin-info">Plugin info</h2>
 	</header>
@@ -442,15 +399,9 @@ add_action('custom-settings-save', $function)
 	</section>
 	<footer>
 	<hr>
-<<<<<<< HEAD
 		<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; float: left; margin-right: 5px;" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
 		<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">GS Custom Settings</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/webketje/GS-Custom-Settings" property="cc:attributionName" rel="cc:attributionURL">Kevin Van Lierde</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. Built for<a xmlns:dct="http://purl.org/dc/terms/" href="http://get-simple.info" rel="dct:source">http://get-simple.info</a>.
 	</p></footer>
-=======
-		<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; float: left; margin-right: 5px;" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"/></a>
-		<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">GS Custom Settings</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/webketje/GS-Custom-Settings" property="cc:attributionName" rel="cc:attributionURL">Kevin Van Lierde</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. Built for<a xmlns:dct="http://purl.org/dc/terms/" href="http://get-simple.info" rel="dct:source">http://get-simple.info</a>.
-	</footer>
->>>>>>> 8b2d07f9d01b7864e8fa635771940782294cd3a0
 </section>
 <script>
   $(document).ready(function(){

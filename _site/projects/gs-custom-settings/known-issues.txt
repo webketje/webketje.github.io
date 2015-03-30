@@ -1,23 +1,5 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 8b2d07f9d01b7864e8fa635771940782294cd3a0
 25/02/2015 - V. 0.2 public test
 
   - Settings import only works with IE10 &amp; up, provide fallback
   - When repeatedly batch editing settings, selection might bug or actions might not be executed on entire selection
-<<<<<<< HEAD
   - Repeatedly importing settings for the same tab without reloading the page/ importing settings for another tab first doesn't work
-=======
-  - Repeatedly importing settings for the same tab without reloading the page/ importing settings for another tab first doesn't work
-=======
-﻿25/02/2015 - V. 0.2 public test
-
-  - Placeholders not showing up in Mozilla FF
-  - IE8 untested
-  - Settings import only works with IE10 & up, provide fallback
-  - When repeatedly batch editing settings, selection might bug or actions might not be executed on entire selection
-  - Repeatedly importing settings for the same tab without reloading the page/ importing settings for another tab first doesn't work
-  - Theme settings label sometimes doesn't appear (fetched with AJAX)
->>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
->>>>>>> 8b2d07f9d01b7864e8fa635771940782294cd3a0
