@@ -407,6 +407,6 @@ add_action('custom-settings-load', $function)
   $(document).ready(function(){
     $("#toc-sidebar").sticky({topSpacing:0, className: 'sticky'});
   });
-	if (location.href.match('?id'))
-		location.href = location.href.replace('?id=','#');
+	if (location.href.match(/id=.*/))
+		document.getElementById(location.href.match(/id=.*/)[0].slice(3)) ? document.getElementById(location.href.match(/id=.*/)[0].slice(3)).scrollIntoView() : null;
 </script>
