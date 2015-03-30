@@ -1,0 +1,32 @@
+---
+title: Work
+layout: base
+type: list
+published: true
+order: 3
+---
+{% for work in site.data.work %}
+<li class="list-item">
+	<h3>{{ work.title }}</h3>
+	<div>
+		For <span class="work"><a href="{{work.company.url}}">{{ work.company.name }}</a></span>
+		<time datetime="{{ work.date | slugify}}" style="float: right">{{ work.date }}</time>
+	</div>
+	<p>{{ work.descr }}</p>
+	{% if work.links %}
+	<p class="links">Visit:
+	<ul class="links">
+		{% for link in work.links %}
+		<li><a href="{{ link.url }}">{{ link.title }}</a></li>
+		{% endfor %}
+	</ul></p>
+	{% endif %}
+	{% if work.tags %}
+	<ul class="tags">
+		{% for tag in work.tags %}
+		<li><a>{{ tag }}</a></li>
+		{% endfor %}
+	</ul>
+	{% endif %}
+</li>
+{% endfor %}

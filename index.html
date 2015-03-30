@@ -1,0 +1,11 @@
+---
+title: Blog
+order: 1
+layout: base
+type: list
+widgets: about,recent,search,categories,tags,archives
+customUrl: /
+---
+{% for post in site.posts limit: 10 %}
+	<li class="list-item">{% include blog-list-item.html %}</li>
+{% endfor %}

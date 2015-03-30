@@ -1,0 +1,3 @@
+[{"name": "GS Custom Settings plugin", 
+  "link": "/projects/gs-custom-settings/",
+  "descr": ["GS Custom Settings is a plugin for GetSimple CMS which lets webmasters/ site managers, theme and plugin developers implement and use their own custom settings for output, configuration, and cross-plugin/-theme communication. The plugin offers 8 different types of input to choose from, 3 access levels, per-user editing permission, and an easy UI to create, import and export the settings. GS Custom Settings is built on Knockout JS and uses JSON for data storage."]}]
