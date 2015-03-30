@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 30/03/2015 - V. 0.2
+=======
+<<<<<<< HEAD
+30/03/2015 - V. 0.2
+=======
+﻿30/03/2015 - V. 0.2
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
+>>>>>>> 8b2d07f9d01b7864e8fa635771940782294cd3a0
 
 New:
   - Fully translatable, (almost) no hard-coded values anymore
@@ -7,15 +15,33 @@ New:
     - tab/setting actions moved to one toolbar to unclutter the UI
     - opening a tab in edit mode is the same as in manage mode (used to be through icon)
     - Settings can now be batch selected/(re)moved/added
+<<<<<<< HEAD
     - settings keyboard functionality (Ctrl, Shift for multiselect &amp; Delete)
   - Import &amp; export data directly from the UI as backup/ transfer to other site.
+=======
+<<<<<<< HEAD
+    - settings keyboard functionality (Ctrl, Shift for multiselect &amp; Delete)
+  - Import &amp; export data directly from the UI as backup/ transfer to other site.
+=======
+    - settings keyboard functionality (Ctrl, Shift for multiselect & Delete)
+  - Import & export data directly from the UI as backup/ transfer to other site.
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
+>>>>>>> 8b2d07f9d01b7864e8fa635771940782294cd3a0
   - Export tab directly to JSON for plugin/theme dev with custom settings.
   - Enhanced, translatable notification manager
   - Theme developers can now register their custom settings, i18n-enabled.
   - Plugin developers can now register their custom settings, i18n-enabled.
   - Added security token check to AJAX filehandler.
   - Added PHP API with variable caching for better performance 
+<<<<<<< HEAD
   - Permissions can be restricted per user by adding a <ko_edit>false</ko_edit> node to the user.xml
+=======
+<<<<<<< HEAD
+  - Permissions can be restricted per user by adding a <ko_edit>false</ko_edit> node to the user.xml
+=======
+  - Permissions can be restricted per user by adding a <KO_EDIT>false</KO_EDIT> node to the user.xml
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
+>>>>>>> 8b2d07f9d01b7864e8fa635771940782294cd3a0
   - Added languages French, Dutch.
 Changed:
   - Removed the ability to view all tabs in one (performance)
@@ -37,3 +63,10 @@ Bugfixes:
 18/02/2014 - V. 0.1 (Alpha)
 
 Initial launch
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4d23269eec3ab466061d82139a05417c26714c1d
+>>>>>>> 8b2d07f9d01b7864e8fa635771940782294cd3a0

@@ -12,6 +12,24 @@
 			</li>
 		</ul>
 		{% endfor %}
+<<<<<<< HEAD
+=======
+	<li><a href="#{{ section.title | slugify }}">{{ section.title }}</a>
+		{% if section.subtitles %}
+		<ul>
+		{% for sub in section.subtitles %}
+			<li><a href="#{{ sub.title | slugify }}">{{ sub.title }}</a>
+				{% if sub.subtitles %}
+				<ul>
+				{% for subt in sub.subtitleq %}
+					<li><a href="#{{ subt.title | slugify }}">{{ subt.title }}</a></li>
+				{% endfor %}
+				</ul>
+				{% endif %}
+			</li>
+		{% endfor %}
+		</ul>
+>>>>>>> 8b2d07f9d01b7864e8fa635771940782294cd3a0
 		{% endif %}
 	</li>
 {% endfor %}
