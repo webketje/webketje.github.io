@@ -21,7 +21,7 @@ order: -1
 	</header>
 	<ul>
 		<li>Custom settings for site managers, plugin and theme developers</li>
-		<li>5 different setting types (select, radio, text, textarea, checkbox) + 3 fancy variants (FontAwesome)</li>
+		<li>8 different setting types (select, radio, text, textarea, checkbox, image, color, section title) + 3 fancy variants (FontAwesome)</li>
 		<li>3 access levels for settings (normal, hidden, locked)</li>
 		<li>Output settings in pages with <code>(% setting:tab/setting %)</code> or in PHP with <code>get_setting('tab','setting')</code></li>
 		<li>Restrict user editing permission per user</li>
@@ -163,7 +163,7 @@ order: -1
 			</tr>
 			<tr>
 				<td><code>image</code></td>
-				<td>Returns an image tag <code>&lt;img src="input_value" alt="input_lookup"&gt;</code>.</td>
+				<td>Returns an image tag <br><code>&lt;img src="input_value" alt="input_lookup"&gt;</code>.</td>
 				<td>Returns the image URL.</td>
 			</tr>
 			<tr>
@@ -209,8 +209,8 @@ order: -1
 	</section>
 	<section>
 		<h3 id="restricting-editing-permission">Restricting editing permission (also with Multi User 1.8.2+)</h3>
-		<p>Go to <code>root/data/users/</code> and edit the XML file for the user you want to restrict editing permissions for. Simply add an XML node <code>&lt;KO_EDIT&gt;FALSE&lt;/KO_EDIT&gt;</code> and you're done. <code>TRUE</code> also works (to allow editing) but this is the default, so it doesn't really matter. As of v0.3, user permission can be set through Mike Henken's <a href="http://get-simple.info/extend/plugin/multi-user/133/">Multi User 1.8.2+</a> plugin. To do so, go to GS <kbd>Settings</kbd> tab, click on <kbd>User management<kbd>, and when you edit the user, in the <code>Custom Permissions</code> section, check GS Custom Settings <strong>to disable Edit access</strong>, and save.</p>
-		<p><u>Note:</u> Upon activation or deactivation of Multi User, GS Custom Settings user permissions will be reset (so you have to do like above/ re-edit the user file)</p>
+		<p>Go to <code>root/data/users/</code> and edit the XML file for the user you want to restrict editing permissions for. Simply add an XML node <code>&lt;KO_EDIT&gt;FALSE&lt;/KO_EDIT&gt;</code> and you're done. <code>TRUE</code> also works (to allow editing) but this is the default, so it doesn't really matter. As of v0.3, user permission can be set through Mike Henken's <a href="http://get-simple.info/extend/plugin/multi-user/133/">Multi User 1.8.2+</a> plugin. To do so, go to GS <kbd>Settings</kbd> tab, click on <kbd>User management</kbd>, and when you edit the user, in the <code>Custom Permissions</code> section, check GS Custom Settings <strong>to disable Edit access</strong>, and save.</p>
+		<p><u>Note:</u> Upon activation or deactivation of Multi User, GS Custom Settings user permissions will be reset (so you have to do like above/ re-edit the user file).</p>
 	</section>
 </section>
 <section>
@@ -250,7 +250,7 @@ order: -1
 }
 {% endraw %}{% endhighlight %}
 
-	<p>You're set! When your theme is activated in the GS <code>theme</code> tab, your settings will appear in the Custom Settings sidebar in the tab <code>Theme settings</code> (GS tab <code>Site</code>). The data is saved to <code>/data/other/custom_settings/theme_data_&lt;themename&gt;.json</code>.</p>
+	<p>You're set! When your theme is activated in the GS <code>theme</code> tab, your settings will appear in the Custom Settings sidebar in the tab <code>Theme settings</code> (GS tab <code>Site</code>). The data is saved to <code>/data/other/custom_settings/theme_data_&lt;themename&gt;.json</code>.<br><br>Not entirely sure yet? For more examples, read the <a href="http://webketje.github.io/cms/2015/03/30/building-a-theme-with-gs-custom-settings/">Theme tutorial</a>.</p>
 </section>
 <section>
 	<header>
@@ -348,7 +348,7 @@ get_tab_link($tab=NULL, $linkText='settings')
 // @param {string} [$linkText='settings'] - (Optional) A custom text for the &lt;a&gt; element
 {% endraw %}{% endhighlight %}
 
-	<p>Outputs a link to the settings from the active theme (with <code>$themeOrPlugin</code> set to <code>theme_settings</code>), to an activated plugin, a site tab, or just the GS Custom Settings tab (if <code>$themeOrPlugin</code> is <code>NULL</code>). You can also set a <code>$linkText</code> for custom link text (default is 'settings'). The link will activate the tab given as <code>$themeOrPlugin</code>: useful if you want to include a link to settings from your plugin's page especially.</p>
+	<p>Outputs a link to the settings from the active theme (with <code>$tab</code> set to <code>theme_settings</code>), to an activated plugin, a site tab, or just the GS Custom Settings tab (if <code>$tab</code> is <code>NULL</code>). You can also set a <code>$linkText</code> for custom link text (default is 'settings'). The link will activate the tab given as <code>$tab</code>: useful if you want to include a link to settings from your plugin's page especially.</p>
 	<br>
 	
 {% highlight php startinline %}{% raw %}
@@ -370,15 +370,7 @@ remove_setting($tab, $setting)
 <p>(<strong>Experimental</strong>) Removes the given setting in the given tab. You should only use this function conditionally (eg, if a version setting is not up to date)</p>
 	
 <h4 id="hooks">Hooks</h4>
-<p>v0.2 doesn't allow <em>updating</em> a plugin's settings yet (from old to new version). Future versions will include an automatic file update.</p>
-
-{% highlight php startinline %}{% raw %}
-add_action('custom-settings-init', $function)
-// @param {string} $function - the function you want to execute right after settings are globalized.
-{% endraw %}{% endhighlight %}
-
-<p>Hook that executes right after settings are globalized. Use it to act upon settings saved in the data files.</p>
-
+<p>v0.3 doesn't allow <em>updating</em> a plugin's settings yet (from old to new version). Future versions will include an automatic file update.</p>
 {% highlight php startinline %}{% raw %}
 add_action('custom-settings-load', $function)
 // @param {string} $function - the function you want to execute before settings are loaded
