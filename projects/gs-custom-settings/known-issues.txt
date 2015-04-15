@@ -1,5 +1,15 @@
-25/02/2015 - V. 0.2 public test
-
-  - Settings import only works with IE10 &amp; up, provide fallback
+30/03/2015 - V. 0.2 (beta)
+	
+	- 'custom-settings-init' hook not working reliably
+	- FATAL: When no settings or tabs are present on first load, a fatal JS error blocks the plugin from loading
+	- When restricting permission, Export & Import are also unavailable.
+	- Empty text value settings are reset on first save if value is empty
+	- Edit mode multiselection bugs in IE8
+	- KO site settings showing as title when no 'site' tabs are created instead of 'GS Custom Settings'
+  - Settings import only works with IE10 & up
   - When repeatedly batch editing settings, selection might bug or actions might not be executed on entire selection
   - Repeatedly importing settings for the same tab without reloading the page/ importing settings for another tab first doesn't work
+	- Minor JS 'input focus' error (non-blocking)
+	- Security token sent along with data
+	- return_setting returns entire setting when asked for absent property (now returns NULL)
+	- return_setting returns entire setting for option inputs instead of value only when value is index 0

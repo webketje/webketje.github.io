@@ -120,6 +120,9 @@ order: -1
 			<p><strong>Checkbox</strong><img src="assets/img/text-input.png" style="float:right;"></p>
 			<p><strong>Radio</strong><img src="assets/img/radio-input.png" style="float:right;"></p>
 			<p><strong>Select</strong><img src="assets/img/select-input.png" style="float:right;"></p>
+			<p><strong>Image</strong><img src="assets/img/image-input.png" style="float:right;"></p>
+			<p><strong>Color</strong><img src="assets/img/color-input.png" style="float:right;"></p>
+			<p><strong>Section Title</strong><img src="assets/img/section-title-input.png" style="float:right;"></p>
 			<p><strong>Fancy checkbox</strong><img src="assets/img/fancy-checkbox-input.png" style="float:right;"></p>
 			<p><strong>Fancy radio</strong><img src="assets/img/fancy-radio-input.png" style="float:right;"></p>
 			<p><strong>Switch</strong><img src="assets/img/switch-input.png" style="float:right;"></p>
@@ -131,7 +134,7 @@ order: -1
 			<tbody><tr>
 				<td><strong>Input types</strong></td>
 				<td><strong>With <code>get_setting</code></strong></td>
-				<td><strong>With <code>return_setting</code></strong></td>
+				<td><strong>With <code>return_setting($tab, $setting, $value)</code></strong></td>
 			</tr>
 			<tr>
 				<td><code>text</code></td>
@@ -157,6 +160,21 @@ order: -1
 				<td><code>select</code></td>
 				<td>Returns the <i>selected</i> option's text value.</td>
 				<td>Returns the <i>selected</i> option's zero-based index.</td>
+			</tr>
+			<tr>
+				<td><code>image</code></td>
+				<td>Returns an image tag <code>&lt;img src="input_value" alt="input_lookup"&gt;</code>.</td>
+				<td>Returns the image URL.</td>
+			</tr>
+			<tr>
+				<td><code>color</code></td>
+				<td>Returns the input's value.</td>
+				<td>Returns the input's value.</td>
+			</tr>
+			<tr>
+				<td><code>section title</code></td>
+				<td>Returns NULL (section titles have no value).</td>
+				<td>Returns NULL (section titles have no value).</td>
 			</tr>
 			<tr>
 				<td><code>switch</code></td>
@@ -190,8 +208,9 @@ order: -1
 		<p>You can <strong>export</strong> settings simply by clicking the <code>export</code> button. You can export 1) all site settings by choosing 'Site Settings', 2) a separate site tab (by name), 3) a separate plugin tab (by name), and 4) the theme settings of the currently selected theme by choosing 'Theme Settings'. You can also manually backup all settings by making a copy of <code>/data/other/custom_settings</code>.</p>
 	</section>
 	<section>
-		<h3 id="restricting-editing-permission">Restricting editing permission</h3>
-		<p>Go to <code>root/data/users/</code> and edit the XML file for the user you want to restrict editing permissions for. Simply add an XML node <code>&lt;KO_EDIT&gt;FALSE&lt;/KO_EDIT&gt;</code> and you're done. <code>TRUE</code> also works (to allow editing) but this is the default, so it doesn't really matter. In one of the next updates, this will be included in the plugin UI.</p>
+		<h3 id="restricting-editing-permission">Restricting editing permission (also with Multi User 1.8.2+)</h3>
+		<p>Go to <code>root/data/users/</code> and edit the XML file for the user you want to restrict editing permissions for. Simply add an XML node <code>&lt;KO_EDIT&gt;FALSE&lt;/KO_EDIT&gt;</code> and you're done. <code>TRUE</code> also works (to allow editing) but this is the default, so it doesn't really matter. As of v0.3, user permission can be set through Mike Henken's <a href="http://get-simple.info/extend/plugin/multi-user/133/">Multi User 1.8.2+</a> plugin. To do so, go to GS <kbd>Settings</kbd> tab, click on <kbd>User management<kbd>, and when you edit the user, in the <code>Custom Permissions</code> section, check GS Custom Settings <strong>to disable Edit access</strong>, and save.</p>
+		<p><u>Note:</u> Upon activation or deactivation of Multi User, GS Custom Settings user permissions will be reset (so you have to do like above/ re-edit the user file)</p>
 	</section>
 </section>
 <section>
@@ -276,9 +295,9 @@ order: -1
 }
 {% endraw %}{% endhighlight %}
 
-	<p>GS Custom Settings provides 2 hooks for your plugin's functions. To use them, do:</p>
+	<p>GS Custom Settings provides 1 hook for your plugin's functions (<code>custom-settings-init</code> didn't work reliably and is only available in v0.2). To use it, do:</p>
 	<ul>
-	<li><code>add_action('custom-settings-init', 'myFunctionOnInit')</code> to act upon settings <em>after</em> they are globalized. (executes every time the plugin is loaded by GS)</li>
+	<li><del><code>add_action('custom-settings-init', 'myFunctionOnInit')</code> to act upon settings <em>after</em> they are globalized. (executes every time the plugin is loaded by GS)</del></li>
 	<li><code>add_action('custom-settings-load', 'myFunctionOnLoad')</code> to act upon settings <em>before</em> they are loaded. (executes only when the Custom Settings 'Site' tab is opened).</li>
 	</ul>
 	<p>You can also output a link to your custom settings in your plugin tab by using <code>&lt;?php get_tab_link('myplugin','link title') ?&gt;</code>. When clicked, it will open the relevant item in the Custom settings sidebar.</p>
@@ -291,9 +310,11 @@ order: -1
 <h4 id="functions">Functions</h4>
 
 {% highlight php startinline %}{% raw %}
-get_setting($tab, $setting)
+get_setting($tab, $setting, $echo=TRUE)
 // @param {string} $tab - lookup property of the tab to search in
 // @param {string} $setting - lookup property of the setting to output
+// @param {boolean} [$echo=TRUE] - (optional) Whether to echo the setting. 
+// Handy if you want the display value returned but not outputted.
 {% endraw %}{% endhighlight %}
 
 	<p>Outputs the setting's value for display. This differs by setting type. </p>
