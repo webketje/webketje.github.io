@@ -342,10 +342,11 @@
 	</header>
 	<ul>
 		<li>Custom settings for site managers, plugin and theme developers</li>
-		<li>5 different setting types (select, radio, text, textarea, checkbox) + 3 fancy variants (FontAwesome)</li>
+		<li>8 different setting types (select, radio, text, textarea, checkbox, image, color, section title) + 3 fancy variants (FontAwesome)</li>
 		<li>3 access levels for settings (normal, hidden, locked)</li>
 		<li>Output settings in pages with <code>(% setting:tab/setting %)</code> or in PHP with <code>get_setting('tab','setting')</code></li>
-		<li>Restrict user editing permission per user</li>
+		<li>Output multilingual settings (only with I18N plugin 2.5.8+)</li>
+		<li>Restrict user editing permission per user (also with MultiUser 1.8.2+)</li>
 		<li>Feature-rich editing in 'edit' mode with multiselect, batch setting adding/removing &amp; keyboard shortcuts</li>
 		<li>Responsive feedback through notifications</li>
 		<li>Import (IE10+ &amp; other browsers)/ Export settings for re-use through the GUI</li>
@@ -353,16 +354,15 @@
 		<li>Extend existing themes and plugins with custom settings</li>
 		<li>Access settings from other themes and plugins</li>
 		<li>(almost) fully i18n, even custom theme and plugin settings I18n-enabled</li>
-		<li>Available in English, French &amp; Dutch</li>
+		<li>Available in English, French, Dutch, German, Russian &amp; Spanish</li>
 	</ul>
-	<p>And many more in future releases...</p>
 </section>
 <section>
 	<header>
 		<h2 id="download-install-upgrade">Download, install, upgrade</h2>
 	</header>
-	<p>Download the latest (and other) version(s) of this plugin on the GetSimple Extend <a href="http://get-simple.info/extend/plugin/ko-site-settings/913/">Plugin page</a>. The latest version of this plugin is <strong>0.2</strong>.
-	To install, simply unzip to GS plugins directory. If you're upgrading from 0.1, the entire directory structure and data files will be automatically updated, provided that you <strong>first deactivate KO Site Settings, then activate the new Custom Settings</strong>.
+	<p>Download the latest (or other) version(s) of this plugin on the GetSimple Extend <a href="http://get-simple.info/extend/plugin/ko-site-settings/913/">Plugin page</a>. The latest version of this plugin is <strong>0.3</strong>.
+	To install, simply unzip to GS plugins directory.
 	</p>
 </section>
 <section>
@@ -375,7 +375,7 @@
 	</section>
 	<section>
 		<h3 id="switching-between-modes">Switching between modes</h3>
-		<p>The Site Settings plugin allows you to switch modes between <kbd>Manage</kbd> and <kbd>Edit</kbd>. <kbd>Manage</kbd> mode only allows changing the value of visible, non-locked inputs, and is meant for the webmaster/ website manager; in <kbd>Edit</kbd> mode, (primarily) for the developer, one can create and modify settings. Simply click the button to toggle the mode. </p>
+		<p>The Site Settings plugin allows you to switch modes between <kbd>Manage</kbd> and <kbd>Edit</kbd>. <kbd>Manage</kbd> mode only allows changing the value of visible, non-locked inputs, and is meant for the webmaster/ website manager; in <kbd>Edit</kbd> mode, (primarily) for the developer, one can create and modify settings. Simply click the button to toggle the mode.</p>
 	</section>
 	<section>
 		<h3 id="editing-tabs">Editing tabs</h3>
@@ -386,6 +386,7 @@
 			<li>Remove this tab</li>
 			<li>Move this tab up</li>
 			<li>Move this tab down</li>
+			<li>Toggle tab label/ lookup</li>
 		</ol>
 		<p>There are 3 types of tabs: site tabs, theme tabs and plugin tabs, displayed in that order respectively. Only site tabs are visible in Edit mode/editable (but you can extend plugin and theme tabs manually). You can also extend plugins/ themes which do <em>not</em> use GS Custom Settings trivially by following the instructions in For Plugin/ Theme developers.</p>
 	</section>
@@ -400,17 +401,21 @@
 			<li>Move all selected settings up</li>
 			<li>Move all selected settings down</li>
 		</ol>
-		<img src="http://i.imgur.com/pXbVG8A.gif" style="width: 50%; float: right; margin-left: 20px;">
 		<p>Every setting also has the two first buttons to (de)select individually &amp; hide/show individually. As of v0.2, some setting actions can also be achieved using keyboard shortcuts, eg:</p>
 		<ol>
 		<li><kbd>SHIFT</kbd> + click selects all settings between the setting first and last clicked.</li>
 		<li><kbd>Ctrl</kbd> + click adds the clicked setting to the selection</li>
-		<li><kbd>DELETE</kbd> removes all selected settings</li>
+		<li><code>(v0.4+)</code> <kbd>Ctrl</kbd> + <kbd>DELETE</kbd> removes all selected settings. <br>
+				<code>(v0.3-)</code> <kbd>DELETE</kbd> removes all selected settings.</li>
+		<li><code>(v0.4+)</code> <kbd>Ctrl</kbd> + <kbd>ArrowUp</kbd> moves all settings in the selection 1 up.</li>
+		<li><code>(v0.4+)</code> <kbd>Ctrl</kbd> + <kbd>ArrowDown</kbd> moves all settings in the selection 1 down.</li>
+		<li><code>(v0.4+)</code> <kbd>Ctrl</kbd> + <kbd>Enter</kbd> adds a new setting under each setting in the selection.</li>
 		</ol>
 	</section>
 	<section>
 		<h3 id="editing-setting-properties">Editing setting properties</h3>
-		<p>Each setting has 6 (or 7) modifiable properties: lookup, label, descr, type, value, access [, options]. Here's what they are used for/ their possible values:</p>
+		<p>Each setting has 6 (or 7) modifiable properties: lookup, label, descr, type, value, access [, options]. 
+			As of <code>v0.4</code> you can also add your own properties in the JSON files. Here's what the default properties are used for/ their possible values:</p>
 		<ul>
 			<li><code>lookup</code> is the identifier used by PHP to link translations and return settings through the API functions. It is important to never have duplicate lookups in the same tab to avoid returning the wrong setting.</li>
 			<li><code>label</code> is the setting's title, displayed in <code>Manage</code> mode, and should be max 5-10 words.</li>
@@ -429,7 +434,7 @@
 				<ul>
 					<li><code>Normal</code> is default</li>
 					<li><code>Locked</code> shows the input for display, but editing is diasbaled, <br>ideal for eg, fixed passwords or tracking codes.</li>
-					<li><code>Invisible</code> hides the input from <code>Manage</code> mode, <br>ideal for meta properties, eg. plugin/theme versions or paths, CSS killswitch. </li>
+					<li><code>Hidden</code> hides the input from <code>Manage</code> mode, <br>ideal for meta properties, eg. plugin/theme versions or paths, CSS killswitch. </li>
 				</ul>
 			</li>
 			<li><code>options</code> is only present if the input is of type select, radio or fancy radio, and holds the options for the input.</li>
@@ -441,6 +446,9 @@
 			<p><strong>Checkbox</strong><img src="assets/img/text-input.png" style="float:right;"></p>
 			<p><strong>Radio</strong><img src="assets/img/radio-input.png" style="float:right;"></p>
 			<p><strong>Select</strong><img src="assets/img/select-input.png" style="float:right;"></p>
+			<p><strong>Image</strong><img src="assets/img/image-input.png" style="float:right;"></p>
+			<p><strong>Color</strong><img src="assets/img/color-input.png" style="float:right;"></p>
+			<p><strong>Section Title</strong><img src="assets/img/section-title-input.png" style="float:right;"></p>
 			<p><strong>Fancy checkbox</strong><img src="assets/img/fancy-checkbox-input.png" style="float:right;"></p>
 			<p><strong>Fancy radio</strong><img src="assets/img/fancy-radio-input.png" style="float:right;"></p>
 			<p><strong>Switch</strong><img src="assets/img/switch-input.png" style="float:right;"></p>
@@ -452,7 +460,7 @@
 			<tbody><tr>
 				<td><strong>Input types</strong></td>
 				<td><strong>With <code>get_setting</code></strong></td>
-				<td><strong>With <code>return_setting</code></strong></td>
+				<td><strong>With <code>return_setting($tab, $setting, $value)</code></strong></td>
 			</tr>
 			<tr>
 				<td><code>text</code></td>
@@ -478,6 +486,21 @@
 				<td><code>select</code></td>
 				<td>Returns the <i>selected</i> option's text value.</td>
 				<td>Returns the <i>selected</i> option's zero-based index.</td>
+			</tr>
+			<tr>
+				<td><code>image</code></td>
+				<td>Returns an image tag <br><code>&lt;img src="input_value" alt="input_lookup"&gt;</code>.</td>
+				<td>Returns the image URL.</td>
+			</tr>
+			<tr>
+				<td><code>color</code></td>
+				<td>Returns the input's value.</td>
+				<td>Returns the input's value.</td>
+			</tr>
+			<tr>
+				<td><code>section title</code></td>
+				<td>Returns NULL (section titles have no value).</td>
+				<td>Returns NULL (section titles have no value).</td>
 			</tr>
 			<tr>
 				<td><code>switch</code></td>
@@ -511,8 +534,9 @@
 		<p>You can <strong>export</strong> settings simply by clicking the <code>export</code> button. You can export 1) all site settings by choosing 'Site Settings', 2) a separate site tab (by name), 3) a separate plugin tab (by name), and 4) the theme settings of the currently selected theme by choosing 'Theme Settings'. You can also manually backup all settings by making a copy of <code>/data/other/custom_settings</code>.</p>
 	</section>
 	<section>
-		<h3 id="restricting-editing-permission">Restricting editing permission</h3>
-		<p>Go to <code>root/data/users/</code> and edit the XML file for the user you want to restrict editing permissions for. Simply add an XML node <code>&lt;KO_EDIT&gt;FALSE&lt;/KO_EDIT&gt;</code> and you're done. <code>TRUE</code> also works (to allow editing) but this is the default, so it doesn't really matter. In one of the next updates, this will be included in the plugin UI.</p>
+		<h3 id="restricting-editing-permission">Restricting editing permission (also with Multi User 1.8.2+)</h3>
+		<p>Go to <code>root/data/users/</code> and edit the XML file for the user you want to restrict editing permissions for. Simply add an XML node <code>&lt;KO_EDIT&gt;FALSE&lt;/KO_EDIT&gt;</code> and you're done. <code>TRUE</code> also works (to allow editing) but this is the default, so it doesn't really matter. As of v0.3, user permission can be set through Mike Henken's <a href="http://get-simple.info/extend/plugin/multi-user/133/">Multi User 1.8.2+</a> plugin. To do so, go to GS <kbd>Settings</kbd> tab, click on <kbd>User management</kbd>, and when you edit the user, in the <code>Custom Permissions</code> section, check GS Custom Settings <strong>to disable Edit access</strong>, and save.</p>
+		<p><u>Note:</u> Upon activation or deactivation of Multi User, GS Custom Settings user permissions will be reset (so you have to do like above/ re-edit the user file).</p>
 	</section>
 </section>
 <section>
@@ -532,6 +556,7 @@
   ├─ functions.php
   <span style="color: #C24145">├─ settings.json </span>(with en_US as standard)
   <span style="color: #C24145">└─ lang/</span> (optional)
+     <span style="color: #C24145">├─ en_US.json</span>
      <span style="color: #C24145">├─ fr_FR.json</span>
      <span style="color: #C24145">└─ de_DE.json</span></code></pre></div>
 	<p>The only translatable strings are a setting's <code>label</code>,<code>descr</code> and <code>options</code> (if the setting is a <code>select</code>, <code>radio</code> or <code>fancy radio</code>). For each of these, you should prefix the property with the setting's <code>lookup</code>. The language files in the <code>lang</code> directory should have a <code>strings</code> object holding all strings for the settings. You can optionally add a <code>meta</code> object containing information about the translation version, author, date etc.</p>
@@ -550,7 +575,7 @@
   <span class="p">}</span>
 <span class="p">}</span></code></pre></div>
 
-	<p>You're set! When your theme is activated in the GS <code>theme</code> tab, your settings will appear in the Custom Settings sidebar in the tab <code>Theme settings</code> (GS tab <code>Site</code>). The data is saved to <code>/data/other/custom_settings/theme_data_&lt;themename&gt;.json</code>.</p>
+	<p>You're set! When your theme is activated in the GS <code>theme</code> tab, your settings will appear in the Custom Settings sidebar in the tab <code>Theme settings</code> (GS tab <code>Site</code>). The data is saved to <code>/data/other/custom_settings/theme_data_&lt;themename&gt;.json</code>.<br><br>Not entirely sure yet? For more examples, read the <a href="http://webketje.github.io/cms/2015/03/30/building-a-theme-with-gs-custom-settings/">Theme tutorial</a>.</p>
 </section>
 <section>
 	<header>
@@ -574,6 +599,7 @@
   └─ your_plugin/
        <span style="color: #C24145">├─ settings.json</span> (with default language)
        <span style="color: #C24145">└─ lang/</span> (optional)
+           <span style="color: #C24145">├─ en_US.json</span>
            <span style="color: #C24145">├─ fr_FR.json</span>
            <span style="color: #C24145">└─ de_DE.json</span></code></pre></div>
   
@@ -593,11 +619,7 @@
   <span class="p">}</span>
 <span class="p">}</span></code></pre></div>
 
-	<p>GS Custom Settings provides 2 hooks for your plugin's functions. To use them, do:</p>
-	<ul>
-	<li><code>add_action('custom-settings-init', 'myFunctionOnInit')</code> to act upon settings <em>after</em> they are globalized. (executes every time the plugin is loaded by GS)</li>
-	<li><code>add_action('custom-settings-load', 'myFunctionOnLoad')</code> to act upon settings <em>before</em> they are loaded. (executes only when the Custom Settings 'Site' tab is opened).</li>
-	</ul>
+	<p>GS Custom Settings provides <a href="#hooks">4 hooks</a> for your plugin's functions. To use it, do: <code>add_action($hook_name, $function)</code></p>
 	<p>You can also output a link to your custom settings in your plugin tab by using <code>&lt;?php get_tab_link('myplugin','link title') ?&gt;</code>. When clicked, it will open the relevant item in the Custom settings sidebar.</p>
 	<p>It should be noted that you don't need to manually add a hook to initialize your settings. As soon as <code>custom_settings.php</code> is included in the site, the <code>settings.json</code> file from your plugin's settings (if it is activated) will be automatically added to the custom settings UI. You should only use functions like <code>remove_setting</code> and <code>set_setting</code> to <em>update settings from an old to a newer version</em>. If so, be sure to include a hidden version setting to check.<br> Plugin data is saved to <code>/data/other/custom_settings/plugin_data_&lt;yourpluginname&gt;.json</code>.</p>
 </section>
@@ -607,70 +629,142 @@
 	</header>
 <h4 id="functions">Functions</h4>
 
-<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nx">get_setting</span><span class="p">(</span><span class="nv">$tab</span><span class="p">,</span> <span class="nv">$setting</span><span class="p">)</span>
+<div class="spoiler-toggle" style="font-size: 1.125em;"><i class="fa fa-plus" style="font-size: .6em;"></i> <code>get_setting</code></div>
+<div class="spoiler" style="display: none;">
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nx">get_setting</span><span class="p">(</span><span class="nv">$tab</span><span class="p">,</span> <span class="nv">$setting</span><span class="p">,</span> <span class="nv">$echo</span><span class="o">=</span><span class="k">TRUE</span><span class="p">)</span>
 <span class="c1">// @param {string} $tab - lookup property of the tab to search in</span>
-<span class="c1">// @param {string} $setting - lookup property of the setting to output</span></code></pre></div>
+<span class="c1">// @param {string} $setting - lookup property of the setting to output</span>
+<span class="c1">// @param {boolean} [$echo=TRUE] - (optional) Whether to echo the setting. </span>
+<span class="c1">// Handy if you want the display value returned but not outputted.</span></code></pre></div>
 
-	<p>Outputs the setting's value for display. This differs by setting type. </p>
-	<ul>
-		<li>If the setting has options, the text from the selected option (in default language) will be displayed. </li>
-		<li>If the setting is a checkbox/ switch/ fancy checkbox, <code>on</code> will be displayed if <code>true</code> and <code>off</code> if <code>false</code>.</li>
-		<li>If the setting is text/ textarea, the <code>value</code> is returned as it was last saved.</li>
-	</ul>
-	<br>
-	
-<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nx">return_setting</span><span class="p">(</span><span class="nv">$tab</span><span class="p">,</span><span class="nv">$setting</span><span class="p">,</span><span class="nv">$prop</span><span class="o">=</span><span class="k">NULL</span><span class="p">)</span>
+<p>Outputs the setting's value for display. This differs by setting type. </p>
+<ul>
+	<li>If the setting has options, the text from the selected option (in default language) will be displayed. </li>
+	<li>If the setting is a checkbox/ switch/ fancy checkbox, <code>on</code> will be displayed if <code>true</code> and <code>off</code> if <code>false</code>.</li>
+	<li>If the setting is text/ textarea/ color, the string <code>value</code> is returned as it was last saved.</li>
+</ul>
+<br>
+<strong>Example use</strong>
+<p>
+	<code>get_setting('my_tab','my_setting')</code> outputs the setting's <em>value</em>.
+	<br><code>get_setting('my_tab','my_setting','descr')</code> outputs the setting's description.
+	<br><code>get_setting('my_tab','my_setting', false)</code> returns the setting's <em>display value</em>. For <code>option</code> or <code>image</code> settings this is different than its actual <code>value</code> property.
+</p>
+</div>
+
+<div class="spoiler-toggle" style="font-size: 1.125em;"><i class="fa fa-plus" style="font-size: .6em;"></i> <code>get_i18n_setting</code></div>
+<div class="spoiler" style="display: none;">
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nx">get_i18n_setting</span><span class="p">(</span><span class="nv">$tab</span><span class="p">,</span> <span class="nv">$setting</span><span class="p">,</span> <span class="nv">$echo</span><span class="o">=</span><span class="k">TRUE</span><span class="p">)</span>
+<span class="c1">// @param {string} $tab - lookup property of the tab to search in</span>
+<span class="c1">// @param {string} $setting - lookup property of the multilingual setting to output</span>
+<span class="c1">// @param {boolean} [$echo=TRUE] - (optional) Whether to echo the multilingual setting. </span>
+<span class="c1">// Handy if you want the display value returned but not outputted.</span></code></pre></div>
+
+<p>Outputs the setting's value for display in the page's language (if none, the default language). Only works with the <a href="http://get-simple.info/extend/plugin/i18n/69/">I18N plugin by Martin Mvlcek</a> and with I18N-enabled <code>text/textarea</code> settings. <br><u>Note:</u> make sure all languages are in the final correct order when saving values, else you might have to reset them.</p>
+</div>
+
+<div class="spoiler-toggle" style="font-size: 1.125em;"><i class="fa fa-plus" style="font-size: .6em;"></i> <code>return_setting</code></div>
+<div class="spoiler" style="display: none;">
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nx">return_setting</span><span class="p">(</span><span class="nv">$tab</span><span class="p">,</span> <span class="nv">$setting</span><span class="p">,</span> <span class="nv">$prop</span><span class="o">=</span><span class="k">NULL</span><span class="p">)</span>
 <span class="c1">// @param {string} $tab - lookup property of the tab to search in</span>
 <span class="c1">// @param {string} $setting - lookup property of the setting to return</span>
-<span class="c1">// @param {string} [$prop=NULL] - (Optional) A single property of the setting to return</span></code></pre></div>
+<span class="c1">// @param {string|boolean} [$prop=NULL] - (Optional) A single property of the setting to return, or FALSE to return the full setting</span></code></pre></div>
 
-	<p>Returns the setting entirely as an array, or one property of it (if <code>$prop !== NULL</code>).</p>
-	<p>When returning a setting's value:</p>
-	<ul>
-		<li>If the setting has options (eg <code>select/ radio</code>), the return is a zero-index based number (0 is the first option).</li>
-		<li>If the setting is a <code>checkbox/ switch/ fancy checkbox</code>, the return is <code>true</code> or <code>false</code>.</li>
-		<li>If the setting is text/ textarea, the <code>value</code> string is returned as it was last saved.</li>
-	</ul>
-	<br>
+<p>Returns the entire setting as an array, or one property of it (if <code>$prop</code> is set).</p>
+<p>When returning a setting's value:</p>
+<ul>
+	<li>If the setting has options (eg <code>select/ radio</code>), the return is a zero-index based number (0 is the first option).</li>
+	<li>If the setting is a <code>checkbox/ switch/ fancy checkbox</code>, the return is <code>true</code> or <code>false</code>.</li>
+	<li>If the setting is <code>text/ textarea/ color</code>, the string <code>value</code> is returned as it was last saved.</li>
+</ul>
+<strong>Example use</strong>
+<p>
+	<code>return_setting('my_tab','my_setting')</code> returns the setting's <em>value</em>.
+	<br><code>return_setting('my_tab','my_setting','descr')</code> returns the setting's description.
+	<br><code>return_setting('my_tab','my_setting', false)</code> returns the entire setting as a PHP array.
+</p>
+</div>
 	
+<div class="spoiler-toggle" style="font-size: 1.125em;"><i class="fa fa-plus" style="font-size: .6em;"></i> <code>return_setting_group</code></div>
+<div class="spoiler" style="display: none;">
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nx">return_setting_group</span><span class="p">(</span><span class="nv">$tab</span><span class="p">,</span> <span class="nv">$group</span><span class="p">,</span> <span class="nv">$prop</span><span class="o">=</span><span class="k">NULL</span><span class="p">)</span>
+<span class="c1">// @param {string} $tab - lookup property of the tab to search in</span>
+<span class="c1">// @param {string} $group - prefix in the lookup property, common to all settings in the group</span>
+<span class="c1">// @param {string|boolean} [$prop=NULL] - (Optional) A single property to return for all settings, or FALSE to return them fully</span></code></pre></div>
+
+<p>Returns a group of settings prefixed with <code>$group_</code> within the given tab as an array of settings. If <code>$settings</code> holds the settings returned, they can be accessed by doing <code>$settings['my_setting']</code>. The prefix is stripped out so you don't have to do <code>$settings['mygroup_my_setting']</code>.</p>
+<strong>Example use</strong>
+<p>
+	<code>return_setting_group('my_tab','mygroup')</code> returns all the values of the settings prefixed with <code>mygroup_</code>.
+	<br><code>return_setting_group('my_tab','mygroup','descr')</code> returns all the descriptions of the settings prefixed with <code>mygroup_</code>.
+	<br><code>return_setting_group('my_tab','mygroup', false)</code> returns all the settings prefixed with <code>mygroup_</code> entirely.
+</p>
+</div>
+
+<div class="spoiler-toggle" style="font-size: 1.125em;"><i class="fa fa-plus" style="font-size: .6em;"></i> <code>get_tab_link</code></div>
+<div class="spoiler" style="display: none;">
 <div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nx">get_tab_link</span><span class="p">(</span><span class="nv">$tab</span><span class="o">=</span><span class="k">NULL</span><span class="p">,</span> <span class="nv">$linkText</span><span class="o">=</span><span class="s1">&#39;settings&#39;</span><span class="p">)</span>
 <span class="c1">// @param {string} [$tab=NULL] - (Optional) Empty, lookup property of  </span>
 <span class="c1">// lookup property of a plugin (basename) or &#39;theme_settings&#39;, or a site tab</span>
 <span class="c1">// @param {string} [$linkText=&#39;settings&#39;] - (Optional) A custom text for the &amp;lt;a&amp;gt; element</span></code></pre></div>
 
-	<p>Outputs a link to the settings from the active theme (with <code>$themeOrPlugin</code> set to <code>theme_settings</code>), to an activated plugin, a site tab, or just the GS Custom Settings tab (if <code>$themeOrPlugin</code> is <code>NULL</code>). You can also set a <code>$linkText</code> for custom link text (default is 'settings'). The link will activate the tab given as <code>$themeOrPlugin</code>: useful if you want to include a link to settings from your plugin's page especially.</p>
-	<br>
+<p>Outputs a link to the settings from the active theme (with <code>$tab</code> set to <code>theme_settings</code>), to an activated plugin, a site tab, or just the GS Custom Settings tab (if <code>$tab</code> is <code>NULL</code>). You can also set a <code>$linkText</code> for custom link text (default is 'settings'). The link will activate the tab given as <code>$tab</code>: useful if you want to include a link to settings from your plugin's page especially.</p>
+</div>
 	
+<div class="spoiler-toggle" style="font-size: 1.125em;"><i class="fa fa-plus" style="font-size: .6em;"></i> <code>set_setting</code></div>
+<div class="spoiler" style="display: none;">
 <div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nx">set_setting</span><span class="p">(</span><span class="nv">$tab</span><span class="p">,</span> <span class="nv">$setting</span><span class="p">,</span> <span class="nv">$value</span><span class="p">)</span>
 <span class="c1">// @param {string} $tab - lookup property of the tab to search in</span>
 <span class="c1">// @param {string} $setting - lookup property of the setting to return</span>
 <span class="c1">// @param {string|array} $value - The property (ies) to modify.</span></code></pre></div>
 
 <p>(<strong>Experimental</strong>) Sets a given setting's properties if an array is given as value, or changes the settings' value if <code>$value</code> is a string. Be careful when using this function, as the code will be executed over and over again, forcing properties set by the function to overwrite those set in the UI. Note that the function does not write to a file, but modifies/ adds to a global, and changes will only persist if the data is saved. You should normally only use this function conditionally (eg, if a version setting is not up to date)</p>
-<br>
+</div>
 	
+<div class="spoiler-toggle" style="font-size: 1.125em;"><i class="fa fa-plus" style="font-size: .6em;"></i> <code>remove_setting</code></div>
+<div class="spoiler" style="display: none;">
 <div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nx">remove_setting</span><span class="p">(</span><span class="nv">$tab</span><span class="p">,</span> <span class="nv">$setting</span><span class="p">)</span>
 <span class="c1">// @param {string} $tab - lookup property of the tab to search in</span>
 <span class="c1">// @param {string} $setting - lookup property of the setting to remove</span></code></pre></div>
 
 <p>(<strong>Experimental</strong>) Removes the given setting in the given tab. You should only use this function conditionally (eg, if a version setting is not up to date)</p>
+</div>
 	
 <h4 id="hooks">Hooks</h4>
-<p>v0.2 doesn't allow <em>updating</em> a plugin's settings yet (from old to new version). Future versions will include an automatic file update.</p>
-
-<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nx">add_action</span><span class="p">(</span><span class="s1">&#39;custom-settings-init&#39;</span><span class="p">,</span> <span class="nv">$function</span><span class="p">)</span>
-<span class="c1">// @param {string} $function - the function you want to execute right after settings are globalized.</span></code></pre></div>
-
-<p>Hook that executes right after settings are globalized. Use it to act upon settings saved in the data files.</p>
-
+<div class="spoiler-toggle" style="font-size: 1.125em;"><i class="fa fa-plus" style="font-size: .6em;"></i> <code>custom-settings-load</code></div>
+<div class="spoiler" style="display: none;">
 <div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nx">add_action</span><span class="p">(</span><span class="s1">&#39;custom-settings-load&#39;</span><span class="p">,</span> <span class="nv">$function</span><span class="p">)</span>
 <span class="c1">// @param {string} $function - the function you want to execute before settings are loaded</span></code></pre></div>
 
 <p>Hook that executes <em>before</em> settings are loaded into the UI. (called through the plugin UI on load). It's worth to point out that this function doesn't directly save settings to a file. It merely adds them to the plugin UI on load, and they will only be saved, if the user hits <kbd>Save updates</kbd>.</p>
-<!--
+</div>
+
+<div class="spoiler-toggle" style="font-size: 1.125em;"><i class="fa fa-plus" style="font-size: .6em;"></i> <code>custom-settings-save</code></div>
+<div class="spoiler" style="display: none;">
 <div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nx">add_action</span><span class="p">(</span><span class="s1">&#39;custom-settings-save&#39;</span><span class="p">,</span> <span class="nv">$function</span><span class="p">)</span>
-<span class="c1">// @param {string} $function - the function you want to execute after settings are saved</span></code></pre></div>
-<p>Hook that executes <em>after</em> settings are saved.</p>-->
+<span class="c1">// @param {string} $function - the function you want to execute right before settings are saved</span></code></pre></div>
+
+<p><code>(v0.4+)</code> Hook that executes <em>before</em> settings are saved to their files. This hook allows you to intercept, check and change values before they are saved, and act accordingly. Furthermore the hook is great as it doesn't require a page refresh to make changes to files or PHP code.</p>
+</div>
+
+<div class="spoiler-toggle" style="font-size: 1.125em;"><i class="fa fa-plus" style="font-size: .6em;"></i> <code>custom-settings-render-top</code></div>
+<div class="spoiler" style="display: none;">
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nx">add_action</span><span class="p">(</span><span class="s1">&#39;custom-settings-render-top&#39;</span><span class="p">,</span> <span class="s1">&#39;custom_settings_render&#39;</span><span class="p">,</span> <span class="k">array</span><span class="p">(</span><span class="nv">$plugin</span><span class="p">,</span> <span class="nv">$function</span><span class="p">))</span>
+<span class="c1">// @param {string} $plugin - the basename of your plugin</span>
+<span class="c1">// @param {string} $function - the function you want to execute </span>
+<span class="c1">// to output content above your setting list (eg. instructions, links, ...).</span></code></pre></div>
+<p><code>(v0.4+)</code> Hook that executes <em>below</em> the tab title (above the list of settings) in the GS Custom Settings tab. Use for outputting content, and <em>always</em> use with the <code>custom_settings_render</code> function as second parameter, and an array with (1) your plugin's name (without .php) and (2) a function that outputs HTML content.</p>
+</div>
+
+<div class="spoiler-toggle" style="font-size: 1.125em;"><i class="fa fa-plus" style="font-size: .6em;"></i> <code>custom-settings-render-bottom</code></div>
+<div class="spoiler" style="display: none;">
+<div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nx">add_action</span><span class="p">(</span><span class="s1">&#39;custom-settings-render-bottom&#39;</span><span class="p">,</span> <span class="s1">&#39;custom_settings_render&#39;</span><span class="p">,</span> <span class="k">array</span><span class="p">(</span><span class="nv">$plugin</span><span class="p">,</span> <span class="nv">$function</span><span class="p">))</span>
+<span class="c1">// @param {string} $plugin - the basename of your plugin</span>
+<span class="c1">// @param {string} $function - the function you want to execute </span>
+<span class="c1">// to output content below your setting list (eg. extra buttons).</span></code></pre></div>
+<p><code>(v0.4+)</code> Hook that executes <em>above</em> the <kbd>Save updates</kbd> button (below the list of settings) in the GS Custom Settings tab. Use for outputting content, and <em>always</em> use with the <code>custom_settings_render</code> function as second parameter, and an array with (1) your plugin's name (without .php) and (2) a function that outputs HTML content.</p>
+</div>
+
 <br>
 <br>
 </section>
@@ -679,48 +773,121 @@
 		<h2 id="plugin-info">Plugin info</h2>
 	</header>
 	<section>
+		<h3 id="translating-the-plugin">Translating the plugin</h3>
+		<p>You can help translating this plugin by downloading it first (see <a href="#download-install-upgrade">Download, install, upgrade</a>) and in the plugin folder, in the <code>/lang</code> folder, copy paste the <code>en_US.json</code> (or another) language file somewhere, update the meta info (revision, data, translator), and change the strings texts.</p>
+	</section>
+	<section>
 		<h3 id="dependencies">Dependencies</h3>
 		<p>GS Custom Settings includes:</p>
 			<ul>
 				<li><a href="http://jquery.com">jQuery (from GetSimple CMS)</a></li>
 				<li><a href="http://knockoutjs.com">KnockoutJS 3.2.0</a></li>
+				<li><a href="http://mbest.github.io/knockout.punches/">KnockoutJS punches</a></li>
 				<li><a href="http://fortawesome.github.io/Font-Awesome/">FontAwesome 4.3.0 Iconfont</a></li>
 			</ul>
 	</section>
 	<section>
 		<h3 id="known-issues">Known issues</h3>
 		<p>Find the list of currently known issues <a href="https://github.com/webketje/GS-Custom-Settings/issues">on Github</a></p>
-		<pre style="white-space: pre-wrap; font-size: 14px;">﻿25/02/2015 - V. 0.2 public test
+		<pre style="white-space: pre-wrap; font-size: 14px;">﻿17/04/2015 - V. 0.3 (Critical fix)
+	
+	- Moving the before-last tab down in Edit mode may cause a fatal error
+	- get_setting always returns NULL when third parameter set to false
+	- get_setting with image settings with whitespace in the path name are broken
+	- Image setting returns broken image if link is not set (now empty string)
+	- Color setting saves empty 'options' property
+	- return_setting returns an entire tab when setting isn't found (now NULL)
+	- notifications don't appear above sidebar when sidebar is set to sticky in gsconfig
+	- Tab labels can only contain ASCII Latin characters (eg, no Arab/ Russian), see http://unicode-table.com/
+	- Changing the 'lookup' property of a setting results in non-blocking JS errors.
+	- 'Section Title' & empty image input placeholder is not translated
+	- Edit mode multiselection bugs in IE8
+	- Plugin breaks when GSADMIN is set to something else than 'admin'
 
-  - Settings import only works with IE10 &amp; up, provide fallback
+30/03/2015 - V. 0.2 (beta)
+	
+	- 'custom-settings-init' hook not working reliably
+	- Tab labels can only contain ASCII Latin characters (eg, no Arab/ Russian), see http://unicode-table.com/
+	- FATAL: When no settings or tabs are present on first load, a fatal JS error blocks the plugin from loading
+	- When restricting permission, Export & Import are also unavailable.
+	- Empty text value settings are reset on first save if value is empty
+	- 'Section Title' is not translated
+	- Edit mode multiselection bugs in IE8
+	- KO site settings showing as title when no 'site' tabs are created instead of 'GS Custom Settings'
+  - Settings import only works with IE10 & up
   - When repeatedly batch editing settings, selection might bug or actions might not be executed on entire selection
-  - Repeatedly importing settings for the same tab without reloading the page/ importing settings for another tab first doesn't work</pre>
-	</section>
-	<section>
-		<h3 id="planned-features">Planned features</h3>
-		<pre style="white-space: pre-wrap; font-size: 14px;">- Integration with Multi User plugin
-- 'Section title' settings (delimiters of different sections of settings inside a tab)
-- URL/ Image fields
-- Version checking & setting updates for plugins
-- Setting user permissions through the UI
-- multilingual text/ textarea settings (mainly for output)
-- Browser testing on Mozilla Firefox and IE (not done yet)
-- Work away bugs in multiselect & keyboard shortcut features
-- Ability to build plugin language files through the UI
-- Add accesskeys & more keyboard shortcuts for saving, exporting etc.
-- Add beforeUnload pagecheck to prevent unsaved edits loss
-- Add ability to move settings from one tab to another
-- Add automatic settings update when plugins are updated
-- Add setting search
-- Add custom settings for components</pre>
+  - Repeatedly importing settings for the same tab without reloading the page/ importing settings for another tab first doesn't work
+	- Minor JS 'input focus' error (non-blocking)
+	- Security token sent along with data
+	- return_setting returns entire setting when asked for absent property (now returns NULL)
+	- return_setting returns entire setting for option inputs instead of value only when value is index 0</pre>
 	</section>
 	<section>
 		<h3 id="changelog">Changelog</h3>
-		<pre style="white-space: pre-wrap; font-size: 14px;">﻿30/03/2015 - V. 0.2
+		<pre style="white-space: pre-wrap; font-size: 14px;">﻿20/05/2015 - V. 0.4 (DevChills)
+
+New:
+  - 3 new plugin hooks 'custom-settings-save', 'custom-settings-render-top', and 'custom-settings-render-bottom'
+  - Plugin version notification & download through the UI
+  - Fully automatic version update of settings for themes/ plugins
+  - Added '?' help tab with version info, links, & translator credits 
+  - Text & textarea settings can now be multilingual (with I18n plugin v.2.5.8+)
+  - Added PHP function get_i18n_setting() for multilingual settings (with I18n plugin)
+  - Added PHP function return_setting_group()
+  - It is now possible to store custom setting properties in JSON file (for checking with PHP)
+  - Renewed keyboard shortcuts
+  - When GSSTYLESBFIXED is set, the toolbar in Edit mode will sticky to the top of the window
+  - Tab options: enableReset ('Reset all settings' button) & 'enableAccessAll: false' hide tabs for users without editing permission 
+Changed:
+  - Upgrade from v0.1 no longer supported - to do this, deactivate, download v0.3, activate, then install 0.4
+  - Search filter improved (lower & uppercase)
+  - Code fields now show the bare lookup as title
+  - Tab lookups can now be set manually from the tab toolbar (tag icon)
+  - If gsconfig is set to have sticky sidebar, the toolbar in Edit mode will also be sticky
+  - Tabs may now contain any unicode characters: use at your own risk
+  - Textareas are resizeable vertically in Manage mode
+  - return_setting($tab, $setting) now returns the value instead of full setting. To return full setting, pass FALSE as third parameter
+  - Export output changed minimally
+Bugfixes:
+  - Fixed moving tab down in Edit mode causing an unrepairable bug
+  - Fixed get_setting always returning NULL when third parameter set to false
+  - Fixed get_setting with image settings to encode whitespace
+  - Fixed empty image setting returning broken image if link is not set (now empty string)
+  - Fixed empty options being saved for color setting
+  - Fixed return_setting returning entire tab when setting wasn't found (now NULL)
+  - Fixed notifications not appearing above sidebar when sidebar is set to sticky in gsconfig
+  - Fixed 'Section Title' input & empty value image placeholder name not being translated
+  - Fixed (% setting %) content filter not correctly outputting HTML tags
+  - Removed 2 non-blocking JS errors
+
+15/04/2015 - V. 0.3 (Critical fix)
+
+New: 
+  - Multi User plugin integration (v1.8.2 onwards)
+  - Added image & color input fields
+  - Added section title fields
+  - Theme settings can now use the shorter tab name 'theme' instead of 'theme_settings', eg get_setting('theme','setting')
+  - Links in descriptions become automatically clickable in 'Manage' mode
+  - Added per-tab search filter for settings (lookup/ label)
+  - Added language German & Spanish (fourth & fifth languages, so might need revision)
+Changed:
+  - Removed 'custom-settings-init' hook (unreliable)
+  - Except for import/ export/ multiselect, now fully compatible with IE8 (previously only Manage mode)
+Bugfixes:
+  - 'KO site settings' replaced as title with 'GS Custom Settings' (in UI)
+  - Eliminated minor JS 'input focus' error
+  - Import & Export buttons now also available to users who cannot access Edit mode (backup purposes)
+  - Fixed (% setting: tab/setting %) (now same as get_setting instead of return_setting)
+  - Fixed text settings not saving when value hasn't been set
+  - Fixed security token being sent with data (no longer)
+  - Fixed return_setting returning entire setting when asked for absent property (now returns NULL)
+  - Fixed loose checking bug returning entire setting for option inputs instead of value only when value is 0
+
+30/03/2015 - V. 0.2 (Beta)
 
 New:
   - Fully translatable, (almost) no hard-coded values anymore
-  - Future Github repo at http://webketje.github.io/gs-custom-settings (issue tracking)
+  - Github repo at http://webketje.github.io/gs-custom-settings (issue tracking)
   - Complete UI overhaul, including:
     - tab/setting actions moved to one toolbar to unclutter the UI
     - opening a tab in edit mode is the same as in manage mode (used to be through icon)
@@ -766,6 +933,13 @@ Initial launch
 <script>
   $(document).ready(function(){
     $("#toc-sidebar").sticky({topSpacing:0, className: 'sticky'});
+  });
+  $('.spoiler-toggle').on('click', function() { 
+    $(this.nextElementSibling).toggle(); 
+    if ($(this.firstChild).hasClass('fa-plus'))
+      this.firstChild.className = this.firstChild.className.replace('fa-plus', 'fa-minus');
+    else if ($(this.firstChild).hasClass('fa-minus'))
+      this.firstChild.className = this.firstChild.className.replace('fa-minus', 'fa-plus');
   });
 	if (location.href.match(/id=.*/))
 		document.getElementById(location.href.match(/id=.*/)[0].slice(3)) ? document.getElementById(location.href.match(/id=.*/)[0].slice(3)).scrollIntoView() : null;
@@ -903,6 +1077,12 @@ Initial launch
 		
 		<ul>
 			<li>
+				<a href="#translating-the-plugin">Translating the plugin</a>
+			</li>
+		</ul>
+		
+		<ul>
+			<li>
 				<a href="#dependencies">Dependencies</a>
 			</li>
 		</ul>
@@ -910,12 +1090,6 @@ Initial launch
 		<ul>
 			<li>
 				<a href="#known-issues">Known Issues</a>
-			</li>
-		</ul>
-		
-		<ul>
-			<li>
-				<a href="#planned-features">Planned features</a>
 			</li>
 		</ul>
 		

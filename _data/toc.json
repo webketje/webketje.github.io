@@ -26,9 +26,9 @@
 		]},
  	{"title":"Plugin info",
   	"subtitles": [
+		{"title":"Translating the plugin"},
 		{"title":"Dependencies"},
 		{"title":"Known Issues"},
-		{"title":"Planned features"},
 		{"title":"Changelog"}
 	]},
 ]}

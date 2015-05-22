@@ -1,9 +1,26 @@
+17/04/2015 - V. 0.3 (Critical fix)
+	
+	- Moving the before-last tab down in Edit mode may cause a fatal error
+	- get_setting always returns NULL when third parameter set to false
+	- get_setting with image settings with whitespace in the path name are broken
+	- Image setting returns broken image if link is not set (now empty string)
+	- Color setting saves empty 'options' property
+	- return_setting returns an entire tab when setting isn't found (now NULL)
+	- notifications don't appear above sidebar when sidebar is set to sticky in gsconfig
+	- Tab labels can only contain ASCII Latin characters (eg, no Arab/ Russian), see http://unicode-table.com/
+	- Changing the 'lookup' property of a setting results in non-blocking JS errors.
+	- 'Section Title' & empty image input placeholder is not translated
+	- Edit mode multiselection bugs in IE8
+	- Plugin breaks when GSADMIN is set to something else than 'admin'
+
 30/03/2015 - V. 0.2 (beta)
 	
 	- 'custom-settings-init' hook not working reliably
+	- Tab labels can only contain ASCII Latin characters (eg, no Arab/ Russian), see http://unicode-table.com/
 	- FATAL: When no settings or tabs are present on first load, a fatal JS error blocks the plugin from loading
 	- When restricting permission, Export & Import are also unavailable.
 	- Empty text value settings are reset on first save if value is empty
+	- 'Section Title' is not translated
 	- Edit mode multiselection bugs in IE8
 	- KO site settings showing as title when no 'site' tabs are created instead of 'GS Custom Settings'
   - Settings import only works with IE10 & up

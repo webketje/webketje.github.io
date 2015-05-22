@@ -30,21 +30,24 @@ You should save the file as `settings.json` in your theme's directory. For this 
       "value": "",
       "type": "text",
       "access": "normal",
-      "label": "Facebook URL"
+      "label": "Facebook URL",
+      "descr": ""
     },
     {
       "lookup": "twitter_url",
       "value": "",
       "type": "text",
       "access": "normal",
-      "label": "Twitter URL"
+      "label": "Twitter URL",
+      "descr": ""
     },
     {
       "lookup": "linkedin_url",
       "value": "",
       "type": "text",
       "access": "normal",
-      "label": "Linkedin URL"
+      "label": "Linkedin URL",
+      "descr": ""
     }
   ]
 }
@@ -58,29 +61,46 @@ You could also get really fancy and add an extra `locked` field to display autho
   "value": "John Doe",
   "type": "text",
   "access": "locked",
-  "label": "Author"
+  "label": "Author",
+  "descr": ""
 },
 {
   "lookup": "author_website",
   "value": "http://www.johndoe.com",
   "type": "text",
   "access": "locked",
-  "label": "Author's website"
+  "label": "Author's website",
+  "descr": ""
 },
 {
   "lookup": "theme_version",
   "value": "v0.1",
   "type": "text",
   "access": "hidden",
-  "label": "Theme Version"
+  "label": "Theme Version",
+  "descr": ""
+}
+{% endraw %}{% endhighlight %}
+
+As of `GS Custom Settings 0.4`, the preferred way of adding theme metadata is by editing the JSON file,
+and adding a 'tab' object to it. If you specify a `version` property, GS Custom Settings will automatically update the settings when a user installs a new version. If you set `enableReset` to `true`, a reset button will appear in the UI, and clicking it will set every setting's value to the default value (if a `default` property is specified for it). If you set `enableAccessAll` to `false`, the theme tab will only show up for users who [have editing permission](http://localhost:4000/projects/gs-custom-settings/#restricting-editing-permission).
+
+{% highlight json startinline %}{% raw %}
+{ "tab": 
+    {
+      "version": "0.1",
+      "enableReset": false,
+      "enableAccessAll": true
+    },
+  "settings": [...]
 }
 {% endraw %}{% endhighlight %}
 
 If your theme is activated in GS, a `Theme Settings` tab will appear and `Manage` mode would look like this:
 
 <figure>
-	<img src="/assets/posts/gs_custom_settings/example_theme_settings.png" alt="Sample manage mode with Theme settings">
-	<figcaption>Sample manage mode with Theme settings</figcaption>
+  <img src="/assets/posts/gs_custom_settings/example_theme_settings.png" alt="Sample manage mode with Theme settings">
+  <figcaption>Sample manage mode with Theme settings</figcaption>
 </figure>
 
 *Note: Even though you see an `Edit` button, theme settings are **not editable** in the UI. If someone wants to remove your crediting links, he will have to change the data in the JSON files :) *
@@ -93,24 +113,24 @@ In the innovation theme, the 3 URLS are outputted to `sidebar.php`. There, on ab
 
 {% highlight php %}{% raw %}
   <?php // use strlen to check that the value is non-empty for text fields
-    if (strlen(return_setting('theme_settings','facebook_url','value'))) { ?>
-    <a href="<?php get_setting('theme_settings','facebook_url'); ?>">
+    if (return_setting('theme','facebook_url','value')) { ?>
+    <a href="<?php get_setting('theme','facebook_url'); ?>">
       <img src="<?php get_theme_url(); ?>/assets/images/facebook.png" />
      </a>
   <?php } ?>
-  <?php if (strlen(return_setting('theme_settings','twitter_url','value'))) { ?>
-    <a href="<?php get_setting('theme_settings','twitter_url'); ?>">
+  <?php if (return_setting('theme','twitter_url','value')) { ?>
+    <a href="<?php get_setting('theme','twitter_url'); ?>">
       <img src="<?php get_theme_url(); ?>/assets/images/twitter.png" />
     </a>
   <?php } ?>
-  <?php if (strlen(return_setting('theme_settings','linkdedin_url','value'))) { ?>
-    <a href="<?php get_setting('theme_settings','linkedin_url'); ?>">
+  <?php if (return_setting('theme','linkedin_url','value')) { ?>
+    <a href="<?php get_setting('theme','linkedin_url'); ?>">
       <img src="<?php get_theme_url(); ?>/assets/images/linkedin.png" />
     </a>
   <?php } ?>
 {% endraw %}{% endhighlight %}
 
-For any theme, the tab to search in is always 'theme_settings'.
+For any theme, the tab to search in is always 'theme_settings' (or the alias 'theme').
 
 ### 4. Making your theme settings multilingual.
 To internationalize your settings, create a `lang` folder in your theme, and include the language files with the same name as the PHP locale strings used by GetSimple (eg. English = en_US.json, French = fr_FR.json) in this folder. For the Innovation theme, it would look like this:
