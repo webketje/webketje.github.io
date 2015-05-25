@@ -39,14 +39,16 @@ intro: |
 <li><a href="#third-party-embeds">Output: third party embeds</a></li>
 <li><a href="#third-party-services">Data: Enabling third party services</a></li>
 <li><a href="#social-media-links">Output: social media icon links collection</a></li>
-<li><a href="#key-value-pairs">Meta: date format - hidden settings for key-value pairs</a></li>
+<li><a href="#key-value-pairs">Meta: date format - hidden settings/ custom properties for key-value pairing</a></li>
 </ol>
 </li>
 <li>
 <a href="#advanced">Advanced (coming soon)</a>
 </li>
 </ol>
+<a name="preface"></a>
 <h3>Preface</h3>
+<a name="best-practices"></a>
 <h4>Best practices</h4>
 <h5>Themes with GS Custom Settings</h5>
 <p>If you use GS Custom Settings for a theme, make sure to mention in the theme description in the <a href="http://get-simple.info/extend/">GS Extend repo</a> that your theme <em>requires</em> installing the Custom settings plugin first, or wrap the entire HTML in an <code>if</code> clause, and output a message <em>'This theme requires GS Custom Settings to work'</em>, else you will get a lot of <em>undefined function</em> errors. Here's a sample snippet that you can directly copy paste in your theme's Extend description:</p>
@@ -72,7 +74,7 @@ intro: |
  echo '<h3>' . $profile['h'] . '</h3>';
  echo '<p>' . $profile['desc'] . '</p>'; ?>
 {% endraw %}{% endhighlight %}
-
+</a name="php-you-should-know"></a>
 <h4>Some PHP you should know</h4>
 <p>As soon as you need to do some more advanced stuff (like in the sections Intermediate and Advanced), you will sometimes need to pre-process the output of a setting. In that case, some of the most useful PHP functions to know are:</p>
 <ul>
@@ -84,8 +86,9 @@ intro: |
 <li><code>date($format[, $timestamp])</code> - Returns a date in the specified <code>$format</code>. Useful for blog posts/ footer copyright/ event dates.</li>
 <li><code>substr($string, $start, $length)</code> - Subtracts a part of a string starting at <code>$start</code> and ending at <code>$start + $length</code>. Useful for eg. post excerpts</li>
 </ul>
+<a name="considering-theme-variables"></a>
 <h4>Considering the theme <em>variables</em></h4>
-<p>First we need to consider which settings will be adjustable in the template. For inspiration, you could have a look at <a href="http://scaffold.tumblr.com/options/">Tumblr theme options</a>, ThemeForest Wordpress' <a href="http://i.imgur.com/1kEkKAu.png">Select options</a>, or even <a href="http://2.bp.blogspot.com/-5o8ExgEBbVk/TzYiXNXleDI/AAAAAAAAFig/38Mcn18TVog/s1600/Change%2Bpost%2Btitle%2Bcolor%2Bin%2BBlogger%2Btemplates.png">Blogger template options</a>. Generally, you will want to provide settings in three four different sections: </p>
+<p>First we need to consider which settings will be adjustable in the template. For inspiration, you could have a look at <a href="http://scaffold.tumblr.com/options/">Tumblr theme options</a>, ThemeForest Wordpress' <a href="http://i.imgur.com/1kEkKAu.png">Select options</a>, or even <a href="http://2.bp.blogspot.com/-5o8ExgEBbVk/TzYiXNXleDI/AAAAAAAAFig/38Mcn18TVog/s1600/Change%2Bpost%2Btitle%2Bcolor%2Bin%2BBlogger%2Btemplates.png">Blogger template options</a>. Generally, you will want to provide settings in three/ four different sections: </p>
 <ol>
 <li><strong>Styling</strong>: Providing users the ability to modify theme colors, fonts and other styles without having to dig into your template, and with the option to change them over time.</li>
 <li><strong>Output</strong>: Providing users the ability to place content in fixed theme positions   (like footer content, contact details, etc.) without having to dig into your template.</li>
@@ -181,7 +184,7 @@ intro: |
  </tbody>
 </table>
 <h5>DISCUSSION</h5>
-<p>Conditionally showing content is pretty easy, the checkbox setting will either return <code>true</code> or <code>false</code>. The snippet below shows/hides the title of pages using the template <code>blog.php</code>. Useful as you would usually not display the title when the blog is also the homepage. </p>
+<p>Conditionally showing content is pretty easy, the checkbox setting will either return <code>true</code> or <code>false</code>. The snippet below shows/hides the title of pages using a blog template, that can both be set as home or distinct blog page. Useful as you would usually not display the title when the blog is also the homepage. </p>
 
 {% highlight php %}{% raw %}
 <?php if (return_setting('theme', 'blog_show_title')) { ?>
@@ -278,7 +281,7 @@ If the setting has no container element, you can simply call <code>get_setting</
  </tbody>
 </table>
 <h5>DISCUSSION</h5>
-<p>The colors take any valid CSS colors (color name, HEX, RGB, HSL or RGBA). You would keep all fixed CSS in a separate stylesheet <code>style.css</code>, and include the changeable CSS in your <code>header.inc.php</code> or <code>dynamic_css.inc.php</code> or something alike in a <code>&lt;style&gt;</code> tag. Below is an example of how you would output dynamic styling options into your theme: </p>
+<p>The color settings take any valid CSS colors (color name, HEX, RGB, HSL or RGBA). You would keep all fixed CSS in a separate stylesheet <code>style.css</code>, and include the changeable CSS in your <code>header.inc.php</code> or <code>dynamic_css.inc.php</code> or something alike in a <code>&lt;style&gt;</code> tag. Below is an example of how you would output dynamic styling options into your theme: </p>
 
 {% highlight php %}{% raw %}
 <style>
@@ -327,7 +330,7 @@ If the setting has no container element, you can simply call <code>get_setting</
  </tbody>
 </table>
 <h5>DISCUSSION</h5>
-<p>You can provide customization through fixed options, with the <code>radio</code> or <code>select</code> type.
+<p>You can provide customization through a fixed range of options, with the <code>radio</code> or <code>select</code> type.
 The <code>radio</code> setting <code>css_theme</code> has 3 options: square, rounded or circle. In our <code>style.css</code> stylesheet, the following rules could be defined (none for square, that is default): </p>
 
 {% highlight css %}
@@ -365,11 +368,8 @@ The <code>radio</code> setting <code>css_theme</code> has 3 options: square, rou
 </style>
 <div class="<?php get_setting('theme', 'profile_img_size');?>"><img src="/my/image.jpeg"></div>
 {% endraw %}{% endhighlight %}
-
-<h3>Styling options</h3>
-<p>For our theme we have a total of 8 styling options. The font <code>&lt;select&gt;</code>'s offer a choice between +- 20 different fonts, including a couple from Google fonts. <strong>Custom CSS</strong> allows non-technical users to add some CSS rules to the theme (this is a popular setting in Wordpress).</p>
-<h5>Fonts and webfonts</h5>
-<p>If you limit your font options to te <a href="">websafe fonts</a>, adding 2 extra <code>font-family</code> lines to the dynamic CSS like below will suffice. Generally this should also be fine if you included custom fonts in your CSS with <code>@font-face</code>
+The theme will allow users to <code>&lt;select&gt;</code> one of +- 20 different fonts, including a couple from Google fonts. 
+<p>If you limit your font options to te <a href="http://www.cssfontstack.com/">websafe fonts</a>, adding 2 extra <code>font-family</code> lines to the dynamic CSS like below will suffice. Generally this should also be fine if you included custom fonts in your CSS with <code>@font-face</code>. However, <a href="#google-web-fonts">read on for Google webfonts</a>.
 <img src="../assets/posts/gscs_advanced_theming/themetut_font_options.png"></p>
 {% highlight php %}{% raw %}
 h1,h2,h3,h4,h5,h6, #site-nav a {
@@ -466,7 +466,7 @@ body, body p, body ul, body ol, body blockquote {
  </tbody>
 </table>
 <h5>DISCUSSION</h5>
-<p>But you could also give your users some more options by providing <em>Google Webfonts</em>, and we need to add a couple of extra lines of code to the <code>head.inc.php</code> file (above the <code>&lt;style&gt;</code> tag) to include them <strong>only if</strong> the user has selected one because they impact loading times negatively. For this purpose, we need to slightly <strong>preprocess</strong> them with PHP. Google expects an API call like this:</p>
+<p>But you could also give your users some more options by providing <em>Google Webfonts</em>, and we need to add a couple of extra lines of code to the <code>&lt;head&gt;</code> of our page (above the <code>&lt;style&gt;</code> tag) to include them <strong>only if</strong> the user has selected one; because they impact loading times negatively. For this purpose, we need to slightly <strong>preprocess</strong> them with PHP. Google expects an API call like this:</p>
 
 {% highlight php %}{% raw %}
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=font+name">
@@ -547,7 +547,7 @@ if (return_setting('theme', 'css_hfont') > 13) { ?>
  </tbody>
 </table>
 <h5>DISCUSSION</h5>
-<p>Embedding a Twitter feed is as simple as copy pasting the code from the <a href="">dev guide</a> and replacing the feed name. Also don't forget to put a surrounding <code>if</code> clause to test if the settings are not empty to avoid JS errors. To be able to use the feed, the user needs to create a 'widget' in his Twitter account for a certain profile, and copy paste the widget's ID and the feed's name into GS Custom Settings.</p>
+<p>Embedding a Twitter (user) feed is as simple as copy pasting the code from the <a href="https://dev.twitter.com/web/embedded-timelines/user">dev guide</a> and replacing the feed name. Also don't forget to put a surrounding <code>if</code> clause to test if the settings are not empty to avoid JS errors. To be able to use the feed, the user needs to create a 'widget' in his Twitter account for a certain profile, and copy paste the widget's ID and the feed's name into GS Custom Settings.</p>
 
 {% highlight php %}{% raw %}
 <?php if (return_setting('theme', 'twttr_fd') && return_setting('theme', 'twttr_id')) { ?>
@@ -562,7 +562,7 @@ Tweets by @<?php get_setting('theme', 'data_twttr_fd'); ?></a>
 </script><?php } ?>
 {% endraw %}{% endhighlight %}
 
-<p>For the Google Map we will re-use the <code>contact_address</code> setting from our theme. Suppose the site owner is Google UK. Their address is entered as:</p>
+<p>For the Google Map we will use the <code>contact_address</code> setting from our theme. Suppose the site owner is Google UK. Their address is entered as:</p>
 
 <div class="highlight"><pre><code>
 Google UK, 
@@ -571,7 +571,7 @@ Belgrave House,
 London
 </code></pre></div>
 
-<p>To understand this part, read up on the <a href="https://developers.google.com/maps/documentation/staticmaps/">Google Maps Static API</a>. The output is served as image data, so we need an image tag, and a safe URL which we obtain through PHP's <code>url_encode</code>. The Static Maps API takes a couple of parameters for customization; here I will only include 3: the location, zoom level, and image size. Zoom levels are between 0 and 21, and image size is in the format <code>wxh</code>, as in <code>100x100</code> (these details can be explained in the setting description).</p>
+<p>To understand this part, read up on the <a href="https://developers.google.com/maps/documentation/staticmaps/">Google Maps Static API</a>. The output is served as image data, so we need an image tag, and a safe URL which we obtain through PHP's <code>url_encode</code>. The Static Maps API takes a couple of parameters for customization; here I will only include 3: the location, zoom level, and image size. Zoom levels are between 0 and 21, and image size is in the format <code>w x h</code>, as in <code>100x100</code> (these details can be explained in the setting description).</p>
 
 {% highlight php %}{% raw %}
 <?php $gmap = return_setting_group('theme', 'gmap');
@@ -606,7 +606,7 @@ if ($gmap['on']) {
  </tbody>
 </table>
 <h5>DISCUSSION</h5>
-<p>Many third-party services (like mail forms, analytics trackers, comment systems) can be embedded via a Javascript API on the page. For this example, we will add <a href="http://analytics.google.com">Google Analytics</a> and the popular <a href="">Disqus comment system</a> to blog pages only. First copy paste the tracker codes: Google Analytics <a href="https://developers.google.com/analytics/devguides/collection/web/">has 2</a>. Instead of having another checkbox for the user to set, we can check it in the code because the tracking codes for universal and classic analytics are different.</p>
+<p>Many third-party services (like mail forms, analytics trackers, comment systems) can be embedded via a Javascript API on the page. For this example, we will add <a href="http://analytics.google.com">Google Analytics</a>. First copy paste the tracker code: Google Analytics <a href="https://developers.google.com/analytics/devguides/collection/web/">has 2</a> (universal vs. classic). Instead of having another checkbox for the user to set, we can check it in the code because the tracking codes for universal and classic analytics have a different format.</p>
 
 {% highlight php %}{% raw %}
 <?php if (return_setting('theme', 'data_ga')) { ?>
@@ -748,8 +748,7 @@ Inside the <code>for</code> loop, we check with <code>if</code> with:
 <h4>Meta: date format - hidden settings for key-value pairs</h4>
 <p>The following code allows the user to:</p>
 <ul>
-<li>Set Google Analytics (both classic and universal account types) from the UI with the GA ID.</li>
-<li>Set the Disqus comment system on blog pages.</li>
+<li>choose a date format from the UI in human-readable form, and output it in PHP form.</li>
 </ul>
 <h5>SETTINGS</h5>
 <table style="border-collapse: collapse;">
@@ -777,7 +776,7 @@ Inside the <code>for</code> loop, we check with <code>if</code> with:
  </tbody>
 </table>
 <h5>DISCUSSION</h5>
-<p>PHP date formats are somewhat hard to understand for non-technical people. They probably don't understand <code>F jS Y</code> as a date. Sometimes you want the <em>options displayed in the UI to return a different output associated with that option</em>. For text settings/ settings with limited options it's easy enough to do, but for 15+ options you might need <strong>key - value</strong> pairs. You could do this in a PHP array but you would be polluting your template. There's a 'hack' around it in GS Custom Settings: create two <code>select</code> settings, - one for the display and one for the return data (hidden access) -, with <em>the same options in the same order</em>.</p>
+<p>PHP date formats are somewhat hard to understand for non-technical people. They probably don't understand <code>F jS Y</code> as a date. Sometimes you want the <em>options displayed in the UI to return a different output associated with that option</em>. For text settings/ settings with limited options it's easy enough to do, but for 15+ options you might need <strong>key - value</strong> pairs. You could do this in a PHP array but you would be polluting your template. There's a 'hack' around it in GS Custom Settings: create two <code>select</code> settings, - one for the display and one for the return data (hidden access) -, with <em>the same options in the same order</em>. <strong>Note:</strong>: With <code>v0.4+</code> you can also simply define a custom <code>data</code> property on one select instead; however you have to modify the JSON & can't use the UI.</p>
 {% highlight php %}{% raw %}
 <?php $date_fm_opts = return_setting('theme', 'blog_date_fm', 'options');
       $date_ui = return_setting('theme','blog_date');
