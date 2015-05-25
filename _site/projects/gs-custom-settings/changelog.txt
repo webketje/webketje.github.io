@@ -1,3 +1,24 @@
+25/05/2015 - V. 0.4.1 (Cyrillic)
+
+New: 
+  - Added option to disable display of lookup code copy in Manage mode
+Changes: 
+  - More space & textarea resize for settings in Edit mode
+  - Minor CSS changes & CSS file restructured
+  - Labels in Manage mode have a title attribute which displays their (full) lookup properties
+  - Code copy fields only appear in Manage mode when hovering over the setting
+  - Added server cache refresh on plugin update
+Bugfixes: 
+  - Fixed Cyrillic char problem with custom JSON indentation function
+  - Fixed Cyrillic chars being stripped out of setting lookups
+  - Fixed 'Search..' label not translated
+  - Fixed code copy lookup tooltip in Edit mode + sidebar tooltip for label/lookup toggle
+  - Fixed wrong version in plugin registration
+  - Fixed unable to remove the last setting in a tab
+  - Fixed crappy page display on load
+  - Fixed content filter
+  - Fixed theme import not working (+not working for I18N-settings)
+
 20/05/2015 - V. 0.4 (DevChills)
 
 New:

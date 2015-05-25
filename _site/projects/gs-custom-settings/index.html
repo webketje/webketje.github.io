@@ -405,6 +405,7 @@
 		<ol>
 		<li><kbd>SHIFT</kbd> + click selects all settings between the setting first and last clicked.</li>
 		<li><kbd>Ctrl</kbd> + click adds the clicked setting to the selection</li>
+		<li><code>(v0.4+)</code> <kbd>Ctrl</kbd> + <kbd>F</kbd> Jumps to the page search</li>
 		<li><code>(v0.4+)</code> <kbd>Ctrl</kbd> + <kbd>DELETE</kbd> removes all selected settings. <br>
 				<code>(v0.3-)</code> <kbd>DELETE</kbd> removes all selected settings.</li>
 		<li><code>(v0.4+)</code> <kbd>Ctrl</kbd> + <kbd>ArrowUp</kbd> moves all settings in the selection 1 up.</li>
@@ -789,42 +790,74 @@
 	<section>
 		<h3 id="known-issues">Known issues</h3>
 		<p>Find the list of currently known issues <a href="https://github.com/webketje/GS-Custom-Settings/issues">on Github</a></p>
-		<pre style="white-space: pre-wrap; font-size: 14px;">﻿17/04/2015 - V. 0.3 (Critical fix)
-	
-	- Moving the before-last tab down in Edit mode may cause a fatal error
-	- get_setting always returns NULL when third parameter set to false
-	- get_setting with image settings with whitespace in the path name are broken
-	- Image setting returns broken image if link is not set (now empty string)
-	- Color setting saves empty 'options' property
-	- return_setting returns an entire tab when setting isn't found (now NULL)
-	- notifications don't appear above sidebar when sidebar is set to sticky in gsconfig
-	- Tab labels can only contain ASCII Latin characters (eg, no Arab/ Russian), see http://unicode-table.com/
-	- Changing the 'lookup' property of a setting results in non-blocking JS errors.
-	- 'Section Title' & empty image input placeholder is not translated
-	- Edit mode multiselection bugs in IE8
-	- Plugin breaks when GSADMIN is set to something else than 'admin'
+		<pre style="white-space: pre-wrap; font-size: 14px;">﻿20/05/2015 - V. 0.4 (DevChills)
+
+  - Using cyrillic chars in the plugin will cause an error which disables saving updates.
+  - Content filter (% %) doesn't work anymore
+  - Cyrillic chars are stripped out of setting lookups
+  - 'Search..' label not translated
+  - Code copy lookup tooltip in Edit mode + sidebar tooltip for label/lookup toggle are incorrect
+  - Update notification & plugin version are wrong
+  - Last setting in a tab can't be removed
+  - Theme import not working (+not working for I18N-settings)
+
+17/04/2015 - V. 0.3 (Critical fix)
+  
+  - Moving the before-last tab down in Edit mode may cause a fatal error
+  - get_setting always returns NULL when third parameter set to false
+  - get_setting with image settings with whitespace in the path name are broken
+  - Image setting returns broken image if link is not set (now empty string)
+  - Color setting saves empty 'options' property
+  - return_setting returns an entire tab when setting isn't found (now NULL)
+  - notifications don't appear above sidebar when sidebar is set to sticky in gsconfig
+  - Tab labels can only contain ASCII Latin characters (eg, no Arab/ Russian), see http://unicode-table.com/
+  - Changing the 'lookup' property of a setting results in non-blocking JS errors.
+  - 'Section Title' & empty image input placeholder is not translated
+  - Edit mode multiselection bugs in IE8
+  - Plugin breaks when GSADMIN is set to something else than 'admin'
 
 30/03/2015 - V. 0.2 (beta)
-	
-	- 'custom-settings-init' hook not working reliably
-	- Tab labels can only contain ASCII Latin characters (eg, no Arab/ Russian), see http://unicode-table.com/
-	- FATAL: When no settings or tabs are present on first load, a fatal JS error blocks the plugin from loading
-	- When restricting permission, Export & Import are also unavailable.
-	- Empty text value settings are reset on first save if value is empty
-	- 'Section Title' is not translated
-	- Edit mode multiselection bugs in IE8
-	- KO site settings showing as title when no 'site' tabs are created instead of 'GS Custom Settings'
+  
+  - 'custom-settings-init' hook not working reliably
+  - Tab labels can only contain ASCII Latin characters (eg, no Arab/ Russian), see http://unicode-table.com/
+  - FATAL: When no settings or tabs are present on first load, a fatal JS error blocks the plugin from loading
+  - When restricting permission, Export & Import are also unavailable.
+  - Empty text value settings are reset on first save if value is empty
+  - 'Section Title' is not translated
+  - Edit mode multiselection bugs in IE8
+  - KO site settings showing as title when no 'site' tabs are created instead of 'GS Custom Settings'
   - Settings import only works with IE10 & up
   - When repeatedly batch editing settings, selection might bug or actions might not be executed on entire selection
   - Repeatedly importing settings for the same tab without reloading the page/ importing settings for another tab first doesn't work
-	- Minor JS 'input focus' error (non-blocking)
-	- Security token sent along with data
-	- return_setting returns entire setting when asked for absent property (now returns NULL)
-	- return_setting returns entire setting for option inputs instead of value only when value is index 0</pre>
+  - Minor JS 'input focus' error (non-blocking)
+  - Security token sent along with data
+  - return_setting returns entire setting when asked for absent property (now returns NULL)
+  - return_setting returns entire setting for option inputs instead of value only when value is index 0</pre>
 	</section>
 	<section>
 		<h3 id="changelog">Changelog</h3>
-		<pre style="white-space: pre-wrap; font-size: 14px;">﻿20/05/2015 - V. 0.4 (DevChills)
+		<pre style="white-space: pre-wrap; font-size: 14px;">﻿25/05/2015 - V. 0.4.1 (Cyrillic)
+
+New: 
+  - Added option to disable display of lookup code copy in Manage mode
+Changes: 
+  - More space & textarea resize for settings in Edit mode
+  - Minor CSS changes & CSS file restructured
+  - Labels in Manage mode have a title attribute which displays their (full) lookup properties
+  - Code copy fields only appear in Manage mode when hovering over the setting
+  - Added server cache refresh on plugin update
+Bugfixes: 
+  - Fixed Cyrillic char problem with custom JSON indentation function
+  - Fixed Cyrillic chars being stripped out of setting lookups
+  - Fixed 'Search..' label not translated
+  - Fixed code copy lookup tooltip in Edit mode + sidebar tooltip for label/lookup toggle
+  - Fixed wrong version in plugin registration
+  - Fixed unable to remove the last setting in a tab
+  - Fixed crappy page display on load
+  - Fixed content filter
+  - Fixed theme import not working (+not working for I18N-settings)
+
+20/05/2015 - V. 0.4 (DevChills)
 
 New:
   - 3 new plugin hooks 'custom-settings-save', 'custom-settings-render-top', and 'custom-settings-render-bottom'

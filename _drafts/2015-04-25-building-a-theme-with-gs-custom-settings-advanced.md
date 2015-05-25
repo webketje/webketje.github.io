@@ -39,14 +39,6 @@ GSCS-sample-theme/
      ├─ fr_FR.json
      └─ de_DE.json
 </pre>
-This tutorial will focus on how to integrate GS Custom Settings in theme development, if you need to get familiar with regular GetSimple theming, read [the tutorial]() in the wiki. It's also handy to keep a browser tab open on the [complete template tags reference](). 
-### Step 1: Considering the *variables* in the theme
-First we need to consider which settings will be adjustable in the template. For inspiration, you could have a look at [Tumblr theme options](http://scaffold.tumblr.com/options/), ThemeForest Wordpress' [Select options](http://i.imgur.com/1kEkKAu.png), or even [Blogger template options](http://2.bp.blogspot.com/-5o8ExgEBbVk/TzYiXNXleDI/AAAAAAAAFig/38Mcn18TVog/s1600/Change%2Bpost%2Btitle%2Bcolor%2Bin%2BBlogger%2Btemplates.png). Generally, you will want to provide settings in three four different sections: 
-
-1. **Styling**: Providing users the ability to modify theme colors, fonts and other styles without having to dig into your template, and with the option to change them over time.
-2. **Output**: Providing users the ability to place content in fixed theme positions   (like footer content, contact details, etc.) without having to dig into your template.
-3. **Data**: Providing users the ability to include/ turn off certain parts of the template, like a social media widget, or whether or not to show the author name under blog posts.
-4. **Meta-settings**: Primarily meant for you, the developer, and usually set to `locked`/`hidden` in the interface, to facilitate version checking, include credits and links, and fixed information.
 
 In our case we will provide the following settings:
 <table style="border-collapse: collapse;">
@@ -321,54 +313,57 @@ Sometimes you might want to have key-value pairs, like for the blog's date forma
 
 1. You map the options to other 
 
-####Contents
+This tutorial will focus on how to integrate GS Custom Settings in theme development, if you need to get familiar with regular GetSimple theming, read [the tutorial]() in the wiki. It's also handy to keep a browser tab open on the [complete template tags reference](). 
+
+### Contents
 
 0. [Preface](#preface)
-  1. [Best practices](#best-practices)
-  2. [Some PHP you should know](#php-you-should-know)
-  1. [Considering the theme variables](#considering-theme-variables)
+ 1. [Best practices](#best-practices)
+ 2. [Some PHP you should know](#php-you-should-know)
+ 1. [Considering the theme variables](#considering-theme-variables)
 1. [Basic](#basic)
-  2. [Output: text and HTML content](#outputting-text-and-html-content)
-  3. [Output: Show-/hiding content](#show-hiding-content)
-  4. [Styling: Allowing custom CSS](#allowing-custom-css)
-  5. [Styling: Tweakable fonts and colors](#tweak-fonts-and-colors)
-  5. [Styling: Multiple options](#tweak-fonts-and-colors)
-  5. [Meta: Setting theme & author data](#theme-and-author-data)
+ 1. [Output: text and HTML content](#outputting-text-and-html-content)
+ 2. [Output: Show-/hiding content](#show-hiding-content)
+ 3. [Styling: Allowing custom CSS](#allowing-custom-css)
+ 4. [Styling: Tweakable fonts and colors](#tweak-fonts-and-colors)
+ 5. [Styling: Multiple options](#multiple-options)
+ 6. [Meta: Setting theme & author data](#theme-and-author-data)
 2. [Intermediate](#intermediate)
-  1. [Data: Enabling third party services](#third-party-services)
   2. [Styling: Google web fonts](#google-web-fonts)
-  1. [Output: third party embeds](#third-party-embeds)
-  2. [Output: social media icon links collection](#social-media-links)
-  3. [Meta: date format - hidden settings for key-value pairs](#key-value-pairs)
+  3. [Output: third party embeds](#third-party-embeds)
+  1. [Data: Enabling third party services](#third-party-services)
+  4. [Output: social media icon links collection](#social-media-links)
+  5. [Meta: date format - hidden settings for key-value pairs](#key-value-pairs)
 3. [Advanced](#advanced)
   1. [Building a mail form](#build-a-mail-form)
-  3. [Integrating with other GS plugins](#integrate-with-other-plugins)
-  4. [Building a configurable blog](#build-a-blog)
+  2. [Integrating with other GS plugins](#integrate-with-other-plugins)
+  3. [Building a configurable blog](#build-a-blog)
 
-###Best practices
-######Themes with GS Custom Settings
-If you use GS Custom Settings for a theme, make sure to mention in the theme description in the [GS Extend]() repo that your theme *requires* installing the Custom settings plugin first, or wrap the entire HTML in an `if` clause, and output a message *'This theme requires GS Custom Settings to work'*, else you will get a lot of *undefined function* errors. Here's a sample snippet that you can directly copy paste in your theme's Extend description:
+### Preface
+#### Best practices
+##### Themes with GS Custom Settings
+If you use GS Custom Settings for a theme, make sure to mention in the theme description in the [GS Extend repo](http://get-simple.info/extend/) that your theme *requires* installing the Custom settings plugin first, or wrap the entire HTML in an `if` clause, and output a message *'This theme requires GS Custom Settings to work'*, else you will get a lot of *undefined function* errors. Here's a sample snippet that you can directly copy paste in your theme's Extend description:
 <pre>This theme requires [GS Custom Settings](http://get-simple.info/extend/plugin/gs-custom-settings/913/).</pre> and one for in the forum threads:
 <pre>This theme requires [url=http://get-simple.info/extend/plugin/gs-custom-settings/913/]GS Custom Settings[/url].</pre>
-######Empty text settings
+##### Empty text settings
 Often you need to check whether a setting is valid. When the only check you need is whether a text setting is empty, you can avoid creating a checkbox to 'enable' the setting (eg. a social media link) by  checking the string length of the setting's value. When it is an empty string, its length is 0, so PHP will evaluate to `false` when you call `return_setting('theme', 'myTextSetting')`. In the setting's description, simply write something like *"Leave empty to disable"*. For example, the `text` setting `social_fb` could be outputted as follows:
 <pre>&lt;?php if (return_setting('theme', 'social_fb'))
    echo '&lt;a href="' . return_setting('theme', 'social_fb') . '>&lt;i class="fa fa-facebook'>&lt;/i>&lt;/a>; ?>
 </pre>
-######Using `for` loops
+##### Using `for` loops
 If you're using setting output in PHP `for` or `foreach` loops, it is wisest to put them in a PHP variable before the loop. Although calls to `return/get_setting` are not very expensive, it does save some performance.
 <pre>&lt;?php $show_img = return_setting('theme', 'blog_show_img'); 
  foreach ($items as $item) {
  echo '&lt;div class="post">' . ($show_img ? '&lt;img src="">' : '') . '&lt;/div>'; ?>
 </pre>
-######Easily accessing a group of settings
+##### Easily accessing a group of settings
 If you need to access many settings (more than 5) in one particular place in your theme, *from v0.4 onwards* you can use `return_setting_group` to return an entire group of settings as a PHP array. For the function to work, you should prefix the setting lookups with a common name, followed by an underscore (`_`); eg. for all profile-related settings, you could have: `profile_h` for the headline, `profile_desc` for the description and `profile_name` for the name. You can then access the returned settings *without the prefix*. In PHP you could simply do: 
 <pre>&lt;?php $profile = return_setting_group('theme', 'profile'); 
  echo '&lt;h1>' . $profile['name'] . '&lt;h1>';
  echo '&lt;h3>' . $profile['h'] . '&lt;/h3>';
  echo '&lt;p>' . $profile['desc'] . '&lt;/p>'; ?>
 </pre>
-###Some PHP you should know
+#### Some PHP you should know
 As soon as you need to do some more advanced stuff (like in the sections Intermediate and Advanced), you will sometimes need to pre-process the output of a setting. In that case, some of the most useful PHP functions to know are:
 
 * `echo($string)` - Outputs the given string.
@@ -379,8 +374,19 @@ As soon as you need to do some more advanced stuff (like in the sections Interme
 * `date($format[, $timestamp])` - Returns a date in the specified `$format`. Useful for blog posts/ footer copyright/ event dates.
 * `substr($string, $start, $length)` - Subtracts a part of a string starting at `$start` and ending at `$start + $length`. Useful for eg. post excerpts
 
+#### Considering the theme *variables*
+First we need to consider which settings will be adjustable in the template. For inspiration, you could have a look at [Tumblr theme options](http://scaffold.tumblr.com/options/), ThemeForest Wordpress' [Select options](http://i.imgur.com/1kEkKAu.png), or even [Blogger template options](http://2.bp.blogspot.com/-5o8ExgEBbVk/TzYiXNXleDI/AAAAAAAAFig/38Mcn18TVog/s1600/Change%2Bpost%2Btitle%2Bcolor%2Bin%2BBlogger%2Btemplates.png). Generally, you will want to provide settings in three four different sections: 
+
+1. **Styling**: Providing users the ability to modify theme colors, fonts and other styles without having to dig into your template, and with the option to change them over time.
+2. **Output**: Providing users the ability to place content in fixed theme positions   (like footer content, contact details, etc.) without having to dig into your template.
+3. **Data**: Providing users the ability to include/ turn off certain parts of the template, like a social media widget, or whether or not to show the author name under blog posts.
+4. **Meta-settings**: Primarily meant for you, the developer, and usually set to `locked`/`hidden` in the interface, to facilitate version checking, include credits and links, and fixed information.
+
+<a name="basic"></a>
+### Basic ###
+
 <a name="outputting-text-and-html-content"></a>
-###Outputting text and HTML content
+#### Outputting text and HTML content ####
 
 ###### SETTINGS
 <table style="border-collapse: collapse;">
@@ -433,7 +439,8 @@ Outputting content is the most basic functionality of GS Custom Settings. In the
 You may also want to let the user decide which HTML content should be outputted, for example to **highlight** a part of the phrase, or to customize, eg sidebar widget content. The `textarea` or `text` settings may contain HTML. As such, if you had a  `textarea` setting `sidebar_html`, you could do the following:
 <pre>&lt;aside>&lt;?php get_setting('theme', 'sidebar_html'); ?>&lt;/aside></pre>
 
-###Show-/hiding content
+<a name="show-hiding-content"></a>
+####Show-/hiding content
 ###### SETTINGS
 <table style="border-collapse: collapse;">
  <thead>
@@ -473,7 +480,8 @@ If the setting output does have a container element, you need to check whether i
 <pre>&lt;?php if (return_setting('theme', 'profile_img')) { ?>
   &lt;div id="profile-img">&lt;?php get_setting('theme', 'profile_img'); ?>&lt;div>
 &lt;?php } ?></pre>
-###Styling: allowing custom CSS
+<a name="allowing-custom-css"></a>
+####Styling: allowing custom CSS
 ###### SETTINGS
 <table style="border-collapse: collapse;">
  <thead>
@@ -498,7 +506,8 @@ Custom CSS is the easiest way to provide users a way to change the visual style 
  &lt;?php get_setting('theme', 'custom_css'); ?>
 &lt;/style>
 </pre>
-###Styling: Tweakable fonts and colors
+<a name="tweak-fonts-and-colors"></a>
+####Styling: Tweakable fonts and colors
 ######SETTINGS
 
 <table style="border-collapse: collapse;">
@@ -570,7 +579,8 @@ The colors take any valid CSS colors (color name, HEX, RGB, HSL or RGBA). You wo
   &lt;?php get_setting('theme', 'custom_css'); ?&gt;
 &lt;/style&gt;</pre>
 
-###Styling: multiple options
+<a name="multiple-options"></a>
+#### Styling: multiple options
 ###### SETTINGS
 <table style="border-collapse: collapse;">
  <thead>
@@ -689,7 +699,14 @@ You might also want to output some of these settings, for example in the site fo
   v.&lt;?php get_setting('theme','version'); ?>by 
   &lt;a href=&quot;&lt;?php get_setting('theme', 'author_url');?&gt;&quot;&gt;&lt;?php get_setting('theme', 'author'); ?&gt;&lt;/a&gt;
 &lt;/footer></pre>
-###Styling: Enabling Google Webfonts
+
+**Note:** With GS Custom Settings v0.4+ you might want to add a `version` property in the `tab` object in your `settings.json` file. GS Custom Settings will automatically update your settings (if there are any changes) when a user installs an updated version of your theme. $
+
+<a name="intermediate"></a>
+### Intermediate
+
+<a name="google-web-fonts"></a>
+####Styling: Enabling Google Webfonts
 ######SETTINGS
 
 <table style="border-collapse: collapse;">
@@ -743,13 +760,14 @@ if (return_setting('theme', 'css_hfont') &gt; 13) { ?&gt;
 &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; 
       href=&quot;http://fonts.googleapis.com/css?family=&lt;?php echo $t_pfont;?&gt;&quot;&gt;
 &lt;?php } ?&gt;</pre>
-###Third party embeds (maps, social feeds,..)
+
+<a name="third-party-embeds"></a>
+#### Third party embeds (maps, social feeds,..)
+
 This setup will enable the user to:
 
 * embed a Twitter profile feed from the UI
 * embed a static Google Map with basic options from the UI
-
-social feeds, Google Drive documents.)
 
 <table style="border-collapse: collapse;">
  <thead>
@@ -817,7 +835,9 @@ if ($gmap['on']) {
    $gmap_url .= urlencode(return_setting('theme', 'contact_address')); ?>
 &lt;img src="https://maps.googleapis.com/maps/api/staticmap? &lt;?php echo $gmap_url; ?>">
 &lt;?php } ?></pre>
-###Third party services (analytics, comments,..)
+
+<a name="third-party-services"></a>
+#### Third party services (analytics, comments,..)
 The following code allows the user to:
 
 * Set Google Analytics (both classic and universal account types) from the UI with the GA ID.
@@ -880,6 +900,7 @@ In the code we:
 3. output the correct tracking codes from the [Google Analytics devguide page](https://developers.google.com/analytics/devguides/collection/web/) in an `if else` clause. 
 4. For *classic* analytics, set `_gaq.push(['_setAccount', '<?php get_setting('theme','data_ga'); ?>']); `, and for *universal analytics*, set `ga('create', '<?php get_setting('theme', 'data_ga'); ?>', 'auto');`
 
+<a name="social-media-links"></a>
 ###Social media links
 The following setup allows the user to:
 
@@ -972,7 +993,9 @@ In the code, we:
    1. `return_setting('theme', 'social_' . $si)` if the value of the `select` is not 0 (='None')
    2. `return_setting('theme', 'social_' . $si . '_url')` if the value of the `text` (link) is not empty.
 4. output the link in the `href` attribute, and the name of the social network as `fa-<name>` (for fontAwesome) <code><?php echo strtolower($social&#95;opts[return&#95;setting('theme', 'social_' . $si)]); ?></code> <br>`strtolower` simply converts eg 'Facebook' to 'facebook', and `$social_opts` is a numeric array, while `return_setting('theme', 'social_' . $si)` is an index, so doing the above is the same as `$social_opts[x]` which holds the name of a social network. 
-###Meta: date format - hidden settings for key-value pairs
+
+<a name="key-value-pairs"></a>
+#### Meta: date format - hidden settings for key-value pairs
 The following code allows the user to:
 
 * Set Google Analytics (both classic and universal account types) from the UI with the GA ID.

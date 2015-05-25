@@ -1,10 +1,10 @@
 ---
-title: Tutorial - Building a theme with GS Custom Settings
+title: Tutorial - Building a basic theme with GS Custom Settings
 category: CMS
 img: http://i.imgur.com/HzihL7G.png
 tags: GetSimple PHP plugin theme
 layout: blog-post
-description: Example use cases for the GetSimple KO Site settings plugin
+description: Example use cases for the GetSimple Custom Settings plugin
 intro: |
   This article demonstrates the functionality of GS Custom Settings by replacing the standard Innovation Theme plugin from Getsimple with an i18N-enabled custom settings version, and converting the theme.
 ---
