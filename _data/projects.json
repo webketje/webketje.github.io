@@ -1,3 +1,6 @@
 [{"name": "GS Custom Settings plugin", 
   "link": "/projects/gs-custom-settings/",
-  "descr": ["GS Custom Settings is a plugin for GetSimple CMS which lets webmasters/ site managers, theme and plugin developers implement and use their own custom settings for output, configuration, and cross-plugin/-theme communication. The plugin offers 8 different types of input to choose from, 3 access levels, per-user editing permission, and an easy UI to create, import and export the settings. GS Custom Settings is built on Knockout JS and uses JSON for data storage."]}]
+  "descr": ["GS Custom Settings is a plugin for GetSimple CMS which lets webmasters/ site managers, theme and plugin developers implement and use their own custom settings for output, configuration, and cross-plugin/-theme communication. The plugin offers 8 different types of input to choose from, 3 access levels, per-user editing permission, and an easy UI to create, import and export the settings. GS Custom Settings is built on Knockout JS and uses JSON for data storage."]},
+ {"name": "GS Blog Import",
+  "link": "/projects/gs-blog-import",
+  "descr": "GS Blog import is a client-side GetSimple CMS utility which converts (currently only Wordpress) blog export files to GS pages. The utility supports multiple options for converting the file (strip whitespace, shortcodes, set properties, etc.) and is built in pure Javascript. It uses the DOMParser API, FileSaver.js and JSzip libraries for exporting."}]

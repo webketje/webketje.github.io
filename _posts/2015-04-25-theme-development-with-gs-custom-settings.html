@@ -368,9 +368,10 @@ The <code>radio</code> setting <code>css_theme</code> has 3 options: square, rou
 </style>
 <div class="<?php get_setting('theme', 'profile_img_size');?>"><img src="/my/image.jpeg"></div>
 {% endraw %}{% endhighlight %}
-The theme will allow users to <code>&lt;select&gt;</code> one of +- 20 different fonts, including a couple from Google fonts. 
-<p>If you limit your font options to te <a href="http://www.cssfontstack.com/">websafe fonts</a>, adding 2 extra <code>font-family</code> lines to the dynamic CSS like below will suffice. Generally this should also be fine if you included custom fonts in your CSS with <code>@font-face</code>. However, <a href="#google-web-fonts">read on for Google webfonts</a>.
-<img src="../assets/posts/gscs_advanced_theming/themetut_font_options.png"></p>
+
+<p>The theme will allow users to <code>&lt;select&gt;</code> one of +- 20 different fonts, including a couple from Google fonts. </p>
+<img src="/assets/posts/gscs_advanced_theming/themetut_font_options.png">
+<p>If you limit your font options to te <a href="http://www.cssfontstack.com/">websafe fonts</a>, adding 2 extra <code>font-family</code> lines to the dynamic CSS like below will suffice. Generally this should also be fine if you included custom fonts in your CSS with <code>@font-face</code>. However, <a href="#google-web-fonts">read on for Google webfonts</a>.</p>
 {% highlight php %}{% raw %}
 h1,h2,h3,h4,h5,h6, #site-nav a {
   color: <?php get_setting('theme', 'css_hcolor'); ?>; 
@@ -468,7 +469,7 @@ body, body p, body ul, body ol, body blockquote {
 <h5>DISCUSSION</h5>
 <p>But you could also give your users some more options by providing <em>Google Webfonts</em>, and we need to add a couple of extra lines of code to the <code>&lt;head&gt;</code> of our page (above the <code>&lt;style&gt;</code> tag) to include them <strong>only if</strong> the user has selected one; because they impact loading times negatively. For this purpose, we need to slightly <strong>preprocess</strong> them with PHP. Google expects an API call like this:</p>
 
-{% highlight php %}{% raw %}
+{% highlight css %}{% raw %}
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=font+name">
 {% endraw %}{% endhighlight %}
 
