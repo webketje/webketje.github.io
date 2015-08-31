@@ -1,21 +1,21 @@
 ---
 title: Projects
-layout: base
+layout: list
 type: list
 published: true
 widgets: smallprojects
 order: 2
 ---
 {% for project in site.data.projects %}
-<li class="list-item">
-	<h3><a href="{{project.link}}">{{ project.name }}</a></h3>
-	{% if project.descr %}<p>{{ project.descr }}</p>{% endif %}
-	{% if project.links %}
-	<ul>
-	{% for link in project.links %}
-		<li><a href="{{link.url}}">{{link.title}}</a></li>
-	{% endfor %}
-	</ul>
+<li class="list-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/CreativeWork">
+	<h3 itemprop="name">
+		<a href="{{project.link}}" itemprop="url">{{ project.name }}</a>
+	</h3>
+	{% if project.media %}
+		{{ project.media }}
+	{% endif %}
+	{% if project.descr %}
+		<p itemprop="description">{{ project.descr }}</p>
 	{% endif %}
 </li>
 {% endfor %}
