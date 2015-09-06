@@ -3,7 +3,7 @@
 	<head>
 		{% include head.html %}
 	</head>
-	<body id="{{ page.title | downcase }}">
+	<body id="{{ page.title | downcase }}" itemscope itemtype="http://schema.org/WebPage">
 		<div id="wrapper">
 			{% include header.html %}
 			<h1 id="page-title">{{ page.title }}</h1>

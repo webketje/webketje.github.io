@@ -4,20 +4,7 @@
 	</figure>
 	<div>
 		<h2 id="site-title">'t Webketje</h2>
-		<nav id="site-nav">
-			{% for order in (1..10) %}
-			{% for page in site.pages %}
-			{% if page.order > -1 %}
-			{% if page.order == order %}
-			{% if page.customUrl %}
-			<a href="{{ page.customUrl }}">{{ page.title }}</a> /
-			{% else %}
-			<a href="{{ page.url }}">{{ page.title }}</a> /
-			{% endif %} 
-			{% endif %}
-			{% endif %}
-			{% endfor %}
-			{% endfor %}
+		<nav id="site-nav">{% for order in (1..10) %}{% for page in site.pages %}{% if page.order > -1 %}{% if page.order == order %}{% if page.customUrl %}<a href="{{ page.customUrl }}">{{ page.title }}</a> / {% else %} <a href="{{ page.url | remove: "index.html" }}">{{ page.title }}</a> / {% endif %}{% endif %}{% endif %}{% endfor %}{% endfor %}
 		</nav>
 	</div>
 	<nav id="site-social-media">

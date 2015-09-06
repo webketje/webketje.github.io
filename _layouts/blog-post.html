@@ -6,13 +6,13 @@
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:description" content="{{ page.intro }}">
 		<meta name="twitter:title" content="{{ page.title }}">
-		<meta name="twitter:url" content="http://webketje.github.io/{{ page.url }}">
+		<meta name="twitter:url" content="http://webketje.com{{ page.url }}">
 		<meta name="twitter:site" content="'t Webketje">
 		<!-- FB OpenGraph tags -->
 		<meta name="og:sitename" content="'t Webketje">
 		<meta name="og:description" content="{{ page.intro }}">
 		<meta name="og:title" content="{{ page.title }}">
-		<meta name="og:url" content="{{ site.url }}{{ page.url }}">
+		<meta name="og:url" content="http://webketje.com{{ page.url }}">
 		<meta name="og:image" content="">
 	</head>
 	<body class="blog-post">
@@ -45,8 +45,10 @@
 								<span class="post-year">{{ page.date | date: "%Y" }}</span>
 							</time>
 						</div>
-						<!-- Go to www.addthis.com/dashboard to customize your tools -->
-						<div class="addthis_native_toolbox"></div>
+						<a href="https://twitter.com/share" class="twitter-share-button" data-via="Tyblitz" data-count="none">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+<script type="IN/Share"></script>
 						<hr>
 						{% if page.intro %}
 							<p itemprop="description">{{ page.intro }}</p>
@@ -128,8 +130,6 @@
 		var head = document.getElementsByTagName('head')[0];
 
 	</script>
-	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53aaa38d4c8bd98c"></script>
-	
-		{% include footer.html %} 
+	{% include footer.html %} 
 	</body>
 </html>

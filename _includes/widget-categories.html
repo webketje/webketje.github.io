@@ -1,6 +1,6 @@
 <strong>Categories</strong>
 <ul>
 {% for cat in site.categories %}
-	<li><a href="{{site.url}}/search?category={{ cat || first }}">{{ cat || first }}</a></li>
+	<li><a href="{{site.url}}/search?category={{ cat | first }}">{{ cat | first }}</a></li>
 {% endfor %}
 </ul>

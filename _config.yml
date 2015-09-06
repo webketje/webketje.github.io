@@ -1,13 +1,14 @@
-github: [Repository metadata]
-timezone: Europe/Brussels
-encoding: utf-8
-title: webketje
-permalink: none
-author: Kevin Van Lierde
-highlighter: pygments
-markdown: kramdown
+github:       [Repository metadata]
+# baseurl:      http://webketje.com
+timezone:     Europe/Brussels
+encoding:     utf-8
+title:        Webketje
+permalink:    none
+author:       Kevin Van Lierde
+highlighter:  pygments
+markdown:     kramdown
 # Outputting
-permalink: pretty
+permalink:    /:categories/:title
 # defaults:
 # -
 #    scope:
