@@ -98,7 +98,7 @@ register_plugin('gsconfig_ui',    # plugin ID
   i18n_r('PLUGIN_NAME'),          # Title of plugin
   '0.1',                          # Version of plugin
   'Kevin Van Lierde',             # Author of plugin
-  'http://webketje.github.io',    # Author URL
+  'https://webketje.github.io',    # Author URL
   i18n_r('PLUGIN_DESCR'),         # Plugin Description
   'plugins'                       # Page type of plugin
 );

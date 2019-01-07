@@ -12,7 +12,7 @@ items: [HTML, test]
 	<body id="search">
 		<div id="wrapper">
 			{% include header.html %}
-			<div id="main">
+			<main>
 				<p>Displaying all posts for 
 					<span id="search-label"></span>:
 					<span id="search-term"></span>
@@ -24,7 +24,7 @@ items: [HTML, test]
 				</ul>
 			</div>
 			{% include sidebar.html widgets="search,categories,tags" %}
-		</div>
+		</main>
 		{% include footer.html %}
 		<script type="text/javascript">
 			{% assign counter = 0 %}

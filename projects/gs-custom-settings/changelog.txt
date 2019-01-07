@@ -82,7 +82,7 @@ Bugfixes:
 
 New:
   - Fully translatable, (almost) no hard-coded values anymore
-  - Github repo at http://webketje.github.io/gs-custom-settings (issue tracking)
+  - Github repo at https://webketje.github.io/gs-custom-settings (issue tracking)
   - Complete UI overhaul, including:
     - tab/setting actions moved to one toolbar to unclutter the UI
     - opening a tab in edit mode is the same as in manage mode (used to be through icon)

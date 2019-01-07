@@ -2,7 +2,7 @@
 title: 3 weeks as a webmaster/developer at Mango-IS
 category: personal
 tags: wordpress git foundation bootstrap sass mango-is
-layout: blog-post
+layout: article
 published: true
 description: Takeaways of a short job as webmaster\dev. at Mango-IS. Learnings about Wordpress, Git, Foundation and SASS
 intro: |

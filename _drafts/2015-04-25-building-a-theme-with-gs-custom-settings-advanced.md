@@ -1,16 +1,16 @@
 ---
 title: Building a theme with GS Custom Settings - advanced
 category: CMS
-img: http://i.imgur.com/HzihL7G.png
+img: https://i.imgur.com/HzihL7G.png
 tags: GetSimple PHP plugin theme
-layout: blog-post
+layout: article
 published: true
 description: Example use cases for the GetSimple KO Site settings plugin
 intro: |
   This article demonstrates the functionality of GS Custom Settings by converting the standard Innovation Theme from Getsimple to an an i18N-enabled custom settings version.
 ---
 
-In this tutorial, we'll be building a theme which will demonstrate all the features in GS Custom Settings, combined with the power of the [I18n plugin](), and 3 different templates: page, blog, and contact. The theme essentially mimics [Todd Motto's Github blog](http://www.toddmotto.com). If you're impatient, or rather learn by looking at the code, you can [download this theme]() at the bottom of the article.
+In this tutorial, we'll be building a theme which will demonstrate all the features in GS Custom Settings, combined with the power of the [I18n plugin](), and 3 different templates: page, blog, and contact. The theme essentially mimics [Todd Motto's Github blog](https://www.toddmotto.com). If you're impatient, or rather learn by looking at the code, you can [download this theme]() at the bottom of the article.
 ###Table of contents
 
 1. [Considering the variables in the theme](#)
@@ -115,7 +115,7 @@ In our case we will provide the following settings:
     <td>Headline</td>
     <td>profile_h</td>
     <td>text</td>
-    <td>Default: Hi, I'm &lt;a href="http://twitter.com/tyblitz">@Tyblitz&lt;/a>!</td>
+    <td>Default: Hi, I'm &lt;a href="https://twitter.com/webketje">@webketje&lt;/a>!</td>
   </tr>
   <tr>
     <td>Lead paragraph</td>
@@ -248,7 +248,7 @@ The `<head>` tag is pretty straightforward too, nothing different from regular G
   &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lt;?php get_theme_url(); ?&gt;/res/font-awesome.min.css&quot;&gt;
   &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lt;?php get_theme_url(); ?&gt;/res/style.css&quot;&gt;
   &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lt;?php get_theme_url(); ?&gt;/res/uikit.css&quot;&gt;
-  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href='http://fonts.googleapis.com/css?family=Open+Sans'&gt;
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href='https://fonts.googleapis.com/css?family=Open+Sans'&gt;
   &lt;script src=&quot;&lt;?php get_theme_url(); ?&gt;/res/html5shiv.min.js&quot;&gt;&lt;/script&gt;</pre>
 
 ####Checking settings for *falsey* values
@@ -291,7 +291,7 @@ For the blog, we add a function in the `functions.php` file because it uses `i18
       &lt;time datetime=&quot;&lt;?php echo date('F jS, Y' , $item-&gt;pubDate); ?&gt;&quot;&gt;&lt;?php echo date('F jS, Y' , $item-&gt;pubDate); ?&gt;&lt;/time&gt;
     &lt;/div&gt;
     &lt;?php if ($show_images) { ?&gt;
-      &lt;img src=&quot;http://placehold.it/192x128&quot;&gt;
+      &lt;img src=&quot;https://placehold.it/192x128&quot;&gt;
     &lt;?php } 
     if ($excerpt_length)
       echo '&lt;p class=&quot;uk-article-lead&quot;&gt;' . substr(strip_tags($item-&gt;content), 0, 50) . '&lt;/p&gt;';
@@ -309,7 +309,7 @@ For the blog, we add a function in the `functions.php` file because it uses `i18
 
 ###Further techniques
 
-Sometimes you might want to have key-value pairs, like for the blog's date format. In the UI you want to display date formats as human-readable, like so: *20/02/2015*, or *April 20, 2015*. But PHP only understands formats as listed [in the docs](http://php.net/manual/en/function.date.php). Given the setting `blog_date_format`, the 2 previou In that case you have 2 options: 
+Sometimes you might want to have key-value pairs, like for the blog's date format. In the UI you want to display date formats as human-readable, like so: *20/02/2015*, or *April 20, 2015*. But PHP only understands formats as listed [in the docs](https://php.net/manual/en/function.date.php). Given the setting `blog_date_format`, the 2 previou In that case you have 2 options: 
 
 1. You map the options to other 
 
@@ -342,9 +342,9 @@ This tutorial will focus on how to integrate GS Custom Settings in theme develop
 ### Preface
 #### Best practices
 ##### Themes with GS Custom Settings
-If you use GS Custom Settings for a theme, make sure to mention in the theme description in the [GS Extend repo](http://get-simple.info/extend/) that your theme *requires* installing the Custom settings plugin first, or wrap the entire HTML in an `if` clause, and output a message *'This theme requires GS Custom Settings to work'*, else you will get a lot of *undefined function* errors. Here's a sample snippet that you can directly copy paste in your theme's Extend description:
-<pre>This theme requires [GS Custom Settings](http://get-simple.info/extend/plugin/gs-custom-settings/913/).</pre> and one for in the forum threads:
-<pre>This theme requires [url=http://get-simple.info/extend/plugin/gs-custom-settings/913/]GS Custom Settings[/url].</pre>
+If you use GS Custom Settings for a theme, make sure to mention in the theme description in the [GS Extend repo](https://get-simple.info/extend/) that your theme *requires* installing the Custom settings plugin first, or wrap the entire HTML in an `if` clause, and output a message *'This theme requires GS Custom Settings to work'*, else you will get a lot of *undefined function* errors. Here's a sample snippet that you can directly copy paste in your theme's Extend description:
+<pre>This theme requires [GS Custom Settings](https://get-simple.info/extend/plugin/gs-custom-settings/913/).</pre> and one for in the forum threads:
+<pre>This theme requires [url=https://get-simple.info/extend/plugin/gs-custom-settings/913/]GS Custom Settings[/url].</pre>
 ##### Empty text settings
 Often you need to check whether a setting is valid. When the only check you need is whether a text setting is empty, you can avoid creating a checkbox to 'enable' the setting (eg. a social media link) by  checking the string length of the setting's value. When it is an empty string, its length is 0, so PHP will evaluate to `false` when you call `return_setting('theme', 'myTextSetting')`. In the setting's description, simply write something like *"Leave empty to disable"*. For example, the `text` setting `social_fb` could be outputted as follows:
 <pre>&lt;?php if (return_setting('theme', 'social_fb'))
@@ -375,7 +375,7 @@ As soon as you need to do some more advanced stuff (like in the sections Interme
 * `substr($string, $start, $length)` - Subtracts a part of a string starting at `$start` and ending at `$start + $length`. Useful for eg. post excerpts
 
 #### Considering the theme *variables*
-First we need to consider which settings will be adjustable in the template. For inspiration, you could have a look at [Tumblr theme options](http://scaffold.tumblr.com/options/), ThemeForest Wordpress' [Select options](http://i.imgur.com/1kEkKAu.png), or even [Blogger template options](http://2.bp.blogspot.com/-5o8ExgEBbVk/TzYiXNXleDI/AAAAAAAAFig/38Mcn18TVog/s1600/Change%2Bpost%2Btitle%2Bcolor%2Bin%2BBlogger%2Btemplates.png). Generally, you will want to provide settings in three four different sections: 
+First we need to consider which settings will be adjustable in the template. For inspiration, you could have a look at [Tumblr theme options](https://scaffold.tumblr.com/options/), ThemeForest Wordpress' [Select options](https://i.imgur.com/1kEkKAu.png), or even [Blogger template options](https://2.bp.blogspot.com/-5o8ExgEBbVk/TzYiXNXleDI/AAAAAAAAFig/38Mcn18TVog/s1600/Change%2Bpost%2Btitle%2Bcolor%2Bin%2BBlogger%2Btemplates.png). Generally, you will want to provide settings in three four different sections: 
 
 1. **Styling**: Providing users the ability to modify theme colors, fonts and other styles without having to dig into your template, and with the option to change them over time.
 2. **Output**: Providing users the ability to place content in fixed theme positions   (like footer content, contact details, etc.) without having to dig into your template.
@@ -733,12 +733,12 @@ You might also want to output some of these settings, for example in the site fo
 ######DISCUSSION
 But you could also give your users some more options by providing *Google Webfonts*, and we need to add a couple of extra lines of code to the `head.inc.php` file (above the `<style>` tag) to include them **only if** the user has selected one because they impact loading times negatively. For this purpose, we need to slightly **preprocess** them with PHP. Google expects an API call like this:
 <pre>
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://fonts.googleapis.com/css?family=font+name">
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://fonts.googleapis.com/css?family=font+name">
 </pre>
 We only want the first font in the option, and we need to replace space characters with `+`, It is good to know the following 2 PHP functions:
 
-* [`explode($delimiter, $string)`](http://php.net/manual/en/function.explode.php)
-* [`str_replace($search, $replacement, $string)`](http://php.net/manual/en/function.str-replace.php)
+* [`explode($delimiter, $string)`](https://php.net/manual/en/function.explode.php)
+* [`str_replace($search, $replacement, $string)`](https://php.net/manual/en/function.str-replace.php)
 
 In the code below, we *(1)* create 2 PHP vars `$t_hfont` (headings font) and `$t_pfont` (paragraph font), *(2)* get the setting with a call to `get_setting` and the third parameter as `FALSE` to output the *display value* of a setting (if you did `return_setting` you would get a number, because the raw value of option settings is the index of the selected option).. *(3)* With `explode` we split the string into an array, then in that string *(4)* we replace space characters with a **+** via `str_replace`. 
 
@@ -755,10 +755,10 @@ $t_pfont = str_replace(' ', '+', $t_pfont[0]);
 
 if (return_setting('theme', 'css_hfont') &gt; 13) { ?&gt;
 &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; 
-      href=&quot;http://fonts.googleapis.com/css?family=&lt;?php echo $t_hfont;?&gt;&quot;&gt;
+      href=&quot;https://fonts.googleapis.com/css?family=&lt;?php echo $t_hfont;?&gt;&quot;&gt;
 &lt;?php } if (return_setting('theme', 'css_pfont') &gt; 13) { ?&gt;
 &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; 
-      href=&quot;http://fonts.googleapis.com/css?family=&lt;?php echo $t_pfont;?&gt;&quot;&gt;
+      href=&quot;https://fonts.googleapis.com/css?family=&lt;?php echo $t_pfont;?&gt;&quot;&gt;
 &lt;?php } ?&gt;</pre>
 
 <a name="third-party-embeds"></a>
@@ -818,7 +818,7 @@ Embedding a Twitter feed is as simple as copy pasting the code from the [dev gui
    data-widget-id=&quot;&lt;?php get_setting('theme', 'data_twttr_id'); ?>&quot;&gt;
 Tweets by @&lt;?php get_setting('theme', 'data_twttr_fd'); ?>&lt;/a&gt;
 &lt;script&gt;
-  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^https:/.test(d.location)?'http':'https';
   if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+&quot;://platform.twitter.com/widgets.js&quot;;
   fjs.parentNode.insertBefore(js,fjs);}}(document,&quot;script&quot;,&quot;twitter-wjs&quot;);
 &lt;/script&gt;&lt;?php } ?></pre>
@@ -865,7 +865,7 @@ The following code allows the user to:
  </tbody>
 </table>
 ######DISCUSSION
-Many third-party services (like mail forms, analytics trackers, comment systems) can be embedded via a Javascript API on the page. For this example, we will add [Google Analytics](http://analytics.google.com) and the popular [Disqus comment system]() to blog pages only. First copy paste the tracker codes: Google Analytics [has 2](https://developers.google.com/analytics/devguides/collection/web/). Instead of having another checkbox for the user to set, we can check it in the code because the tracking codes for universal and classic analytics are different.
+Many third-party services (like mail forms, analytics trackers, comment systems) can be embedded via a Javascript API on the page. For this example, we will add [Google Analytics](https://analytics.google.com) and the popular [Disqus comment system]() to blog pages only. First copy paste the tracker codes: Google Analytics [has 2](https://developers.google.com/analytics/devguides/collection/web/). Instead of having another checkbox for the user to set, we can check it in the code because the tracking codes for universal and classic analytics are different.
 
 <pre>&lt;?php if (return_setting('theme', 'data_ga')) { ?>
 &lt;script type=&quot;text/javascript&quot;&gt;
@@ -877,7 +877,7 @@ Many third-party services (like mail forms, analytics trackers, comment systems)
   _gaq.push(['_setAccount', '&lt;?php get_setting('theme','data_ga'); ?&gt;']); 
   _gaq.push(['_trackPageview']);
   (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
 
   &lt;?php } elseif ($ga_method === 'uni') { ?&gt;
@@ -971,8 +971,8 @@ The following setup allows the user to:
  </tbody>
 </table>
 ######DISCUSSION
-If your theme includes fixed social media providers (Facebook, Twitter, Google+ for example), you could simply use `text` settings for each one. But if you want to give the webmaster the *possiblility to choose the display order* of the social media, and give him/her more social media options, read on =). In this approach, there are 2 settings per social button: `social_x` defines which social network to choose for profile x, `social_x_url` holds the link. Basically every `social_x` `select` setting has +- 20 of the [FontAwesome brand icons](http://fortawesome.github.io/Font-Awesome/icons/#brand) as options, and an extra option 'None'.
-You might want to read up on PHP [for loops](http://php.net/manual/en/control-structures.for.php) and [conditional if](http://php.net/manual/en/control-structures.if.php) if you're not familiar.
+If your theme includes fixed social media providers (Facebook, Twitter, Google+ for example), you could simply use `text` settings for each one. But if you want to give the webmaster the *possiblility to choose the display order* of the social media, and give him/her more social media options, read on =). In this approach, there are 2 settings per social button: `social_x` defines which social network to choose for profile x, `social_x_url` holds the link. Basically every `social_x` `select` setting has +- 20 of the [FontAwesome brand icons](https://fortawesome.github.io/Font-Awesome/icons/#brand) as options, and an extra option 'None'.
+You might want to read up on PHP [for loops](https://php.net/manual/en/control-structures.for.php) and [conditional if](https://php.net/manual/en/control-structures.if.php) if you're not familiar.
 
 <pre>&lt;?php $social_opts = return_setting('theme', 'social_1', 'options'); 
 ?&gt;

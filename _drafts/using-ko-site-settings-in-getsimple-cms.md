@@ -2,7 +2,7 @@
 title: Using KO Site Settings in GetSimple CMS
 category: CMS
 tags: GetSimple PHP plugin
-layout: blog-post
+layout: article
 description: Example use cases for the GetSimple KO Site settings plugin
 intro: |
   This article shows you how the KO Site Settings plugin can be configured and used in GetSimple CMS. Following its original intent, the article will demonstrate a variety of ways in which you can create components whose output depends (among other plugins) on KO settings.

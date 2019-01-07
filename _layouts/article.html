@@ -6,13 +6,13 @@
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:description" content="{{ page.intro }}">
 		<meta name="twitter:title" content="{{ page.title }}">
-		<meta name="twitter:url" content="http://webketje.com{{ page.url }}">
+		<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
 		<meta name="twitter:site" content="'t Webketje">
 		<!-- FB OpenGraph tags -->
 		<meta name="og:sitename" content="'t Webketje">
 		<meta name="og:description" content="{{ page.intro }}">
 		<meta name="og:title" content="{{ page.title }}">
-		<meta name="og:url" content="http://webketje.com{{ page.url }}">
+		<meta name="og:url" content="{{ site.url }}{{ page.url }}">
 		<meta name="og:image" content="">
 	</head>
 	<body class="blog-post">
@@ -28,12 +28,8 @@
 		</script>
 		<div id="wrapper">
 		{% include header.html %}
-		<div id="main">
-			<article itemscope="" itemtype="http://schema.org/BlogPosting" class="list-item post">
-				<figure id="coffee-cup">
-					<img src="{{site.url}}/assets/img/coffee-cup4.png" alt="A drawing of a delicious coffee cup by lineandwash.blogspot.be">
-					<figcaption><small>Drawing of a delicious coffee cup by <cite><a href="http://lineandwash.blogspot.be">LineAndWash.blogspot.be</a></cite></small></figcaption>
-				</figure>
+		<main>
+			<article itemscope="" itemtype="https://schema.org/BlogPosting" class="list-item post">
 				<section itemprop="articleBody">
 					<header>
 						<h1 id="page-title">{{ page.title }}</h1>
@@ -45,7 +41,7 @@
 								<span class="post-year">{{ page.date | date: "%Y" }}</span>
 							</time>
 						</div>
-						<a href="https://twitter.com/share" class="twitter-share-button" data-via="Tyblitz" data-count="none">Tweet</a>
+						<a href="https://twitter.com/share" class="twitter-share-button" data-via="webketje" data-count="none">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
 <script type="IN/Share"></script>
@@ -72,7 +68,7 @@
 						</div>
 						<div class="addthis_native_toolbox"></div>
 					</section>
-					<section id="comments" itemprop="comment" itemtype="http://schema.org/UserComments" itemscope>
+					<section id="comments" itemprop="comment" itemtype="https://schema.org/UserComments" itemscope>
 			 			<div id="disqus_thread"></div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -84,12 +80,12 @@
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
     </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 					</section>
 				</footer>
 			</article>
-		</div>
+		</main>
 		{% include sidebar.html widgets="recent,categories,tags,archives" %}
 		<script type="text/javascript">
 		// code select event

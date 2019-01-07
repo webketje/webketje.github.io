@@ -12,8 +12,8 @@ order: -1
 	<header>
 		<h2 id="introduction">Introduction</h2>
 	</header>
-	<p>GS Custom Settings is a plugin for <a href="http://get-simple.info/">GetSimple CMS </a>which lets webmasters/ site managers, theme and plugin developers implement and use their own custom settings for output, configuration, and cross-plugin/-theme communication. It's a bit like the <a href="http://get-simple.info/extend/plugin/customfields/22/">custom fields plugin</a>, but not for pages. The plugin offers 8 different types of input to choose from, 3 access levels, per-user editing permission, and an easy UI to create, import and export the settings. Once activated, a new tab 'Site', is added, where one will find all settings created with the plugin, grouped by sidebar tab. View a screenshot of the UI in <a href="http://i.imgur.com/w0yV3ez.png">Manage mode</a> or <a href="http://i.imgur.com/NuQ2ezN.png">Edit mode</a></p>
-	<p>The plugin is built on <a href="http://knockoutjs.com">Knockout JS</a> and handles almost all logic client-side, except for plugin registration, hooks, path resolving, and handling server requests. Data is sent and saved through AJAX. Furthermore, the plugin provides an interactive notification service and a JS localization system. The language file for this plugin is also in JSON format.</p><p>GS Custom Settings is compatible with <strong>PHP 5.2+</strong> (might work with PHP 5+, untested) and <strong>all browsers except Internet Explorer 8 and older</strong> Managing settings also works in IE8 (editing doesn't). Some features might not work on some browsers. See <a href="#known-issues">Known Issues</a> for more information. If you find <strong>bugs</strong> or have <strong>feature requests or questions</strong>, feel free to open a new issue in the <a href="https://github.com/webketje/GS-Custom-Settings/">Github repo</a> or write a post on the <a href="http://get-simple.info/forums/showthread.php?tid=7099">GS support forum</a>.</p>
+	<p>GS Custom Settings is a plugin for <a href="https://get-simple.info/">GetSimple CMS </a>which lets webmasters/ site managers, theme and plugin developers implement and use their own custom settings for output, configuration, and cross-plugin/-theme communication. It's a bit like the <a href="https://get-simple.info/extend/plugin/customfields/22/">custom fields plugin</a>, but not for pages. The plugin offers 8 different types of input to choose from, 3 access levels, per-user editing permission, and an easy UI to create, import and export the settings. Once activated, a new tab 'Site', is added, where one will find all settings created with the plugin, grouped by sidebar tab. View a screenshot of the UI in <a href="https://i.imgur.com/w0yV3ez.png">Manage mode</a> or <a href="https://i.imgur.com/NuQ2ezN.png">Edit mode</a></p>
+	<p>The plugin is built on <a href="https://knockoutjs.com">Knockout JS</a> and handles almost all logic client-side, except for plugin registration, hooks, path resolving, and handling server requests. Data is sent and saved through AJAX. Furthermore, the plugin provides an interactive notification service and a JS localization system. The language file for this plugin is also in JSON format.</p><p>GS Custom Settings is compatible with <strong>PHP 5.2+</strong> (might work with PHP 5+, untested) and <strong>all browsers except Internet Explorer 8 and older</strong> Managing settings also works in IE8 (editing doesn't). Some features might not work on some browsers. See <a href="#known-issues">Known Issues</a> for more information. If you find <strong>bugs</strong> or have <strong>feature requests or questions</strong>, feel free to open a new issue in the <a href="https://github.com/webketje/GS-Custom-Settings/">Github repo</a> or write a post on the <a href="https://get-simple.info/forums/showthread.php?tid=7099">GS support forum</a>.</p>
 </section>
 <section>
 	<header>
@@ -40,7 +40,7 @@ order: -1
 	<header>
 		<h2 id="download-install-upgrade">Download, install, upgrade</h2>
 	</header>
-	<p>Download the latest (or other) version(s) of this plugin on the GetSimple Extend <a href="http://get-simple.info/extend/plugin/ko-site-settings/913/">Plugin page</a>. The latest version of this plugin is <strong>0.3</strong>.
+	<p>Download the latest (or other) version(s) of this plugin on the GetSimple Extend <a href="https://get-simple.info/extend/plugin/ko-site-settings/913/">Plugin page</a>. The latest version of this plugin is <strong>0.3</strong>.
 	To install, simply unzip to GS plugins directory.
 	</p>
 </section>
@@ -58,7 +58,7 @@ order: -1
 	</section>
 	<section>
 		<h3 id="editing-tabs">Editing tabs</h3>
-		<img style="float: right; margin-left: 20px;" src="http://i.imgur.com/dmuLukB.gif">
+		<img style="float: right; margin-left: 20px;" src="https://i.imgur.com/dmuLukB.gif">
 		<p>Editing tabs is pretty self-explanatory (see image to the right). Click the tab label to edit it, and click the icons to complete any of the following actions, from left to right: </p>
 		<ol>
 			<li>Add a new tab</li>
@@ -215,7 +215,7 @@ order: -1
 	</section>
 	<section>
 		<h3 id="restricting-editing-permission">Restricting editing permission (also with Multi User 1.8.2+)</h3>
-		<p>Go to <code>root/data/users/</code> and edit the XML file for the user you want to restrict editing permissions for. Simply add an XML node <code>&lt;KO_EDIT&gt;FALSE&lt;/KO_EDIT&gt;</code> and you're done. <code>TRUE</code> also works (to allow editing) but this is the default, so it doesn't really matter. As of v0.3, user permission can be set through Mike Henken's <a href="http://get-simple.info/extend/plugin/multi-user/133/">Multi User 1.8.2+</a> plugin. To do so, go to GS <kbd>Settings</kbd> tab, click on <kbd>User management</kbd>, and when you edit the user, in the <code>Custom Permissions</code> section, check GS Custom Settings <strong>to disable Edit access</strong>, and save.</p>
+		<p>Go to <code>root/data/users/</code> and edit the XML file for the user you want to restrict editing permissions for. Simply add an XML node <code>&lt;KO_EDIT&gt;FALSE&lt;/KO_EDIT&gt;</code> and you're done. <code>TRUE</code> also works (to allow editing) but this is the default, so it doesn't really matter. As of v0.3, user permission can be set through Mike Henken's <a href="https://get-simple.info/extend/plugin/multi-user/133/">Multi User 1.8.2+</a> plugin. To do so, go to GS <kbd>Settings</kbd> tab, click on <kbd>User management</kbd>, and when you edit the user, in the <code>Custom Permissions</code> section, check GS Custom Settings <strong>to disable Edit access</strong>, and save.</p>
 		<p><u>Note:</u> Upon activation or deactivation of Multi User, GS Custom Settings user permissions will be reset (so you have to do like above/ re-edit the user file).</p>
 	</section>
 </section>
@@ -257,7 +257,7 @@ order: -1
 }
 {% endraw %}{% endhighlight %}
 
-	<p>You're set! When your theme is activated in the GS <code>theme</code> tab, your settings will appear in the Custom Settings sidebar in the tab <code>Theme settings</code> (GS tab <code>Site</code>). The data is saved to <code>/data/other/custom_settings/theme_data_&lt;themename&gt;.json</code>.<br><br>Not entirely sure yet? For more examples, read the <a href="http://webketje.github.io/cms/2015/03/30/building-a-theme-with-gs-custom-settings/">Theme tutorial</a>.</p>
+	<p>You're set! When your theme is activated in the GS <code>theme</code> tab, your settings will appear in the Custom Settings sidebar in the tab <code>Theme settings</code> (GS tab <code>Site</code>). The data is saved to <code>/data/other/custom_settings/theme_data_&lt;themename&gt;.json</code>.<br><br>Not entirely sure yet? For more examples, read the <a href="https://webketje.github.io/cms/2015/03/30/building-a-theme-with-gs-custom-settings/">Theme tutorial</a>.</p>
 </section>
 <section>
 	<header>
@@ -269,7 +269,7 @@ order: -1
 	<li>
 	In this directory you should have a valid JSON settings file, named <code>settings.json</code>. You can build this either:
 	<ol>
-	<li><strong>Manually</strong>: If you choose this, make sure your file has the required format, and your JSON contains no errors. You can test this with <a href="http://jsonlint.com">JSONlint</a>.</li>
+	<li><strong>Manually</strong>: If you choose this, make sure your file has the required format, and your JSON contains no errors. You can test this with <a href="https://jsonlint.com">JSONlint</a>.</li>
 	<li><strong>Through the plugin's GUI</strong> (easiest):. To do so, install the plugin on your test site, go to <strong>Site</strong> tab, switch to <strong>Edit</strong> mode, create a new tab, give it your plugin's name, and add all the settings you need. When ready, in the toolbar's <code>Export tab as:</code> dropdown, choose <code>Plugin</code>. Save the file as <code>settings.json</code> in your plugin's directory.</li>
 	</ol>
 	</li>
@@ -348,7 +348,7 @@ get_i18n_setting($tab, $setting, $echo=TRUE)
 // Handy if you want the display value returned but not outputted.
 {% endraw %}{% endhighlight %}
 
-<p>Outputs the setting's value for display in the page's language (if none, the default language). Only works with the <a href="http://get-simple.info/extend/plugin/i18n/69/">I18N plugin by Martin Mvlcek</a> and with I18N-enabled <code>text/textarea</code> settings. <br><u>Note:</u> make sure all languages are in the final correct order when saving values, else you might have to reset them.</p>
+<p>Outputs the setting's value for display in the page's language (if none, the default language). Only works with the <a href="https://get-simple.info/extend/plugin/i18n/69/">I18N plugin by Martin Mvlcek</a> and with I18N-enabled <code>text/textarea</code> settings. <br><u>Note:</u> make sure all languages are in the final correct order when saving values, else you might have to reset them.</p>
 </div>
 
 <div class="spoiler-toggle" style="font-size: 1.125em;"><i class="fa fa-plus" style="font-size: .6em;"></i> <code>return_setting</code></div>
@@ -486,10 +486,10 @@ add_action('custom-settings-render-bottom', 'custom_settings_render', array($plu
 		<h3 id="dependencies">Dependencies</h3>
 		<p>GS Custom Settings includes:</p>
 			<ul>
-				<li><a href="http://jquery.com">jQuery (from GetSimple CMS)</a></li>
-				<li><a href="http://knockoutjs.com">KnockoutJS 3.2.0</a></li>
-				<li><a href="http://mbest.github.io/knockout.punches/">KnockoutJS punches</a></li>
-				<li><a href="http://fortawesome.github.io/Font-Awesome/">FontAwesome 4.3.0 Iconfont</a></li>
+				<li><a href="https://jquery.com">jQuery (from GetSimple CMS)</a></li>
+				<li><a href="https://knockoutjs.com">KnockoutJS 3.2.0</a></li>
+				<li><a href="https://mbest.github.io/knockout.punches/">KnockoutJS punches</a></li>
+				<li><a href="https://fortawesome.github.io/Font-Awesome/">FontAwesome 4.3.0 Iconfont</a></li>
 			</ul>
 	</section>
 	<section>
@@ -503,8 +503,8 @@ add_action('custom-settings-render-bottom', 'custom_settings_render', array($plu
 	</section>
 	<footer>
 	<hr>
-		<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; float: left; margin-right: 5px;" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
-		<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">GS Custom Settings</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/webketje/GS-Custom-Settings" property="cc:attributionName" rel="cc:attributionURL">Kevin Van Lierde</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. Built for<a xmlns:dct="http://purl.org/dc/terms/" href="http://get-simple.info" rel="dct:source">http://get-simple.info</a>.
+		<p><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; float: left; margin-right: 5px;" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+		<span xmlns:dct="https://purl.org/dc/terms/" property="dct:title">GS Custom Settings</span> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/webketje/GS-Custom-Settings" property="cc:attributionName" rel="cc:attributionURL">Kevin Van Lierde</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. Built for<a xmlns:dct="https://purl.org/dc/terms/" href="https://get-simple.info" rel="dct:source">https://get-simple.info</a>.
 	</p></footer>
 </section>
 <script>

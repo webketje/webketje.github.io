@@ -62,9 +62,9 @@
 		<header class="uk-width-1-1">
 			<div class="uk-block uk-block-primary uk-contrast">
 				<h1 class="uk-h2">GetSimpleCMS WP import</h1>
-				<p class="uk-article-lead uk-contrast">GetSimple WP import is a utility that converts a <a href="http://google-blog-converters-appengine.googlecode.com/svn/trunk/samples/wordpress-sample.wxr" target="_blank">Wordpress export XML file</a> for <em>posts</em> (not pages) to GetSimple pages. It makes use of <a href="https://github.com/eligrey/FileSaver.js">FileSaver.js</a>, <a href="https://stuk.github.io/jszip/">JSzip</a> and the JS FileReader and DOMParser API's. As such, it can not be guaranteed to work with browsers older than IE 10. Also, custom WP shortcodes & tags are not supported so any information saved in them will not be transferred (like MashShare plugin etc.)
+				<p class="uk-article-lead uk-contrast">GetSimple WP import is a utility that converts a <a href="https://google-blog-converters-appengine.googlecode.com/svn/trunk/samples/wordpress-sample.wxr" target="_blank">Wordpress export XML file</a> for <em>posts</em> (not pages) to GetSimple pages. It makes use of <a href="https://github.com/eligrey/FileSaver.js">FileSaver.js</a>, <a href="https://stuk.github.io/jszip/">JSzip</a> and the JS FileReader and DOMParser API's. As such, it can not be guaranteed to work with browsers older than IE 10. Also, custom WP shortcodes & tags are not supported so any information saved in them will not be transferred (like MashShare plugin etc.)
 				</p>
-				<p style="float: right;">By <a href="http://webketje.com">Kevin Van Lierde</a></p>
+				<p style="float: right;">By <a href="{{site.url}}">Kevin Van Lierde</a></p>
 			</div>
 		</header>
 		<div class="uk-width-1-1 uk-form">
@@ -112,9 +112,9 @@
 		<input type="checkbox" id="strip-class" name="strip-class" class="uk-margin-small-right uk-margin-small-left"><label for="strip-class"><code>class</code></label>
 	</tr><tr>
 		<td><label for="">In page content, replace the domain URL:</label>
-			<br><label for="li-h-1" class="uk-margin-left">Make links root-relative (eg, <code><del>http://myolddomain.com</del>/myLink</code>)</label>
-			<br><label for="li-h-2" class="uk-margin-left">Point links to new domain</label> <input type="text" id="new-link-url" value="http://" class="uk-form-small uk-form-width-medium">
-			<br><label for="li-h-3" class="uk-margin-left">Keep (eg, <code>http://myolddomain.com/myLink</code>)</label>
+			<br><label for="li-h-1" class="uk-margin-left">Make links root-relative (eg, <code><del>https://myolddomain.com</del>/myLink</code>)</label>
+			<br><label for="li-h-2" class="uk-margin-left">Point links to new domain</label> <input type="text" id="new-link-url" value="https://" class="uk-form-small uk-form-width-medium">
+			<br><label for="li-h-3" class="uk-margin-left">Keep (eg, <code>https://myolddomain.com/myLink</code>)</label>
 		</td>
 		<td>
 			<br><input type="radio" value="root-rel" id="li-h-1" name="link-handler" checked="true">

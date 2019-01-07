@@ -7,7 +7,7 @@
 		<div id="wrapper">
 			{% include header.html %}
 			<h1 id="page-title">{{ page.title }}</h1>
-			<div id="main" {% unless page.widgets %} class="no-sidebar" {% endunless %}>
+			<main {% unless page.widgets %} class="no-sidebar" {% endunless %}>
 				{% if page.type == 'list' %}
 					<ul id="{{ page.title | downcase }}-roll" class="list">
 						{{ content }}
@@ -19,7 +19,7 @@
 					</div>
 				{% endif %}
 				{% if page.type == 'cards' %}
-					<ul id="{{ page.title | downcase }}-roll" class="cards">
+					<ul id="{{ page.title | downcase }}-roll">
 						{{ content }}
 					</ul>
 				{% endif %}
@@ -27,7 +27,7 @@
 			{% if page.widgets %}
 				{% include sidebar.html widgets=page.widgets %}
 			{% endif %}
-		</div>
+		</main>
 		{% include footer.html %}
 	</body>
 </html>
