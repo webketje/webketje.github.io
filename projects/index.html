@@ -10,11 +10,8 @@ order: 2
 	<h3 itemprop="name">
 		<a href="{{project.link}}" itemprop="url">{{ project.name }}</a>
 	</h3>
-	{% if project.media %}
-		{{ project.media }}
-	{% endif %}
 	{% if project.descr %}
-		<p itemprop="description">{{ project.descr }}</p>
+		<p itemprop="description">{{ project.descr_short }}</p>
 	{% endif %}
 </li>
 {% endfor %}
