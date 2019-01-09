@@ -1,7 +1,7 @@
 ---
 title: Tutorial - Building a theme with GS Custom Settings
 category: getsimplecms
-img: http://i.imgur.com/HzihL7G.png
+img: https://i.imgur.com/HzihL7G.png
 tags: GetSimple PHP plugin theme
 layout: article
 published: true
