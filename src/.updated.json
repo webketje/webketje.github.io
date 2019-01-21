@@ -37,9 +37,9 @@
   },
   "_layouts/includes/header.twig": {
     "filename": "_layouts/includes/header.twig",
-    "hash": "ce13775cfd662078a4622c357c69c102487a9d13",
+    "hash": "8c651a00913d90cd5c84f7d02b03b10b6bbc1fb4",
     "created": "2019-01-14T14:47:52.655Z",
-    "updated": "2019-01-18T23:13:00.243Z"
+    "updated": "2019-01-21T10:28:56.556Z"
   },
   "projects/index.html": {
     "filename": "projects/index.html",
@@ -430,5 +430,11 @@
     "hash": "15d3855c741dfa3c61850aa67a6b7e064fea6fe1",
     "created": "2019-01-21T01:47:59.585Z",
     "updated": "2019-01-21T02:26:13.787Z"
+  },
+  "assets/img/kevin-van-lierde.png": {
+    "filename": "assets/img/kevin-van-lierde.png",
+    "hash": "7c3c2300e1872ae0340b9e7b20beb08df9de5fac",
+    "created": "2019-01-21T02:56:09.908Z",
+    "updated": "2019-01-21T02:56:09.908Z"
   }
 }
