@@ -1,9 +1,0 @@
-{% extends "default.twig" %}
-
-{% block main %}
-  {% set vars = {
-    'show_topic':true, 
-    'posts': collections.posts
-  } %}
-  {% include "includes/article-list.twig" with vars %}
-{% endblock %}

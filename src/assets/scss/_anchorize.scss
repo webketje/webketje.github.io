@@ -1,4 +1,0 @@
-/* standard CSS. Add position:relative to elements which get an anchor hash */
-.anchorize-hash { outline: none; text-decoration: none; position: absolute; left: -1rem; cursor: hand; cursor: pointer; color: inherit; opacity: 0.3; transition: opacity .1s; }
-.anchorize-hash:hover { opacity: 1; }
-.article__body h2, .article__body h3 { position: relative;}
