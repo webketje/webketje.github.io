@@ -1,0 +1,25 @@
+{% extends "default.twig" %}
+
+{% block head %}
+  {% block prepended %}
+    {% include "includes/highlight.twig" %}
+  {% endblock %}
+{% endblock %}
+
+{% block content %}
+  {% for project in data.projects %}
+  <li class="list-item project" itemprop="itemListElement" itemscope itemtype="http://schema.org/CreativeWork">
+    <div>
+      <small>
+        <a class="project-category" href="{{siteurl}}/search/?category={{ project.category }}">{{ project.category }}</a>
+      </small>
+    </div>
+    <h3 class="project-name" itemprop="name">
+      <a href="{{project.link}}" itemprop="url">{{ project.name }}</a>
+    </h3>
+    {% if project.descr_short %}
+      <p class="project-desc" itemprop="description">{{ project.descr_short }}</p>
+    {% endif %}
+  </li>
+  {% endfor %}
+{% endblock %}

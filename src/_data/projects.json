@@ -1,0 +1,23 @@
+[
+	{
+		"name": "anchorize.js", 
+    "link": "https://gist.github.com/webketje/b6b3ef5486afd99ff868e8028a0e526c",
+    "category": "javascript",
+    "descr_short": "A Javascript blog post plugin which adds a # hash anchor to elements for easy bookmarking and navigation"
+  },
+	{
+		"name": "GS Custom Settings", 
+    "link": "/projects/gs-custom-settings/",
+    "category": "getsimplecms",
+    "media": "<img src=\"/projects/gs-custom-settings/assets/img/GSCS_header.png\" alt=\"GS Custom Settings preview\" style=\"max-height: 200px; max-width: 100%; float: none;\">",
+    "descr_short": "A settings API plugin for GetSimpleCMS",
+    "descr": ["GS Custom Settings is a plugin for GetSimple CMS which lets webmasters/ site managers, theme and plugin developers implement and use their own custom settings for output, configuration, and cross-plugin/-theme communication. The plugin offers 8 different types of input to choose from, 3 access levels, per-user editing permission, and an easy UI to create, import and export the settings. GS Custom Settings is built on Knockout JS and uses JSON for data storage."]
+  },
+  {
+    "name": "GS Blog Import",
+    "link": "/projects/gs-blog-import",
+    "category": "getsimplecms",
+    "descr_short": "A client-side GetSimpleCMS utility to convert Wordpress blog export files to GS pages.",
+    "descr": "GS Blog import is a client-side GetSimple CMS utility which converts (currently only Wordpress) blog export files to GS pages. The utility supports multiple options for converting the file (strip whitespace, shortcodes, set properties, etc.) and is built in pure Javascript. It uses the DOMParser API, FileSaver.js and JSzip libraries for exporting."
+  }
+]

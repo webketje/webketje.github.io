@@ -1,8 +1,0 @@
-<strong>Search</strong>
-<input type="text" id="search-input">
-<ul class="autocomplete hidden">
-{% for post in site.posts %}
-	<li data-tags="{{post.tags}}" data-cats="{{post.category}}" data-title="{{post.title}}">{{post.title}}</li>
-{% endfor %}
-</ul>
-<button type="button" id="search-button">Search</button>

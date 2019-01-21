@@ -1,0 +1,12 @@
+$screen-xsmall: '479px';
+$screen-small: '767px';
+$screen-med: '1023px';
+
+$font-pri: 'Droid Serif', Georgia, 'Times New Roman', serif;
+$font-sec: 'Ubuntu', Arial, Helvetica, sans-serif;
+
+@mixin unstyled-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}

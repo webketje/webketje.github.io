@@ -1,0 +1,22 @@
+<ul class="articles">
+  {% for post in posts %}
+  <li class="articles__item">
+    <div class="article">
+      {% if show_topic %}
+        <a class="article__topic" href="/{{ post.category }}">{{ post.category }}</a>
+      {% endif %}
+      <h3 class="article__title">
+        <a class="article__permalink" href="/{{ post.path }}">
+          {{ post.title }}
+        </a>
+      <span>&nbsp;&mdash;&nbsp;</span>
+      <span class="article__date">
+        <time datetime="{{ post.stats.mtime }}">
+          {{ post.stats.mtime | date('j M, Y') }}
+        </time>
+      </span>
+      </h3>
+    </div>
+  </li>
+  {% endfor %}
+</ul>

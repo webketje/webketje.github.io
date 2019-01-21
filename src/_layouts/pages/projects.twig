@@ -1,0 +1,16 @@
+{% extends "default.twig" %}
+
+{% block content %}
+  <ul class="list list--projects">
+    {% for project in data.projects %}
+      {% set vars = {
+        'type': 'project',
+        'title': project.name,
+        'link': project.link,
+        'desc': project.descr_short,
+        'meta': ['<span class="topic">' ~ project.category ~ '</span>']
+      } %}
+      {% include "includes/list-item.twig" with vars %}
+    {% endfor %}
+  </ul>
+{% endblock %}

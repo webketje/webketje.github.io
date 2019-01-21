@@ -1,0 +1,113 @@
+@mixin headerlink {
+  color: #444;
+  font-size: 1.2em;
+  transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+}
+
+.site__header { 
+	position: relative;
+	width: 100%;
+  display: flex;
+  padding: 15px 0px;
+  border-bottom: 1px solid #EEE;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  
+  & > div:last-child {
+    width: 100%; display: flex; justify-content: space-between;
+  }
+  
+}
+
+#profile-picture {
+  width: 72px;
+  height: 72px;
+  margin: -4px 8px 0 0;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+h2#site-title {
+  margin-top: 0;
+  margin-bottom: .375rem;
+  font-style: italic;
+  font-weight: bold;
+  font-family: $font-pri;
+  color: var(--accent-color);
+}
+
+#site-nav {
+  & > span {
+    display: inline-block;
+  }
+  a {
+    @include headerlink;
+    text-transform: capitalize;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.125rem 0.25rem;
+    line-height: 1em;
+    font-family: $font-sec;
+
+    &:hover {
+      color: var(--accent-color);
+    }
+
+    &.active {
+      color: var(--accent-color);
+      border-bottom: 2px solid var(--accent-color);
+    }
+
+    h1 {
+      font-size: inherit;
+      margin: 0;
+    }
+
+    @media screen and (max-width: $screen-small) {
+      margin-top: 4px;
+    }
+  }
+}
+
+
+nav#site-social a {
+  @include headerlink;
+  padding: 4px;
+  font-size: .875rem;
+  display: inline-block;
+
+  &:hover {
+    color: var(--accent-color);
+  }
+} 
+
+@media screen and (max-width: $screen-xsmall) {
+  .site__header { 
+    padding-top: 0;
+  }
+  
+  #profile-picture {
+    width: 56px;
+    height: 56px;
+  }
+
+  #site-social {
+    margin-top: 1rem;
+  }
+
+  #site-nav {
+    display: flex;
+    flex-wrap: wrap;
+
+    & > span, & > a {
+      width: 30%;
+      min-width: 85px;
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{% extends "default.twig" %}
+
+{% block head %}
+  {% block prepended %}
+    {% include "includes/highlight.twig" %}
+  {% endblock %}
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:description" content="{{ summary }}">
+	<meta name="twitter:title" content="{{ title }}">
+	<meta name="twitter:url" content="{{ permalink }}">
+	<meta name="twitter:site" content="{{ sitename }}">
+
+  <script>
+  /* AnchorizeJS v0.8 | 2019-01-11 | Kevin Van Lierde (kevin.van.lierde@gmail.com) | MIT license */
+  !function(e,t){"function"==typeof define&&define.amd?define([],t):"object"==typeof module&&module.exports?module.exports=t():e.anchorize=t()}("undefined"!=typeof self?self:this,function(){"use strict";var c={selector:"h2,h3",symbol:"#",onclick:null};function i(e,t){var o,r,n,c=document.createElement("a");return c.className="anchorize-anchor",c.setAttribute("aria-hidden","true"),c.name=(e.id||e.textContent.slice(0,20)).toLowerCase().replace(/[ _]+/g,"-").replace(/[!:^*./\\]/g,""),e.parentNode.insertBefore(c,e),e.insertBefore((o=c.name,r=t,(n=document.createElement("a")).className="anchorize-hash",n.href="#"+o,n.appendChild(document.createTextNode(r)),n),e.firstChild),c}return function(e){for(var o=Object.assign({root:document.body},c,"string"==typeof e?{selector:e}:e),r=o.root.querySelectorAll(o.selector),t=0,n=r.length;t<n;t++)r[t].previousElementSibling&&r[t].previousElementSibling.className.match("anchorize-anchor")||i(r[t],o.symbol);o.onclick&&o.root.addEventListener("click",function(e){var t=o.root.querySelector('[name="'+e.target.getAttribute("href").slice(1)+'"]');t&&-1<Array.prototype.indexOf.call(r,e.target.parentNode)&&o.onclick(e,t)})}});
+  </script>
+  
+{% endblock %}
+
+{% block content %}
+	<article itemscope itemtype="https://schema.org/BlogPosting" class="article article--full">
+    <header class="article__header">
+      <h1 class="article__title" itemprop="headline">
+        <a class="article__permalink" href="{{ path }}" itemprop="url">{{ title }}</a>
+      </h1>
+
+      {% if subtitle %}
+        <h2 class="article__subtitle" itemprop="alternativeHeadline">{{ subtitle }}</h2>
+      {% endif %}
+
+			<div class="article__meta">
+				<meta itemprop="author" content="{{ author }}">
+				<meta itemprop="publisher" content="{{ sitename }}">
+				<meta itemprop="dateModified"content="{% if lastmod %}{{ lastmod }}{% else %}{{ date | date('Y-m-d') }}{%endif %}">
+
+				In <a class="article__category" href="/{{ category }}">{{ category }}</a>
+				<time datetime="{{ date | date('Y-m-d') }}" itemprop="datePublished">
+          {{ date | date('Y-m-d') }}
+				</time>
+			</div>
+    </header>
+
+		<div class="article__body" itemprop="articleBody">
+			{% if summary %}
+			  <p class="article__lead" itemprop="description">{{ summary }}</p>
+			{% endif %}
+
+      {{ contents }}
+    </div>
+
+    <footer>
+      {% if tags %}
+			<div id="article__tags">
+				<label style="margin-right: 10px;">Tags:</label>
+				<span itemprop="keywords">
+          {% for tag in tags %}
+            <a href="/tags?{{ tag }}">#{{ tag }}</a>
+          {% endfor %}
+					</span>
+			</div>
+      {% endif %}
+
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="webketje" data-count="none">Tweet</a>
+			<script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+			<a href="https://www.linkedin.com/shareArticle?mini=true&url={{ siteurl }}/{{ path | url_encode }}&title={{ title | url_encode }}&summary={{ summary | url_encode }}&source={{ sitename }}" target="_blank">Share on Linkedin</a>
+
+			<div class="article__comments" itemtype="https://schema.org/UserComments" itemscope>
+				<div id="disqus_thread"></div>
+				<script type="text/javascript">
+					var disqus_shortname = 'tyblitzsandbox';
+					(function () {
+						var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+						dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+						(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+					})();
+				</script>
+				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+				<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+			</div>
+    </footer>
+  </article>
+{% endblock %}
+
+{% block footer %}
+	<script type="text/javascript">
+		// code select event
+		function selectText(element) {
+			var doc = document;
+			var text = element;
+
+			if (doc.body.createTextRange) { // ms
+				var range = doc.body.createTextRange();
+				range.moveToElementText(text);
+				range.select();
+			} else if (window.getSelection) { // moz, opera, webkit
+				var selection = window.getSelection();
+				var range = doc.createRange();
+				range.selectNodeContents(text);
+				selection.removeAllRanges();
+				selection.addRange(range);
+			}
+		}
+		// code select generator
+		var codeBlocks = document.getElementsByClassName('hljs');
+		for (var i = 0; i < codeBlocks.length; i++) {
+			var el = document.createElement('button');
+			el.type = 'button';
+			el.className = 'copy-code';
+			el.title = 'Select code';
+			el.appendChild(document.createTextNode('</>'));
+			codeBlocks[i].appendChild(el);
+		}
+		// code selector
+		document.getElementsByTagName('article')[0].addEventListener('click', function (e) {
+			var target = e.target || e.srcElement;
+			if (target.className === 'copy-code') {
+				selectText(target.parentNode.getElementsByTagName('code')[0]);
+			}
+		}, false);
+
+    anchorize('.article__body h2, .article__body h3');
+	</script>
+{% endblock %}

@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Articles",
+    "slug": "/"
+  },
+  {
+    "label": "Posts",
+    "slug": "/posts"
+  },
+  {
+    "label": "Projects",
+    "slug": "/projects"
+  },
+  {
+    "label": "About",
+    "slug": "/about"
+  },
+  {
+    "label": "Contact",
+    "slug": "/contact"
+  }
+]
