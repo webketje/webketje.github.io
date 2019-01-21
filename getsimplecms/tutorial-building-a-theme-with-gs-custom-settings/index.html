@@ -1,0 +1,128 @@
+<!DOCTYPE html><html lang=en><head><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js></script><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/dark.min.css><script>hljs.initHighlightingOnLoad();</script><meta name=twitter:card content=summary><meta name=twitter:description content=""><meta name=twitter:title content="Tutorial - Building a theme with GS Custom Settings"><meta name=twitter:url content=""><meta name=twitter:site content="'t Webketje"><script>/* AnchorizeJS v0.8 | 2019-01-11 | Kevin Van Lierde (kevin.van.lierde@gmail.com) | MIT license */
+  !function(e,t){"function"==typeof define&&define.amd?define([],t):"object"==typeof module&&module.exports?module.exports=t():e.anchorize=t()}("undefined"!=typeof self?self:this,function(){"use strict";var c={selector:"h2,h3",symbol:"#",onclick:null};function i(e,t){var o,r,n,c=document.createElement("a");return c.className="anchorize-anchor",c.setAttribute("aria-hidden","true"),c.name=(e.id||e.textContent.slice(0,20)).toLowerCase().replace(/[ _]+/g,"-").replace(/[!:^*./\\]/g,""),e.parentNode.insertBefore(c,e),e.insertBefore((o=c.name,r=t,(n=document.createElement("a")).className="anchorize-hash",n.href="#"+o,n.appendChild(document.createTextNode(r)),n),e.firstChild),c}return function(e){for(var o=Object.assign({root:document.body},c,"string"==typeof e?{selector:e}:e),r=o.root.querySelectorAll(o.selector),t=0,n=r.length;t<n;t++)r[t].previousElementSibling&&r[t].previousElementSibling.className.match("anchorize-anchor")||i(r[t],o.symbol);o.onclick&&o.root.addEventListener("click",function(e){var t=o.root.querySelector('[name="'+e.target.getAttribute("href").slice(1)+'"]');t&&-1<Array.prototype.indexOf.call(r,e.target.parentNode)&&o.onclick(e,t)})}});</script><meta charset=utf-8><title>Tutorial - Building a theme with GS Custom Settings | 't Webketje</title><link rel=stylesheet type=text/css href=https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css><link rel=stylesheet type=text/css href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css type=text/css><script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js></script><link href="https://fonts.googleapis.com/css?family=Droid+Serif|Ubuntu|Inconsolata:400,700" rel=stylesheet><link rel=stylesheet type=text/css href=/assets/css/style.css><link rel=stylesheet type=text/css href=/assets/css/main.css><meta name=google-site-verification content=AG8SEesLBdPVqHccv9AG2DZ9kaIRAQ3hj6r555G7XyU><meta name=description content="Example use cases for the GetSimple GS Custom Settings plugin"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=keywords content="GetSimple PHP plugin theme"><meta name=author content="Kevin Van Lierde"><link rel="shortcut icon" type=image/png href=/favicon.png></head><body id=page-tutorial---building-a-theme-with-gs-custom-settings><div id=wrapper itemscope itemtype=http://schema.org/WebPage itemid=Tutorial%20-%20Building%20a%20theme%20with%20GS%20Custom%20Settings><header class=site__header><div><img src=https://webketje.com/assets/img/kevin-van-lierde.png alt="Kevin Van Lierde's profile picture" id=profile-picture></div><div><div><h2 id=site-title>'t Webketje</h2><nav id=site-nav><a href=/ >Articles </a><a href=/posts>Posts </a><a href=/projects>Projects </a><a href=/about>About </a><a href=/contact>Contact</a></nav></div><nav id=site-social><a href=https://twitter.com/webketje title=Twitter><i class="fa fa-fw fa-twitter"></i></a> <a href=https://www.linkedin.com/in/kevinvanlierde title=Linkedin><i class="fa fa-fw fa-linkedin"></i></a> <a href=https://stackoverflow.com/users/1938203/tyblitz title=StackOverflow><i class="fa fa-fw fa-stack-overflow"></i></a> <a href=https://github.com/webketje title=Github><i class="fa fa-fw fa-github"></i></a></nav></div></header><main><article itemscope itemtype=https://schema.org/BlogPosting class="article article--full"><header class=article__header><h1 class=article__title itemprop=headline><a class=article__permalink href=getsimplecms/tutorial-building-a-theme-with-gs-custom-settings itemprop=url>Tutorial - Building a theme with GS Custom Settings</a></h1><div class=article__meta><meta itemprop=author content="Kevin Van Lierde"><meta itemprop=publisher content="'t Webketje"><meta itemprop=dateModified content="Mon Mar 30 2015 02:00:00 GMT+0200 (Central European Summer Time)">In <a class=article__category href=/getsimplecms>getsimplecms</a> <time datetime=2019-01-21 itemprop=datePublished>2019-01-21</time></div></header><div class=article__body itemprop=articleBody><h3 id=1-inspecting-the-theme-creating-the-settings>1. Inspecting the theme &amp; creating the settings</h3><p>The standard GS theme &#39;Innovation&#39; includes 3 modifiable settings that are normally loaded into the theme sidebar. These are simply the facebook, twitter and linkedin URL&#39;s. When GS custom settings is installed and activated on your local test site, go to the &#39;Site&#39; tab, switch to <kbd>Edit</kbd> mode, and create a new tab. Name it however you like, for this demo we&#39;ll name it <code>innov</code>. Our 3 settings are links (=text), so we can simply create 3 new settings, change their lookups resp. to <code>facebook_url</code>, <code>twitter_url</code> and <code>linkedin_url</code>, and their labels to <code>Facebook URL</code>, <code>Twitter URL</code>, <code>Linkedin URL</code>.</p><p><strong>Note:</strong> In GS Custom Settings v0.2 it is also required to set a non-null value, eg a single space, or the default theme social links, else the settings will not save/ export correctly (You can set them back to empty in the JSON file afterwards).</p><h3 id=2-exporting-the-settings>2. Exporting the settings</h3><p><img src=http://i.imgur.com/HzihL7G.png alt="Export settings as theme from the UI"></p><p>When all your theme settings are created, in the settings toolbar on the right, select &#39;Export tab as: Theme&#39;. You should save the file as <code>settings.json</code> in your theme&#39;s directory. For this demo, it looks simply like this:</p><pre><code class=language-json>{
+  &quot;settings&quot;: [
+    {
+      &quot;lookup&quot;: &quot;facebook_url&quot;,
+      &quot;value&quot;: &quot;&quot;,
+      &quot;type&quot;: &quot;text&quot;,
+      &quot;access&quot;: &quot;normal&quot;,
+      &quot;label&quot;: &quot;Facebook URL&quot;,
+      &quot;descr&quot;: &quot;&quot;
+    },
+    {
+      &quot;lookup&quot;: &quot;twitter_url&quot;,
+      &quot;value&quot;: &quot;&quot;,
+      &quot;type&quot;: &quot;text&quot;,
+      &quot;access&quot;: &quot;normal&quot;,
+      &quot;label&quot;: &quot;Twitter URL&quot;,
+      &quot;descr&quot;: &quot;&quot;
+    },
+    {
+      &quot;lookup&quot;: &quot;linkedin_url&quot;,
+      &quot;value&quot;: &quot;&quot;,
+      &quot;type&quot;: &quot;text&quot;,
+      &quot;access&quot;: &quot;normal&quot;,
+      &quot;label&quot;: &quot;Linkedin URL&quot;,
+      &quot;descr&quot;: &quot;&quot;
+    }
+  ]
+}</code></pre><p>You could also get really fancy and add an extra <code>locked</code> field to display author credits and website, and a <code>hidden</code> field for the theme version, eg:</p><pre><code class=language-json>{
+  &quot;lookup&quot;: &quot;author&quot;,
+  &quot;value&quot;: &quot;John Doe&quot;,
+  &quot;type&quot;: &quot;text&quot;,
+  &quot;access&quot;: &quot;locked&quot;,
+  &quot;label&quot;: &quot;Author&quot;,
+  &quot;descr&quot;: &quot;&quot;
+},
+{
+  &quot;lookup&quot;: &quot;author_website&quot;,
+  &quot;value&quot;: &quot;http://www.johndoe.com&quot;,
+  &quot;type&quot;: &quot;text&quot;,
+  &quot;access&quot;: &quot;locked&quot;,
+  &quot;label&quot;: &quot;Author&#39;s website&quot;,
+  &quot;descr&quot;: &quot;&quot;
+},
+{
+  &quot;lookup&quot;: &quot;theme_version&quot;,
+  &quot;value&quot;: &quot;v0.1&quot;,
+  &quot;type&quot;: &quot;text&quot;,
+  &quot;access&quot;: &quot;hidden&quot;,
+  &quot;label&quot;: &quot;Theme Version&quot;,
+  &quot;descr&quot;: &quot;&quot;
+}</code></pre><p>As of <code>GS Custom Settings 0.4</code>, the preferred way of adding theme metadata is by editing the JSON file, and adding a &#39;tab&#39; object to it. If you specify a <code>version</code> property, GS Custom Settings will automatically update the settings when a user installs a new version. If you set <code>enableReset</code> to <code>true</code>, a reset button will appear in the UI, and clicking it will set every setting&#39;s value to the default value (if a <code>default</code> property is specified for it). If you set <code>enableAccessAll</code> to <code>false</code>, the theme tab will only show up for users who <a href=http://localhost:4000/projects/gs-custom-settings/#restricting-editing-permission>have editing permission</a>.</p><pre><code class=language-json>{ &quot;tab&quot;: 
+    {
+      &quot;version&quot;: &quot;0.1&quot;,
+      &quot;enableReset&quot;: false,
+      &quot;enableAccessAll&quot;: true
+    },
+  &quot;settings&quot;: [...]
+}</code></pre><p>If your theme is activated in GS, a <code>Theme Settings</code> tab will appear and <code>Manage</code> mode would look like this:</p><figure><img src=/assets/posts/gs_custom_settings/example_theme_settings.png alt="Sample manage mode with Theme settings"><figcaption>Sample manage mode with Theme settings</figcaption></figure><p><em>Note: Even though you see an <code>Edit</code> button, theme settings are *</em>not editable** in the UI. If someone wants to remove your crediting links, he will have to change the data in the JSON files :) *</p><p>If you need to add new settings/ remove old ones later, you can simply save the tab as a site tab, and re-edit them later or export them as data (export button in top nav) and import them later. The labels and descriptions in this file will be used as default (if a theme language file for the chosen language is missing).</p><h3 id=3-converting-the-theme-files>3. Converting the theme files</h3><p>In the innovation theme, the 3 URLS are outputted to <code>sidebar.php</code>. There, on about line 14, change the code to:</p><pre><code class=language-php>  &lt;?php // use strlen to check that the value is non-empty for text fields
+    if (return_setting(&#39;theme&#39;,&#39;facebook_url&#39;,&#39;value&#39;)) { ?&gt;
+    &lt;a href=&quot;&lt;?php get_setting(&#39;theme&#39;,&#39;facebook_url&#39;); ?&gt;&quot;&gt;
+      &lt;img src=&quot;&lt;?php get_theme_url(); ?&gt;/assets/images/facebook.png&quot; /&gt;
+     &lt;/a&gt;
+  &lt;?php } ?&gt;
+  &lt;?php if (return_setting(&#39;theme&#39;,&#39;twitter_url&#39;,&#39;value&#39;)) { ?&gt;
+    &lt;a href=&quot;&lt;?php get_setting(&#39;theme&#39;,&#39;twitter_url&#39;); ?&gt;&quot;&gt;
+      &lt;img src=&quot;&lt;?php get_theme_url(); ?&gt;/assets/images/twitter.png&quot; /&gt;
+    &lt;/a&gt;
+  &lt;?php } ?&gt;
+  &lt;?php if (return_setting(&#39;theme&#39;,&#39;linkedin_url&#39;,&#39;value&#39;)) { ?&gt;
+    &lt;a href=&quot;&lt;?php get_setting(&#39;theme&#39;,&#39;linkedin_url&#39;); ?&gt;&quot;&gt;
+      &lt;img src=&quot;&lt;?php get_theme_url(); ?&gt;/assets/images/linkedin.png&quot; /&gt;
+    &lt;/a&gt;
+  &lt;?php } ?&gt;</code></pre><p>For any theme, the tab to search in is always &#39;theme_settings&#39; (or the alias &#39;theme&#39;).</p><h3 id=4-making-your-theme-settings-multilingual->4. Making your theme settings multilingual.</h3><p>To internationalize your settings, create a <code>lang</code> folder in your theme, and include the language files with the same name as the PHP locale strings used by GetSimple (eg. English = en_US.json, French = fr_FR.json) in this folder. For the Innovation theme, it would look like this:</p><p>English language file (<code>en_US.json</code>):</p><pre><code class=language-json>{
+  &quot;meta&quot;: &quot;Innovation settings English translation&quot;,
+  &quot;strings&quot;: {
+    &quot;twitter_url_label&quot;: &quot;Twitter URL&quot;,
+    &quot;facebook_url_label&quot;: &quot;Facebook URL&quot;,
+    &quot;linkedin_url_label&quot;: &quot;Linkedin URL&quot;
+  }
+}</code></pre><p>French language file (<code>fr_FR.json</code>):</p><pre><code class=language-json>{
+  &quot;meta&quot;: &quot;Innovation settings French translation&quot;,
+  &quot;strings&quot;: {
+    &quot;twitter_url_label&quot;: &quot;Lien Twitter&quot;,
+    &quot;facebook_url_label&quot;: &quot;Lien Facebook&quot;,
+    &quot;linkedin_url_label&quot;: &quot;Lien Linkedin&quot;
+  }
+}</code></pre><h3 id=5-ready->5. Ready!</h3><p>Activate your theme in the <code>theme</code> tab, set the URLS in the <code>Site</code> tab on the <code>Theme Settings</code> sidebar, save updates and preview a page. Your links are now outputted to the theme :).</p></div><footer><div id=article__tags><label style="margin-right: 10px;">Tags:</label> <span itemprop=keywords></span></div><a href=https://twitter.com/share class=twitter-share-button data-via=webketje data-count=none>Tweet</a><script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script><a href="https://www.linkedin.com/shareArticle?mini=true&url=https://webketje.com/getsimplecms%2Ftutorial-building-a-theme-with-gs-custom-settings&title=Tutorial%20-%20Building%20a%20theme%20with%20GS%20Custom%20Settings&summary=&source='t Webketje" target=_blank>Share on Linkedin</a><div class=article__comments itemtype=https://schema.org/UserComments itemscope><div id=disqus_thread></div><script type=text/javascript>var disqus_shortname = 'tyblitzsandbox';
+					(function () {
+						var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+						dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+						(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+					})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div></footer></article></main></div><footer class=site__footer><footer id=site-footer itemscope itemtype=http://schema.org/WPFooter><small>Copyright <span itemprop=copyRightYear>2019</span>, <span itemprop=copyRightHolder>Kevin Van Lierde</span>. All Rights Reserved, content licensed under <a href=http://creativecommons.org/licenses/by/4.0/ itemprop=license>Creative Commons</a></small><script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101163649);</script><script async src=//static.getclicky.com/js></script></footer><script type=text/javascript>// code select event
+		function selectText(element) {
+			var doc = document;
+			var text = element;
+
+			if (doc.body.createTextRange) { // ms
+				var range = doc.body.createTextRange();
+				range.moveToElementText(text);
+				range.select();
+			} else if (window.getSelection) { // moz, opera, webkit
+				var selection = window.getSelection();
+				var range = doc.createRange();
+				range.selectNodeContents(text);
+				selection.removeAllRanges();
+				selection.addRange(range);
+			}
+		}
+		// code select generator
+		var codeBlocks = document.getElementsByClassName('hljs');
+		for (var i = 0; i < codeBlocks.length; i++) {
+			var el = document.createElement('button');
+			el.type = 'button';
+			el.className = 'copy-code';
+			el.title = 'Select code';
+			el.appendChild(document.createTextNode('</>'));
+			codeBlocks[i].appendChild(el);
+		}
+		// code selector
+		document.getElementsByTagName('article')[0].addEventListener('click', function (e) {
+			var target = e.target || e.srcElement;
+			if (target.className === 'copy-code') {
+				selectText(target.parentNode.getElementsByTagName('code')[0]);
+			}
+		}, false);
+
+    anchorize('.article__body h2, .article__body h3');</script></footer></body></html>
