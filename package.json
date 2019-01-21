@@ -37,16 +37,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node index.js",
     "serve": "node index.js serve",
-    "publish": "npm run build && gh-pages -t -d dist -b gh-pages"
+    "publish": "npm run build && gh-pages -t -d dist -b master"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/webketje/metalsmith-test.git"
+    "url": "git+https://github.com/webketje/webketje.github.io.git"
   },
-  "author": "",
+  "author": "Kevin Van Lierde",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/webketje/metalsmith-test/issues"
+    "url": "https://github.com/webketje/webketje.github.io/issues"
   },
-  "homepage": "https://github.com/webketje/metalsmith-test#readme"
+  "homepage": "https://github.com/webketje/webketje.github.io#readme"
 }
