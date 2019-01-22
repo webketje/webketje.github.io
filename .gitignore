@@ -12,6 +12,9 @@ pids
 # Build output
 dist/
 
+# Metalsmith-generated
+src/.updated.json
+
 # Dependency directories
 node_modules/
 
