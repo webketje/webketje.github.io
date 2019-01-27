@@ -10,8 +10,10 @@ intro: |
   This article gives tips about how to use GS Custom Settings to its full extent for theme development, and includes advice, 
   tips, and multiple use cases for augmenting your theme and offering customization to your theme users, thereby also augmenting your theme's value.
 ---
-<p>This tutorial will focus on how to integrate GS Custom Settings in theme development, if you need to get familiar with regular GetSimple theming, read <a href="http://get-simple.info/wiki/themes:creation">the tutorial</a> in the wiki. It's also handy to keep a browser tab open on the <a href="http://get-simple.info/wiki/themes:template_tags">complete template tags reference</a>. </p>
-<h3>Contents</h3>
+This tutorial will focus on how to integrate GS Custom Settings in theme development, if you need to get familiar with regular GetSimple theming, read [the tutorial](http://get-simple.info/wiki/themes:creation) in the wiki. It's also handy to keep a browser tab open on the [complete template tags reference](http://get-simple.info/wiki/themes:template_tags).
+
+### Contents
+
 <ol>
 <li>
 <a href="#preface">Preface</a>
@@ -44,12 +46,16 @@ intro: |
 </li>
 </ol>
 <a name="preface"></a>
-<h3>Preface</h3>
+
+### Preface
+
 <a name="best-practices"></a>
-<h4>Best practices</h4>
+
+#### Best practices
+
 ##### Themes with GS Custom Settings
 
-<p>If you use GS Custom Settings for a theme, make sure to mention in the theme description in the <a href="http://get-simple.info/extend/">GS Extend repo</a> that your theme <em>requires</em> installing the Custom settings plugin first, or wrap the entire HTML in an <code>if</code> clause, and output a message <em>'This theme requires GS Custom Settings to work'</em>, else you will get a lot of <em>undefined function</em> errors. Here's a sample snippet that you can directly copy paste in your theme's Extend description:</p>
+If you use GS Custom Settings for a theme, make sure to mention in the theme description in the [GS Extend repo](http://get-simple.info/extend/") that your theme _requires_ installing the Custom settings plugin first, or wrap the entire HTML in an `if` clause, and output a message _'This theme requires GS Custom Settings to work'_, else you will get a lot of _undefined function_ errors. Here's a sample snippet that you can directly copy paste in your theme's Extend description:
 
 ```plaintext
 This theme requires [GS Custom Settings](http://get-simple.info/extend/plugin/gs-custom-settings/913/).
@@ -79,7 +85,7 @@ If you're using setting output in PHP `for` or `foreach` loops, it is wisest to 
 
 ##### Easily accessing a group of settings
 
-If you need to access many settings (more than 5) in one particular place in your theme, <em>from v0.4 onwards</em> you can use `return_setting_group` to return an entire group of settings as a PHP array. For the function to work, you should prefix the setting lookups with a common name, followed by an underscore (`_`); eg. for all profile-related settings, you could have: `profile_h` for the headline, `profile_desc` for the description and `profile_name` for the name. You can then access the returned settings <em>without the prefix</em>. In PHP you could simply do:
+If you need to access many settings (more than 5) in one particular place in your theme, _from v0.4 onwards_ you can use `return_setting_group` to return an entire group of settings as a PHP array. For the function to work, you should prefix the setting lookups with a common name, followed by an underscore (`_`); eg. for all profile-related settings, you could have: `profile_h` for the headline, `profile_desc` for the description and `profile_name` for the name. You can then access the returned settings _without the prefix_. In PHP you could simply do:
 
 ```php
 <?php $profile = return_setting_group('theme', 'profile'); 
@@ -90,7 +96,7 @@ If you need to access many settings (more than 5) in one particular place in you
 
 #### Some PHP you should know
 
-As soon as you need to do some more advanced stuff (like in the sections Intermediate and Advanced), you will sometimes need to pre-process the output of a setting. In that case, some of the most useful PHP functions to know are:
+As soon as you need to do some more advanced stuff (like in the section Intermediate), you will sometimes need to pre-process the output of a setting. In that case, some of the most useful PHP functions to know are:
 
 * `echo($string)` - Outputs the given string.
 * `strip_tags($string)` - Removes HTML tags from the string.Handy for example if you want to use HTML in the profile description on the page, and use the same setting for social media/ meta descriptions but without HTML.
@@ -102,7 +108,7 @@ As soon as you need to do some more advanced stuff (like in the sections Interme
 
 <a name="considering-theme-variables"></a>
 
-<h4>Considering the theme <em>variables</em></h4>
+#### Considering the theme *variables*
 
 <p>First we need to consider which settings will be adjustable in the template. For inspiration, you could have a look at <a href="http://scaffold.tumblr.com/options/">Tumblr theme options</a>, ThemeForest Wordpress' <a href="http://i.imgur.com/1kEkKAu.png">Select options</a>, or even <a href="http://2.bp.blogspot.com/-5o8ExgEBbVk/TzYiXNXleDI/AAAAAAAAFig/38Mcn18TVog/s1600/Change%2Bpost%2Btitle%2Bcolor%2Bin%2BBlogger%2Btemplates.png">Blogger template options</a>. Generally, you will want to provide settings in three/ four different sections: </p>
 
@@ -114,11 +120,11 @@ As soon as you need to do some more advanced stuff (like in the sections Interme
 
 <a name="basic"></a>
 
-<h3>Basic</h3>
+### Basic
 
 <a name="outputting-text-and-html-content"></a>
 
-<h4>Outputting text and HTML content</h4>
+#### Outputting text and HTML content
 
 ##### SETTINGS
 
@@ -180,11 +186,12 @@ Another popular example is outputting a copyright notice in the theme footer:
 </footer>
 ```
 
-You may also want to let the user decide which HTML content should be outputted, for example to <strong>highlight</strong> a part of the phrase, or to customize, eg sidebar widget content. The `textarea` or `text` settings may contain HTML. As such, if you had a  `textarea` setting `sidebar_html`, you could do the following:
+You may also want to let the user decide which HTML content should be outputted, for example to **highlight** a part of the phrase, or to customize, eg sidebar widget content. The `textarea` or `text` settings may contain HTML. As such, if you had a  `textarea` setting `sidebar_html`, you could do the following:
 
 
-<p><a name="show-hiding-content"></a></p>
-<h4>Show-/hiding content</h4>
+<a name="show-hiding-content"></a>
+
+#### Show-/hiding content
 
 ##### SETTINGS
 
@@ -241,8 +248,9 @@ If the setting output does have a container element, you need to check whether i
 <?php } ?>
 ```
 
-<p><a name="allowing-custom-css"></a></p>
-<h4>Styling: allowing custom CSS</h4>
+<a name="allowing-custom-css"></a>
+
+#### Styling: allowing custom CSS
 
 ##### SETTINGS
 
@@ -354,7 +362,8 @@ The color settings take any valid CSS colors (color name, HEX, RGB, HSL or RGBA)
 ```
 
 <a name="multiple-options"></a>
-<h4>Styling: multiple options</h4>
+
+#### Styling: multiple options
 
 ##### SETTINGS
 
@@ -804,7 +813,7 @@ You might want to read up on PHP <a href="http://php.net/manual/en/control-struc
   <a href="<?php get_setting('theme', 'social_' . $si . '_url'); ?>">
     <i class="fa fa-fw fa-<?php echo strtolower($social_opts[return_setting('theme', 'social_' . $si)]); ?>"></i>
   </a>
-  <?php } } ?>
+  <?php } ?>
 </nav>
 ```
 
@@ -824,12 +833,14 @@ Inside the <code>for</code> loop, we check with <code>if</code> with:
 </li>
 <li>output the link in the <code>href</code> attribute, and the name of the social network as <code>fa-&lt;name&gt;</code> (for fontAwesome) <code>&lt;?php echo strtolower($social_opts[return_setting('theme', 'social_' . $si)]); ?&gt;</code> <br><code>strtolower</code> simply converts eg 'Facebook' to 'facebook', and <code>$social_opts</code> is a numeric array, while <code>return_setting('theme', 'social_' . $si)</code> is an index, so doing the above is the same as <code>$social_opts[x]</code> which holds the name of a social network. </li>
 </ol>
-<p><a name="key-value-pairs"></a></p>
-<h4>Meta: date format - hidden settings for key-value pairs</h4>
-<p>The following code allows the user to:</p>
-<ul>
-<li>choose a date format from the UI in human-readable form, and output it in PHP form.</li>
-</ul>
+
+<a name="key-value-pairs"></a>
+
+#### Meta: date format - hidden settings for key-value pairs
+
+The following code allows the user to:
+
+* choose a date format from the UI in human-readable form, and output it in PHP form.
 
 ##### SETTINGS
 
