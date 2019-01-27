@@ -2,7 +2,7 @@
   "workbench.startupEditor": "newUntitledFile",
   "editor.tabSize": 2,
   "editor.multiCursorModifier": "ctrlCmd",
-  "workbench.colorTheme": "Monokai Dimmed",
+  "workbench.colorTheme": "Base16 Tomorrow Night",
   "typescript.suggestionActions.enabled": false,
   "typescript.validate.enable": false,
   "typescript.suggest.paths": false,
