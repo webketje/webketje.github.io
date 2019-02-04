@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>WP importer</title>
+---
+title: WP importer
+layout: project.twig
+---
 	<style>
 		.title-row { border-top: 2px solid; }
-		#wrapper { margin: 60px auto; min-height: 600px; }
-		#wrapper div.uk-width-1-1 { padding: 20px; }
-		#wrapper .uk-width-1-1 .uk-block.uk-width-4-5 { padding: 20px;  margin: auto; }
-		#wrapper header.uk-width-1-1 .uk-block { padding: 20px; padding-left: 55px; margin-left: -35px;  }
-		#wrapper { border: 1px solid #00a8e6;}
-		#wrapper :not(pre)>code, :not(pre)>kbd, :not(pre)>samp {color: gray; }
-		#wrapper .uk-scrollable-box { resize: vertical; max-width: 100%; }
-		#wrapper #preview pre, #wrapper #preview table { white-space: pre-wrap; max-width: 100%; }
+		#sub-wrapper div.uk-width-1-1 { padding: 20px; }
+		#sub-wrapper .uk-width-1-1 .uk-block.uk-width-4-5 { padding: 20px;  margin: auto; }
+		#sub-wrapper header.uk-width-1-1 .uk-block { padding: 20px; }
+		#sub-wrapper { border: 1px solid #00a8e6;}
+		#sub-wrapper :not(pre)>code, :not(pre)>kbd, :not(pre)>samp {color: gray; }
+		#sub-wrapper .uk-scrollable-box { resize: vertical; max-width: 100%; }
+		#sub-wrapper #preview pre, #sub-wrapper #preview table { white-space: pre-wrap; max-width: 100%; }
 		.uk-form fieldset { min-width: 0px; }
 		table.uk-table tr td:first-child { width: 80%; }
 		.uk-scrollable-box table.uk-table tr td:first-child { width: 15%; }
@@ -22,14 +20,12 @@
 		.prev-next:first-child { left: -50px; }
 		.prev-next:last-child { right: -50px; }
 		#preview { max-width: 100%; }
-		#wrapper .uk-badge-notification { border-radius: 50%; font-size: 24px;line-height: 28px;width: 30px; height: 30px; margin-top: -15px; margin-right: 10px;}
+		#sub-wrapper .uk-badge-notification { border-radius: 50%; font-size: 24px;line-height: 28px;width: 30px; height: 30px; margin-top: -15px; margin-right: 10px;}
 	</style>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2014-11-29/FileSaver.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.21.0/css/uikit.almost-flat.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.21.0/css/components/form-file.almost-flat.min.css">
-</head>
- <body>
  <!----------------------------------------------------------------------------------------------------
  * GS Posts import - Import Wordpress (& in the future other CMS'es) blog posts easily to GetSimple CMS. 
  *  Version 0.1 - 4th of June 2015
@@ -58,7 +54,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  ----------------------------------------------------------------------------------------------------->
-	<div id="wrapper" class="uk-grid uk-width-2-3 uk-article">
+	<div id="sub-wrapper" class="uk-article">
 		<header class="uk-width-1-1">
 			<div class="uk-block uk-block-primary uk-contrast">
 				<h1 class="uk-h2">GetSimpleCMS WP import</h1>
@@ -182,6 +178,4 @@
 	</tr>		
 	</script>
 	<script src="importer.js"></script>
-	</div>
-</body>
-</html>
+</div>
