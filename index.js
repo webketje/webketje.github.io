@@ -6,7 +6,6 @@ var layouts = require('metalsmith-layouts');
 var markdown = require('metalsmith-markdown');
 var permalinks = require('metalsmith-permalinks');
 var drafts = require('metalsmith-drafts');
-var highlight = require('metalsmith-code-highlight');
 var domTransform = require('metalsmith-dom-transform');
 var branch = require('metalsmith-branch');
 var sitemap = require('metalsmith-sitemap');
@@ -23,15 +22,17 @@ var categories = require('./metalsmith/metalsmith-categories');
 var devrant = require('./metalsmith/metalsmith-devrant');
 var data = require('./metalsmith/metalsmith-data');
 var ignore = require('metalsmith-ignore');
+var admin = require('metalsmith-ui');
 
 var metalsmith = Metalsmith(__dirname);
 
 if (process.argv[2] === 'serve') {
-  metalsmith.use(serve({
+  metalsmith.use(admin());
+  /* metalsmith.use(serve({
     port: 4000,
     host: 'localhost',
     verbose: true,
-  }));
+  })); */
 }
 
 metalsmith
@@ -101,7 +102,7 @@ metalsmith
     changefreq: 'monthly',
     lastmod: new Date()
   }))
-  .use(debugUI.report('Permalinks'))
+ // .use(debugUI.report('Permalinks'))
   .build(function (err) {
     if (err) throw err;
   });
