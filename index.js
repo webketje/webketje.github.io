@@ -43,7 +43,7 @@ metalsmith
   .destination('./dist')
   // clean destination directory
   .clean(true)
-  .use(devrant('webketje', true))
+  .use(devrant('webketje', isDev ? true : false))
   .use(debug())
   .metadata({
     author: 'Kevin Van Lierde',
