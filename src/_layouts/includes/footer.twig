@@ -1,9 +1,12 @@
 
-<footer id="site-footer" itemscope itemtype="http://schema.org/WPFooter">
+<footer class="site__footer" itemscope itemtype="http://schema.org/WPFooter">
 	<small>Copyright <span itemprop="copyRightYear">{{ date | date('Y') }}</span>, 
     <span itemprop="copyRightHolder">Kevin Van Lierde</span>. 
     All Rights Reserved, content licensed under <a href="http://creativecommons.org/licenses/by/4.0/" itemprop="license">Creative Commons</a>
   </small>
 	<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101163649);</script>
 	<script async src="//static.getclicky.com/js"></script>
+  {% if scripts %}
+    {{scripts}}
+  {% endif %}
 </footer>

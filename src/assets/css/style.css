@@ -119,29 +119,8 @@ main dd {
 main dfn { 
 
 }
-/* editing */
-main ins { 
-	text-decoration: none;
-	background: rgb(219, 238, 235);
-}
-main del { 
-	text-decoration: strike-through;
-}
-/* code */
 main em {
 	color: inherit;
-}
-
-main pre code { 
-	color: inherit;
-	font-size: 14px;
-	white-space: pre;
-	padding: 0;
-	border: none;
-	border-radius: 0;
-	background: transparent;
-	display: block;
-	line-height: 1.5em;
 }
 main kbd {
 	color: #000;
@@ -188,25 +167,6 @@ main kbd {
 				width: 100%;
 			}
 
-
-aside ul li a {
-	color: #444;
-}
-aside ul li {
-	padding: 2px 0;
-	padding: 0.12rem 0;
-}
-aside ul li a i {
-	margin: 0px 10px;
-}
-aside #blog-tags ul {
-	overflow: auto;
-}
-aside #blog-tags li {
-	float: left;
-	padding:4px;
-	padding: 0.25rem;
-}
 body#search aside { margin-top: 60px;}
 ul.autocomplete { position: absolute; background: #FFFFFE; }
 ul.autocomplete li { padding: 2px 5px; }
@@ -234,9 +194,8 @@ ul.autocomplete li { padding: 2px 5px; }
 	background-image: linear-gradient(to bottom, #DB7768, #A63B2D);
 }
 a {
-	/*color: #5CA6A6;*/
 	position: relative;
-	color: var(--accent-color);
+	color: var(--text-color);
 }
 #main a:after, .uk-link:after {
 	background-color: var(--accent-color);

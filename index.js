@@ -25,8 +25,9 @@ var ignore = require('metalsmith-ignore');
 var admin = require('metalsmith-ui');
 
 var metalsmith = Metalsmith(__dirname);
+var isDev = process.argv[2] === 'serve'
 
-if (process.argv[2] === 'serve') {
+if (isDev) {
   metalsmith.use(admin());
   /* metalsmith.use(serve({
     port: 4000,
@@ -54,9 +55,12 @@ metalsmith
   })
   .use(sass({ outputDir: 'assets/css/' }))
   .use(data('_data/*.json'))
-  .use(wordcount())
   .use(drafts())
   .use(markdown())
+  .use(wordcount())
+  .use(ignore(isDev ? [] : [
+    '_drafts/**/*'
+  ]))
   .use(categories({
     layout: 'pages/topic.twig',
     category: 'topic',

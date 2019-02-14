@@ -14,7 +14,6 @@
   padding: 15px 0px;
   border-bottom: 1px solid #EEE;
   margin-bottom: 2rem;
-  overflow: hidden;
   
   & > div:last-child {
     width: 100%; display: flex; justify-content: space-between;
@@ -33,12 +32,12 @@
   border-radius: 50%;
 }
 
-h2#site-title {
+h2.site__title {
   margin-top: 0;
   margin-bottom: .375rem;
   font-style: italic;
   font-weight: bold;
-  font-family: $font-pri;
+  font-family: var(--font-pri);
   color: var(--accent-color);
 }
 
@@ -53,7 +52,7 @@ h2#site-title {
     display: inline-block;
     padding: 0.125rem 0.25rem;
     line-height: 1em;
-    font-family: $font-sec;
+    font-family: var(--font-sec);
 
     &:hover {
       color: var(--accent-color);

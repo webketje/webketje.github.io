@@ -1,0 +1,266 @@
+---
+layout: post.twig
+title: Every&shy;thing we take for granted when clicking on a thumb&shy;nail image
+subtitle: A case study in Progressive enhancement applied to thumb&shy;nails
+description: A case study in Progressive enhancement applied to thumb&shy;nails
+category: User experience
+pubdate: 2019-02-07
+moddate: 2019-02-07
+social:
+  title:
+tags:
+ - progressive enhancement
+ - thumbnail
+ - case study
+---
+<p>You've come across them countless times on blogs, social media and especially webshop pages: small images with zooming, image gallery navigation, descriptions, captions, all kinds of features. They work so well we barely take notice, <em><b>except when they don't.</b></em> Like when they are slow as hell, cause hiccups or completely break the webpage, forcing us to reload.</p>
+<p>In this article I explore <b>progressive enhancement</b> applied to user experience with <b>image thumbnails</b>. I start from the bare minimal concept and walk briefly through the additional layers on top, to arrive at the <em>progressively enhanced version</em> most of us take for granted today. Each layer enables extra or enhances existing <em>affordances</em>, which in turn improve user experience. Try it for yourself by clicking the thumbnails and comparing the level of comfort/ irritation you experience.</p>
+
+<p>Let's get it over with the definitions already and make sure we're all on the same page:</p>
+
+<dl>
+  <dt>progressive enhancement</dt>
+  <dd>Progressive enhancement is a design philosophy that centers around providing a baseline of essential content and functionality to as many users as possible, while at the same time going further and delivering the best possible experience only to users of the most modern browsers that can run all the required code. (via <a href="https://developer.mozilla.org/en-US/docs/Glossary/Progressive_Enhancement">developer.mozilla.org</a>)</dd>
+  <dt>thumbnail</dt>
+  <dd>a small image that represents a larger version of the same image, and also usually serves as a link to its larger counterpart (adapted from <a href="https://techterms.com/definition/thumbnail">techterms.com</a>)</dd>
+  <dt>affordance</dt>
+  <dd>the quality or property of an object that defines its possible uses or makes clear how it can or should be used (via <a href="https://www.merriam-webster.com/dictionary/affordance">merriam-webster.com</a>)</dd>
+</dl>
+
+<p>So what are the bare affordances of a thumbnail?</p>
+
+<ol>
+  <li>Cognitive: it should be apparent that, and <em>how</em>, a thumbnail will react to user actions, for both <em>desktop</em> and <em>mobile</em> users (mouse, keyboard and touch).</li>
+  <li>Functional: The action of clicking or tapping the thumbnail should display the larger image.</li>
+  <li>Functional: The action of tabbing to the thumbnail on desktop and pressing <kbd>Enter</kbd> should display the larger image.</li>
+</ol>
+
+<h2>A functional thumbnail</h2>
+
+<div class="case" id="case-bare">
+  <div class="case__img">
+    <h4>Thumbnail</h4>
+    <a href="https://via.placeholder.com/400x300/008080/FFF?text=An%20image">
+      <img src="https://via.placeholder.com/128x96/008080/FFF?text=A%20thumbnail" alt="An image" width="128" height="96">
+    </a>
+  </div>
+  <div class="case__code">
+    <h4>Code</h4>
+    <pre><code class="language-html">&lt;a href=&quot;path/to/thumbnail.png&quot;&gt;&#13;&#10;  &lt;img src=&quot;path/to/full-size-image.png&quot; alt=&quot;An image&quot;&gt;&#13;&#10;&lt;/a&gt;</code></pre>
+  </div>
+</div>
+
+<p>Cross-browser link (<code>&lt;a&gt;</code>) behavior already satisfies the functional requirements, but the thumbnail you see below has no indication that it can be expanded to full size upon clicking it. Desktop users <em>do</em> see the cursor changing to a pointer (hand) but that's still a pretty vague indication.</p>
+<p>The functional thumbnail does not provide the basic cognitive affordances of a good thumbnail.</p>
+
+<h2>A basic thumbnail</h2>
+
+<div class="case" id="case-basic">
+  <div class="case__img">
+    <h4>Thumbnail</h4>
+    <a href="https://via.placeholder.com/400x300/008080/FFF?text=An%20image" title="View full size" target="_blank">
+      <img src="https://via.placeholder.com/128x96/008080/FFF?text=A%20thumbnail" alt="An image" width="128" height="96">
+    </a>
+  </div>
+  <div class="case__code">
+    <h4>Code</h4>
+    <pre><code class="language-html">&lt;a href=&quot;path/to/thumbnail.png&quot; title=&quot;View full size&quot; target=&quot;_blank&quot;&gt;&#13;&#10;  &lt;img src=&quot;path/to/full-size-image.png&quot; alt=&quot;An image&quot;&gt;&#13;&#10;&lt;/a&gt;</code></pre>
+  </div>
+</div>
+
+<p>In this version I've added a <code>title</code> attribute which says <em>View full size</em>. Better: when putting your cursor over the image on desktop, you know what to expect when clicking it. It's still not apparent on first view that the image is clickable though, especially not on mobile. We will enhance this in the next version.</p>
+<p>There's also (in the context of this article) a minor annoyance in that clicking the 'functional' thumbnail will redirect you away from this article in the same tab, forcing the user to reload the current page if (s)he wishes to come back. We need a new affordance: <em>interacting with the thumbnail should not, or as little as possible, interrupt the reader flow</em>. Thanks to the <code>target="_blank"</code> attribute, the full-size image will now open in a new tab.*</p>
+
+<p><small>* Whether opening a link in a new tab by default is good or bad is admittedly debatable, and depends on a lot of factors including type of website, type of content, device, OS, target audience. But I found opening in a new tab much more user-friendly on mobile (when you tap 'Go back' on Android, it will close an image tab).</small></p>
+
+<h2>A thumbnail with action indicator</h2>
+
+<p>In our mobile-first world, there must be a way for mobile users to identify that they can expand the thumbnail to full size by clicking it. I've added 2 versions here: I could use simple text (safe but plain), or an icon (more concise but the meaning of the pictogram should be almost web-universally agreed upon) or both (visual clutter).</p>
+
+<div class="case" id="case-basic-mobile-icon">
+  <div class="case__img">
+    <h4>Thumbnail</h4>
+    <a href="https://via.placeholder.com/400x300/008080/FFF?text=An%20image" title="View full size" target="_blank">
+      <img src="https://via.placeholder.com/128x96/008080/FFF?text=A%20thumbnail" alt="An image" width="128" height="96"><i class="expand"></i>
+    </a>
+  </div>
+  <div class="case__code">
+    <h4>Code</h4>
+    <pre><code class="language-html">&lt;a href=&quot;path/to/thumbnail.png&quot; title=&quot;View full size&quot; target=&quot;_blank&quot;&gt;&#13;&#10;  &lt;img src=&quot;path/to/full-size-image.png&quot; alt=&quot;An image&quot;&gt;&lt;i class=&quot;expand&quot;&gt;&lt;/i&gt;&#13;&#10;&lt;/a&gt;</code></pre>
+  </div>
+</div>
+
+<div class="case" id="case-basic-mobile-text">
+  <div class="case__img">
+    <h4>Thumbnail</h4>
+    <a href="https://via.placeholder.com/400x300/008080/FFF?text=An%20image" title="View full size" target="_blank">
+      <img src="https://via.placeholder.com/128x96/008080/FFF?text=A%20thumbnail" alt="An image" width="128" height="96"><small class="expand">View full size</small>
+    </a>
+  </div>
+  <div class="case__code">
+    <h4>Code</h4>
+    <pre><code class="language-html">&lt;a href=&quot;path/to/thumbnail.png&quot; title=&quot;View full size&quot; target=&quot;_blank&quot;&gt;&#13;&#10;  &lt;img src=&quot;path/to/full-size-image.png&quot; alt=&quot;An image&quot;&gt;&#13;&#10;  &lt;small class=&quot;expand&quot;&gt;View full size&lt;/small&gt;&#13;&#10;&lt;/a&gt;</code></pre>
+  </div>
+</div>
+
+<p>This is about the most </em>advanced</em> you can get without using Javascript, and also allows all basic thumbnail affordances.
+The only area where user experience can be enhanced is not interrupting reader flow.  but the amount of effort required to reduce a tiny bit of user friction is exponentially bigger. Let's see what we can do anyhow.</p>
+
+<h2>A Javascript-enhanced thumbnail</h2>
+
+<div class="case" id="case-full-featured">
+  <div class="case__img">
+    <h4>Thumbnail</h4>
+    <a href="https://via.placeholder.com/400x300/008080/FFF?text=An%20image" title="View full size" target="_blank" data-expand>
+      <img src="https://via.placeholder.com/128x96/008080/FFF?text=A%20thumbnail" alt="An image" width="128" height="96"><i class="expand"></i>
+    </a>
+    <div class="case__overlay" tabindex="0">
+      <i class="case__overlay-close" title="close">×</i>
+    </div>
+  </div>
+  <div class="case__code">
+    <h4>Code</h4>
+    <pre><code class="language-html">&lt;a href=&quot;path/to/full-size-image.png&quot; title=&quot;View full size&quot; target=&quot;_blank&quot; data-expand&gt;&#13;&#10;  &lt;img src=&quot;path/to/thumbnail.png&quot; alt=&quot;An image&quot; width=&quot;128&quot; height=&quot;96&quot;&gt;&lt;i class=&quot;expand&quot;&gt;&lt;/i&gt;&#13;&#10;&lt;/a&gt;&#13;&#10;&lt;div class=&quot;overlay&quot; tabindex=&quot;0&quot;&gt;&#13;&#10;  &lt;i class=&quot;case__overlay-close&quot; title=&quot;close&quot;&gt;&times;&lt;/i&gt;&#13;&#10;&lt;/div&gt;</code></pre>
+    <br>
+    <br>
+    <pre><code class="language-js">(function(root) {&#13;&#10;  &apos;use strict&apos;;&#13;&#10;  var overlay = root.querySelector(&apos;.overlay&apos;);&#13;&#10;  var thumb = root.querySelector(&apos;[data-expand]&apos;);&#13;&#10;&#13;&#10;  function close(e) {&#13;&#10;    var target = e.target || e;&#13;&#10;    if (target.nodeName !== &apos;IMG&apos;) {&#13;&#10;      overlay.style.opacity = 0;&#13;&#10;      document.body.style.overflow = &apos;auto&apos;;&#13;&#10;      setTimeout(function() {&#13;&#10;        overlay.classList.remove(&apos;overlay--active&apos;);&#13;&#10;      }, 300);&#13;&#10;    }&#13;&#10;  }&#13;&#10;&#13;&#10;  function open(e) {&#13;&#10;    e.preventDefault();&#13;&#10;    overlay.classList.add(&apos;overlay--active&apos;);&#13;&#10;    if (!overlay.getElementsByTagName(&apos;img&apos;).length)&#13;&#10;      overlay.insertAdjacentHTML(&apos;beforeEnd&apos;, &apos;&lt;img src=&quot;&apos; + thumb.href + &apos;&quot; alt=&quot;&apos; + thumb.getElementsByTagName(&apos;img&apos;)[0].alt + &apos;&quot;&gt;&apos;);&#13;&#10;      document.body.style.overflow = &apos;hidden&apos;;&#13;&#10;    requestAnimationFrame(function() {&#13;&#10;      overlay.style.opacity = 1;&#13;&#10;      overlay.focus();&#13;&#10;    });&#13;&#10;  }&#13;&#10;&#13;&#10;  thumb.addEventListener(&apos;click&apos;, open);&#13;&#10;  overlay.addEventListener(&apos;click&apos;, close);&#13;&#10;  overlay.addEventListener(&apos;keyup&apos;, function(e) {&#13;&#10;    var ESC = 27;&#13;&#10;    if (e.keyCode === ESC)&#13;&#10;      close(e);&#13;&#10;  });&#13;&#10;&#13;&#10;}(document.body);</code></pre>
+  </div>
+</div>
+
+<script>
+  (function(root) {
+    'use strict';
+
+    var overlay = root.querySelector('.case__overlay');
+    var thumb = root.querySelector('[data-expand]');
+
+    function close(e) {
+      var target = e.target || e;
+      if (target.nodeName !== 'IMG') {
+        overlay.style.opacity = 0;
+        document.body.style.overflow = 'auto';
+        setTimeout(function() {
+          overlay.classList.remove('case__overlay--active');
+        }, 300);
+      }
+    }
+
+    function open(e) {
+      e.preventDefault();
+      overlay.classList.add('case__overlay--active');
+      if (!overlay.getElementsByTagName('img').length)
+        overlay.insertAdjacentHTML('beforeEnd', '<img src="' + thumb.href + '" alt="' + thumb.getElementsByTagName('img')[0].alt + '">');
+        document.body.style.overflow = 'hidden';
+      requestAnimationFrame(function() {
+        overlay.style.opacity = 1;
+        overlay.focus();
+      });
+    }
+
+    thumb.addEventListener('click', open);
+    overlay.addEventListener('click', close);
+    overlay.addEventListener('keyup', function(e) {
+      var ESC = 27;
+      if (e.keyCode === ESC)
+        close(e);
+    });
+
+  }(document.getElementById('case-full-featured')));
+</script>
+
+<style>
+.case {
+  text-align: left;
+}
+.case:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.case__img {
+  float: left;
+  width: 200px;
+}
+.case__code {
+  float: left;
+  width: calc(100% - 200px);
+}
+
+@media screen and (max-width: 767px) {
+  .case__code, .case__img { float: none; width: 100%; }
+}
+
+.case a {
+  display: inline-block;
+  position: relative;
+  line-height: 0;
+  color: white;
+}
+.case i.expand {
+  font-style: normal;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-size: 24px;
+  line-height: 24px;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAqVJREFUeNq8VjuLGlEUnhlHNz5BsnkYXdwQNWCxVoFUWlhJCotgI4LiP5AUlpZiEfwBgljZSBohpaCpUgUkIEELH1EkJCH4fo1jzpE7wZjRnXElB84uc+d6vjnnfOe7l95sNjRFUfeJX1DntQX4T3QWAUaj0XU0GnU3Go2Xk8nESNP0nRE0Gs0vu93+MZvNftDr9RQNGT0PBAKvqtXqa3jPwjN3DiCMBc65XK53hULhPYPlwkzIiyWA8PD/HL7EmCT2BQJR0+nUiOjU+Y0jsbdZ/GNQPobjOCXP88zuOsMwPDinUCjWp9QRA1O7fUGQZrP5Yn/zcDhc+/3+z71ebywVAGNvPxL/7Dd/PxO0wWDAx2Kxr+12ey4nEyE2I/UHUC6q3+8jWTanNEsykE6nY4LB4APIVkmG/O5AQrrQC65SqUyF9VAoZEylUk8BTHEykNA0ArRutVqLZDLZDYfDXyKRSEt4V6vVZrhdLhAqw43D4XiLqkEGbUtvtVqtBDlaA53XYKzX6720WCyqXC7Xh379UQ8y4McSmdbr9TfsgdLx8/l8gQTYzgDLrsrl8jeBFAgMWZq63e6yVCr9QGAsp1arVcxms5UYOCODpjw6EgHK+SSRSFxlMplnbrf70Wq1Uvt8vsfFYvEGZpA9OLBiQ3sM0+l0qoUHKOU1EOahzWZTmc1mFGXFUSCpio09i8fjzeVyySALcc3j8WjESLX78Yxs9sDAAtgqn89/H4/HvBRVOAmIfCltMplUQAp5oirXrFbrvXQ6fWUwGBiR0vKS1fs263Q6Mzg5P4kdIzgKYurNyiHCjsCupZ5Jf5EBLxKnlvG21pDYW6AF3lbIUa4ia1tHKdp9FvMjezAWR2IvUOsud69bwhkvtXeH9uxdt1r0/7pA/hZgACO4VuIsr37kAAAAAElFTkSuQmCC);
+}
+.case small.expand {
+  display: block;
+  margin-top: -1em;
+  text-align: center;
+  font-size: smaller;
+}
+.case h4 {
+  margin: 0 0 .5rem;
+}
+.case pre {
+  margin: 0;
+}
+.case__overlay {
+  display: none;
+  position: fixed;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  height: 0;
+  opacity: 0;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.9);
+  transition: opacity .3s;
+  z-index: -50;
+}
+.case__overlay img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.case__overlay--active {
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.case__overlay-close {
+  display: block;
+  color: white;
+  font-size: 24px;
+  top: 16px;
+  right: 16px;
+  position: fixed;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 16px;
+  cursor: pointer;
+}
+</style>
