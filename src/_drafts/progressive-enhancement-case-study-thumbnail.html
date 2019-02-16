@@ -14,7 +14,7 @@ tags:
  - case study
 ---
 <p>You've come across them countless times on blogs, social media and especially webshop pages: small images with zooming, image gallery navigation, descriptions, captions, all kinds of features. They work so well we barely take notice, <em><b>except when they don't.</b></em> Like when they are slow as hell, cause hiccups or completely break the webpage, forcing us to reload.</p>
-<p>In this article I explore <b>progressive enhancement</b> applied to user experience with <b>image thumbnails</b>. I start from the bare minimal concept and walk briefly through the additional layers on top, to arrive at the <em>progressively enhanced version</em> most of us take for granted today. Each layer enables extra or enhances existing <em>affordances</em>, which in turn improve user experience. Try it for yourself by clicking the thumbnails and comparing the level of comfort/ irritation you experience.</p>
+<p>In this article I explore <b>progressive enhancement</b> applied to user experience with <b>image thumbnails</b>. I start from the bare minimal concept and walk briefly through the additional layers on top, to arrive at the <em>progressively enhanced version</em> most of us take for granted today. Each layer enables extra or enhances existing <em>affordances</em>, which in turn improve user experience. Try it for yourself by clicking the thumbnails in this article and comparing the level of comfort/ irritation you experience!</p>
 
 <p>Let's get it over with the definitions already and make sure we're all on the same page:</p>
 
@@ -68,27 +68,14 @@ tags:
   </div>
 </div>
 
-<p>In this version I've added a <code>title</code> attribute which says <em>View full size</em>. Better: when putting your cursor over the image on desktop, you know what to expect when clicking it. It's still not apparent on first view that the image is clickable though, especially not on mobile. We will enhance this in the next version.</p>
-<p>There's also (in the context of this article) a minor annoyance in that clicking the 'functional' thumbnail will redirect you away from this article in the same tab, forcing the user to reload the current page if (s)he wishes to come back. We need a new affordance: <em>interacting with the thumbnail should not, or as little as possible, interrupt the reader flow</em>. Thanks to the <code>target="_blank"</code> attribute, the full-size image will now open in a new tab.*</p>
+<p>In this version I've added a <code>title</code> attribute which says <em>View full size</em>. Better: when putting your cursor over the image on desktop, you know what to expect when clicking it. It's still not apparent on first view that the image is clickable though, especially not on mobile. I will enhance this in the next version.</p>
+<p>There's also (in the context of this article) a minor annoyance in that clicking the 'functional' thumbnail will redirect you away from this article in the same tab, forcing the user to reload  the current page if (s)he wishes to come back. We need to provide a new affordance: <em>interacting with the thumbnail should not, or as little as possible, interrupt the reader flow</em>. Thanks to the <code>target="_blank"</code> attribute, the full-size image will now open in a new tab.*</p>
 
 <p><small>* Whether opening a link in a new tab by default is good or bad is admittedly debatable, and depends on a lot of factors including type of website, type of content, device, OS, target audience. But I found opening in a new tab much more user-friendly on mobile (when you tap 'Go back' on Android, it will close an image tab).</small></p>
 
 <h2>A thumbnail with action indicator</h2>
 
-<p>In our mobile-first world, there must be a way for mobile users to identify that they can expand the thumbnail to full size by clicking it. I've added 2 versions here: I could use simple text (safe but plain), or an icon (more concise but the meaning of the pictogram should be almost web-universally agreed upon) or both (visual clutter).</p>
-
-<div class="case" id="case-basic-mobile-icon">
-  <div class="case__img">
-    <h4>Thumbnail</h4>
-    <a href="https://via.placeholder.com/400x300/008080/FFF?text=An%20image" title="View full size" target="_blank">
-      <img src="https://via.placeholder.com/128x96/008080/FFF?text=A%20thumbnail" alt="An image" width="128" height="96"><i class="expand"></i>
-    </a>
-  </div>
-  <div class="case__code">
-    <h4>Code</h4>
-    <pre><code class="language-html">&lt;a href=&quot;path/to/thumbnail.png&quot; title=&quot;View full size&quot; target=&quot;_blank&quot;&gt;&#13;&#10;  &lt;img src=&quot;path/to/full-size-image.png&quot; alt=&quot;An image&quot;&gt;&lt;i class=&quot;expand&quot;&gt;&lt;/i&gt;&#13;&#10;&lt;/a&gt;</code></pre>
-  </div>
-</div>
+<p>In our mobile-first world, there must be a way for mobile users to identify that they can expand the thumbnail to full size by clicking it. I've added 2 versions here: I could use simple text (safe but plain), or an icon (more concise but the meaning of the pictogram should be almost web-universally agreed upon) or both (adds visual clutter).</p>
 
 <div class="case" id="case-basic-mobile-text">
   <div class="case__img">
@@ -103,10 +90,25 @@ tags:
   </div>
 </div>
 
-<p>This is about the most </em>advanced</em> you can get without using Javascript, and also allows all basic thumbnail affordances.
-The only area where user experience can be enhanced is not interrupting reader flow.  but the amount of effort required to reduce a tiny bit of user friction is exponentially bigger. Let's see what we can do anyhow.</p>
+<div class="case" id="case-basic-mobile-icon">
+  <div class="case__img">
+    <h4>Thumbnail</h4>
+    <a href="https://via.placeholder.com/400x300/008080/FFF?text=An%20image" title="View full size" target="_blank">
+      <img src="https://via.placeholder.com/128x96/008080/FFF?text=A%20thumbnail" alt="An image" width="128" height="96"><i class="expand"></i>
+    </a>
+  </div>
+  <div class="case__code">
+    <h4>Code</h4>
+    <pre><code class="language-html">&lt;a href=&quot;path/to/thumbnail.png&quot; title=&quot;View full size&quot; target=&quot;_blank&quot;&gt;&#13;&#10;  &lt;img src=&quot;path/to/full-size-image.png&quot; alt=&quot;An image&quot;&gt;&lt;i class=&quot;expand&quot;&gt;&lt;/i&gt;&#13;&#10;&lt;/a&gt;</code></pre>
+  </div>
+</div>
+
+<p>This is about the most </em>advanced</em> functionality you can get without using Javascript (or even CSS), and also provides all basic thumbnail affordances.
+The only area where user experience can be enhanced is not interrupting reader flow, but at what cost?</p>
 
 <h2>A Javascript-enhanced thumbnail</h2>
+
+<p>The thumbnail below is much more like what we know! It took about 40 lines of styling and 30 lines of Javascript code. It's much more user-friendly in the sense that it requires only: 1 click to expand the image, and 1 click to go back to the article without reloading the page. I've added a close icon in the top-right, and keyboard users can even hit <kbd>ESC</kbd> to close the overlay.</p>
 
 <div class="case" id="case-full-featured">
   <div class="case__img">
@@ -121,11 +123,19 @@ The only area where user experience can be enhanced is not interrupting reader f
   <div class="case__code">
     <h4>Code</h4>
     <pre><code class="language-html">&lt;a href=&quot;path/to/full-size-image.png&quot; title=&quot;View full size&quot; target=&quot;_blank&quot; data-expand&gt;&#13;&#10;  &lt;img src=&quot;path/to/thumbnail.png&quot; alt=&quot;An image&quot; width=&quot;128&quot; height=&quot;96&quot;&gt;&lt;i class=&quot;expand&quot;&gt;&lt;/i&gt;&#13;&#10;&lt;/a&gt;&#13;&#10;&lt;div class=&quot;overlay&quot; tabindex=&quot;0&quot;&gt;&#13;&#10;  &lt;i class=&quot;case__overlay-close&quot; title=&quot;close&quot;&gt;&times;&lt;/i&gt;&#13;&#10;&lt;/div&gt;</code></pre>
-    <br>
-    <br>
-    <pre><code class="language-js">(function(root) {&#13;&#10;  &apos;use strict&apos;;&#13;&#10;  var overlay = root.querySelector(&apos;.overlay&apos;);&#13;&#10;  var thumb = root.querySelector(&apos;[data-expand]&apos;);&#13;&#10;&#13;&#10;  function close(e) {&#13;&#10;    var target = e.target || e;&#13;&#10;    if (target.nodeName !== &apos;IMG&apos;) {&#13;&#10;      overlay.style.opacity = 0;&#13;&#10;      document.body.style.overflow = &apos;auto&apos;;&#13;&#10;      setTimeout(function() {&#13;&#10;        overlay.classList.remove(&apos;overlay--active&apos;);&#13;&#10;      }, 300);&#13;&#10;    }&#13;&#10;  }&#13;&#10;&#13;&#10;  function open(e) {&#13;&#10;    e.preventDefault();&#13;&#10;    overlay.classList.add(&apos;overlay--active&apos;);&#13;&#10;    if (!overlay.getElementsByTagName(&apos;img&apos;).length)&#13;&#10;      overlay.insertAdjacentHTML(&apos;beforeEnd&apos;, &apos;&lt;img src=&quot;&apos; + thumb.href + &apos;&quot; alt=&quot;&apos; + thumb.getElementsByTagName(&apos;img&apos;)[0].alt + &apos;&quot;&gt;&apos;);&#13;&#10;      document.body.style.overflow = &apos;hidden&apos;;&#13;&#10;    requestAnimationFrame(function() {&#13;&#10;      overlay.style.opacity = 1;&#13;&#10;      overlay.focus();&#13;&#10;    });&#13;&#10;  }&#13;&#10;&#13;&#10;  thumb.addEventListener(&apos;click&apos;, open);&#13;&#10;  overlay.addEventListener(&apos;click&apos;, close);&#13;&#10;  overlay.addEventListener(&apos;keyup&apos;, function(e) {&#13;&#10;    var ESC = 27;&#13;&#10;    if (e.keyCode === ESC)&#13;&#10;      close(e);&#13;&#10;  });&#13;&#10;&#13;&#10;}(document.body);</code></pre>
   </div>
 </div>
+
+<p>Additional optional UX experience enhancers would be image transitions, a loading spinner, or even widgets built on top like image galleries, with captions and more. While this is outside the scope of this article, you almost definitely encountered these from the <a href="http://fancyapps.com/fancybox/3/#features">FancyBox</a> or <a href="https://www.lokeshdhakar.com/projects/lightbox2/">LightBox</a> libraries.
+</p>
+<p>This article explored how progressive enhancement can be applied to thumbnail images, and how low-budget projects can provide a fully functional thumbnail feature without spending too many ressources. It also listed all <em>affordances</em> a thumbnail should provide:</p>
+
+<ol>
+  <li>Cognitive: it should be apparent that, and <em>how</em>, a thumbnail will react to user actions, for both <em>desktop</em> and <em>mobile</em> users (mouse, keyboard and touch).</li>
+  <li>Functional: The action of clicking or tapping the thumbnail should display the larger image.</li>
+  <li>Functional: The action of tabbing to the thumbnail on desktop and pressing <kbd>Enter</kbd> should display the larger image.</li>
+  <li>Additional: interacting with the thumbnail should interrupt the user flow as little as possible.</li>
+</ol>
 
 <script>
   (function(root) {
@@ -138,7 +148,7 @@ The only area where user experience can be enhanced is not interrupting reader f
       var target = e.target || e;
       if (target.nodeName !== 'IMG') {
         overlay.style.opacity = 0;
-        document.body.style.overflow = 'auto';
+        document.documentElement.style.overflow = 'auto';
         setTimeout(function() {
           overlay.classList.remove('case__overlay--active');
         }, 300);
@@ -150,7 +160,7 @@ The only area where user experience can be enhanced is not interrupting reader f
       overlay.classList.add('case__overlay--active');
       if (!overlay.getElementsByTagName('img').length)
         overlay.insertAdjacentHTML('beforeEnd', '<img src="' + thumb.href + '" alt="' + thumb.getElementsByTagName('img')[0].alt + '">');
-        document.body.style.overflow = 'hidden';
+        document.documentElement.overflow = 'hidden';
       requestAnimationFrame(function() {
         overlay.style.opacity = 1;
         overlay.focus();
