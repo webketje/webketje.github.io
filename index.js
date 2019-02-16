@@ -48,7 +48,7 @@ metalsmith
   .destination("./dist")
   // clean destination directory
   .clean(true)
-  .use(devrant("webketje", isPublish && findArg('--devrant') ? false : true )
+  .use(devrant("webketje", isPublish && findArg('--devrant') ? false : true ))
   .use(debug())
   .metadata({
     author: "Kevin Van Lierde",
