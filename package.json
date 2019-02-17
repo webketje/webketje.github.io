@@ -3,9 +3,6 @@
   "version": "1.0.1",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "metalsmith-admin": "file:../metalsmith-admin"
-  },
   "devDependencies": {
     "devrant": "git+https://github.com/danillouz/devrant.git",
     "gh-pages": "^2.0.1",
@@ -43,6 +40,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/webketje/webketje.github.io.git"
+  },
+  "bin": {
+    "webketje": "./index"
   },
   "author": "Kevin Van Lierde",
   "license": "ISC",

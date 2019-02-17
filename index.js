@@ -34,11 +34,6 @@ var findArg = function(arg) {
 
 if (isDev) {
   metalsmith.use(serve({ port: 3000 }));
-  /* metalsmith.use(serve({
-    port: 4000,
-    host: 'localhost',
-    verbose: true,
-  })); */
 }
 
 metalsmith
@@ -48,7 +43,7 @@ metalsmith
   .destination("./dist")
   // clean destination directory
   .clean(true)
-  .use(devrant("webketje", isPublish && findArg('--devrant') ? false : true ))
+  .use(devrant("webketje", findArg('devrant') ? false : true ))
   .use(debug())
   .metadata({
     author: "Kevin Van Lierde",
