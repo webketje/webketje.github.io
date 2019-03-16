@@ -1,6 +1,6 @@
 {
   "username": "webketje",
-  "score": 266,
+  "score": 344,
   "about": "Webdev with focus on front-end.",
   "location": "Belgium",
   "created_time": 1518443770,
@@ -11,9 +11,149 @@
     "content": {
       "rants": [
         {
+          "id": 2019724,
+          "text": "The night before I had an oral exam about history of Communication Studies at university, I was too excited about learning <strong>php</strong> (ikr, that was 5 years ago). I mailed the professor an apology and stated the real reason I would skip this exam. When I still showed up at 9 in the morning without having slept, he told me \"that's the most honest mail I've ever had\" and gave me a 2/20 for showing up. (At the third exam period I studied it properly and got an 18/20)",
+          "score": 6,
+          "created_time": 1551994887,
+          "attached_image": "",
+          "num_comments": 0,
+          "tags": [
+            "rant",
+            "php",
+            "study",
+            "wk146"
+          ],
+          "vote_state": 0,
+          "edited": true,
+          "weekly": {
+            "week": 146,
+            "topic": "Story of pulling a coding all-nighter?",
+            "date": "3/4/19",
+            "height": 50
+          },
+          "rt": 1,
+          "rc": 1,
+          "user_id": 1207790,
+          "user_username": "webketje",
+          "user_score": 344,
+          "user_avatar": {
+            "b": "f99a66",
+            "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
+          },
+          "user_avatar_lg": {
+            "b": "f99a66",
+            "i": "v-21_c-1_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.png"
+          }
+        },
+        {
+          "id": 2015792,
+          "text": "The <strong>search</strong> engine that understands programmers. Way to go, Duck Duck",
+          "score": 19,
+          "created_time": 1551739422,
+          "attached_image": {
+            "url": "https://img.devrant.com/devrant/rant/r_2015792_77dns.jpg",
+            "width": 684,
+            "height": 312
+          },
+          "num_comments": 9,
+          "tags": [
+            "joke/meme",
+            "dom",
+            "duckduckgo",
+            "virtual dom",
+            "search",
+            "javascript"
+          ],
+          "vote_state": 0,
+          "edited": true,
+          "rt": 1,
+          "rc": 3,
+          "user_id": 1207790,
+          "user_username": "webketje",
+          "user_score": 344,
+          "user_avatar": {
+            "b": "f99a66",
+            "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
+          },
+          "user_avatar_lg": {
+            "b": "f99a66",
+            "i": "v-21_c-1_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.png"
+          }
+        },
+        {
+          "id": 1999421,
+          "text": "Unpopular opinion: I actually enjoy writing <strong>html</strong>/CSS, the only <strong>frustration</strong> I have with the latter is lacking browser support",
+          "score": 9,
+          "created_time": 1550450174,
+          "attached_image": "",
+          "num_comments": 3,
+          "tags": [
+            "rant",
+            "frustration",
+            "wk140",
+            "html",
+            "css"
+          ],
+          "vote_state": 0,
+          "edited": false,
+          "weekly": {
+            "week": 140,
+            "topic": "Your most frustrating HTML/CSS exp.?",
+            "date": "1/21/19",
+            "height": 50
+          },
+          "rt": 1,
+          "rc": 1,
+          "user_id": 1207790,
+          "user_username": "webketje",
+          "user_score": 344,
+          "user_avatar": {
+            "b": "f99a66",
+            "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
+          },
+          "user_avatar_lg": {
+            "b": "f99a66",
+            "i": "v-21_c-1_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.png"
+          }
+        },
+        {
+          "id": 1992434,
+          "text": "devRant, devRant, you're my devRant. \r\nAnd, baby, you can turn me on - turn me on,  darlin'!",
+          "score": 1,
+          "created_time": 1549924189,
+          "attached_image": "",
+          "num_comments": 0,
+          "tags": [
+            "random",
+            "wk143",
+            "what tom jones actually meant"
+          ],
+          "vote_state": 0,
+          "edited": false,
+          "weekly": {
+            "week": 143,
+            "topic": "Story of code affecting your dating?",
+            "date": "2/11/19",
+            "height": 50
+          },
+          "rt": 1,
+          "rc": 6,
+          "user_id": 1207790,
+          "user_username": "webketje",
+          "user_score": 344,
+          "user_avatar": {
+            "b": "f99a66",
+            "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
+          },
+          "user_avatar_lg": {
+            "b": "f99a66",
+            "i": "v-21_c-1_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.png"
+          }
+        },
+        {
           "id": 1954925,
-          "text": "Lorem ipsum dolor sit amet.\r\nI studied Latin for 6 years in high school. \r\nA dummy text is the link between my education and my job\n\n°_°",
-          "score": 31,
+          "text": "Lorem ipsum dolor sit amet.\r\nI studied <strong>latin</strong> for 6 years in high school. \r\nA dummy text is the link between my education and my job\n\n°_°",
+          "score": 40,
           "created_time": 1547170578,
           "attached_image": "",
           "num_comments": 12,
@@ -30,7 +170,7 @@
           "rc": 1,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -42,15 +182,15 @@
         },
         {
           "id": 1931147,
-          "text": "My kick-ass merch from JapanCon Brussels (Nov 2018): a Yoda doormat, TallGeese Gundam Wing model, Pulp fiction displate, AND in front of it A 3D-PRINTED PICKLE RICK OMG CAN YOU BELIEVE THAT!!! xD",
-          "score": 8,
+          "text": "My kick-ass <strong>merch</strong> from <strong>japancon</strong> Brussels (Nov 2018): a Yoda doormat, TallGeese Gundam Wing model, Pulp fiction displate, AND in front of it A 3D-PRINTED PICKLE RICK OMG CAN YOU BELIEVE THAT!!! xD",
+          "score": 9,
           "created_time": 1545430412,
           "attached_image": {
             "url": "https://img.devrant.com/devrant/rant/r_1931147_xoWSo.jpg",
             "width": 800,
             "height": 600
           },
-          "num_comments": 2,
+          "num_comments": 3,
           "tags": [
             "random",
             "pop culture",
@@ -63,7 +203,7 @@
           "rc": 6,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -75,7 +215,7 @@
         },
         {
           "id": 1921798,
-          "text": "Imagine in the future a sponsored tweet \"Dear followers, I am no longer among you. This message was posted by my heirs, who accepted the terms and conditions of my will, which included letting my followers know in case I'd no longer be here. Get yours too with Buffer (https://buffer.com/)\".\n\nThat would be the pinnacle of capitalism",
+          "text": "Imagine in the future a sponsored tweet \"Dear followers, I am no longer among you. This message was posted by my heirs, who accepted the terms and conditions of my will, which included letting my followers know in case I'd no longer be here. Get yours too with <strong>buffer</strong> (<a href=\"https://buffer.com/\">https://buffer.com/</a>)\".\n\nThat would be the pinnacle of <strong>capitalism</strong>",
           "score": 3,
           "created_time": 1544827316,
           "attached_image": "",
@@ -104,7 +244,7 @@
           "special": true,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -116,7 +256,7 @@
         },
         {
           "id": 1917138,
-          "text": "Apparently the standard \"pack\" of applicants for a job is at least 100 people, how else can you only be in the top \"2%\"? If there's only 2 applicants, your fingers (typing skills?) are in the top 2%, and the rest is in the upper 48.\n\nAll of that just to say it would have been better worded as 2 in 100 people than 2% =).\n\nhttps://grammarly.com/blog/...",
+          "text": "Apparently the standard \"pack\" of applicants for a job is at least 100 people, how else can you only be in the top \"2%\"? If there's only 2 applicants, your fingers (typing skills?) are in the top 2%, and the rest is in the upper 48.\n\nAll of that just to say it would have been better worded as 2 in 100 people than 2% =).\n\n<a href=\"https://www.grammarly.com/blog/how-to-send-email-to-recruiter/\">https://grammarly.com/blog/...</a>",
           "score": 2,
           "created_time": 1544563661,
           "attached_image": {
@@ -151,7 +291,7 @@
           "special": true,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -164,7 +304,7 @@
         {
           "id": 1906774,
           "text": "Damn, Natasha Bedingfield's Unwritten accurately describes the start of my workday coding sessions.",
-          "score": 24,
+          "score": 23,
           "created_time": 1543955541,
           "attached_image": {
             "url": "https://img.devrant.com/devrant/rant/r_1906774_CvEc2.jpg",
@@ -185,7 +325,7 @@
           "rc": 6,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -197,7 +337,7 @@
         },
         {
           "id": 1886665,
-          "text": "One day in a near but comfortably not too near future, I will start a webdevelopment 3-letter-abbreviation dictionary page, with self-taken photos of Belgian car license plates, and use the alphabetic part for each definition. It's insane how many PSD's, JSX's, PHP's and other technologies and file formats I've seen driving around and can no longer keep it for myself.\nTo qualify the tech/ format must 1) have been spotted and photographed by me and, 2) be about something related to webdev \n\nIf it doesn't take off, I can still create a unique custom CAPTCHA service with the photos :D",
+          "text": "One day in a near but comfortably not too near future, I will start a webdevelopment 3-letter-abbreviation <strong>dictionary</strong> page, with self-taken photos of Belgian car license plates, and use the alphabetic part for each definition. It's insane how many PSD's, JSX's, PHP's and other technologies and file formats I've seen driving around and can no longer keep it for myself.\nTo qualify the tech/ format must 1) have been spotted and photographed by me and, 2) be about something related to webdev \n\nIf it doesn't take off, I can still create a unique custom CAPTCHA service with the photos :D",
           "score": 3,
           "created_time": 1542817975,
           "attached_image": "",
@@ -221,7 +361,7 @@
           "rc": 1,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -234,14 +374,14 @@
         {
           "id": 1792678,
           "text": "How do devs React when they realize Vue is upside-down triAngular? (Share ur clever answers)",
-          "score": 19,
+          "score": 18,
           "created_time": 1537914039,
           "attached_image": {
             "url": "https://img.devrant.com/devrant/rant/r_1792678_hfVEQ.jpg",
             "width": 268,
             "height": 180
           },
-          "num_comments": 4,
+          "num_comments": 3,
           "tags": [
             "joke/meme",
             "front-end",
@@ -253,7 +393,7 @@
           "rc": 3,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -265,7 +405,7 @@
         },
         {
           "id": 1780121,
-          "text": "Isn't it curious that most development libraries, frameworks, widgets in an ecosystem see a decrease in popularity when they reach a \"no longer under active development\"/ maintenance stage (especially exacerbated in the front-end)? \n\nAs if we just can't settle on a convention. As if, even for limited-scope solutions, a final stage can never be reached, there must be perpetual growth. As if we must constantly trade a solution for a shinier one, that just might provide us with 2% profit based on a doubtful forecast... or not. Sounds a lot like the investment capitalism that resulted in the 2008 subprime crisis. Not sure what to make of this thought but\n\nFUUUUUUUUUUUUUUUUUUUUUU",
+          "text": "Isn't it curious that most development libraries, frameworks, widgets in an <strong>ecosystem</strong> see a decrease in popularity when they reach a \"no longer under active development\"/ maintenance stage (especially exacerbated in the front-end)? \n\nAs if we just can't settle on a convention. As if, even for limited-scope solutions, a final stage can never be reached, there must be perpetual growth. As if we must constantly trade a solution for a shinier one, that just might provide us with 2% profit based on a doubtful forecast... or not. Sounds a lot like the investment <strong>capitalism</strong> that resulted in the 2008 subprime crisis. Not sure what to make of this thought but\n\nFUUUUUUUUUUUUUUUUUUUUUU",
           "score": 8,
           "created_time": 1537489268,
           "attached_image": "",
@@ -283,7 +423,7 @@
           "rc": 1,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -295,7 +435,7 @@
         },
         {
           "id": 1758210,
-          "text": "The amount of repetition and vagueness in this unsollicited recruiter job invite is insane: \"Current Technology Sector Consultant\". I've had 10's of invites from these recruiters on Linkedin, blocked all of them and they just keep coming back despite my Linkedin preference being set to let recruiters know \"that I'm NOT open to opportunities\"\n\nIf you ever get an offer from VMR consultants / J People consider these reviews carefully: https://glassdoor.co.uk/Reviews/.... \n\nI'm naming the company because it seriously deserves to be exposed for its bad practices towards both their potential and current employees.",
+          "text": "The amount of repetition and vagueness in this unsollicited <strong>recruiter</strong> job invite is insane: \"Current Technology Sector Consultant\". I've had 10's of invites from these recruiters on <strong>linkedin</strong>, blocked all of them and they just keep coming back despite my <strong>linkedin</strong> preference being set to let recruiters know \"that I'm NOT open to opportunities\"\n\nIf you ever get an offer from VMR consultants / J People consider these reviews carefully: <a href=\"https://www.glassdoor.co.uk/Reviews/VMR-Consultants-Reviews-E839547.htm\">https://glassdoor.co.uk/Reviews/...</a>. \n\nI'm naming the company because it seriously deserves to be exposed for its bad practices towards both their potential and current employees.",
           "score": 8,
           "created_time": 1536616388,
           "attached_image": {
@@ -328,7 +468,7 @@
           "special": true,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -362,7 +502,7 @@
           "rc": 1,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -374,7 +514,7 @@
         },
         {
           "id": 1678193,
-          "text": "I feel connected in all the word's meanings. To give you some context:  I'm high, it's illegal, but at least it's outside of office hours",
+          "text": "I feel <strong>connected</strong> in all the word's meanings. To give you some context:  I'm <strong>high</strong>, it's illegal, but at least it's outside of office hours",
           "score": 3,
           "created_time": 1535408236,
           "attached_image": "",
@@ -390,7 +530,7 @@
           "rc": 6,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -424,7 +564,7 @@
           "rc": 1,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -436,11 +576,11 @@
         },
         {
           "id": 1548036,
-          "text": "That moment when you read a Redux article titled \"The Perils of Using a Common Redux Anti-Pattern\" as part of educating yourself on the stack of the app you're paid to continue development on, go back to the code of the application, and realize the ENTIRE REDUX STATE WAS BUILT ON THAT ANTI-PATTERN. I thought I was the Redux noob!! #FML\n\nURL: https://itnext.io/the-perils-of-usi...",
+          "text": "That moment when you read a <strong>redux</strong> article titled \"The Perils of Using a Common <strong>redux</strong> <strong>anti-pattern</strong>\" as part of educating yourself on the stack of the app you're paid to continue development on, go back to the code of the application, and realize the ENTIRE <strong>redux</strong> STATE WAS BUILT ON THAT <strong>anti-pattern</strong>. I thought I was the <strong>redux</strong> noob!!  <strong>fml</strong>\n\nURL: <a href=\"https://itnext.io/the-perils-of-using-a-common-redux-anti-pattern-344d778e59da\">https://itnext.io/the-perils-of-usi...</a>",
           "score": 6,
           "created_time": 1531148585,
           "attached_image": "",
-          "num_comments": 1,
+          "num_comments": 0,
           "tags": [
             "rant",
             "anti-pattern",
@@ -467,7 +607,7 @@
           "special": true,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -479,7 +619,7 @@
         },
         {
           "id": 1540669,
-          "text": "The best Redux logger is the simplest (in-browser: console.log(store.getState())",
+          "text": "The best <strong>redux</strong> logger is the simplest (in-browser: console.log(store.getState())",
           "score": 1,
           "created_time": 1530871696,
           "attached_image": {
@@ -500,7 +640,7 @@
           "rc": 6,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -512,7 +652,7 @@
         },
         {
           "id": 1498413,
-          "text": "Fuck the ScrumTime app",
+          "text": "Fuck the <strong>scrumtime</strong> app",
           "score": 4,
           "created_time": 1529484289,
           "attached_image": {
@@ -532,7 +672,7 @@
           "rc": 1,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -544,7 +684,7 @@
         },
         {
           "id": 1497173,
-          "text": "Estimates..  First, part of the team makes \"high-level\" estimates which are based on informal, incomplete, still-evolving specs and an unstable back-end. The project people report the estimates to the client and elevate the status of these inaccurate estimates to that of commitments.\n\nThen, before the \"sprint\", we review our initial estimates *ahum commitments* in greater (technical) detail. Because there are still a lot of unknowns, we tend to estimate more buffer here (back-end is often not ready, always ping-pong between project people and dev-team about unclear specs, more work than originally expected, and often late modifications to the original spec).\n\nWhen an estimate becomes more than 50% extra time at the \"refinement\", we are told: \"sorry, we gotta do it in less\" and when it doesn't work out, we're kindly asked to spend part of our weekend catching up at 100% pay rate (legally it's 150-200%).\n\nFUCK THIS SHIT\n\n*quotes used abundantly because these terms belong to \"agile/scrum\" terminology but we're only pretending",
+          "text": "Estimates..  First, part of the team makes \"high-level\" <strong>estimates</strong> which are based on informal, incomplete, still-evolving specs and an unstable back-end. The project people report the <strong>estimates</strong> to the client and elevate the status of these inaccurate <strong>estimates</strong> to that of commitments.\n\nThen, before the \"sprint\", we review our initial <strong>estimates</strong> *ahum commitments* in greater (technical) detail. Because there are still a lot of unknowns, we tend to estimate more buffer here (back-end is often not ready, always ping-pong between project people and dev-team about unclear specs, more work than originally expected, and often late modifications to the original spec).\n\nWhen an estimate becomes more than 50% extra time at the \"refinement\", we are told: \"sorry, we gotta do it in less\" and when it doesn't work out, we're kindly asked to spend part of our weekend catching up at 100% pay rate (legally it's 150-200%).\n\nFUCK THIS SHIT\n\n*quotes used abundantly because these terms belong to \"agile/scrum\" terminology but we're only pretending",
           "score": 5,
           "created_time": 1529431402,
           "attached_image": "",
@@ -567,7 +707,7 @@
           "rc": 1,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -580,14 +720,14 @@
         {
           "id": 1484431,
           "text": "create-react-app is HUUUGEE (in a literal way)",
-          "score": 5,
+          "score": 4,
           "created_time": 1528997489,
           "attached_image": {
             "url": "https://img.devrant.com/devrant/rant/r_1484431_88oin.jpg",
             "width": 447,
             "height": 287
           },
-          "num_comments": 3,
+          "num_comments": 2,
           "tags": [
             "joke/meme",
             "node_modules",
@@ -600,7 +740,7 @@
           "rc": 3,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -612,7 +752,7 @@
         },
         {
           "id": 1294916,
-          "text": "Yes you are. Not a single reason. Clearly no one. I am very surprised. This recruiter put in some very subtle irony and lots of effort (google \"minutes in an hour\")",
+          "text": "Yes you are. Not a single reason. Clearly no one. I am very surprised. This <strong>recruiter</strong> put in some very subtle <strong>irony</strong> and lots of effort (google \"minutes in an hour\")",
           "score": 7,
           "created_time": 1521756924,
           "attached_image": {
@@ -636,7 +776,7 @@
           "rc": 1,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -648,7 +788,7 @@
         },
         {
           "id": 1289291,
-          "text": "Fuck you! I'm really starting to like this npm package, https://npmjs.com/package/fuck-you/",
+          "text": "Fuck you! I'm really starting to like this <strong>npm</strong> package, <a href=\"https://www.npmjs.com/package/fuck-you\">https://npmjs.com/package/fuck-you/</a>",
           "score": 7,
           "created_time": 1521550027,
           "attached_image": {
@@ -682,7 +822,7 @@
           ],
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -694,7 +834,7 @@
         },
         {
           "id": 1231794,
-          "text": "I see a lot of React devs (ab)using the array.map function in cases where a forEach would be more suitable (e.g. without assigning the result, and without return statements). What are your thoughts on this?",
+          "text": "I see a lot of <strong>react</strong> devs (ab)using the <strong>array</strong>.map function in cases where a <strong>foreach</strong> would be more suitable (e.g. without assigning the result, and without return statements). What are your thoughts on this?",
           "score": 2,
           "created_time": 1519314632,
           "attached_image": {
@@ -717,7 +857,7 @@
           "rc": 7,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -729,7 +869,7 @@
         },
         {
           "id": 1215878,
-          "text": "When you join a React JS SPA project months after the start to discover that 2 CSS grid systems with totally different breakpoints have been in use in parallel since 5 months, hidden by layer upon layer of abstraction, and that no dev bothered to fix, let alone notice.\r\n#FML",
+          "text": "When you join a <strong>react</strong> <strong>js</strong> <strong>spa</strong> project months after the start to discover that 2 <strong>css</strong> <strong>grid</strong> systems with totally different breakpoints have been in use in parallel since 5 months, hidden by layer upon layer of abstraction, and that no dev bothered to fix, let alone notice.\r\n <strong>fml</strong>",
           "score": 3,
           "created_time": 1518781797,
           "attached_image": "",
@@ -749,7 +889,7 @@
           "rc": 7,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -762,492 +902,23 @@
       ],
       "upvoted": [
         {
-          "id": 1963046,
-          "text": "LINUX is a pain :/",
-          "score": 11,
-          "created_time": 1547743362,
-          "attached_image": "",
-          "num_comments": 15,
-          "tags": [
-            "rant"
-          ],
-          "vote_state": 0,
-          "edited": true,
-          "rt": 1,
-          "rc": 1,
-          "user_id": 1963039,
-          "user_username": "AdityaJ1998",
-          "user_score": 11,
-          "user_avatar": {
-            "b": "7bc8a4"
-          },
-          "user_avatar_lg": {
-            "b": "7bc8a4"
-          }
-        },
-        {
-          "id": 1961419,
-          "text": "Windows vs Mac vs Linux",
-          "score": 6,
-          "created_time": 1547636185,
-          "attached_image": {
-            "url": "https://img.devrant.com/devrant/rant/r_1961419_2WpyN.jpg",
-            "width": 800,
-            "height": 557
-          },
-          "num_comments": 0,
-          "tags": [
-            "joke/meme",
-            "linux",
-            "github"
-          ],
-          "vote_state": 0,
-          "edited": false,
-          "rt": 1,
-          "rc": 3,
-          "user_id": 1557897,
-          "user_username": "Kimm",
-          "user_score": 12,
-          "user_avatar": {
-            "b": "7bc8a4",
-            "i": "v-21_c-3_b-1_g-m_9-1_1-12_16-1_3-12_8-1_7-1_5-1_12-12_6-43_2-17_22-6_4-1.jpg"
-          },
-          "user_avatar_lg": {
-            "b": "7bc8a4",
-            "i": "v-21_c-1_b-1_g-m_9-1_1-12_16-1_3-12_8-1_7-1_5-1_12-12_6-43_2-17_22-6_4-1.png"
-          }
-        },
-        {
-          "id": 1957720,
-          "text": "Checklist of most stupid things I did:\n\nBuy a 500gb SSD and install Windows Server 2008 R2 onto it, then configure it to look like Windows 7 and use it for development/gaming ✅\n\nBTW after installing all features and components, it runs very well.",
+          "id": 2023823,
+          "text": "#noestimates\n\nI fucking hate doing estimates. It stresses me out. I just did it, for a requirement about migration. I'm on my way to a fight now with the PO, because \"the estimated time is too long\". There was an agreement that deliverables were not to have extensive documentation and unit testing will only cover 30% of each use case (I know, stfu), but that's gone so I have to do the whole thing. I estimated 160 hours coding time, 40% of that for docs and 50 for testing. I'm standing by it.\n\nAll that stuff aside, what bothers me the most about estimates is that there's lazy motherfuckers who say shit like \"I can have their RESTful ws in 2 days, but I said a month, because fuck it\" and generate a win-win situation for them and their company, because the client - practically everytime - will just argue for the task to be completed in barely 10% less of the estimated time, accept the proposal and be happy waiting, the developer will fucking dawdle and the company will be paid for more hours than it deserves. Ugh.\n\nFuck estimates.",
           "score": 8,
-          "created_time": 1547387798,
-          "attached_image": {
-            "url": "https://img.devrant.com/devrant/rant/r_1957720_Qpomf.jpg",
-            "width": 562,
-            "height": 1000
-          },
-          "num_comments": 6,
-          "tags": [
-            "rant",
-            "windows",
-            "windows server",
-            "checklist",
-            "windows server 2008 r2",
-            "windows server 2008"
-          ],
-          "vote_state": 0,
-          "edited": true,
-          "rt": 1,
-          "rc": 1,
-          "user_id": 573382,
-          "user_username": "Joni4Games",
-          "user_score": 308,
-          "user_avatar": {
-            "b": "7bc8a4",
-            "i": "v-21_c-3_b-1_g-m_9-1_1-3_16-1_3-1_8-1_7-1_5-1_12-3_6-7_10-1_2-10_22-10_11-1_4-1.jpg"
-          },
-          "user_avatar_lg": {
-            "b": "7bc8a4",
-            "i": "v-21_c-1_b-1_g-m_9-1_1-3_16-1_3-1_8-1_7-1_5-1_12-3_6-7_10-1_2-10_22-10_11-1_4-1.png"
-          }
-        },
-        {
-          "id": 1957773,
-          "text": "😒 always",
-          "score": 56,
-          "created_time": 1547392359,
-          "attached_image": {
-            "url": "https://img.devrant.com/devrant/rant/r_1957773_v5JBP.jpg",
-            "width": 538,
-            "height": 542
-          },
-          "num_comments": 4,
-          "tags": [
-            "joke/meme",
-            "web development"
-          ],
-          "vote_state": 0,
-          "edited": false,
-          "rt": 1,
-          "rc": 3,
-          "user_id": 1180620,
-          "user_username": "fiktion",
-          "user_score": 566,
-          "user_avatar": {
-            "b": "d55161",
-            "i": "v-21_c-3_b-5_g-m_9-1_1-6_16-12_3-6_8-1_7-1_5-1_12-6_17-2_6-2_10-4_2-22_22-7_15-3_11-2_18-1_19-1_4-1.jpg"
-          },
-          "user_avatar_lg": {
-            "b": "d55161",
-            "i": "v-21_c-1_b-5_g-m_9-1_1-6_16-12_3-6_8-1_7-1_5-1_12-6_17-2_6-2_10-4_2-22_22-7_15-3_11-2_18-1_19-1_4-1.png"
-          }
-        },
-        {
-          "id": 1957877,
-          "text": "It will wake you hard",
-          "score": 51,
-          "created_time": 1547398690,
-          "attached_image": {
-            "url": "https://img.devrant.com/devrant/rant/r_1957877_bC5H1.jpg",
-            "width": 799,
-            "height": 643
-          },
-          "num_comments": 3,
-          "tags": [
-            "joke/meme"
-          ],
-          "vote_state": 0,
-          "edited": false,
-          "rt": 1,
-          "rc": 3,
-          "user_id": 1829270,
-          "user_username": "Abid",
-          "user_score": 4788,
-          "user_avatar": {
-            "b": "2a8b9d",
-            "i": "v-21_c-3_b-4_g-m_9-1_1-2_16-13_3-2_8-4_7-4_5-3_12-2_6-3_10-9_2-50_22-5_15-3_11-13_18-4_19-3_4-3_20-15_21-2.jpg"
-          },
-          "user_avatar_lg": {
-            "b": "2a8b9d",
-            "i": "v-21_c-1_b-4_g-m_9-1_1-2_16-13_3-2_8-4_7-4_5-3_12-2_6-3_10-9_2-50_22-5_15-3_11-13_18-4_19-3_4-3_20-15_21-2.png"
-          }
-        },
-        {
-          "id": 1957923,
-          "text": "I wanted to write about this around 6 months ago, i don't want to wait anymore, so here it goes.\n\nTldr: She is like my personal chat bot except she is real human and is perfect at this.\n\nAlmost a year ago I signed up for a random chat app to cure my loneliness and I met this girl. She was different than other strangers I have seen that I thought she was stupid. The main reason is i thought she was \"stupid\" to invite me to chat on telegram just after few days. \n\nThe way she chatted, it felt like she had no guard on. Usually, a girl on internet would be drowned with guys wanting to chat and they would be quite hostile or unfriendly and it almost never happens for a real girl to invite guys. The reason she added me was to practice her english while she was preparing to get in uni. As I had nothing to lose, I was okay. \n\nWe chatted a lot. It was weird because the chat we have felt like we knew each other her in real life. She was chatting to me almost every single day. She would send mirror selfies of her when going out, video of food she was prepping, the food she was about to have, photos she took and all. It was odd because she is a hijabi from an muslim majority nation. At one point, I suspected she was looking for attention and interaction from guys. But apparently even her mom knows about me.\n\nFor me, it didn't really matter what her motives were because her chats were helping me cure my feeling of loneliness. We never run out of things to talk about. We had a few little fights along the way, but it felt the friendship became more real after we fix them each time. \n\nToday she is a student in uni learning language to be a teacher, she is my dj where we listen to music together online, she is like my personal therapist where I can rant about things I don't want to rant with people in real life. She talks about wishing to meet me one day and show me around Istanbul - that doesn't sound like a good idea in a muslim country.\n\nLet's see how far it goes.",
-          "score": 21,
-          "created_time": 1547402191,
-          "attached_image": "",
-          "num_comments": 6,
-          "tags": [
-            "random",
-            "life",
-            "internet friends",
-            "chatbot"
-          ],
-          "vote_state": 0,
-          "edited": false,
-          "rt": 1,
-          "rc": 6,
-          "user_id": 232103,
-          "user_username": "HoloDreamer",
-          "user_score": 6389,
-          "user_avatar": {
-            "b": "d55161",
-            "i": "v-21_c-3_b-5_g-m_9-1_1-2_16-6_3-4_8-1_7-1_5-1_12-2_6-97_10-1_2-31_22-9_15-10_4-1_20-10_21-2.jpg"
-          },
-          "user_avatar_lg": {
-            "b": "d55161",
-            "i": "v-21_c-1_b-5_g-m_9-1_1-2_16-6_3-4_8-1_7-1_5-1_12-2_6-97_10-1_2-31_22-9_15-10_4-1_20-10_21-2.png"
-          }
-        },
-        {
-          "id": 1957953,
-          "text": "Q: Why did the database administrator leave his wife?\n\nA: She had one-to-many relationships.",
-          "score": 34,
-          "created_time": 1547406455,
+          "created_time": 1552330100,
           "attached_image": "",
           "num_comments": 2,
           "tags": [
-            "joke/meme",
-            "relationship",
-            "database"
-          ],
-          "vote_state": 0,
-          "edited": false,
-          "rt": 1,
-          "rc": 3,
-          "user_id": 1940586,
-          "user_username": "appsdevpk",
-          "user_score": 102,
-          "user_avatar": {
-            "b": "2a8b9d",
-            "i": "v-21_c-3_b-4_g-m_9-1_1-1_16-3_3-3_8-1_7-1_5-1_12-1_6-97_2-31_22-6_15-12_11-1_18-1_19-1_4-1.jpg"
-          },
-          "user_avatar_lg": {
-            "b": "2a8b9d",
-            "i": "v-21_c-1_b-4_g-m_9-1_1-1_16-3_3-3_8-1_7-1_5-1_12-1_6-97_2-31_22-6_15-12_11-1_18-1_19-1_4-1.png"
-          }
-        },
-        {
-          "id": 1958029,
-          "text": "I visited one IT company here in my town and lead dev told me they are writing their own framework becuase they dont believe on people who wrote open source projects, after few clicking on trying to show me his latest live project -PHP fatal error appeared and I was like 🤔",
-          "score": 18,
-          "created_time": 1547412361,
-          "attached_image": "",
-          "num_comments": 3,
-          "tags": [
-            "rant"
-          ],
-          "vote_state": 0,
-          "edited": false,
-          "rt": 1,
-          "rc": 1,
-          "user_id": 836537,
-          "user_username": "usernames",
-          "user_score": 605,
-          "user_avatar": {
-            "b": "2a8b9d",
-            "i": "v-21_c-3_b-4_g-m_9-1_1-1_16-6_3-1_8-1_7-1_5-1_12-1_6-14_10-3_2-2_22-6_15-3_18-2_19-1_4-1.jpg"
-          },
-          "user_avatar_lg": {
-            "b": "2a8b9d",
-            "i": "v-21_c-1_b-4_g-m_9-1_1-1_16-6_3-1_8-1_7-1_5-1_12-1_6-14_10-3_2-2_22-6_15-3_18-2_19-1_4-1.png"
-          }
-        },
-        {
-          "id": 1958106,
-          "text": "So... When is devRant going to get a mobile progressive web application? What features do Android and iOS offer that devRant need that are unavailable for the web?",
-          "score": 2,
-          "created_time": 1547416953,
-          "attached_image": "",
-          "num_comments": 13,
-          "tags": [
             "rant",
-            "question",
-            "progressive web applications",
-            "devrant"
+            "wk147"
           ],
           "vote_state": 0,
           "edited": false,
           "rt": 1,
           "rc": 1,
-          "user_id": 1949755,
-          "user_username": "MoonOwl",
-          "user_score": 156,
-          "user_avatar": {
-            "b": "2a8b9d",
-            "i": "v-21_c-3_b-4_g-m_9-1_1-12_16-3_3-9_8-1_7-1_5-1_12-12_6-107_10-1_2-38_22-5_4-1.jpg"
-          },
-          "user_avatar_lg": {
-            "b": "2a8b9d",
-            "i": "v-21_c-1_b-4_g-m_9-1_1-12_16-3_3-9_8-1_7-1_5-1_12-12_6-107_10-1_2-38_22-5_4-1.png"
-          }
-        },
-        {
-          "id": 1958311,
-          "text": "and more..",
-          "score": 25,
-          "created_time": 1547432764,
-          "attached_image": {
-            "url": "https://img.devrant.com/devrant/rant/r_1958311_a4dEz.jpg",
-            "width": 677,
-            "height": 513
-          },
-          "num_comments": 1,
-          "tags": [
-            "joke/meme"
-          ],
-          "vote_state": 0,
-          "edited": false,
-          "rt": 1,
-          "rc": 3,
-          "user_id": 1784788,
-          "user_username": "aflahali",
-          "user_score": 121,
-          "user_avatar": {
-            "b": "2a8b9d",
-            "i": "v-21_c-3_b-4_g-m_9-1_1-2_16-1_3-3_8-1_7-1_5-1_12-2_6-2_10-1_2-1_22-1_15-1_4-1.jpg"
-          },
-          "user_avatar_lg": {
-            "b": "2a8b9d",
-            "i": "v-21_c-1_b-4_g-m_9-1_1-2_16-1_3-3_8-1_7-1_5-1_12-2_6-2_10-1_2-1_22-1_15-1_4-1.png"
-          }
-        },
-        {
-          "id": 1958350,
-          "text": "\"A programmer was arrested for writing unreadable code. He refused to comment.\" \n\nH/T: (@Mr_Drinksonme)",
-          "score": 5,
-          "created_time": 1547435877,
-          "attached_image": "",
-          "num_comments": 1,
-          "tags": [
-            "joke/meme",
-            "code",
-            "programmer",
-            "comments",
-            "coder"
-          ],
-          "vote_state": 0,
-          "edited": false,
-          "rt": 1,
-          "rc": 3,
-          "user_id": 1759721,
-          "user_username": "shaurya",
-          "user_score": 171,
-          "user_avatar": {
-            "b": "2a8b9d",
-            "i": "v-21_c-3_b-4_g-m_9-1_1-2_16-6_3-1_8-1_7-1_5-1_12-2_6-2_10-1_2-1_22-5_11-2_4-1.jpg"
-          },
-          "user_avatar_lg": {
-            "b": "2a8b9d",
-            "i": "v-21_c-1_b-4_g-m_9-1_1-2_16-6_3-1_8-1_7-1_5-1_12-2_6-2_10-1_2-1_22-5_11-2_4-1.png"
-          }
-        },
-        {
-          "id": 1958352,
-          "text": "My !dev boyfriend just broke up with me because \"I spend too much on the computer\".",
-          "score": 108,
-          "created_time": 1547435908,
-          "attached_image": "",
-          "num_comments": 40,
-          "tags": [
-            "rant"
-          ],
-          "vote_state": 0,
-          "edited": false,
-          "rt": 1,
-          "rc": 1,
-          "user_id": 1824691,
-          "user_username": "cabbybaby",
-          "user_score": 977,
-          "user_avatar": {
-            "b": "d55161",
-            "i": "v-21_c-3_b-5_g-f_9-1_1-1_16-19_3-5_8-1_7-1_5-1_12-1_6-32_10-1_2-54_22-10_11-1_18-2_19-1_4-1.jpg"
-          },
-          "user_avatar_lg": {
-            "b": "d55161",
-            "i": "v-21_c-1_b-5_g-f_9-1_1-1_16-19_3-5_8-1_7-1_5-1_12-1_6-32_10-1_2-54_22-10_11-1_18-2_19-1_4-1.png"
-          }
-        },
-        {
-          "id": 1954952,
-          "text": "Take the know-it-all guy you grew up with, that ruins every relationship he's ever had with friends and family, because he gets angry when folks don't deem him as the authority, even for shit he doesn't have a single clue about doing correctly.\n\nNow make him the manager of a fast-food restaurant - so he can command anyone he pleases, making them do anything he wants them to, because he feels it's fun to experiment with co-workers emotions.\n\nGive him an assistant manager that realizes that the only way they can keep their job is to kiss his ass, blowing him every once in a while for a ten cent raise, while the rest of the employees do nothing but smile, say \"yes, sir\", and go about their business - eventually shit talking about him at the parties he's not invited to.\n\nWatch him jump on every fashion trend, no matter how much it costs, until he eventually decides that the job he's had for the last decade and his fellow employees are beneath him, without saving any money to pay for the things he needs to survive, or taking the proper time to learn all the things that would have made him successful in the long run.\n\nEven though he was an uptight twat and a half, some folks feel that he never got the chance he deserved, as death comes knocking at an earlier age than many would have expected; creating an empty, irrational, and partial dependency in their lives, caused by problems he never cared to correct for their love and admiration, while others are happy as fuck that he's breathed his last breath.\n\nThis is the state of our current industry.\n\n*Drops the mic*",
-          "score": 27,
-          "created_time": 1547173732,
-          "attached_image": "",
-          "num_comments": 1,
-          "tags": [
-            "rant",
-            "wk138"
-          ],
-          "vote_state": 0,
-          "edited": true,
-          "rt": 1,
-          "rc": 1,
-          "user_id": 1901583,
-          "user_username": "Hypergeek",
-          "user_score": 233,
-          "user_avatar": {
-            "b": "a973a2",
-            "i": "v-21_c-3_b-2_g-m_9-1_1-9_16-10_3-2_8-1_7-1_5-1_12-9_6-47_10-1_2-14_22-10_15-5_11-6_18-1_19-1_4-1.jpg"
-          },
-          "user_avatar_lg": {
-            "b": "a973a2",
-            "i": "v-21_c-1_b-2_g-m_9-1_1-9_16-10_3-2_8-1_7-1_5-1_12-9_6-47_10-1_2-14_22-10_15-5_11-6_18-1_19-1_4-1.png"
-          }
-        },
-        {
-          "id": 1954869,
-          "text": "Why do people pronounce char like charcoal when it clearly stands for character? It should be pronounced like car 🤔",
-          "score": 15,
-          "created_time": 1547163435,
-          "attached_image": "",
-          "num_comments": 44,
-          "tags": [
-            "question"
-          ],
-          "vote_state": 0,
-          "edited": false,
-          "rt": 1,
-          "rc": 4,
-          "user_id": 148803,
-          "user_username": "620hun",
-          "user_score": 7633,
-          "user_avatar": {
-            "b": "a973a2",
-            "i": "v-21_c-3_b-2_g-m_9-1_1-2_16-5_3-3_8-4_7-4_5-4_12-2_17-2_6-3_10-1_2-76_22-2_15-10_18-4_19-3_4-4_20-9.jpg"
-          },
-          "user_avatar_lg": {
-            "b": "a973a2",
-            "i": "v-21_c-1_b-2_g-m_9-1_1-2_16-5_3-3_8-4_7-4_5-4_12-2_17-2_6-3_10-1_2-76_22-2_15-10_18-4_19-3_4-4_20-9.png"
-          }
-        },
-        {
-          "id": 1954780,
-          "text": "My debugging buddy 😁🦉",
-          "score": 41,
-          "created_time": 1547156153,
-          "attached_image": {
-            "url": "https://img.devrant.com/devrant/rant/r_1954780_HNN1s.jpg",
-            "width": 750,
-            "height": 1000
-          },
-          "num_comments": 5,
-          "tags": [
-            "random",
-            "programming",
-            "debugging"
-          ],
-          "vote_state": 0,
-          "edited": false,
-          "rt": 1,
-          "rc": 6,
-          "user_id": 1832173,
-          "user_username": "Lyubo",
-          "user_score": 746,
-          "user_avatar": {
-            "b": "7bc8a4",
-            "i": "v-21_c-3_b-1_g-m_9-1_1-2_16-3_3-3_8-1_7-1_5-1_12-2_6-6_10-2_2-39_22-9_18-2_19-2_4-1.jpg"
-          },
-          "user_avatar_lg": {
-            "b": "7bc8a4",
-            "i": "v-21_c-1_b-1_g-m_9-1_1-2_16-3_3-3_8-1_7-1_5-1_12-2_6-6_10-2_2-39_22-9_18-2_19-2_4-1.png"
-          }
-        },
-        {
-          "id": 1954497,
-          "text": "Can anyone else relate?",
-          "score": 75,
-          "created_time": 1547135864,
-          "attached_image": {
-            "url": "https://img.devrant.com/devrant/rant/r_1954497_9drzt.jpg",
-            "width": 799,
-            "height": 789
-          },
-          "num_comments": 3,
-          "tags": [
-            "joke/meme",
-            "wk125"
-          ],
-          "vote_state": 0,
-          "edited": false,
-          "rt": 1,
-          "rc": 3,
-          "user_id": 9814,
-          "user_username": "ericfledderman",
-          "user_score": 1363,
-          "user_avatar": {
-            "b": "2a8b9d",
-            "i": "v-21_c-3_b-4_g-m_9-1_1-3_16-3_3-1_8-2_7-2_5-1_12-3_17-2_6-3_10-9_2-5_22-2_15-3_11-2_18-2_19-2_4-1_20-10.jpg"
-          },
-          "user_avatar_lg": {
-            "b": "2a8b9d",
-            "i": "v-21_c-1_b-4_g-m_9-1_1-3_16-3_3-1_8-2_7-2_5-1_12-3_17-2_6-3_10-9_2-5_22-2_15-3_11-2_18-2_19-2_4-1_20-10.png"
-          },
-          "user_dpp": 1
-        },
-        {
-          "id": 1954609,
-          "text": "I'd like some fat avatars to represent my current state. Went from 90 to 115 KG during 2018. At 6 ft. tall I already look like absolute shit.",
-          "score": 2,
-          "created_time": 1547143965,
-          "attached_image": "",
-          "num_comments": 7,
-          "tags": [
-            "devrant",
-            "fat",
-            "fat avatar for a fat cunt",
-            "avatar"
-          ],
-          "vote_state": 0,
-          "edited": false,
-          "rt": 1,
-          "rc": 5,
           "user_id": 1173330,
           "user_username": "telephantasm",
-          "user_score": 2242,
+          "user_score": 2580,
           "user_avatar": {
             "b": "2a8b9d",
             "i": "v-21_c-3_b-4_g-m_9-1_1-8_16-1_3-5_8-1_7-1_5-1_12-8_6-97_10-1_2-39_22-1_15-3_11-2_19-1_4-1.jpg"
@@ -1258,296 +929,721 @@
           }
         },
         {
-          "id": 1912899,
-          "text": "The more time I spend here, the more I feel like xkcd#386",
-          "score": 228,
-          "created_time": 1544303398,
+          "id": 2019606,
+          "text": "Super strong... hahaha",
+          "score": 12,
+          "created_time": 1551989278,
           "attached_image": {
-            "url": "https://img.devrant.com/devrant/rant/r_1912899_xXPbd.jpg",
-            "width": 300,
-            "height": 330
+            "url": "https://img.devrant.com/devrant/rant/r_2019606_7m1M4.jpg",
+            "width": 640,
+            "height": 715
           },
           "num_comments": 3,
           "tags": [
-            "rant",
-            "xkcd",
-            "devrant",
-            "duty calls"
-          ],
-          "vote_state": 0,
-          "edited": false,
-          "rt": 1,
-          "rc": 1,
-          "user_id": 566844,
-          "user_username": "mt3o",
-          "user_score": 1730,
-          "user_avatar": {
-            "b": "f99a66",
-            "i": "v-21_c-3_b-3_g-m_9-1_1-1_16-15_3-5_8-2_7-2_5-1_12-1_17-2_6-92_2-51_22-11_15-5_11-3_18-2_19-2_4-1_20-1.jpg"
-          },
-          "user_avatar_lg": {
-            "b": "f99a66",
-            "i": "v-21_c-1_b-3_g-m_9-1_1-1_16-15_3-5_8-2_7-2_5-1_12-1_17-2_6-92_2-51_22-11_15-5_11-3_18-2_19-2_4-1_20-1.png"
-          }
-        },
-        {
-          "id": 1946953,
-          "text": "Very confusing",
-          "score": 18,
-          "created_time": 1546612935,
-          "attached_image": {
-            "url": "https://img.devrant.com/devrant/rant/r_1946953_ZHjfc.jpg",
-            "width": 798,
-            "height": 228
-          },
-          "num_comments": 1,
-          "tags": [
-            "joke/meme"
+            "joke/meme",
+            "dev",
+            "strong",
+            "joke",
+            "meme",
+            "coding",
+            "google"
           ],
           "vote_state": 0,
           "edited": false,
           "rt": 1,
           "rc": 3,
-          "user_id": 1944309,
-          "user_username": "IDontLikeSchool",
-          "user_score": 229,
+          "user_id": 1997409,
+          "user_username": "jamesmcglone",
+          "user_score": 230,
           "user_avatar": {
-            "b": "a973a2",
-            "i": "v-21_c-3_b-2_g-m_9-1_1-2_16-6_3-2_8-1_7-1_5-1_12-2_17-1_6-15_10-3_2-14_22-3_15-4_18-1_19-1_4-1.jpg"
+            "b": "2a8b9d",
+            "i": "v-21_c-3_b-4_g-m_9-1_1-7_16-15_3-2_8-1_7-1_5-1_12-7_6-2_10-1_2-10_22-2_19-1_4-1.jpg"
           },
           "user_avatar_lg": {
-            "b": "a973a2",
-            "i": "v-21_c-1_b-2_g-m_9-1_1-2_16-6_3-2_8-1_7-1_5-1_12-2_17-1_6-15_10-3_2-14_22-3_15-4_18-1_19-1_4-1.png"
+            "b": "2a8b9d",
+            "i": "v-21_c-1_b-4_g-m_9-1_1-7_16-15_3-2_8-1_7-1_5-1_12-7_6-2_10-1_2-10_22-2_19-1_4-1.png"
           }
         },
         {
-          "id": 1896056,
-          "text": "A Life Fact!",
-          "score": 296,
-          "created_time": 1543373905,
-          "attached_image": {
-            "url": "https://img.devrant.com/devrant/rant/r_1896056_Wxayw.jpg",
-            "width": 800,
-            "height": 735
-          },
-          "num_comments": 17,
-          "tags": [
-            "joke/meme"
-          ],
-          "vote_state": 0,
-          "edited": false,
-          "rt": 1,
-          "rc": 3,
-          "user_id": 1856223,
-          "user_username": "abdulmoniem",
-          "user_score": 886,
-          "user_avatar": {
-            "b": "a973a2",
-            "i": "v-21_c-3_b-2_g-m_9-1_1-6_16-1_3-1_8-1_7-1_5-1_12-6_6-2_2-1_22-1_15-10_4-1.jpg"
-          },
-          "user_avatar_lg": {
-            "b": "a973a2",
-            "i": "v-21_c-1_b-2_g-m_9-1_1-6_16-1_3-1_8-1_7-1_5-1_12-6_6-2_2-1_22-1_15-10_4-1.png"
-          }
-        },
-        {
-          "id": 1946798,
-          "text": "My foolishness of giving into an almost impossible dream seems to be finally setting in.\n\nSo the client, who is also my relative is launching an hotel. He wanted a website for the hotel with booking facility. The budget was plenty for that requirement and I was okay. In my calculations 20% of the proposed budget seemed fair to charge.\n\nFew months in, it turns out he now wants a hotel booking platform where other hotels can also be listed. The reasoning was he wants to avoid the commissions charged by popular booking sites and also feature his own hotel in the booking platform that was about to be build.\n\nI was skeptical about his intentions and my skills in developing it. I was also concerned whether he understood the responsibilities and overhead costs of running such a platform. He talked like it'll be fine. I calculated my billing to about 50% of the budget. I left the other 50% intentionally because I knew it would need for keeping up the site.\n\nTime goes by, i am now 90% into completion of the new requirement. \n\nFew weeks ago, i had informed about server pricing and I quoted a starting price of $15 per month. He seemed quite shocked. His reaction shocked me too and I got concerned whether I would even get rest of the payment ( already got 10% of proposed budget ) as advance.\n\nJust few days ago, he now has a new requirement. He wants to show the hotel pricing from the booking site in Google Maps search. I tried to understand him that those are Ads and I was pretty sure price of running those ads are beyond his budget and probably negate any savings he is trying to make by competing popular booking platforms. Signing up for Hotel Ads as a booking platform is quite challenging. I don't think it'll happen.\n\nI am now concerned he might bail on the project, so I have not informed yet. I just hope I get paid for the work I done and I'll inform then. :P\n\nAnyways, the journey of it's development was quite insightful and challenging experience. I fell in love with a language I knew existed but never really bothered about and a framework whose only thing I knew was that it's name sounded cool to say.",
-          "score": 11,
-          "created_time": 1546602274,
+          "id": 2019675,
+          "text": "Any tips on getting into open source development? Listings of projects in search of devs? I have done next to zero contribution to the open source community and would like to change that.",
+          "score": 6,
+          "created_time": 1551992358,
           "attached_image": "",
-          "num_comments": 5,
+          "num_comments": 7,
           "tags": [
-            "rant",
-            "mistakes were made",
-            "bail",
-            "client"
+            "question",
+            "open source"
+          ],
+          "vote_state": 0,
+          "edited": false,
+          "rt": 1,
+          "rc": 4,
+          "user_id": 829642,
+          "user_username": "dyte",
+          "user_score": 113,
+          "user_avatar": {
+            "b": "2a8b9d",
+            "i": "v-21_c-3_b-4_g-m_9-1_1-2_16-4_3-6_8-1_7-1_5-1_12-2_6-107_2-40_22-9_15-10_18-1_19-1_4-1.jpg"
+          },
+          "user_avatar_lg": {
+            "b": "2a8b9d",
+            "i": "v-21_c-1_b-4_g-m_9-1_1-2_16-4_3-6_8-1_7-1_5-1_12-2_6-107_2-40_22-9_15-10_18-1_19-1_4-1.png"
+          }
+        },
+        {
+          "id": 2019586,
+          "text": "NEVER ACCEPT to be the ONLY DEV in the company who knows the whole product!\n\nI am in the position of being the only one who knows all modules, there are even modules I developed which no one else will be able to maintain as soon as I leave the company, which I am planning right now and this also makes me getting depressed about.",
+          "score": 44,
+          "created_time": 1551987582,
+          "attached_image": "",
+          "num_comments": 26,
+          "tags": [
+            "rant"
           ],
           "vote_state": 0,
           "edited": false,
           "rt": 1,
           "rc": 1,
-          "user_id": 232103,
-          "user_username": "HoloDreamer",
-          "user_score": 6389,
+          "user_id": 2009749,
+          "user_username": "tuc0w",
+          "user_score": 262,
           "user_avatar": {
-            "b": "d55161",
-            "i": "v-21_c-3_b-5_g-m_9-1_1-2_16-6_3-4_8-1_7-1_5-1_12-2_6-97_10-1_2-31_22-9_15-10_4-1_20-10_21-2.jpg"
+            "b": "2a8b9d",
+            "i": "v-21_c-3_b-4_g-m_9-1_1-1_16-6_3-4_8-1_7-1_5-1_12-1_6-3_10-1_2-10_22-10_15-4_11-1_18-1_19-1_4-1.jpg"
           },
           "user_avatar_lg": {
-            "b": "d55161",
-            "i": "v-21_c-1_b-5_g-m_9-1_1-2_16-6_3-4_8-1_7-1_5-1_12-2_6-97_10-1_2-31_22-9_15-10_4-1_20-10_21-2.png"
-          }
-        },
-        {
-          "id": 1946844,
-          "text": "Programmers have logic! \r\nSometimes......",
-          "score": 42,
-          "created_time": 1546606028,
-          "attached_image": {
-            "url": "https://img.devrant.com/devrant/rant/r_1946844_pVw11.jpg",
-            "width": 236,
-            "height": 350
-          },
-          "num_comments": 11,
-          "tags": [
-            "joke/meme",
-            "coder"
-          ],
-          "vote_state": 0,
-          "edited": false,
-          "rt": 1,
-          "rc": 3,
-          "user_id": 1946552,
-          "user_username": "Saksham-Saxena",
-          "user_score": 58,
-          "user_avatar": {
-            "b": "7bc8a4",
-            "i": "v-21_c-3_b-1_g-m_9-1_1-1_16-6_3-6_8-1_7-1_5-1_12-1_6-2_10-1_2-1_22-6_4-1.jpg"
-          },
-          "user_avatar_lg": {
-            "b": "7bc8a4",
-            "i": "v-21_c-1_b-1_g-m_9-1_1-1_16-6_3-6_8-1_7-1_5-1_12-1_6-2_10-1_2-1_22-6_4-1.png"
-          }
-        },
-        {
-          "id": 1946989,
-          "text": "Does this count as Donald Duck debugging? 🦆🍊",
-          "score": 37,
-          "created_time": 1546614653,
-          "attached_image": {
-            "url": "https://img.devrant.com/devrant/rant/r_1946989_mVPBT.jpg",
-            "width": 750,
-            "height": 1000
-          },
-          "num_comments": 12,
-          "tags": [
-            "joke/meme",
-            "donald trump",
-            "debugging"
-          ],
-          "vote_state": 0,
-          "edited": false,
-          "rt": 1,
-          "rc": 3,
-          "user_id": 92131,
-          "user_username": "Duncan",
-          "user_score": 268,
-          "user_avatar": {
-            "b": "7bc8a4",
-            "i": "v-21_c-3_b-1_g-m_9-1_1-9_16-15_3-1_8-1_7-1_5-1_12-9_6-15_10-1_2-10_22-3_15-11_11-6_4-1.jpg"
-          },
-          "user_avatar_lg": {
-            "b": "7bc8a4",
-            "i": "v-21_c-1_b-1_g-m_9-1_1-9_16-15_3-1_8-1_7-1_5-1_12-9_6-15_10-1_2-10_22-3_15-11_11-6_4-1.png"
+            "b": "2a8b9d",
+            "i": "v-21_c-1_b-4_g-m_9-1_1-1_16-6_3-4_8-1_7-1_5-1_12-1_6-3_10-1_2-10_22-10_15-4_11-1_18-1_19-1_4-1.png"
           },
           "user_dpp": 1
         },
         {
-          "id": 1947101,
-          "text": "A guessing game where you can guess if the question is from an indian.",
-          "score": 17,
-          "created_time": 1546622519,
-          "attached_image": "",
-          "num_comments": 14,
+          "id": 2017624,
+          "text": "Really who would check if he/ she is an idiot ??",
+          "score": 18,
+          "created_time": 1551868975,
+          "attached_image": {
+            "url": "https://img.devrant.com/devrant/rant/r_2017624_xf8mf.jpg",
+            "width": 562,
+            "height": 1000
+          },
+          "num_comments": 8,
           "tags": [
             "random",
-            "indians got questions"
+            "wk145"
           ],
           "vote_state": 0,
           "edited": false,
           "rt": 1,
           "rc": 6,
-          "user_id": 49001,
-          "user_username": "heyheni",
-          "user_score": 14875,
+          "user_id": 1901606,
+          "user_username": "ParshavJain",
+          "user_score": 42,
           "user_avatar": {
             "b": "2a8b9d",
-            "i": "v-21_c-3_b-4_g-m_9-1_1-2_16-6_3-3_8-1_7-1_5-1_12-2_6-3_10-9_2-49_22-5_4-1_20-13.jpg"
+            "i": "v-21_c-3_b-4_g-m_9-1_1-10_16-6_3-3_8-1_7-1_5-1_12-10_6-3_10-1_2-10_22-1_15-4_4-1.jpg"
           },
           "user_avatar_lg": {
             "b": "2a8b9d",
-            "i": "v-21_c-1_b-4_g-m_9-1_1-2_16-6_3-3_8-1_7-1_5-1_12-2_6-3_10-9_2-49_22-5_4-1_20-13.png"
+            "i": "v-21_c-1_b-4_g-m_9-1_1-10_16-6_3-3_8-1_7-1_5-1_12-10_6-3_10-1_2-10_22-1_15-4_4-1.png"
+          }
+        },
+        {
+          "id": 2015779,
+          "text": "Good advice, I guess?",
+          "score": 32,
+          "created_time": 1551738531,
+          "attached_image": {
+            "url": "https://img.devrant.com/devrant/rant/r_2015779_jrFRq.jpg",
+            "width": 324,
+            "height": 187
+          },
+          "num_comments": 7,
+          "tags": [
+            "joke/meme",
+            "throwback",
+            "error message"
+          ],
+          "vote_state": 0,
+          "edited": false,
+          "rt": 1,
+          "rc": 3,
+          "user_id": 1959552,
+          "user_username": "cmckendry",
+          "user_score": 60,
+          "user_avatar": {
+            "b": "69c9cd",
+            "i": "v-21_c-3_b-6_g-m_9-1_1-9_16-4_3-5_8-1_7-1_5-1_12-9_6-37_10-1_2-9_22-2_15-5_4-1.jpg"
+          },
+          "user_avatar_lg": {
+            "b": "69c9cd",
+            "i": "v-21_c-1_b-6_g-m_9-1_1-9_16-4_3-5_8-1_7-1_5-1_12-9_6-37_10-1_2-9_22-2_15-5_4-1.png"
+          }
+        },
+        {
+          "id": 2015029,
+          "text": "This was my first freelancer project. Just dropped out of school, i think i was 17. No money, no proper hardware, i had a very old laptop & stolen wifi from our neighbor. I lived in a very small room at my mom’s flat, she wanted me out as soon as i turn 18. At the time my plan was to work on freelancer stuff and make my own games. “It will be fine, fuck school, who needs school? 😂“ I haven’t really finished anything back then, so i only had a few wip hobby projects to show ppl as my references. I saw a freelancer job posting. The task was to make a simple quiz game for mobile, it paid 350$. Back then that was a lot of money for me so i took it. I met the client, he said “2-3 week tops, i send you everything, you do the code” Cool. I finally had a “job”😃. The 2-3 weeks turned into a 8 month blur of all-nighting and just implement one more thing and its finished. I did not really have any experience on how to deal with clients and i really needed this project to finally have something on my porfolio. I motivated myself with “if i can finish this i can finish anything”. I think the story of my most definitive all-nighting was 3 months into the development. I finally got everything from the client so it was like just put it together and its done. The client wanted 300 levels, beeing a noob i was i started making all the 300 unity scenes by hand, aligning the pictures, the ui, testing each level, making adjustments to the code, etc.. after a really long night and a fuckton of caffeine i was done. I sent it to the client at around 9 am and gone to sleep. When i woke up i checked my emails to saw this: Cool! But can we do hints? (wich needed a fuckton of rework of my code) I think i had my first mental breakdown while working on the project. After that he wanted more modifications and because i made every level by hand i had to remake all of them like 10 times 😂\nBut in the end it turned out positive, he really helped me to start my carrier, we became sord of friends and the project gave me a lot of confidence and experience on how to deal with stuff when shit goes wrong because everything that can go wrong in a project gone wrong. It was the most valuable developer lesson. Plus it sounds so cool to say “i was born in development hell, b*tch!”🕶\nI attached a pic of the laptop i worked on 😂\nThanks for reading 😃",
+          "score": 176,
+          "created_time": 1551695592,
+          "attached_image": {
+            "url": "https://img.devrant.com/devrant/rant/r_2015029_Q7HuH.jpg",
+            "width": 552,
+            "height": 414
+          },
+          "num_comments": 33,
+          "tags": [
+            "rant",
+            "development hell",
+            "wk146",
+            "freelancing",
+            "clients"
+          ],
+          "vote_state": 0,
+          "edited": false,
+          "rt": 1,
+          "rc": 1,
+          "user_id": 691191,
+          "user_username": "PreyK",
+          "user_score": 1940,
+          "user_avatar": {
+            "b": "2a8b9d",
+            "i": "v-21_c-3_b-4_g-m_9-1_1-1_16-6_3-9_8-2_7-2_5-1_12-1_17-1_6-4_10-1_2-81_22-1_11-13_18-1_19-3_4-1_20-7.jpg"
+          },
+          "user_avatar_lg": {
+            "b": "2a8b9d",
+            "i": "v-21_c-1_b-4_g-m_9-1_1-1_16-6_3-9_8-2_7-2_5-1_12-1_17-1_6-4_10-1_2-81_22-1_11-13_18-1_19-3_4-1_20-7.png"
+          }
+        },
+        {
+          "id": 2011408,
+          "text": "So it turns out I'm not receiving my first salary for this new job until March 15 because I joined the company right after the cut-off period.\n\n1. I'm running out of cash and I use my credit card for all my transportation costs because the office is too far.\n\n2. I had to have food delivered and paid using my credit card because I  have little cash for the next two weeks. I think I'll have to cash out some of my bitcoins.\n\n3. My condo unit is totally fucked after three years of habitation. The toilet fill valve is broken so my water bills skyrocketed to an insane amount. The kitchen sink is still leaking and so is the bathroom ceiling. I was sleeping when I heard a loud \"tud\" from the bathroom. It's no longer liquid that fell from the ceiling, it's bricks! I didn't notice it until the morning and now my toilet is clogged with broken bricks. It's been five months since I started following up on the repairs and nothing is fixed yet. Now I don't even have money for repairs.\n\n4. My brother brought a big, weird, and ugly drawer over a year ago when they visited so they can keep clothes and shit in there when they stayed with me for a few months. Now it's still there and I can't setup my own workstation because the ugly motherfucker occupies so much space. I have barely recovered from the plastic neon green plates and cups they left before. They pretty much turned my unit into a junkyard.\n\nLife doesn't immediately get better as soon as depression stops. You have to first deal with the aftermath. I'm gonna deal with all this shit as soon as I get my first paycheck. In a weird way, I'm still positive about the future.",
+          "score": 38,
+          "created_time": 1551394031,
+          "attached_image": "",
+          "num_comments": 18,
+          "tags": [
+            "rant"
+          ],
+          "vote_state": 0,
+          "edited": false,
+          "rt": 1,
+          "rc": 1,
+          "user_id": 1832213,
+          "user_username": "rutee07",
+          "user_score": 4513,
+          "user_avatar": {
+            "b": "2a8b9d",
+            "i": "v-21_c-3_b-4_g-m_9-1_1-9_16-1_3-7_8-1_7-1_5-1_12-9_6-63_10-1_2-19_22-10_15-5_19-1_4-1.jpg"
+          },
+          "user_avatar_lg": {
+            "b": "2a8b9d",
+            "i": "v-21_c-1_b-4_g-m_9-1_1-9_16-1_3-7_8-1_7-1_5-1_12-9_6-63_10-1_2-19_22-10_15-5_19-1_4-1.png"
+          }
+        },
+        {
+          "id": 2011831,
+          "text": "Oh boy..",
+          "score": 28,
+          "created_time": 1551428480,
+          "attached_image": {
+            "url": "https://img.devrant.com/devrant/rant/r_2011831_vTLMH.jpg",
+            "width": 562,
+            "height": 999
+          },
+          "num_comments": 20,
+          "tags": [
+            "rant"
+          ],
+          "vote_state": 0,
+          "edited": false,
+          "rt": 1,
+          "rc": 1,
+          "user_id": 1666511,
+          "user_username": "muffledMitosis",
+          "user_score": 190,
+          "user_avatar": {
+            "b": "69c9cd",
+            "i": "v-21_c-3_b-6_g-m_9-1_1-7_16-1_3-9_8-1_7-1_5-1_12-7_6-14_10-1_2-1_22-7_15-5_11-2_4-1.jpg"
+          },
+          "user_avatar_lg": {
+            "b": "69c9cd",
+            "i": "v-21_c-1_b-6_g-m_9-1_1-7_16-1_3-9_8-1_7-1_5-1_12-7_6-14_10-1_2-1_22-7_15-5_11-2_4-1.png"
+          }
+        },
+        {
+          "id": 1969466,
+          "text": "Hahahaha 😂😂😂",
+          "score": 427,
+          "created_time": 1548193054,
+          "attached_image": {
+            "url": "https://img.devrant.com/devrant/rant/r_1969466_jf67R.jpg",
+            "width": 599,
+            "height": 382
+          },
+          "num_comments": 5,
+          "tags": [
+            "joke/meme"
+          ],
+          "vote_state": 0,
+          "edited": false,
+          "rt": 1,
+          "rc": 3,
+          "user_id": 1420854,
+          "user_username": "etrock",
+          "user_score": 4595,
+          "user_avatar": {
+            "b": "2a8b9d",
+            "i": "v-21_c-3_b-4_g-m_9-1_1-1_16-18_3-3_8-4_7-4_5-3_12-1_6-3_10-9_2-44_22-11_15-4_11-12_18-4_19-3_4-3_20-15_21-3.jpg"
+          },
+          "user_avatar_lg": {
+            "b": "2a8b9d",
+            "i": "v-21_c-1_b-4_g-m_9-1_1-1_16-18_3-3_8-4_7-4_5-3_12-1_6-3_10-9_2-44_22-11_15-4_11-12_18-4_19-3_4-3_20-15_21-3.png"
           },
           "user_dpp": 1
         },
         {
-          "id": 1891120,
-          "text": "It counts?",
-          "score": 307,
-          "created_time": 1543069976,
+          "id": 2010800,
+          "text": "Fat indeed",
+          "score": 64,
+          "created_time": 1551362238,
           "attached_image": {
-            "url": "https://img.devrant.com/devrant/rant/r_1891120_83wkq.jpg",
-            "width": 799,
-            "height": 904
+            "url": "https://img.devrant.com/devrant/rant/r_2010800_vZB6x.jpg",
+            "width": 468,
+            "height": 451
           },
-          "num_comments": 22,
+          "num_comments": 6,
           "tags": [
-            "devrant",
-            "counts",
-            "it",
-            "ball",
-            "stress"
+            "joke/meme",
+            "android",
+            "code",
+            "java",
+            "php",
+            "programming",
+            "python",
+            "javascript"
           ],
           "vote_state": 0,
-          "edited": true,
+          "edited": false,
           "rt": 1,
-          "rc": 5,
-          "user_id": 1884662,
-          "user_username": "zegarr",
-          "user_score": 435,
+          "rc": 3,
+          "user_id": 2007214,
+          "user_username": "polo254",
+          "user_score": 130,
           "user_avatar": {
-            "b": "e6c653",
-            "i": "v-21_c-3_b-7_g-m_9-1_1-1_16-6_3-4_8-1_7-1_5-1_12-1_6-11_2-20_22-7_15-3_4-1.jpg"
+            "b": "f99a66",
+            "i": "v-21_c-3_b-3_g-m_9-1_1-5_16-11_3-12_8-1_7-1_5-1_12-5_17-1_6-42_10-1_2-10_22-5_15-4_19-1_4-1.jpg"
           },
           "user_avatar_lg": {
-            "b": "e6c653",
-            "i": "v-21_c-1_b-7_g-m_9-1_1-1_16-6_3-4_8-1_7-1_5-1_12-1_6-11_2-20_22-7_15-3_4-1.png"
+            "b": "f99a66",
+            "i": "v-21_c-1_b-3_g-m_9-1_1-5_16-11_3-12_8-1_7-1_5-1_12-5_17-1_6-42_10-1_2-10_22-5_15-4_19-1_4-1.png"
           }
         },
         {
-          "id": 1943102,
-          "text": "No idea if this is already posted but it made my day.",
-          "score": 129,
-          "created_time": 1546291899,
+          "id": 2010781,
+          "text": "About to put together this new killing machine!",
+          "score": 52,
+          "created_time": 1551361568,
           "attached_image": {
-            "url": "https://img.devrant.com/devrant/rant/r_1943102_4fFAw.jpg",
-            "width": 720,
-            "height": 520
+            "url": "https://img.devrant.com/devrant/rant/r_2010781_X8pHG.jpg",
+            "width": 800,
+            "height": 600
+          },
+          "num_comments": 24,
+          "tags": [
+            "random",
+            "excited",
+            "build",
+            "new pc",
+            "desktop"
+          ],
+          "vote_state": 0,
+          "edited": false,
+          "rt": 1,
+          "rc": 6,
+          "user_id": 1336255,
+          "user_username": "scarface78987",
+          "user_score": 161,
+          "user_avatar": {
+            "b": "a973a2",
+            "i": "v-21_c-3_b-2_g-m_9-1_1-9_16-6_3-3_8-1_7-1_5-1_12-9_6-2_2-10_22-7_15-12_4-1.jpg"
+          },
+          "user_avatar_lg": {
+            "b": "a973a2",
+            "i": "v-21_c-1_b-2_g-m_9-1_1-9_16-6_3-3_8-1_7-1_5-1_12-9_6-2_2-10_22-7_15-12_4-1.png"
+          }
+        },
+        {
+          "id": 2010765,
+          "text": "detective + murderer",
+          "score": 88,
+          "created_time": 1551360636,
+          "attached_image": {
+            "url": "https://img.devrant.com/devrant/rant/r_2010765_Tryer.jpg",
+            "width": 500,
+            "height": 322
           },
           "num_comments": 3,
           "tags": [
             "joke/meme",
-            "meme",
+            "java",
+            "android",
             "programming"
           ],
           "vote_state": 0,
           "edited": false,
           "rt": 1,
           "rc": 3,
-          "user_id": 591931,
-          "user_username": "PanagIatrou",
-          "user_score": 417,
+          "user_id": 2010733,
+          "user_username": "manuell",
+          "user_score": 113,
           "user_avatar": {
-            "b": "f99a66",
-            "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-3_3-3_8-1_7-1_5-1_12-2_6-2_10-1_2-10_22-6_11-7_18-1_4-1.jpg"
+            "b": "2a8b9d",
+            "i": "v-21_c-3_b-4_g-m_9-1_1-13_16-5_3-3_8-1_7-1_5-1_12-13_6-82_10-1_2-1_22-6_15-6_4-1.jpg"
           },
           "user_avatar_lg": {
-            "b": "f99a66",
-            "i": "v-21_c-1_b-3_g-m_9-1_1-2_16-3_3-3_8-1_7-1_5-1_12-2_6-2_10-1_2-10_22-6_11-7_18-1_4-1.png"
+            "b": "2a8b9d",
+            "i": "v-21_c-1_b-4_g-m_9-1_1-13_16-5_3-3_8-1_7-1_5-1_12-13_6-82_10-1_2-1_22-6_15-6_4-1.png"
           }
         },
         {
-          "id": 1897076,
-          "text": "And it is healthy BTW!",
-          "score": 310,
-          "created_time": 1543419879,
+          "id": 2009420,
+          "text": "on point, motivation lols",
+          "score": 55,
+          "created_time": 1551272589,
           "attached_image": {
-            "url": "https://img.devrant.com/devrant/rant/r_1897076_4vsXJ.jpg",
-            "width": 799,
-            "height": 691
+            "url": "https://img.devrant.com/devrant/rant/r_2009420_iYy4K.jpg",
+            "width": 640,
+            "height": 406
           },
-          "num_comments": 12,
+          "num_comments": 5,
+          "tags": [
+            "joke/meme",
+            "opprtunities",
+            "issues"
+          ],
+          "vote_state": 0,
+          "edited": false,
+          "rt": 1,
+          "rc": 3,
+          "user_id": 316849,
+          "user_username": "japzio",
+          "user_score": 6887,
+          "user_avatar": {
+            "b": "2a8b9d",
+            "i": "v-21_c-3_b-4_g-m_9-1_1-6_16-17_3-2_8-2_7-2_5-1_12-6_6-46_10-1_2-26_22-10_15-6_11-2_18-4_19-1_4-1_20-3_21-2.jpg"
+          },
+          "user_avatar_lg": {
+            "b": "2a8b9d",
+            "i": "v-21_c-1_b-4_g-m_9-1_1-6_16-17_3-2_8-2_7-2_5-1_12-6_6-46_10-1_2-26_22-10_15-6_11-2_18-4_19-1_4-1_20-3_21-2.png"
+          }
+        },
+        {
+          "id": 2009708,
+          "text": "Pretty accurate I would say",
+          "score": 132,
+          "created_time": 1551291542,
+          "attached_image": {
+            "url": "https://img.devrant.com/devrant/rant/r_2009708_8oCmM.jpg",
+            "width": 799,
+            "height": 855
+          },
+          "num_comments": 7,
+          "tags": [
+            "joke/meme",
+            "apple"
+          ],
+          "vote_state": 0,
+          "edited": false,
+          "rt": 1,
+          "rc": 3,
+          "user_id": 958923,
+          "user_username": "AhmedZak",
+          "user_score": 786,
+          "user_avatar": {
+            "b": "69c9cd",
+            "i": "v-21_c-3_b-6_g-m_9-1_1-1_16-5_3-1_8-1_7-1_5-1_12-1_6-11_10-7_2-24_22-5_15-3_18-2_19-1_4-1.jpg"
+          },
+          "user_avatar_lg": {
+            "b": "69c9cd",
+            "i": "v-21_c-1_b-6_g-m_9-1_1-1_16-5_3-1_8-1_7-1_5-1_12-1_6-11_10-7_2-24_22-5_15-3_18-2_19-1_4-1.png"
+          }
+        },
+        {
+          "id": 2009425,
+          "text": "I'm starting to realize, that if you just know the basics of researching, you can (most of the time) find better free resources, than paid ones, for learning about new things in this field.",
+          "score": 25,
+          "created_time": 1551273590,
+          "attached_image": "",
+          "num_comments": 7,
+          "tags": [
+            "random",
+            "so many communities",
+            "so many great tutorials"
+          ],
+          "vote_state": 0,
+          "edited": false,
+          "rt": 1,
+          "rc": 6,
+          "user_id": 1538816,
+          "user_username": "KasperNS",
+          "user_score": 1675,
+          "user_avatar": {
+            "b": "2a8b9d",
+            "i": "v-21_c-3_b-4_g-m_9-1_1-1_16-6_3-4_8-2_7-2_5-1_12-1_6-4_10-9_2-39_22-1_15-5_18-2_19-2_4-1_20-11.jpg"
+          },
+          "user_avatar_lg": {
+            "b": "2a8b9d",
+            "i": "v-21_c-1_b-4_g-m_9-1_1-1_16-6_3-4_8-2_7-2_5-1_12-1_6-4_10-9_2-39_22-1_15-5_18-2_19-2_4-1_20-11.png"
+          },
+          "user_dpp": 1
+        },
+        {
+          "id": 2009653,
+          "text": "from laravel to magento2 to laravel to raw php... life is going pretty well.. 🙂",
+          "score": 13,
+          "created_time": 1551287636,
+          "attached_image": "",
+          "num_comments": 10,
+          "tags": [
+            "random",
+            "magento2",
+            "php",
+            "laravel 5.4"
+          ],
+          "vote_state": 0,
+          "edited": false,
+          "rt": 1,
+          "rc": 6,
+          "user_id": 1995287,
+          "user_username": "fahimbinlokman",
+          "user_score": 105,
+          "user_avatar": {
+            "b": "7bc8a4",
+            "i": "v-21_c-3_b-1_g-m_9-1_1-2_16-5_3-6_8-1_7-1_5-1_12-2_6-14_10-1_2-1_22-3_15-4_11-6_4-1.jpg"
+          },
+          "user_avatar_lg": {
+            "b": "7bc8a4",
+            "i": "v-21_c-1_b-1_g-m_9-1_1-2_16-5_3-6_8-1_7-1_5-1_12-2_6-14_10-1_2-1_22-3_15-4_11-6_4-1.png"
+          }
+        },
+        {
+          "id": 2000471,
+          "text": "-When they ask for your current/previous salary in a job interview, tell them that you don't find that relevant or that you don't want to tell. If they insist on you telling your salary, GTFO\n\n- When they are overenthusiasticly telling about all the latest technologies they're using without staying one word about legacy projects, GTFO. It's a trap.\n\n- If you walk trough the developer room(s) and everybody is extremely focused and just programming like a zombie, GTFO.\n\n- If they cannot tell you one single downside of the company, it's probably too good to be true. \n\nThat's about everything I can think of at the moment",
+          "score": 44,
+          "created_time": 1550527581,
+          "attached_image": {
+            "url": "https://img.devrant.com/devrant/rant/r_2000471_uNuMW.gif",
+            "width": 245,
+            "height": 245,
+            "frame": "https://img.devrant.com/devrant/rant/frame_r_2000471_uNuMW.jpg"
+          },
+          "num_comments": 7,
+          "tags": [
+            "rant",
+            "wk144"
+          ],
+          "vote_state": 0,
+          "edited": true,
+          "rt": 1,
+          "rc": 1,
+          "user_id": 63042,
+          "user_username": "dennie170",
+          "user_score": 396,
+          "user_avatar": {
+            "b": "7bc8a4",
+            "i": "v-21_c-3_b-1_g-m_9-1_1-1_16-10_3-7_8-1_7-1_5-1_12-1_6-1_10-1_2-1_22-1_15-3_4-1.jpg"
+          },
+          "user_avatar_lg": {
+            "b": "7bc8a4",
+            "i": "v-21_c-1_b-1_g-m_9-1_1-1_16-10_3-7_8-1_7-1_5-1_12-1_6-1_10-1_2-1_22-1_15-3_4-1.png"
+          }
+        },
+        {
+          "id": 1970837,
+          "text": "Most frustrating? Anything involving IE, but that's a safe answer. No, my most frustrating experience (to this day) is getting tables to behave responsively on mobile screens. Not easy when the tables in questions contain dozens of columns with hundreds of rows and mostly rely on fixed widths to render the text the way the client wants. So if you have a client who doesn't understand how hyphenation and word break work, I know how you feel.",
+          "score": 9,
+          "created_time": 1548298729,
+          "attached_image": "",
+          "num_comments": 3,
+          "tags": [
+            "rant",
+            "wk140"
+          ],
+          "vote_state": 0,
+          "edited": false,
+          "rt": 1,
+          "rc": 1,
+          "user_id": 729633,
+          "user_username": "Kairpooph",
+          "user_score": 681,
+          "user_avatar": {
+            "b": "f99a66",
+            "i": "v-21_c-3_b-3_g-m_9-1_1-6_16-6_3-3_8-1_7-1_5-1_12-6_17-2_6-97_10-4_2-19_22-1_15-3_11-7_18-2_19-1_4-1.jpg"
+          },
+          "user_avatar_lg": {
+            "b": "f99a66",
+            "i": "v-21_c-1_b-3_g-m_9-1_1-6_16-6_3-3_8-1_7-1_5-1_12-6_17-2_6-97_10-4_2-19_22-1_15-3_11-7_18-2_19-1_4-1.png"
+          }
+        },
+        {
+          "id": 1973174,
+          "text": "When a client ask you for a HTML layout and you use HTML5, js and CSS3 but, when it's finished, the client tell you that the layout is for emailing so you must start again from scratch ... Damm!",
+          "score": 23,
+          "created_time": 1548450968,
+          "attached_image": "",
+          "num_comments": 4,
+          "tags": [
+            "rant",
+            "html",
+            "clients",
+            "html5",
+            "email design sucks",
+            "wk140"
+          ],
+          "vote_state": 0,
+          "edited": false,
+          "rt": 1,
+          "rc": 1,
+          "user_id": 25750,
+          "user_username": "marodok",
+          "user_score": 3912,
+          "user_avatar": {
+            "b": "a973a2",
+            "i": "v-21_c-3_b-2_g-m_9-1_1-11_16-8_3-11_8-4_7-4_5-3_12-11_6-100_2-57_22-11_11-4_18-4_19-3_4-3_20-12_21-1.jpg"
+          },
+          "user_avatar_lg": {
+            "b": "a973a2",
+            "i": "v-21_c-1_b-2_g-m_9-1_1-11_16-8_3-11_8-4_7-4_5-3_12-11_6-100_2-57_22-11_11-4_18-4_19-3_4-3_20-12_21-1.png"
+          }
+        },
+        {
+          "id": 1973351,
+          "text": "When developers have no idea what the fundamental concepts of semantic html is and a solid grasp of Accessibility Design Patterns and just stuff improperly used aria tags everywhere - aka - the output of every enterprise CMS I come across **cough** Sitecore **cough** but it's apparently WCAG 2.0 \"friendly\". 😪😪 Do you even aria tags bro?!",
+          "score": 4,
+          "created_time": 1548463464,
+          "attached_image": "",
+          "num_comments": 0,
+          "tags": [
+            "rant",
+            "wk140"
+          ],
+          "vote_state": 0,
+          "edited": false,
+          "rt": 1,
+          "rc": 1,
+          "user_id": 1228671,
+          "user_username": "Vip3rDev",
+          "user_score": 1628,
+          "user_avatar": {
+            "b": "e6c653",
+            "i": "v-21_c-3_b-7_g-m_9-1_1-6_16-10_3-1_8-2_7-2_5-1_12-6_6-97_10-9_2-74_22-6_15-4_18-2_19-2_4-1_20-3.jpg"
+          },
+          "user_avatar_lg": {
+            "b": "e6c653",
+            "i": "v-21_c-1_b-7_g-m_9-1_1-6_16-10_3-1_8-2_7-2_5-1_12-6_6-97_10-9_2-74_22-6_15-4_18-2_19-2_4-1_20-3.png"
+          },
+          "user_dpp": 1
+        },
+        {
+          "id": 1974990,
+          "text": "CSS.... vertical centering back around 2000 before flexbox and frameworks\n\nHTML- before we head css frameworks looked bootstrap. I am done make things pretty ..I make them functional",
+          "score": 3,
+          "created_time": 1548607916,
+          "attached_image": "",
+          "num_comments": 0,
+          "tags": [
+            "rant",
+            "wk140"
+          ],
+          "vote_state": 0,
+          "edited": false,
+          "rt": 1,
+          "rc": 1,
+          "user_id": 202107,
+          "user_username": "billgates",
+          "user_score": 20414,
+          "user_avatar": {
+            "b": "2a8b9d",
+            "i": "v-21_c-3_b-4_g-m_9-2_1-3_16-15_3-7_8-4_7-4_5-4_12-3_6-38_2-50_22-9_11-4_18-4_19-3_4-4_20-14_21-3.jpg"
+          },
+          "user_avatar_lg": {
+            "b": "2a8b9d",
+            "i": "v-21_c-1_b-4_g-m_9-2_1-3_16-15_3-7_8-4_7-4_5-4_12-3_6-38_2-50_22-9_11-4_18-4_19-3_4-4_20-14_21-3.png"
+          },
+          "user_dpp": 1
+        },
+        {
+          "id": 1999087,
+          "text": "Okay so I just bought a new laptop and I'm starting my programming career now.\nWindows or Ubuntu or Fedora?\nI'm not a huge fan of dual booting and need an operating system that is generally good with a slight bias for developers.\nHelp me make this lifelong decision :-)",
+          "score": 6,
+          "created_time": 1550430866,
+          "attached_image": "",
+          "num_comments": 28,
+          "tags": [
+            "question",
+            "ubuntu",
+            "help",
+            "fedora",
+            "windows"
+          ],
+          "vote_state": 0,
+          "edited": false,
+          "rt": 1,
+          "rc": 4,
+          "user_id": 1099538,
+          "user_username": "virustark24",
+          "user_score": 838,
+          "user_avatar": {
+            "b": "e6c653",
+            "i": "v-21_c-3_b-7_g-m_9-1_1-1_16-10_3-6_8-1_7-1_5-1_12-1_6-2_10-5_2-10_22-1_15-3_11-1_4-1.jpg"
+          },
+          "user_avatar_lg": {
+            "b": "e6c653",
+            "i": "v-21_c-1_b-7_g-m_9-1_1-1_16-10_3-6_8-1_7-1_5-1_12-1_6-2_10-5_2-10_22-1_15-3_11-1_4-1.png"
+          }
+        },
+        {
+          "id": 1999091,
+          "text": "You know this is you everytime...",
+          "score": 53,
+          "created_time": 1550431114,
+          "attached_image": {
+            "url": "https://img.devrant.com/devrant/rant/r_1999091_KQgUY.jpg",
+            "width": 633,
+            "height": 643
+          },
+          "num_comments": 0,
+          "tags": [
+            "joke/meme",
+            "testing",
+            "code"
+          ],
+          "vote_state": 0,
+          "edited": true,
+          "rt": 1,
+          "rc": 3,
+          "user_id": 1999088,
+          "user_username": "rohinkt",
+          "user_score": 53,
+          "user_avatar": {
+            "b": "7bc8a4"
+          },
+          "user_avatar_lg": {
+            "b": "7bc8a4"
+          }
+        },
+        {
+          "id": 1999094,
+          "text": "Well, that's true",
+          "score": 75,
+          "created_time": 1550431300,
+          "attached_image": {
+            "url": "https://img.devrant.com/devrant/rant/r_1999094_fzAnN.jpg",
+            "width": 562,
+            "height": 999
+          },
+          "num_comments": 8,
           "tags": [
             "joke/meme"
           ],
@@ -1555,110 +1651,377 @@
           "edited": false,
           "rt": 1,
           "rc": 3,
-          "user_id": 1856223,
-          "user_username": "abdulmoniem",
-          "user_score": 886,
-          "user_avatar": {
-            "b": "a973a2",
-            "i": "v-21_c-3_b-2_g-m_9-1_1-6_16-1_3-1_8-1_7-1_5-1_12-6_6-2_2-1_22-1_15-10_4-1.jpg"
-          },
-          "user_avatar_lg": {
-            "b": "a973a2",
-            "i": "v-21_c-1_b-2_g-m_9-1_1-6_16-1_3-1_8-1_7-1_5-1_12-6_6-2_2-1_22-1_15-10_4-1.png"
-          }
-        },
-        {
-          "id": 1943055,
-          "text": "</2018><2019>",
-          "score": 34,
-          "created_time": 1546288334,
-          "attached_image": "",
-          "num_comments": 0,
-          "tags": [
-            "devrant"
-          ],
-          "vote_state": 0,
-          "edited": false,
-          "rt": 1,
-          "rc": 5,
-          "user_id": 1896999,
-          "user_username": "ArnasL",
-          "user_score": 150,
+          "user_id": 1999080,
+          "user_username": "hobyrr",
+          "user_score": 237,
           "user_avatar": {
             "b": "d55161",
-            "i": "v-21_c-3_b-5_g-m_9-1_1-2_16-6_3-4_8-1_7-1_5-1_12-2_6-2_10-1_2-39_22-7_4-1.jpg"
+            "i": "v-21_c-3_b-5_g-m_9-1_1-1_16-10_3-3_8-1_7-1_5-1_12-1_6-98_2-10_22-10_4-1.jpg"
           },
           "user_avatar_lg": {
             "b": "d55161",
-            "i": "v-21_c-1_b-5_g-m_9-1_1-2_16-6_3-4_8-1_7-1_5-1_12-2_6-2_10-1_2-39_22-7_4-1.png"
+            "i": "v-21_c-1_b-5_g-m_9-1_1-1_16-10_3-3_8-1_7-1_5-1_12-1_6-98_2-10_22-10_4-1.png"
           }
         },
         {
-          "id": 1942659,
-          "text": "After years of struggle with nvidia on Linux across several devices I built my first AMD only PC and I have only one thing in my mind...",
-          "score": 46,
-          "created_time": 1546266852,
+          "id": 1999207,
+          "text": "Behold the current state of the world wide mobile web.",
+          "score": 69,
+          "created_time": 1550438589,
           "attached_image": {
-            "url": "https://img.devrant.com/devrant/rant/r_1942659_c1cJT.jpg",
-            "width": 625,
-            "height": 499
+            "url": "https://img.devrant.com/devrant/rant/r_1999207_8LuFX.jpg",
+            "width": 562,
+            "height": 1000
           },
-          "num_comments": 8,
+          "num_comments": 12,
           "tags": [
             "rant",
-            "fuck nvidia"
+            "clutter",
+            "gpdr",
+            "download our app",
+            "was this tested?",
+            "connect with fecesbook"
           ],
           "vote_state": 0,
           "edited": false,
           "rt": 1,
           "rc": 1,
-          "user_id": 26258,
-          "user_username": "hell",
-          "user_score": 18150,
+          "user_id": 1346039,
+          "user_username": "Brosyl",
+          "user_score": 3710,
           "user_avatar": {
-            "b": "d55161",
-            "i": "v-21_c-3_b-5_g-f_9-2_1-3_16-3_3-3_8-1_7-1_5-4_12-3_6-24_10-1_2-1_22-10_11-4_4-4_20-15_21-3.jpg"
+            "b": "2a8b9d",
+            "i": "v-21_c-3_b-4_g-m_9-1_1-1_16-7_3-2_8-4_7-4_5-3_12-1_6-31_10-2_2-47_22-9_15-10_11-1_18-4_19-3_4-3_20-15_21-3.jpg"
           },
           "user_avatar_lg": {
-            "b": "d55161",
-            "i": "v-21_c-1_b-5_g-f_9-2_1-3_16-3_3-3_8-1_7-1_5-4_12-3_6-24_10-1_2-1_22-10_11-4_4-4_20-15_21-3.png"
-          }
+            "b": "2a8b9d",
+            "i": "v-21_c-1_b-4_g-m_9-1_1-1_16-7_3-2_8-4_7-4_5-3_12-1_6-31_10-2_2-47_22-9_15-10_11-1_18-4_19-3_4-3_20-15_21-3.png"
+          },
+          "user_dpp": 1
         },
         {
-          "id": 1943026,
-          "text": "Happy new year guys",
-          "score": 164,
-          "created_time": 1546286698,
-          "attached_image": {
-            "url": "https://img.devrant.com/devrant/rant/r_1943026_iZsug.jpg",
-            "width": 751,
-            "height": 999
-          },
-          "num_comments": 18,
+          "id": 1999269,
+          "text": "I don't know why universities dont tech version controlling.. i used to save backups of my final year project as a RAR files. I mean when I started the job and got to know the git. It was enlightening..",
+          "score": 14,
+          "created_time": 1550441262,
+          "attached_image": "",
+          "num_comments": 7,
           "tags": [
-            "random",
-            "same always",
-            "2019",
-            "nothing's gonna change"
+            "question",
+            "university",
+            "git",
+            "version control"
           ],
           "vote_state": 0,
           "edited": false,
           "rt": 1,
-          "rc": 6,
-          "user_id": 1582321,
-          "user_username": "YuganshT79",
-          "user_score": 1918,
+          "rc": 4,
+          "user_id": 1954614,
+          "user_username": "gradlefailed",
+          "user_score": 75,
           "user_avatar": {
-            "b": "e6c653",
-            "i": "v-21_c-3_b-7_g-m_9-1_1-2_16-10_3-3_8-1_7-1_5-1_12-2_6-3_10-1_2-26_22-6_18-2_19-2_4-1.jpg"
+            "b": "a973a2",
+            "i": "v-21_c-3_b-2_g-m_9-1_1-9_16-1_3-1_8-1_7-1_5-1_12-9_6-2_10-1_2-5_22-3_4-1.jpg"
           },
           "user_avatar_lg": {
-            "b": "e6c653",
-            "i": "v-21_c-1_b-7_g-m_9-1_1-2_16-10_3-3_8-1_7-1_5-1_12-2_6-3_10-1_2-26_22-6_18-2_19-2_4-1.png"
+            "b": "a973a2",
+            "i": "v-21_c-1_b-2_g-m_9-1_1-9_16-1_3-1_8-1_7-1_5-1_12-9_6-2_10-1_2-5_22-3_4-1.png"
+          }
+        },
+        {
+          "id": 483624,
+          "text": "Well, since you're already here... ;-)",
+          "score": 266,
+          "created_time": 1489827936,
+          "attached_image": {
+            "url": "https://img.devrant.com/devrant/rant/r_483624_qwwre.jpg",
+            "width": 500,
+            "height": 635
+          },
+          "num_comments": 6,
+          "tags": [
+            "undefined",
+            "what am i doing with my life"
+          ],
+          "vote_state": 0,
+          "edited": false,
+          "rt": 1,
+          "rc": 7,
+          "user_id": 157623,
+          "user_username": "iRant",
+          "user_score": 1007,
+          "user_avatar": {
+            "b": "2a8b9d",
+            "i": "v-21_c-3_b-4_g-m_9-1_1-1_16-4_3-3_8-1_7-1_5-1_12-1_6-16_2-26_22-10_15-11_11-3_18-1_19-1_4-1.jpg"
+          },
+          "user_avatar_lg": {
+            "b": "2a8b9d",
+            "i": "v-21_c-1_b-4_g-m_9-1_1-1_16-4_3-3_8-1_7-1_5-1_12-1_6-16_2-26_22-10_15-11_11-3_18-1_19-1_4-1.png"
+          }
+        },
+        {
+          "id": 1829076,
+          "text": "I was told that my comment on another rant needed to be its own rant.  So here it is:\n\nI had a client that runs a tattoo shops website to be updated and more modern. He wanted nothing to do with looking at or approve mock ups or designs so I just did my thing and took care of it. Once I was finished I showed him what I had and said “now I just need some content from you all so I can replace all the placeholder text and images”.\nHe seemed completely onboard. Took down notes of all the content needed, assigned all of it out to his artists to gather what I needed and provide it to me.\nAfter 6 months, and several emails asking if they ever got that content together I finally get a response:\n“LOOK MAN, if you didn’t want to do the site then you shouldn’t have accepted the money. I know you don’t need all these from us to finish up, you’re just stalling! I need the site up now!”\nSo I’m like “Sure man, I’ll publish it exactly as it stands now.”\nAn hour later I get a call “who are these people in these pictures? Why do you have our pricing all wrong? Why is everything in French or something (Lorem ipsum)? I just need my money back at this point.”\nI explained that he’s not getting his money back because I already did my part, but just because it’s important to me that a client is satisfied (and seemingly what he wants is money) I can waive his hosting fee for the next 3 years.\nIt’s been a year now. Sites still up in all “French”, wrong pricing, random stock photos. Couple weeks ago he called to apologize for being a dick before.\nStill haven’t gotten any content to finish up.\nI don’t understand. It’s like these people think if you want to publish a book for instance that you just give the publisher the title you came up with and they’ll fill in the pages with story/info for you.\nI’m a web developer, not a content manager.",
+          "score": 336,
+          "created_time": 1539811261,
+          "attached_image": "",
+          "num_comments": 37,
+          "tags": [
+            "rant"
+          ],
+          "vote_state": 0,
+          "edited": false,
+          "rt": 1,
+          "rc": 1,
+          "user_id": 9814,
+          "user_username": "ericfledderman",
+          "user_score": 1396,
+          "user_avatar": {
+            "b": "2a8b9d",
+            "i": "v-21_c-3_b-4_g-m_9-1_1-3_16-3_3-1_8-2_7-2_5-1_12-3_17-2_6-3_10-9_2-5_22-2_15-3_11-2_18-2_19-2_4-1_20-10.jpg"
+          },
+          "user_avatar_lg": {
+            "b": "2a8b9d",
+            "i": "v-21_c-1_b-4_g-m_9-1_1-3_16-3_3-1_8-2_7-2_5-1_12-3_17-2_6-3_10-9_2-5_22-2_15-3_11-2_18-2_19-2_4-1_20-10.png"
+          }
+        },
+        {
+          "id": 1991699,
+          "text": "Scary AF!!!",
+          "score": 99,
+          "created_time": 1549883158,
+          "attached_image": {
+            "url": "https://img.devrant.com/devrant/rant/r_1991699_BYk1v.jpg",
+            "width": 700,
+            "height": 794
+          },
+          "num_comments": 7,
+          "tags": [
+            "joke/meme"
+          ],
+          "vote_state": 0,
+          "edited": false,
+          "rt": 1,
+          "rc": 3,
+          "user_id": 1991638,
+          "user_username": "jlokhande46",
+          "user_score": 102,
+          "user_avatar": {
+            "b": "a973a2",
+            "i": "v-21_c-3_b-2_g-m_9-1_1-1_16-15_3-4_8-1_7-1_5-1_12-1_6-6_10-1_2-1_22-7_15-10_11-1_4-1.jpg"
+          },
+          "user_avatar_lg": {
+            "b": "a973a2",
+            "i": "v-21_c-1_b-2_g-m_9-1_1-1_16-15_3-4_8-1_7-1_5-1_12-1_6-6_10-1_2-1_22-7_15-10_11-1_4-1.png"
           }
         }
       ],
       "comments": [
+        {
+          "id": 2019709,
+          "rant_id": 2019675,
+          "body": "The dev.to community publishes posts for open source projects in search of contributors every month: https://dev.to/ben/.... Dev.to & devrant itself are also open to contributions :)",
+          "score": 5,
+          "created_time": 1551994158,
+          "vote_state": 0,
+          "links": [
+            {
+              "type": "url",
+              "url": "https://dev.to/ben/whos-looking-for-open-source-contributors-feb-25th-edition-47f8",
+              "short_url": "https://dev.to/ben/...",
+              "title": "https://dev.to/ben/...",
+              "start": 101,
+              "end": 123,
+              "special": 0
+            }
+          ],
+          "user_id": 1207790,
+          "user_username": "webketje",
+          "user_score": 344,
+          "user_avatar": {
+            "b": "f99a66",
+            "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
+          }
+        },
+        {
+          "id": 2018217,
+          "rant_id": 2017624,
+          "body": "Makes me think of good ol' CollegeHumor video https://youtu.be/yc86ZXFsriM :)",
+          "score": 0,
+          "created_time": 1551904220,
+          "vote_state": 0,
+          "links": [
+            {
+              "type": "url",
+              "url": "https://youtu.be/yc86ZXFsriM",
+              "short_url": "https://youtu.be/yc86ZXFsriM",
+              "title": "https://youtu.be/yc86ZXFsriM",
+              "start": 46,
+              "end": 74,
+              "special": 0
+            }
+          ],
+          "user_id": 1207790,
+          "user_username": "webketje",
+          "user_score": 344,
+          "user_avatar": {
+            "b": "f99a66",
+            "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
+          }
+        },
+        {
+          "id": 2017121,
+          "rant_id": 2015792,
+          "body": "@Commodore Sure, if.. it's not yet in draft stage though xD",
+          "score": 0,
+          "created_time": 1551827839,
+          "vote_state": 0,
+          "user_id": 1207790,
+          "user_username": "webketje",
+          "user_score": 344,
+          "user_avatar": {
+            "b": "f99a66",
+            "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
+          }
+        },
+        {
+          "id": 2016130,
+          "rant_id": 2015792,
+          "body": "@aprzn123 didn't  know, thx will look into it!",
+          "score": 0,
+          "created_time": 1551769370,
+          "vote_state": 0,
+          "user_id": 1207790,
+          "user_username": "webketje",
+          "user_score": 344,
+          "user_avatar": {
+            "b": "f99a66",
+            "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
+          }
+        },
+        {
+          "id": 2016129,
+          "rant_id": 2015792,
+          "body": "@Commodore I wanted to check if someone already published a sensational article under that title before I do :D",
+          "score": 1,
+          "created_time": 1551769331,
+          "vote_state": 0,
+          "user_id": 1207790,
+          "user_username": "webketje",
+          "user_score": 344,
+          "user_avatar": {
+            "b": "f99a66",
+            "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
+          }
+        },
+        {
+          "id": 2000479,
+          "rant_id": 2000434,
+          "body": "An ex-colleague of mine was tasked with developing a distributed ledger system prototype (think blockchain) by a big bank for fund transactions in Kotlin. Not sure it'll ever be released though",
+          "score": 1,
+          "created_time": 1550528130,
+          "vote_state": 0,
+          "edited": true,
+          "user_id": 1207790,
+          "user_username": "webketje",
+          "user_score": 344,
+          "user_avatar": {
+            "b": "f99a66",
+            "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
+          }
+        },
+        {
+          "id": 1999407,
+          "rant_id": 1999087,
+          "body": "I recently purchased a 'Mintbook' (with Linux Mint 19.1 Cinnamon preinstalled). The Cinnamon desktop is awesome, the environment great for webdev, local server testing & docker containers.\n\nThe drawbacks (of having any Linux-only pc) are that a lot of lesser known commercial software only supports Windows/OSX. If you plan to work in corporate environments you probably need one of those. Eg. The company I work for right now uses a VPN for homeworking but it simply doesn't support Linux. Also some hardware features (keyboard FN keys using Windows WMI interface, fingerprint scan) have bad support on Linux.\n\nSo.. if I had to do it over, I'd probaby just have a Windows pc with a lot of storage, repartition & dual-boot it anyway",
+          "score": 0,
+          "created_time": 1550449015,
+          "vote_state": 0,
+          "edited": true,
+          "user_id": 1207790,
+          "user_username": "webketje",
+          "user_score": 344,
+          "user_avatar": {
+            "b": "f99a66",
+            "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
+          }
+        },
+        {
+          "id": 1973358,
+          "rant_id": 1973338,
+          "body": "I have the exact same set at home 😃",
+          "score": 2,
+          "created_time": 1548464990,
+          "vote_state": 0,
+          "user_id": 1207790,
+          "user_username": "webketje",
+          "user_score": 344,
+          "user_avatar": {
+            "b": "f99a66",
+            "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
+          }
+        },
+        {
+          "id": 1964964,
+          "rant_id": 1964793,
+          "body": "I want to get to the stage where I can agree",
+          "score": 3,
+          "created_time": 1547889155,
+          "vote_state": 0,
+          "user_id": 1207790,
+          "user_username": "webketje",
+          "user_score": 344,
+          "user_avatar": {
+            "b": "f99a66",
+            "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
+          }
+        },
+        {
+          "id": 1964960,
+          "rant_id": 1964644,
+          "body": "@electrineer I guess you have to figure out for yourself, but I think there's value in tasting and genuinely enjoying different beers and coffees. With total abstinence I would miss out on these experiences I consider valuable.",
+          "score": 1,
+          "created_time": 1547888988,
+          "vote_state": 0,
+          "user_id": 1207790,
+          "user_username": "webketje",
+          "user_score": 344,
+          "user_avatar": {
+            "b": "f99a66",
+            "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
+          }
+        },
+        {
+          "id": 1964691,
+          "rant_id": 1964644,
+          "body": "I smoke and have coffee daily, drink weekly, and have a trip to Amsterdam yearly. I am fully in the know about what @Alice said. So my additional question is: why care? \n\nAnd my current answer is: as long as you consume drugs and drugs don't consume you (addiction) it's ok. If cutting those habits drains your happiness/health more than it adds to it long-term, it's not worth it. That implies giving a serious try at it first of course, or at least at cutting down on them.. There's nothing bad about rare/occasional drug use.",
+          "score": 7,
+          "created_time": 1547857548,
+          "vote_state": 0,
+          "edited": true,
+          "user_id": 1207790,
+          "user_username": "webketje",
+          "user_score": 344,
+          "user_avatar": {
+            "b": "f99a66",
+            "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
+          }
+        },
+        {
+          "id": 1964319,
+          "rant_id": 1964056,
+          "body": "@monkeyboy I used to have Ubuntu, but would definitely say Linux Mint (love the Cinnamon desktop). The distro is similar to Windows in that it comes with batteries included, lots of useful stuff pre-installed (LibreOffice, Software update, Shutter screenshots, VLC, GIMP, etc), the feel of its start menu is alike, and it's got 'desklets' (desktop widgets).",
+          "score": 0,
+          "created_time": 1547833795,
+          "vote_state": 0,
+          "user_id": 1207790,
+          "user_username": "webketje",
+          "user_score": 344,
+          "user_avatar": {
+            "b": "f99a66",
+            "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
+          }
+        },
         {
           "id": 1963093,
           "rant_id": 1963046,
@@ -1668,7 +2031,7 @@
           "vote_state": 0,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -1678,12 +2041,12 @@
           "id": 1963077,
           "rant_id": 1963046,
           "body": "In Windows when you search for \"how do I do X?\" you get a program (.exe) that does X. You click to download, then you click to execute. Windows is for mouse people.\n\nIn Linux you get a (set of) command(s) that does X. You open a terminal, then copy paste.  Linux is for keyboard people \n\n=P",
-          "score": 1,
+          "score": 4,
           "created_time": 1547744807,
           "vote_state": 0,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -1698,7 +2061,7 @@
           "vote_state": 0,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -1708,13 +2071,13 @@
           "id": 1958393,
           "rant_id": 1958352,
           "body": "@cabbybaby my gf and I've had some tensions about smartphone overuse and there were issues at both sides: she really had to tone it down, and I really needed to let go of a fixation on her smartphone use. Sorry it didn't end happily for you",
-          "score": 16,
+          "score": 20,
           "created_time": 1547438287,
           "vote_state": 0,
           "edited": true,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -1729,7 +2092,7 @@
           "vote_state": 0,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -1744,7 +2107,7 @@
           "vote_state": 0,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -1754,12 +2117,12 @@
           "id": 1958375,
           "rant_id": 1958352,
           "body": "You spend too much or you meant spend too much time on..? The former is ridiculous, the latter is either exaggerated or serious.",
-          "score": 8,
+          "score": 15,
           "created_time": 1547437445,
           "vote_state": 0,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -1774,7 +2137,7 @@
           "vote_state": 0,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -1789,7 +2152,7 @@
           "vote_state": 0,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -1799,13 +2162,13 @@
           "id": 1931292,
           "rant_id": 1931147,
           "body": "@telephantasm but it is, here's a closeup for the non-believers =]",
-          "score": 0,
+          "score": 1,
           "created_time": 1545442710,
           "vote_state": 0,
           "edited": true,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -1820,12 +2183,12 @@
           "id": 1929971,
           "rant_id": 1929676,
           "body": "VLC is awesome, they give you a free cone image when you donate :D!",
-          "score": 3,
+          "score": 4,
           "created_time": 1545354159,
           "vote_state": 0,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -1846,7 +2209,7 @@
           "edited": true,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -1872,7 +2235,7 @@
           ],
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -1887,7 +2250,7 @@
           "vote_state": 0,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -1913,7 +2276,7 @@
           ],
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -1928,7 +2291,7 @@
           "vote_state": 0,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -1943,7 +2306,7 @@
           "vote_state": 0,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -1958,213 +2321,7 @@
           "vote_state": 0,
           "user_id": 1207790,
           "user_username": "webketje",
-          "user_score": 266,
-          "user_avatar": {
-            "b": "f99a66",
-            "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
-          }
-        },
-        {
-          "id": 1548706,
-          "rant_id": 1548036,
-          "body": "@AlexDeLarge thx for sharing. I think your criticism is valid, but I'm working on a large React-Redux based production-facing app and the amount of code duplication (sometimes literally copy-pasted, sometimes with very little differences) is just insane. \n\nBecause the Redux action creators are modeled for containers instead of generic, parameterized API endpoints/ actions, we end up repeating ourselves way too often. \n\nWe also have a large amount of \"Reduxified\" code in which Redux has no use whatsoever (no client-side caching needed, no state persistence). So I still think, even though it might not present sufficient evidence/ alternatives, there are important take-aways in the article.",
-          "score": 0,
-          "created_time": 1531166599,
-          "vote_state": 0,
-          "edited": true,
-          "user_id": 1207790,
-          "user_username": "webketje",
-          "user_score": 266,
-          "user_avatar": {
-            "b": "f99a66",
-            "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
-          }
-        },
-        {
-          "id": 1483925,
-          "rant_id": 1483811,
-          "body": "So fucking annoying when ESLint breaks a slightly-longer-than-allowed statement into newlines. Especially with React/JSX attributes.",
-          "score": 2,
-          "created_time": 1528985601,
-          "vote_state": 0,
-          "edited": true,
-          "user_id": 1207790,
-          "user_username": "webketje",
-          "user_score": 266,
-          "user_avatar": {
-            "b": "f99a66",
-            "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
-          }
-        },
-        {
-          "id": 1406878,
-          "rant_id": 1405447,
-          "body": "Relatable af",
-          "score": 1,
-          "created_time": 1526390836,
-          "vote_state": 0,
-          "user_id": 1207790,
-          "user_username": "webketje",
-          "user_score": 266,
-          "user_avatar": {
-            "b": "f99a66",
-            "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
-          }
-        },
-        {
-          "id": 1406872,
-          "rant_id": 1406778,
-          "body": "You're late to the party. True stuff, but can still be handy.",
-          "score": 2,
-          "created_time": 1526390509,
-          "vote_state": 0,
-          "user_id": 1207790,
-          "user_username": "webketje",
-          "user_score": 266,
-          "user_avatar": {
-            "b": "f99a66",
-            "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
-          }
-        },
-        {
-          "id": 1360774,
-          "rant_id": 1360376,
-          "body": "A single small side project (PWA), testing language features bit by bit, or contributing to existing open-source projects, even if it's just raising an issue or adding a comment",
-          "score": 2,
-          "created_time": 1524557407,
-          "vote_state": 0,
-          "user_id": 1207790,
-          "user_username": "webketje",
-          "user_score": 266,
-          "user_avatar": {
-            "b": "f99a66",
-            "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
-          }
-        },
-        {
-          "id": 1352871,
-          "rant_id": 1351649,
-          "body": "If you make it through the coming 7 years, you'll be fine. IE11 end of life is scheduled for extended end-of-life support for Windows 10 (2025) #great #not",
-          "score": 1,
-          "created_time": 1524217593,
-          "vote_state": 0,
-          "user_id": 1207790,
-          "user_username": "webketje",
-          "user_score": 266,
-          "user_avatar": {
-            "b": "f99a66",
-            "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
-          }
-        },
-        {
-          "id": 1345273,
-          "rant_id": 1345078,
-          "body": "I still have a Samsung S4 Mini with Android KitKat (4.4.2). Still works like a charm!",
-          "score": 0,
-          "created_time": 1523908847,
-          "vote_state": 0,
-          "user_id": 1207790,
-          "user_username": "webketje",
-          "user_score": 266,
-          "user_avatar": {
-            "b": "f99a66",
-            "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
-          }
-        },
-        {
-          "id": 1327906,
-          "rant_id": 1326224,
-          "body": "Actually.. lol. In the last 2 years I've had to work with almost all 'prehistoric technologies' cited here: SOAP, COBOL (mainframe), NetBeans, Npp++, JSP. Oh, and even for new projects.",
-          "score": 0,
-          "created_time": 1523232306,
-          "vote_state": 0,
-          "user_id": 1207790,
-          "user_username": "webketje",
-          "user_score": 266,
-          "user_avatar": {
-            "b": "f99a66",
-            "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
-          }
-        },
-        {
-          "id": 1322621,
-          "rant_id": 1322473,
-          "body": "Yikes... I share some of his gripes but feels like he leapt ALL types of developers together in this article. There are edge cases who perfectly match the stereotypes, but I think every developer falls into one of these \"types\" some days (eg. bad mood, not enough sleep, etc.).",
-          "score": 1,
-          "created_time": 1523002419,
-          "vote_state": 0,
-          "user_id": 1207790,
-          "user_username": "webketje",
-          "user_score": 266,
-          "user_avatar": {
-            "b": "f99a66",
-            "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
-          }
-        },
-        {
-          "id": 1319072,
-          "rant_id": 1318674,
-          "body": "I fucking hate JSX, and don't like React's API, like dangerouslySetInnerHTML and __SECRET_DOM_DO_NOT_USE_OR_YOU_WILL_BE_FIRED or requiring the 'style' prop to be an object while native DOM allows Element.cssText.  So I went with a simpler kind of React without the JSX bloat: mithril https://mithril.js.org/. Do give it a try!",
-          "score": 0,
-          "created_time": 1522856549,
-          "vote_state": 0,
-          "links": [
-            {
-              "type": "url",
-              "url": "https://mithril.js.org/",
-              "short_url": "https://mithril.js.org/",
-              "title": "https://mithril.js.org/",
-              "start": 284,
-              "end": 307,
-              "special": 0
-            }
-          ],
-          "edited": true,
-          "user_id": 1207790,
-          "user_username": "webketje",
-          "user_score": 266,
-          "user_avatar": {
-            "b": "f99a66",
-            "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
-          }
-        },
-        {
-          "id": 1281151,
-          "rant_id": 1281046,
-          "body": "\"They probably rely on ActiveX for some features\"",
-          "score": 3,
-          "created_time": 1521216088,
-          "vote_state": 0,
-          "user_id": 1207790,
-          "user_username": "webketje",
-          "user_score": 266,
-          "user_avatar": {
-            "b": "f99a66",
-            "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
-          }
-        },
-        {
-          "id": 1231886,
-          "rant_id": 1231794,
-          "body": "@BindView This seems to tilt the argument in favor of map. However map did come out slower for me with this perftest: https://jsperf.com/map-vs-foreach-s... on Chromium.\n\nSo I guess if perf difference is marginal/variable, it semantically makes more sense to use forEach in cases where the expected result is not strictly a different representation of each of the array's entries.",
-          "score": 0,
-          "created_time": 1519316769,
-          "vote_state": 0,
-          "links": [
-            {
-              "type": "url",
-              "url": "https://jsperf.com/map-vs-foreach-speed-test",
-              "short_url": "https://jsperf.com/map-vs-foreach-s...",
-              "title": "https://jsperf.com/map-vs-foreach-s...",
-              "start": 118,
-              "end": 156,
-              "special": 1
-            }
-          ],
-          "special": true,
-          "user_id": 1207790,
-          "user_username": "webketje",
-          "user_score": 266,
+          "user_score": 344,
           "user_avatar": {
             "b": "f99a66",
             "i": "v-21_c-3_b-3_g-m_9-1_1-2_16-4_3-7_8-1_7-1_5-1_12-2_6-3_2-39_22-1_15-3_11-2_18-1_4-1.jpg"
@@ -2174,9 +2331,9 @@
       "favorites": []
     },
     "counts": {
-      "rants": 21,
-      "upvoted": 325,
-      "comments": 32,
+      "rants": 25,
+      "upvoted": 385,
+      "comments": 43,
       "favorites": 4,
       "collabs": 0
     }
