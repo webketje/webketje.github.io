@@ -12,7 +12,7 @@
       "rants": [
         {
           "id": 2019724,
-          "text": "The night before I had an oral exam about history of Communication Studies at university, I was too excited about learning <strong>php</strong> (ikr, that was 5 years ago). I mailed the professor an apology and stated the real reason I would skip this exam. When I still showed up at 9 in the morning without having slept, he told me \"that's the most honest mail I've ever had\" and gave me a 2/20 for showing up. (At the third exam period I studied it properly and got an 18/20)",
+          "text": "The night before I had an oral exam about history of Communication Studies at university, I was too excited about learning &lt;strong&gt;php&lt;/strong&gt; (ikr, that was 5 years ago). I mailed the professor an apology and stated the real reason I would skip this exam. When I still showed up at 9 in the morning without having slept, he told me \"that's the most honest mail I've ever had\" and gave me a 2/20 for showing up. (At the third exam period I studied it properly and got an 18/20)",
           "score": 6,
           "created_time": 1551994887,
           "attached_image": "",
@@ -47,7 +47,7 @@
         },
         {
           "id": 2015792,
-          "text": "The <strong>search</strong> engine that understands programmers. Way to go, Duck Duck",
+          "text": "The &lt;strong&gt;search&lt;/strong&gt; engine that understands programmers. Way to go, Duck Duck",
           "score": 19,
           "created_time": 1551739422,
           "attached_image": {
@@ -82,7 +82,7 @@
         },
         {
           "id": 1999421,
-          "text": "Unpopular opinion: I actually enjoy writing <strong>html</strong>/CSS, the only <strong>frustration</strong> I have with the latter is lacking browser support",
+          "text": "Unpopular opinion: I actually enjoy writing &lt;strong&gt;html&lt;/strong&gt;/CSS, the only &lt;strong&gt;frustration&lt;/strong&gt; I have with the latter is lacking browser support",
           "score": 9,
           "created_time": 1550450174,
           "attached_image": "",
@@ -152,7 +152,7 @@
         },
         {
           "id": 1954925,
-          "text": "Lorem ipsum dolor sit amet.\r\nI studied <strong>latin</strong> for 6 years in high school. \r\nA dummy text is the link between my education and my job\n\n°_°",
+          "text": "Lorem ipsum dolor sit amet.\r\nI studied &lt;strong&gt;latin&lt;/strong&gt; for 6 years in high school. \r\nA dummy text is the link between my education and my job\n\n°_°",
           "score": 40,
           "created_time": 1547170578,
           "attached_image": "",
@@ -182,7 +182,7 @@
         },
         {
           "id": 1931147,
-          "text": "My kick-ass <strong>merch</strong> from <strong>japancon</strong> Brussels (Nov 2018): a Yoda doormat, TallGeese Gundam Wing model, Pulp fiction displate, AND in front of it A 3D-PRINTED PICKLE RICK OMG CAN YOU BELIEVE THAT!!! xD",
+          "text": "My kick-ass &lt;strong&gt;merch&lt;/strong&gt; from &lt;strong&gt;japancon&lt;/strong&gt; Brussels (Nov 2018): a Yoda doormat, TallGeese Gundam Wing model, Pulp fiction displate, AND in front of it A 3D-PRINTED PICKLE RICK OMG CAN YOU BELIEVE THAT!!! xD",
           "score": 9,
           "created_time": 1545430412,
           "attached_image": {
@@ -215,7 +215,7 @@
         },
         {
           "id": 1921798,
-          "text": "Imagine in the future a sponsored tweet \"Dear followers, I am no longer among you. This message was posted by my heirs, who accepted the terms and conditions of my will, which included letting my followers know in case I'd no longer be here. Get yours too with <strong>buffer</strong> (<a href=\"https://buffer.com/\">https://buffer.com/</a>)\".\n\nThat would be the pinnacle of <strong>capitalism</strong>",
+          "text": "Imagine in the future a sponsored tweet \"Dear followers, I am no longer among you. This message was posted by my heirs, who accepted the terms and conditions of my will, which included letting my followers know in case I'd no longer be here. Get yours too with &lt;strong&gt;buffer&lt;/strong&gt; (&lt;a href=\"https://buffer.com/\"&gt;https://buffer.com/&lt;/a&gt;)\".\n\nThat would be the pinnacle of &lt;strong&gt;capitalism&lt;/strong&gt;",
           "score": 3,
           "created_time": 1544827316,
           "attached_image": "",
@@ -256,7 +256,7 @@
         },
         {
           "id": 1917138,
-          "text": "Apparently the standard \"pack\" of applicants for a job is at least 100 people, how else can you only be in the top \"2%\"? If there's only 2 applicants, your fingers (typing skills?) are in the top 2%, and the rest is in the upper 48.\n\nAll of that just to say it would have been better worded as 2 in 100 people than 2% =).\n\n<a href=\"https://www.grammarly.com/blog/how-to-send-email-to-recruiter/\">https://grammarly.com/blog/...</a>",
+          "text": "Apparently the standard \"pack\" of applicants for a job is at least 100 people, how else can you only be in the top \"2%\"? If there's only 2 applicants, your fingers (typing skills?) are in the top 2%, and the rest is in the upper 48.\n\nAll of that just to say it would have been better worded as 2 in 100 people than 2% =).\n\n&lt;a href=\"https://www.grammarly.com/blog/how-to-send-email-to-recruiter/\"&gt;https://grammarly.com/blog/...&lt;/a&gt;",
           "score": 2,
           "created_time": 1544563661,
           "attached_image": {
@@ -337,7 +337,7 @@
         },
         {
           "id": 1886665,
-          "text": "One day in a near but comfortably not too near future, I will start a webdevelopment 3-letter-abbreviation <strong>dictionary</strong> page, with self-taken photos of Belgian car license plates, and use the alphabetic part for each definition. It's insane how many PSD's, JSX's, PHP's and other technologies and file formats I've seen driving around and can no longer keep it for myself.\nTo qualify the tech/ format must 1) have been spotted and photographed by me and, 2) be about something related to webdev \n\nIf it doesn't take off, I can still create a unique custom CAPTCHA service with the photos :D",
+          "text": "One day in a near but comfortably not too near future, I will start a webdevelopment 3-letter-abbreviation &lt;strong&gt;dictionary&lt;/strong&gt; page, with self-taken photos of Belgian car license plates, and use the alphabetic part for each definition. It's insane how many PSD's, JSX's, PHP's and other technologies and file formats I've seen driving around and can no longer keep it for myself.\nTo qualify the tech/ format must 1) have been spotted and photographed by me and, 2) be about something related to webdev \n\nIf it doesn't take off, I can still create a unique custom CAPTCHA service with the photos :D",
           "score": 3,
           "created_time": 1542817975,
           "attached_image": "",
@@ -405,7 +405,7 @@
         },
         {
           "id": 1780121,
-          "text": "Isn't it curious that most development libraries, frameworks, widgets in an <strong>ecosystem</strong> see a decrease in popularity when they reach a \"no longer under active development\"/ maintenance stage (especially exacerbated in the front-end)? \n\nAs if we just can't settle on a convention. As if, even for limited-scope solutions, a final stage can never be reached, there must be perpetual growth. As if we must constantly trade a solution for a shinier one, that just might provide us with 2% profit based on a doubtful forecast... or not. Sounds a lot like the investment <strong>capitalism</strong> that resulted in the 2008 subprime crisis. Not sure what to make of this thought but\n\nFUUUUUUUUUUUUUUUUUUUUUU",
+          "text": "Isn't it curious that most development libraries, frameworks, widgets in an &lt;strong&gt;ecosystem&lt;/strong&gt; see a decrease in popularity when they reach a \"no longer under active development\"/ maintenance stage (especially exacerbated in the front-end)? \n\nAs if we just can't settle on a convention. As if, even for limited-scope solutions, a final stage can never be reached, there must be perpetual growth. As if we must constantly trade a solution for a shinier one, that just might provide us with 2% profit based on a doubtful forecast... or not. Sounds a lot like the investment &lt;strong&gt;capitalism&lt;/strong&gt; that resulted in the 2008 subprime crisis. Not sure what to make of this thought but\n\nFUUUUUUUUUUUUUUUUUUUUUU",
           "score": 8,
           "created_time": 1537489268,
           "attached_image": "",
@@ -435,7 +435,7 @@
         },
         {
           "id": 1758210,
-          "text": "The amount of repetition and vagueness in this unsollicited <strong>recruiter</strong> job invite is insane: \"Current Technology Sector Consultant\". I've had 10's of invites from these recruiters on <strong>linkedin</strong>, blocked all of them and they just keep coming back despite my <strong>linkedin</strong> preference being set to let recruiters know \"that I'm NOT open to opportunities\"\n\nIf you ever get an offer from VMR consultants / J People consider these reviews carefully: <a href=\"https://www.glassdoor.co.uk/Reviews/VMR-Consultants-Reviews-E839547.htm\">https://glassdoor.co.uk/Reviews/...</a>. \n\nI'm naming the company because it seriously deserves to be exposed for its bad practices towards both their potential and current employees.",
+          "text": "The amount of repetition and vagueness in this unsollicited &lt;strong&gt;recruiter&lt;/strong&gt; job invite is insane: \"Current Technology Sector Consultant\". I've had 10's of invites from these recruiters on &lt;strong&gt;linkedin&lt;/strong&gt;, blocked all of them and they just keep coming back despite my &lt;strong&gt;linkedin&lt;/strong&gt; preference being set to let recruiters know \"that I'm NOT open to opportunities\"\n\nIf you ever get an offer from VMR consultants / J People consider these reviews carefully: &lt;a href=\"https://www.glassdoor.co.uk/Reviews/VMR-Consultants-Reviews-E839547.htm\"&gt;https://glassdoor.co.uk/Reviews/...&lt;/a&gt;. \n\nI'm naming the company because it seriously deserves to be exposed for its bad practices towards both their potential and current employees.",
           "score": 8,
           "created_time": 1536616388,
           "attached_image": {
@@ -514,7 +514,7 @@
         },
         {
           "id": 1678193,
-          "text": "I feel <strong>connected</strong> in all the word's meanings. To give you some context:  I'm <strong>high</strong>, it's illegal, but at least it's outside of office hours",
+          "text": "I feel &lt;strong&gt;connected&lt;/strong&gt; in all the word's meanings. To give you some context:  I'm &lt;strong&gt;high&lt;/strong&gt;, it's illegal, but at least it's outside of office hours",
           "score": 3,
           "created_time": 1535408236,
           "attached_image": "",
@@ -576,7 +576,7 @@
         },
         {
           "id": 1548036,
-          "text": "That moment when you read a <strong>redux</strong> article titled \"The Perils of Using a Common <strong>redux</strong> <strong>anti-pattern</strong>\" as part of educating yourself on the stack of the app you're paid to continue development on, go back to the code of the application, and realize the ENTIRE <strong>redux</strong> STATE WAS BUILT ON THAT <strong>anti-pattern</strong>. I thought I was the <strong>redux</strong> noob!!  <strong>fml</strong>\n\nURL: <a href=\"https://itnext.io/the-perils-of-using-a-common-redux-anti-pattern-344d778e59da\">https://itnext.io/the-perils-of-usi...</a>",
+          "text": "That moment when you read a &lt;strong&gt;redux&lt;/strong&gt; article titled \"The Perils of Using a Common &lt;strong&gt;redux&lt;/strong&gt; &lt;strong&gt;anti-pattern&lt;/strong&gt;\" as part of educating yourself on the stack of the app you're paid to continue development on, go back to the code of the application, and realize the ENTIRE &lt;strong&gt;redux&lt;/strong&gt; STATE WAS BUILT ON THAT &lt;strong&gt;anti-pattern&lt;/strong&gt;. I thought I was the &lt;strong&gt;redux&lt;/strong&gt; noob!!  &lt;strong&gt;fml&lt;/strong&gt;\n\nURL: &lt;a href=\"https://itnext.io/the-perils-of-using-a-common-redux-anti-pattern-344d778e59da\"&gt;https://itnext.io/the-perils-of-usi...&lt;/a&gt;",
           "score": 6,
           "created_time": 1531148585,
           "attached_image": "",
@@ -619,7 +619,7 @@
         },
         {
           "id": 1540669,
-          "text": "The best <strong>redux</strong> logger is the simplest (in-browser: console.log(store.getState())",
+          "text": "The best &lt;strong&gt;redux&lt;/strong&gt; logger is the simplest (in-browser: console.log(store.getState())",
           "score": 1,
           "created_time": 1530871696,
           "attached_image": {
@@ -652,7 +652,7 @@
         },
         {
           "id": 1498413,
-          "text": "Fuck the <strong>scrumtime</strong> app",
+          "text": "Fuck the &lt;strong&gt;scrumtime&lt;/strong&gt; app",
           "score": 4,
           "created_time": 1529484289,
           "attached_image": {
@@ -684,7 +684,7 @@
         },
         {
           "id": 1497173,
-          "text": "Estimates..  First, part of the team makes \"high-level\" <strong>estimates</strong> which are based on informal, incomplete, still-evolving specs and an unstable back-end. The project people report the <strong>estimates</strong> to the client and elevate the status of these inaccurate <strong>estimates</strong> to that of commitments.\n\nThen, before the \"sprint\", we review our initial <strong>estimates</strong> *ahum commitments* in greater (technical) detail. Because there are still a lot of unknowns, we tend to estimate more buffer here (back-end is often not ready, always ping-pong between project people and dev-team about unclear specs, more work than originally expected, and often late modifications to the original spec).\n\nWhen an estimate becomes more than 50% extra time at the \"refinement\", we are told: \"sorry, we gotta do it in less\" and when it doesn't work out, we're kindly asked to spend part of our weekend catching up at 100% pay rate (legally it's 150-200%).\n\nFUCK THIS SHIT\n\n*quotes used abundantly because these terms belong to \"agile/scrum\" terminology but we're only pretending",
+          "text": "Estimates..  First, part of the team makes \"high-level\" &lt;strong&gt;estimates&lt;/strong&gt; which are based on informal, incomplete, still-evolving specs and an unstable back-end. The project people report the &lt;strong&gt;estimates&lt;/strong&gt; to the client and elevate the status of these inaccurate &lt;strong&gt;estimates&lt;/strong&gt; to that of commitments.\n\nThen, before the \"sprint\", we review our initial &lt;strong&gt;estimates&lt;/strong&gt; *ahum commitments* in greater (technical) detail. Because there are still a lot of unknowns, we tend to estimate more buffer here (back-end is often not ready, always ping-pong between project people and dev-team about unclear specs, more work than originally expected, and often late modifications to the original spec).\n\nWhen an estimate becomes more than 50% extra time at the \"refinement\", we are told: \"sorry, we gotta do it in less\" and when it doesn't work out, we're kindly asked to spend part of our weekend catching up at 100% pay rate (legally it's 150-200%).\n\nFUCK THIS SHIT\n\n*quotes used abundantly because these terms belong to \"agile/scrum\" terminology but we're only pretending",
           "score": 5,
           "created_time": 1529431402,
           "attached_image": "",
@@ -752,7 +752,7 @@
         },
         {
           "id": 1294916,
-          "text": "Yes you are. Not a single reason. Clearly no one. I am very surprised. This <strong>recruiter</strong> put in some very subtle <strong>irony</strong> and lots of effort (google \"minutes in an hour\")",
+          "text": "Yes you are. Not a single reason. Clearly no one. I am very surprised. This &lt;strong&gt;recruiter&lt;/strong&gt; put in some very subtle &lt;strong&gt;irony&lt;/strong&gt; and lots of effort (google \"minutes in an hour\")",
           "score": 7,
           "created_time": 1521756924,
           "attached_image": {
@@ -788,7 +788,7 @@
         },
         {
           "id": 1289291,
-          "text": "Fuck you! I'm really starting to like this <strong>npm</strong> package, <a href=\"https://www.npmjs.com/package/fuck-you\">https://npmjs.com/package/fuck-you/</a>",
+          "text": "Fuck you! I'm really starting to like this &lt;strong&gt;npm&lt;/strong&gt; package, &lt;a href=\"https://www.npmjs.com/package/fuck-you\"&gt;https://npmjs.com/package/fuck-you/&lt;/a&gt;",
           "score": 7,
           "created_time": 1521550027,
           "attached_image": {
@@ -834,7 +834,7 @@
         },
         {
           "id": 1231794,
-          "text": "I see a lot of <strong>react</strong> devs (ab)using the <strong>array</strong>.map function in cases where a <strong>foreach</strong> would be more suitable (e.g. without assigning the result, and without return statements). What are your thoughts on this?",
+          "text": "I see a lot of &lt;strong&gt;react&lt;/strong&gt; devs (ab)using the &lt;strong&gt;array&lt;/strong&gt;.map function in cases where a &lt;strong&gt;foreach&lt;/strong&gt; would be more suitable (e.g. without assigning the result, and without return statements). What are your thoughts on this?",
           "score": 2,
           "created_time": 1519314632,
           "attached_image": {
@@ -869,7 +869,7 @@
         },
         {
           "id": 1215878,
-          "text": "When you join a <strong>react</strong> <strong>js</strong> <strong>spa</strong> project months after the start to discover that 2 <strong>css</strong> <strong>grid</strong> systems with totally different breakpoints have been in use in parallel since 5 months, hidden by layer upon layer of abstraction, and that no dev bothered to fix, let alone notice.\r\n <strong>fml</strong>",
+          "text": "When you join a &lt;strong&gt;react&lt;/strong&gt; &lt;strong&gt;js&lt;/strong&gt; &lt;strong&gt;spa&lt;/strong&gt; project months after the start to discover that 2 &lt;strong&gt;css&lt;/strong&gt; &lt;strong&gt;grid&lt;/strong&gt; systems with totally different breakpoints have been in use in parallel since 5 months, hidden by layer upon layer of abstraction, and that no dev bothered to fix, let alone notice.\r\n &lt;strong&gt;fml&lt;/strong&gt;",
           "score": 3,
           "created_time": 1518781797,
           "attached_image": "",
