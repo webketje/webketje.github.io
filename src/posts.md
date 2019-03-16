@@ -2,6 +2,7 @@
 layout: pages/posts.twig
 changefreq: weekly
 slug: /posts
+title: Posts
 ---
 <h1 style="font-size: 1rem;">{{ title }}</h1>
 <div class="rants"></div>

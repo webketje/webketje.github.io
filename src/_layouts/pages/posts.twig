@@ -9,6 +9,7 @@
         'type': 'post',
         'desc': post.text|replace({'\n':'<br>'}),
         'image': post.attached_image ? post.attached_image.url : '',
+        'title':'',
         'meta': [
           '<time>' ~ post.created_time|date('j M, Y') ~ '</time>',
           '<div class="list-item__score"><i class="icon-increment">++ </i>' ~ post.score ~ '</div>'
